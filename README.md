@@ -137,9 +137,17 @@ pandoc protocol/protocol-english.md \
   -o protocol/protocol-english.pdf
 ```
 
+## Raw Data Access
+
+The raw paper data used for evaluation is available at [https://doi.org/10.5281/zenodo.17547700](https://doi.org/10.5281/zenodo.17547700). Zenodo users can request access to the dataset.
+
 ## Notes
 
 - Keep `.env` files private?never commit them. Use `environment/.env.example` as the template.
 - All paths above are relative to this bundle root; adjust output destinations if you prefer to keep regenerated artifacts separate.
 - For end-to-end evaluator reruns, mount this bundle inside the full PRISMA-AI repository, activate the shared virtual environment, and run `prisma_evaluator/cli/main.py` as described in the manuscript.
+
+## Acknowledgments
+
+This work was supported by a JSPS Grant-in-Aid for Scientific Research (Grant No. 25K13585) provided to Y.K.
 
