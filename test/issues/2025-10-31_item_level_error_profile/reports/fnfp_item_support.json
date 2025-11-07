@@ -1,0 +1,2067 @@
+{
+  "Suda": {
+    "1": {
+      "tp": 6,
+      "tn": 3,
+      "fp": 0,
+      "fn": 1,
+      "fn_support": 7,
+      "fp_support": 3,
+      "fn_rate": 0.14285714285714285,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "The title provided does not identify the report as a systematic review.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "10a": {
+      "tp": 3,
+      "tn": 5,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.4,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Outcomes sought are not prespecified and defined in Methods; detailed only in Results.",
+          "count": 1
+        },
+        {
+          "reason": "Outcomes are listed, but there is no statement on seeking all compatible results/time points or methods for selecting among multiples.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "10b": {
+      "tp": 1,
+      "tn": 4,
+      "fp": 0,
+      "fn": 5,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.8333333333333334,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Other variables are listed, but no assumptions for missing or unclear information are described.",
+          "count": 2
+        },
+        {
+          "reason": "Other variables listed but not defined; no assumptions about missing/unclear information reported; funding of included studies not extracted.",
+          "count": 1
+        },
+        {
+          "reason": "Other variables sought and assumptions are not listed; only a supplementary appendix is referenced.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "11": {
+      "tp": 3,
+      "tn": 4,
+      "fp": 0,
+      "fn": 3,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.5,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "ROB-2 and NOS tools named, but number/independence of reviewers for risk-of-bias assessment not reported; no automation details.",
+          "count": 1
+        },
+        {
+          "reason": "NOS tool used, but number/independence of assessors not specified; one included study lacked a risk-of-bias assessment.",
+          "count": 1
+        },
+        {
+          "reason": "Risk-of-bias domains and assessors reported, but independence of assessments is not stated.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "12": {
+      "tp": 7,
+      "tn": 1,
+      "fp": 1,
+      "fn": 1,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.125,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [
+        {
+          "reason": "Effect measures are not specified for each outcome; approach is inconsistently described.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Effect measure specified: ratio of means with 95% CIs used for syntheses.",
+          "count": 1
+        }
+      ]
+    },
+    "13a": {
+      "tp": 4,
+      "tn": 1,
+      "fp": 0,
+      "fn": 5,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.5555555555555556,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "No process described for deciding which studies were eligible for each synthesis.",
+          "count": 1
+        },
+        {
+          "reason": "No process described for assigning studies to specific syntheses.",
+          "count": 1
+        },
+        {
+          "reason": "No explicit process to determine eligibility for each synthesis beyond ‘when possible’ and by design.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "13b": {
+      "tp": 2,
+      "tn": 5,
+      "fp": 3,
+      "fn": 0,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.0,
+      "fp_rate": 0.375,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Data were converted to ratios of means prior to pooling.",
+          "count": 1
+        },
+        {
+          "reason": "Data preparation methods are described (continuity correction for zero events; avoiding transformations).",
+          "count": 1
+        },
+        {
+          "reason": "Data preparation described (unit conversion for hospital stay)",
+          "count": 1
+        }
+      ]
+    },
+    "13c": {
+      "tp": 3,
+      "tn": 5,
+      "fp": 2,
+      "fn": 0,
+      "fn_support": 3,
+      "fp_support": 7,
+      "fn_rate": 0.0,
+      "fp_rate": 0.2857142857142857,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Methods to tabulate/visualize results described (tables and RevMan-generated figures).",
+          "count": 1
+        },
+        {
+          "reason": "Methods mention tabulating data and using RevMan to create summary figures.",
+          "count": 1
+        }
+      ]
+    },
+    "13d": {
+      "tp": 5,
+      "tn": 1,
+      "fp": 1,
+      "fn": 3,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.375,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [
+        {
+          "reason": "Meta-analysis model, heterogeneity, and software reported, but no rationale for synthesis choices provided.",
+          "count": 1
+        },
+        {
+          "reason": "Meta-analysis model, heterogeneity methods, and software reported, but no rationale provided for synthesis choices.",
+          "count": 1
+        },
+        {
+          "reason": "Meta-analytic methods given (random-effects, heterogeneity metrics, software), but no rationale for model choice.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Random-effects model, heterogeneity measures, and software are specified with rationale.",
+          "count": 1
+        }
+      ]
+    },
+    "13e": {
+      "tp": 3,
+      "tn": 5,
+      "fp": 2,
+      "fn": 0,
+      "fn_support": 3,
+      "fp_support": 7,
+      "fn_rate": 0.0,
+      "fp_rate": 0.2857142857142857,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Exploration of heterogeneity via planned subgroup analyses (drug combinations, design types) described.",
+          "count": 1
+        },
+        {
+          "reason": "Meta-regression with prespecified covariates used to explore heterogeneity.",
+          "count": 1
+        }
+      ]
+    },
+    "13f": {
+      "tp": 5,
+      "tn": 5,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "14": {
+      "tp": 6,
+      "tn": 4,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "15": {
+      "tp": 2,
+      "tn": 8,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "16a": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "16b": {
+      "tp": 0,
+      "tn": 5,
+      "fp": 1,
+      "fn": 4,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 1.0,
+      "fp_rate": 0.16666666666666666,
+      "top_fn_reasons": [
+        {
+          "reason": "Excluded studies that might appear eligible are not listed with specific reasons for exclusion.",
+          "count": 1
+        },
+        {
+          "reason": "No list of excluded studies that seemed eligible with reasons is provided.",
+          "count": 1
+        },
+        {
+          "reason": "No list of excluded but potentially eligible studies with reasons",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Excluded studies with reasons cited (e.g., Koster et al) and listed in Appendix 4.",
+          "count": 1
+        }
+      ]
+    },
+    "17": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "18": {
+      "tp": 6,
+      "tn": 2,
+      "fp": 2,
+      "fn": 0,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.0,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Risk-of-bias assessments presented (low ROB for RCTs; NOS scores and bias notes for cohorts).",
+          "count": 1
+        },
+        {
+          "reason": "Risk-of-bias assessments are presented via a summary figure (Figure 1).",
+          "count": 1
+        }
+      ]
+    },
+    "19": {
+      "tp": 3,
+      "tn": 1,
+      "fp": 1,
+      "fn": 5,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.625,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [
+        {
+          "reason": "Per-study effect estimates with precision are not fully presented for all outcomes.",
+          "count": 1
+        },
+        {
+          "reason": "Per-study outcome statistics and effect estimates are not explicitly presented.",
+          "count": 1
+        },
+        {
+          "reason": "Per-study summary statistics and effect estimates with precision for all outcomes are not fully presented.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Per-study effect estimates with CIs shown in forest plots; events/totals displayed",
+          "count": 1
+        }
+      ]
+    },
+    "20a": {
+      "tp": 1,
+      "tn": 4,
+      "fp": 2,
+      "fn": 3,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.75,
+      "fp_rate": 0.3333333333333333,
+      "top_fn_reasons": [
+        {
+          "reason": "Syntheses lack explicit summaries of contributing studies’ characteristics and risk of bias.",
+          "count": 1
+        },
+        {
+          "reason": "Syntheses results are reported, but characteristics and risk of bias of contributing studies are not summarised for each synthesis.",
+          "count": 1
+        },
+        {
+          "reason": "No summary of risk of bias among contributing studies provided.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Study characteristics and overall risk of bias summarised before syntheses",
+          "count": 1
+        },
+        {
+          "reason": "Each synthesis summarises contributing studies, heterogeneity, and certainty/risk-of-bias considerations.",
+          "count": 1
+        }
+      ]
+    },
+    "20b": {
+      "tp": 8,
+      "tn": 0,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.2,
+      "fp_rate": null,
+      "top_fn_reasons": [
+        {
+          "reason": "Pooled estimates are reported, but measures of heterogeneity for each synthesis are not presented.",
+          "count": 1
+        },
+        {
+          "reason": "Summary estimates are reported, but heterogeneity measures (e.g., I2) are not presented.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "20c": {
+      "tp": 3,
+      "tn": 3,
+      "fp": 1,
+      "fn": 3,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.5,
+      "fp_rate": 0.25,
+      "top_fn_reasons": [
+        {
+          "reason": "No results of investigations into heterogeneity causes are reported.",
+          "count": 1
+        },
+        {
+          "reason": "No results of investigations into heterogeneity causes reported.",
+          "count": 1
+        },
+        {
+          "reason": "No formal results of heterogeneity investigations (e.g., subgroup or meta-regression) are presented.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Results of heterogeneity investigations (meta-regression) are reported.",
+          "count": 1
+        }
+      ]
+    },
+    "20d": {
+      "tp": 4,
+      "tn": 6,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "21": {
+      "tp": 5,
+      "tn": 5,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "22": {
+      "tp": 2,
+      "tn": 8,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "23a": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "23b": {
+      "tp": 9,
+      "tn": 1,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "23c": {
+      "tp": 3,
+      "tn": 3,
+      "fp": 0,
+      "fn": 4,
+      "fn_support": 7,
+      "fp_support": 3,
+      "fn_rate": 0.5714285714285714,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Limited discussion of review process limitations; apart from noting no registration, screening/extraction/search process limitations are not discussed.",
+          "count": 1
+        },
+        {
+          "reason": "Limitations of the review processes (e.g., registration/protocol, language restriction) are not discussed.",
+          "count": 1
+        },
+        {
+          "reason": "Limitations of the review processes (e.g., language restriction, lack of protocol/registration) are not explicitly discussed.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "23d": {
+      "tp": 9,
+      "tn": 1,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "24a": {
+      "tp": 4,
+      "tn": 5,
+      "fp": 0,
+      "fn": 1,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.2,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "No registration information is provided nor a clear statement that the review was not registered.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "24b": {
+      "tp": 2,
+      "tn": 6,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.5,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Does not indicate where a protocol can be accessed or explicitly state that no protocol was prepared.",
+          "count": 1
+        },
+        {
+          "reason": "No protocol location provided and not explicitly stated that no protocol was prepared.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "24c": {
+      "tp": 0,
+      "tn": 8,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 1.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "No amendments to the registration/protocol are described.",
+          "count": 1
+        },
+        {
+          "reason": "No protocol/registration amendments are described.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "25": {
+      "tp": 6,
+      "tn": 3,
+      "fp": 0,
+      "fn": 1,
+      "fn_support": 7,
+      "fp_support": 3,
+      "fn_rate": 0.14285714285714285,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Funding sources listed, but the role of funders/sponsors in the review is not described.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "26": {
+      "tp": 9,
+      "tn": 1,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "27": {
+      "tp": 0,
+      "tn": 6,
+      "fp": 1,
+      "fn": 3,
+      "fn_support": 3,
+      "fp_support": 7,
+      "fn_rate": 1.0,
+      "fp_rate": 0.14285714285714285,
+      "top_fn_reasons": [
+        {
+          "reason": "No statement on availability of data, extraction forms, code, or materials.",
+          "count": 1
+        },
+        {
+          "reason": "Only ‘available on request’ is stated; no publicly available data, code, or materials and locations are reported.",
+          "count": 1
+        },
+        {
+          "reason": "Data/materials are available only on request; no public repository or links provided.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "States processed data are available in the supplementary files with a link to the materials.",
+          "count": 1
+        }
+      ]
+    },
+    "3": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "4": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "5": {
+      "tp": 6,
+      "tn": 1,
+      "fp": 0,
+      "fn": 3,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.3333333333333333,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Inclusion/exclusion criteria reported, but grouping of studies for syntheses not described.",
+          "count": 1
+        },
+        {
+          "reason": "Inclusion/exclusion given, but no explicit grouping for each synthesis.",
+          "count": 1
+        },
+        {
+          "reason": "Inclusion/exclusion are stated, but methods do not describe how studies were grouped for syntheses (groupings only reported in Results).",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "6": {
+      "tp": 4,
+      "tn": 4,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.3333333333333333,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Sources are listed, but last-searched dates are not specified for each source individually.",
+          "count": 1
+        },
+        {
+          "reason": "Databases listed with last search date, but dates for Google Scholar/ResearchGate and reference checking are not specified.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "7": {
+      "tp": 1,
+      "tn": 7,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 3,
+      "fp_support": 7,
+      "fn_rate": 0.6666666666666666,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Only the Ovid MEDLINE strategy is referenced in a supplement; full strategies for all databases are not presented.",
+          "count": 1
+        },
+        {
+          "reason": "Full search strategies provided for PubMed, Embase, and Cochrane, but none for Google Scholar/ResearchGate, which were also searched.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "8": {
+      "tp": 5,
+      "tn": 1,
+      "fp": 1,
+      "fn": 3,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.375,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [
+        {
+          "reason": "Two reviewers screened titles/abstracts, but independence and full-text selection methods not specified.",
+          "count": 1
+        },
+        {
+          "reason": "Two reviewers screened independently, but automation tools used without details.",
+          "count": 1
+        },
+        {
+          "reason": "Screening methods lack details on reviewer numbers per record, independence, and any automation tools.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Two reviewers independently screened; disagreements resolved with a third; reasons recorded.",
+          "count": 1
+        }
+      ]
+    },
+    "9": {
+      "tp": 3,
+      "tn": 6,
+      "fp": 0,
+      "fn": 1,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.25,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Data extraction roles, independence, and investigator contact/automation not described.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "A1": {
+      "tp": 7,
+      "tn": 3,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 7,
+      "fp_support": 3,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A10": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A11": {
+      "tp": 0,
+      "tn": 10,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A12": {
+      "tp": 0,
+      "tn": 10,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A2": {
+      "tp": 9,
+      "tn": 1,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A3": {
+      "tp": 0,
+      "tn": 9,
+      "fp": 1,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.1,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Eligibility specified: adult non-trauma OHCA, English, ROSC outcome, RCT/observational designs, 2000–2020, mechanical vs manual.",
+          "count": 1
+        }
+      ]
+    },
+    "A4": {
+      "tp": 1,
+      "tn": 5,
+      "fp": 2,
+      "fn": 2,
+      "fn_support": 3,
+      "fp_support": 7,
+      "fn_rate": 0.6666666666666666,
+      "fp_rate": 0.2857142857142857,
+      "top_fn_reasons": [
+        {
+          "reason": "Search date reported (22 July 2020) but no databases or registers named.",
+          "count": 1
+        },
+        {
+          "reason": "Databases/registers are not named and last search dates per source are not reported.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Lists databases (PubMed, EMBASE, Cochrane, CNKI, Wanfang) and search period Jan 2000–Dec 2021.",
+          "count": 1
+        },
+        {
+          "reason": "Sources (CENTRAL, Medline, Google Scholar) and last search timing (up to January 2021) are reported.",
+          "count": 1
+        }
+      ]
+    },
+    "A5": {
+      "tp": 4,
+      "tn": 6,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A6": {
+      "tp": 2,
+      "tn": 2,
+      "fp": 6,
+      "fn": 0,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.0,
+      "fp_rate": 0.75,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "States that Stata 16.0 was used for meta-analysis, indicating the synthesis approach.",
+          "count": 1
+        },
+        {
+          "reason": "Synthesis methods stated: random-effects meta-analysis, trial sequential analysis, and multivariate meta-regression.",
+          "count": 1
+        },
+        {
+          "reason": "Synthesis methods are specified: qualitative analysis and meta-analysis pooling using ratio of means.",
+          "count": 1
+        }
+      ]
+    },
+    "A7": {
+      "tp": 6,
+      "tn": 2,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.25,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Reports 16 studies and participant numbers but does not summarise study characteristics.",
+          "count": 1
+        },
+        {
+          "reason": "Reports 19 included studies but not total participants; limited study characteristics.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "A8": {
+      "tp": 8,
+      "tn": 0,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.2,
+      "fp_rate": null,
+      "top_fn_reasons": [
+        {
+          "reason": "Presents outcomes and direction, but no summary effect estimates or confidence intervals, and no studies/participants per outcome.",
+          "count": 1
+        },
+        {
+          "reason": "Main outcomes lack confidence intervals and numbers of studies/participants per outcome.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "A9": {
+      "tp": 0,
+      "tn": 6,
+      "fp": 3,
+      "fn": 1,
+      "fn_support": 1,
+      "fp_support": 9,
+      "fn_rate": 1.0,
+      "fp_rate": 0.3333333333333333,
+      "top_fn_reasons": [
+        {
+          "reason": "No explicit summary of evidence limitations (e.g., risk of bias, inconsistency, imprecision) is provided.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Notes need for further well-designed studies with sufficient sample sizes, indicating limitations of the current evidence (imprecision).",
+          "count": 1
+        },
+        {
+          "reason": "States limitations: heterogeneity, study quality, and paucity of data.",
+          "count": 1
+        },
+        {
+          "reason": "Notes limited evidence due to an inadequate number of trials.",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "Tsuge": {
+    "1": {
+      "tp": 7,
+      "tn": 1,
+      "fp": 1,
+      "fn": 1,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.125,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [
+        {
+          "reason": "Title not provided; cannot confirm it identifies as a systematic review.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Title identifies it as a meta-analysis (a type of systematic review).",
+          "count": 1
+        }
+      ]
+    },
+    "10a": {
+      "tp": 3,
+      "tn": 2,
+      "fp": 3,
+      "fn": 2,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.4,
+      "fp_rate": 0.6,
+      "top_fn_reasons": [
+        {
+          "reason": "Outcomes sought are implied (PAS, SSA) but not comprehensively listed and defined a priori or across all time points.",
+          "count": 1
+        },
+        {
+          "reason": "Outcomes not fully listed/defined; only DVT incidence mentioned without time points or selection rules.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "All outcomes listed and defined; time point selection rule stated.",
+          "count": 1
+        },
+        {
+          "reason": "Outcomes (fitness domains) listed and defined; classification steps described.",
+          "count": 1
+        },
+        {
+          "reason": "All outcomes listed and defined as primary and secondary; measures specified.",
+          "count": 1
+        }
+      ]
+    },
+    "10b": {
+      "tp": 1,
+      "tn": 7,
+      "fp": 1,
+      "fn": 1,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.5,
+      "fp_rate": 0.125,
+      "top_fn_reasons": [
+        {
+          "reason": "Other variables sought and assumptions for missing/unclear data not fully described.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Other variables (study/patient characteristics) listed; no assumptions about missing data reported.",
+          "count": 1
+        }
+      ]
+    },
+    "11": {
+      "tp": 3,
+      "tn": 2,
+      "fp": 5,
+      "fn": 0,
+      "fn_support": 3,
+      "fp_support": 7,
+      "fn_rate": 0.0,
+      "fp_rate": 0.7142857142857143,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Cochrane Risk of Bias tool specified; items listed; some blinding and reviewer details provided.",
+          "count": 1
+        },
+        {
+          "reason": "Risk of bias assessed using Cochrane tool; domains listed; reviewer process and resolution by consensus reported.",
+          "count": 1
+        },
+        {
+          "reason": "Cochrane risk of bias tool specified, domains adjusted, and reviewer approach described.",
+          "count": 1
+        }
+      ]
+    },
+    "12": {
+      "tp": 8,
+      "tn": 0,
+      "fp": 1,
+      "fn": 1,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.1111111111111111,
+      "fp_rate": 1.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Effect measures per outcome are not explicitly specified (e.g., MD for each outcome) in methods",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Effect measure specified as Cohen’s d for outcomes.",
+          "count": 1
+        }
+      ]
+    },
+    "13a": {
+      "tp": 3,
+      "tn": 0,
+      "fp": 0,
+      "fn": 7,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.7,
+      "fp_rate": null,
+      "top_fn_reasons": [
+        {
+          "reason": "No explicit process for deciding study eligibility per synthesis beyond general inclusion.",
+          "count": 1
+        },
+        {
+          "reason": "Process to decide study eligibility for each synthesis not described beyond general pooling",
+          "count": 1
+        },
+        {
+          "reason": "Eligibility for each synthesis not described beyond general inclusion",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "13b": {
+      "tp": 3,
+      "tn": 4,
+      "fp": 3,
+      "fn": 0,
+      "fn_support": 3,
+      "fp_support": 7,
+      "fn_rate": 0.0,
+      "fp_rate": 0.42857142857142855,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "States handling via random-effects model; mentions pooling and timepoint alignment; software used",
+          "count": 1
+        },
+        {
+          "reason": "Handling of change scores, heterogeneity metrics, and model choices described; no conversions beyond this.",
+          "count": 1
+        },
+        {
+          "reason": "Data handling includes model choice by heterogeneity, conversions (SMD), and handling of missing data noted for self-care.",
+          "count": 1
+        }
+      ]
+    },
+    "13c": {
+      "tp": 2,
+      "tn": 4,
+      "fp": 4,
+      "fn": 0,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.0,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Use of forest plots and tables (supplementary) to display results stated.",
+          "count": 1
+        },
+        {
+          "reason": "States use of tables and funnel plot; results tabulated in Tables 2–3 and Figure 2.",
+          "count": 1
+        },
+        {
+          "reason": "Use of tables/figures and forest plots stated for individual studies and syntheses.",
+          "count": 1
+        }
+      ]
+    },
+    "13d": {
+      "tp": 5,
+      "tn": 0,
+      "fp": 5,
+      "fn": 0,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.0,
+      "fp_rate": 1.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Meta-analysis model (DerSimonian-Laird), heterogeneity (I2), and software (RevMan) reported with rationale of heterogeneity",
+          "count": 1
+        },
+        {
+          "reason": "Meta-analysis model details include SMD, heterogeneity (I2), software, significance level",
+          "count": 1
+        },
+        {
+          "reason": "Synthesis methods described: fixed-effects model, heterogeneity via Cochran’s Q, software (RevMan), and rationale noted.",
+          "count": 1
+        }
+      ]
+    },
+    "13e": {
+      "tp": 3,
+      "tn": 4,
+      "fp": 3,
+      "fn": 0,
+      "fn_support": 3,
+      "fp_support": 7,
+      "fn_rate": 0.0,
+      "fp_rate": 0.42857142857142855,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Explored heterogeneity via subgroup analyses (age, period, fitness domains).",
+          "count": 1
+        },
+        {
+          "reason": "Subgroup analyses reported (e.g., VAS scales, functional score types).",
+          "count": 1
+        },
+        {
+          "reason": "Subgroup analyses by setting performed to explore heterogeneity.",
+          "count": 1
+        }
+      ]
+    },
+    "13f": {
+      "tp": 4,
+      "tn": 3,
+      "fp": 3,
+      "fn": 0,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.0,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Sensitivity analysis explicitly addressed as not performed with rationale (few studies).",
+          "count": 1
+        },
+        {
+          "reason": "Sensitivity analyses described (leave-one-out) for all outcomes.",
+          "count": 1
+        },
+        {
+          "reason": "Conducted stepwise sensitivity analyses by excluding studies.",
+          "count": 1
+        }
+      ]
+    },
+    "14": {
+      "tp": 6,
+      "tn": 4,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "15": {
+      "tp": 1,
+      "tn": 9,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 1,
+      "fp_support": 9,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "16a": {
+      "tp": 9,
+      "tn": 0,
+      "fp": 0,
+      "fn": 1,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.1,
+      "fp_rate": null,
+      "top_fn_reasons": [
+        {
+          "reason": "Counts of records at each stage not fully reported; flow diagram referenced but not provided in text.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "16b": {
+      "tp": 1,
+      "tn": 7,
+      "fp": 1,
+      "fn": 1,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.5,
+      "fp_rate": 0.125,
+      "top_fn_reasons": [
+        {
+          "reason": "Excluded studies that seemed eligible are not individually cited with specific reasons.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Excludes near-eligible studies are cited with reasons (e.g., missing SDs, bilateral HF rTMS, different outcomes).",
+          "count": 1
+        }
+      ]
+    },
+    "17": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "18": {
+      "tp": 8,
+      "tn": 1,
+      "fp": 0,
+      "fn": 1,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.1111111111111111,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Risk of bias assessments for each study not presented; only quality scale scores provided",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "19": {
+      "tp": 1,
+      "tn": 1,
+      "fp": 1,
+      "fn": 7,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.875,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [
+        {
+          "reason": "Per-study effect estimates with precision for all outcomes are not presented in structured tables/plots within text.",
+          "count": 1
+        },
+        {
+          "reason": "Per-study effect estimates with precision for all outcomes are not fully presented",
+          "count": 1
+        },
+        {
+          "reason": "Per-study effect estimates and precision not comprehensively presented",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Individual study statistics and effect estimates with CIs provided in text/figures and supplements.",
+          "count": 1
+        }
+      ]
+    },
+    "20a": {
+      "tp": 6,
+      "tn": 2,
+      "fp": 0,
+      "fn": 2,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.25,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "Syntheses do not summarize characteristics and risk of bias of contributing studies per synthesis.",
+          "count": 1
+        },
+        {
+          "reason": "No summary of contributing studies’ risk of bias within syntheses",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "20b": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "20c": {
+      "tp": 4,
+      "tn": 4,
+      "fp": 2,
+      "fn": 0,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.0,
+      "fp_rate": 0.3333333333333333,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Results of subgroup investigations reported (e.g., modality, instrument).",
+          "count": 1
+        },
+        {
+          "reason": "Presents subgroup investigation results (age, period) with effect sizes and heterogeneity.",
+          "count": 1
+        }
+      ]
+    },
+    "20d": {
+      "tp": 4,
+      "tn": 3,
+      "fp": 3,
+      "fn": 0,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.0,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "States no sensitivity analyses conducted due to few studies.",
+          "count": 1
+        },
+        {
+          "reason": "Results of sensitivity analyses reported (e.g., excluding outliers, model choices).",
+          "count": 1
+        },
+        {
+          "reason": "Presents results of sensitivity analysis excluding one study.",
+          "count": 1
+        }
+      ]
+    },
+    "21": {
+      "tp": 4,
+      "tn": 4,
+      "fp": 1,
+      "fn": 1,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.2,
+      "fp_rate": 0.2,
+      "top_fn_reasons": [
+        {
+          "reason": "Funnel plot shown, but no synthesis-level reporting bias assessment results detailed.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Assessments of reporting bias for syntheses presented (funnel plots, Egger’s tests).",
+          "count": 1
+        }
+      ]
+    },
+    "22": {
+      "tp": 1,
+      "tn": 9,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 1,
+      "fp_support": 9,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "23a": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "23b": {
+      "tp": 9,
+      "tn": 0,
+      "fp": 1,
+      "fn": 0,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.0,
+      "fp_rate": 1.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Notes limitations of included evidence, publication bias, variability in stocking types and durations.",
+          "count": 1
+        }
+      ]
+    },
+    "23c": {
+      "tp": 8,
+      "tn": 0,
+      "fp": 2,
+      "fn": 0,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.0,
+      "fp_rate": 1.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Review process limitations discussed (heterogeneity, blinding challenges).",
+          "count": 1
+        },
+        {
+          "reason": "Acknowledges limitations such as lack of differentiation of stocking types/durations and heterogeneity handling.",
+          "count": 1
+        }
+      ]
+    },
+    "23d": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "24a": {
+      "tp": 5,
+      "tn": 5,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "24b": {
+      "tp": 0,
+      "tn": 5,
+      "fp": 5,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "States protocol registered; implies access via PROSPERO; no separate protocol stated.",
+          "count": 1
+        },
+        {
+          "reason": "Protocol registration noted; PRISMA checklist in Supplementary File S6 referenced.",
+          "count": 1
+        },
+        {
+          "reason": "Protocol location/status addressed via PRISMA checklist reference; no separate protocol indicated.",
+          "count": 1
+        }
+      ]
+    },
+    "24c": {
+      "tp": 0,
+      "tn": 6,
+      "fp": 0,
+      "fn": 4,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 1.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "No amendments to registration/protocol are described.",
+          "count": 1
+        },
+        {
+          "reason": "No amendments to registration/protocol described",
+          "count": 1
+        },
+        {
+          "reason": "Amendments to registration/protocol are not described.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "25": {
+      "tp": 9,
+      "tn": 1,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "26": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "27": {
+      "tp": 0,
+      "tn": 3,
+      "fp": 0,
+      "fn": 7,
+      "fn_support": 7,
+      "fp_support": 3,
+      "fn_rate": 1.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [
+        {
+          "reason": "States data available on request; no public availability or locations for data, code, or materials reported.",
+          "count": 1
+        },
+        {
+          "reason": "No statement about availability of data, code, or materials; only supplementary information link provided without specifics.",
+          "count": 1
+        },
+        {
+          "reason": "Availability of data, code, and materials not publicly reported; only “contact author to request data.”",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": []
+    },
+    "3": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "4": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "5": {
+      "tp": 9,
+      "tn": 0,
+      "fp": 1,
+      "fn": 0,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.0,
+      "fp_rate": 1.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Eligibility criteria detailed (age≥60, single yoga program, outcomes, design, statistics) and grouping for syntheses by fitness factors described.",
+          "count": 1
+        }
+      ]
+    },
+    "6": {
+      "tp": 5,
+      "tn": 2,
+      "fp": 3,
+      "fn": 0,
+      "fn_support": 5,
+      "fp_support": 5,
+      "fn_rate": 0.0,
+      "fp_rate": 0.6,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "All databases listed with search coverage to May 2024; dates provided.",
+          "count": 1
+        },
+        {
+          "reason": "Databases listed with last search month/year (December 2021)",
+          "count": 1
+        },
+        {
+          "reason": "All sources listed with search dates and access dates provided.",
+          "count": 1
+        }
+      ]
+    },
+    "7": {
+      "tp": 3,
+      "tn": 5,
+      "fp": 1,
+      "fn": 1,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.25,
+      "fp_rate": 0.16666666666666666,
+      "top_fn_reasons": [
+        {
+          "reason": "Full search strategies are not presented in the text; only keywords are listed and refer to supplementary Sect. 1 without details here.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Full MEDLINE search strategy provided in Supplementary File S1.",
+          "count": 1
+        }
+      ]
+    },
+    "8": {
+      "tp": 6,
+      "tn": 1,
+      "fp": 3,
+      "fn": 0,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.0,
+      "fp_rate": 0.75,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Selection process details include two independent reviewers and use of EndNote; independence stated.",
+          "count": 1
+        },
+        {
+          "reason": "Two reviewers screened independently and in duplicate; process described.",
+          "count": 1
+        },
+        {
+          "reason": "Selection process with two independent reviewers and resolution by third is described; Rayyan specified.",
+          "count": 1
+        }
+      ]
+    },
+    "9": {
+      "tp": 6,
+      "tn": 3,
+      "fp": 1,
+      "fn": 0,
+      "fn_support": 6,
+      "fp_support": 4,
+      "fn_rate": 0.0,
+      "fp_rate": 0.25,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Data extraction by independent reviewers using a form; processes described.",
+          "count": 1
+        }
+      ]
+    },
+    "A1": {
+      "tp": 8,
+      "tn": 0,
+      "fp": 2,
+      "fn": 0,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.0,
+      "fp_rate": 1.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Title states it is a meta-analysis, identifying it as a systematic review.",
+          "count": 1
+        },
+        {
+          "reason": "Title states “Meta-Analysis,” identifying it as a systematic review/meta-analysis.",
+          "count": 1
+        }
+      ]
+    },
+    "A10": {
+      "tp": 9,
+      "tn": 0,
+      "fp": 1,
+      "fn": 0,
+      "fn_support": 9,
+      "fp_support": 1,
+      "fn_rate": 0.0,
+      "fp_rate": 1.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Provides a general interpretation and implications for promoting yoga in the elderly.",
+          "count": 1
+        }
+      ]
+    },
+    "A11": {
+      "tp": 0,
+      "tn": 10,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A12": {
+      "tp": 0,
+      "tn": 10,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A2": {
+      "tp": 10,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 10,
+      "fp_support": 0,
+      "fn_rate": 0.0,
+      "fp_rate": null,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A3": {
+      "tp": 0,
+      "tn": 8,
+      "fp": 2,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.2,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Inclusion criteria reported (years 2016–2021, intervention components, population); no exclusions stated",
+          "count": 1
+        },
+        {
+          "reason": "Inclusion criteria reported: adult HF RCTs comparing eHealth vs usual care within specified dates; exclusion implied by non-RCT/adult.",
+          "count": 1
+        }
+      ]
+    },
+    "A4": {
+      "tp": 3,
+      "tn": 3,
+      "fp": 3,
+      "fn": 1,
+      "fn_support": 4,
+      "fp_support": 6,
+      "fn_rate": 0.25,
+      "fp_rate": 0.5,
+      "top_fn_reasons": [
+        {
+          "reason": "Databases named and a single search date given, but lacks per-source last-searched dates as required.",
+          "count": 1
+        }
+      ],
+      "top_fp_reasons": [
+        {
+          "reason": "Databases listed and last search date given (to May 2024).",
+          "count": 1
+        },
+        {
+          "reason": "Databases are listed and described as searched; however, no search dates are provided.",
+          "count": 1
+        },
+        {
+          "reason": "Information sources (PubMed, Embase, Cochrane) and date range (2008 to date) are stated.",
+          "count": 1
+        }
+      ]
+    },
+    "A5": {
+      "tp": 2,
+      "tn": 7,
+      "fp": 1,
+      "fn": 0,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.0,
+      "fp_rate": 0.125,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Risk of bias assessment is reported with ratings for included studies.",
+          "count": 1
+        }
+      ]
+    },
+    "A6": {
+      "tp": 0,
+      "tn": 3,
+      "fp": 7,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.7,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "States meta-analyses performed and mentions pooled analysis; synthesis method is clear.",
+          "count": 1
+        },
+        {
+          "reason": "States meta-analysis with standardized mean differences and CIs",
+          "count": 1
+        },
+        {
+          "reason": "Indicates meta-analysis with standardized mean differences, CIs, and p-values used to synthesize results.",
+          "count": 1
+        }
+      ]
+    },
+    "A7": {
+      "tp": 0,
+      "tn": 3,
+      "fp": 7,
+      "fn": 0,
+      "fn_support": 0,
+      "fp_support": 10,
+      "fn_rate": null,
+      "fp_rate": 0.7,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Reports 11 RCTs with 940 subjects; provides brief characteristics (post-TKA massage).",
+          "count": 1
+        },
+        {
+          "reason": "Reports six studies, total participants (158) and group allocation; context of RCTs provided.",
+          "count": 1
+        },
+        {
+          "reason": "Reports 33 randomized controlled trials and 2567 participants; prostate cancer population noted.",
+          "count": 1
+        }
+      ]
+    },
+    "A8": {
+      "tp": 8,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0,
+      "fn_support": 8,
+      "fp_support": 2,
+      "fn_rate": 0.0,
+      "fp_rate": 0.0,
+      "top_fn_reasons": [],
+      "top_fp_reasons": []
+    },
+    "A9": {
+      "tp": 2,
+      "tn": 7,
+      "fp": 1,
+      "fn": 0,
+      "fn_support": 2,
+      "fp_support": 8,
+      "fn_rate": 0.0,
+      "fp_rate": 0.125,
+      "top_fn_reasons": [],
+      "top_fp_reasons": [
+        {
+          "reason": "Notes evidence quality levels (low to very low) and need for high-quality studies, implying limitations.",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

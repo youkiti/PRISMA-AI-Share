@@ -1,129 +1,145 @@
-# PRISMA-AI
+# PRISMA-AI Manuscript Export Bundle
 
-> Automating PRISMA guideline compliance assessments with large language models.  
-> PRISMA（Preferred Reporting Items for Systematic Reviews and Meta-Analyses）ガイドライン遵守評価を大規模言語モデルで自動化する研究プロジェクトです。
+This bundle contains every artifact cited in the manuscript?only those actually used for the figures, tables, and licensing workflow. Each directory mirrors the original repository layout so the scripts run in-place without extra dependencies.
 
-## Overview
+## Directory Guide
 
-PRISMA-AI is a reproducible research platform that evaluates systematic reviews against the PRISMA checklist using multiple large language models (LLMs) and document formats. The project includes a modular evaluation pipeline, curated Creative Commons datasets, and experiment harnesses for format alignment, ensemble strategies, and evaluator benchmarking.
+| Path | Contents / Purpose |
+| --- | --- |
+| `analysis/` | Table generators (`aggregate_table2_runtime_cost.py`, `compute_validation_ci.py`, `item_level_error_profile.py`) and CC licensing helpers |
+| `api_pipeline/prisma_evaluator/` | Minimal CLI + config required for cost aggregation and checklist loading |
+| `checklists/canonical/` | PRISMA 2020 (main + abstract) in JSON/MD/YAML (canonical source) |
+| `data/pricing/` | `model_pricing.toml` referenced by the cost scripts |
+| `export/suda_multi_format_scaling/` | Format comparison report + CSV used by Figure?2/3 |
+| `figures/` | Source SVG/PNG assets and generation scripts for Figures?1?4 |
+| `protocol/` | Study protocol (Markdown/Word), bibliography (`ref.bib`), and citation style (`vancouver.csl`) |
+| `pdf_preprocessing/` | Adobe PDF Services extraction pipeline + section splitter |
+| `results/license_filter/enriched/` | CC-enriched annotation JSONs |
+| `test/issues/.../results` | Unified evaluator outputs for Suda (format comparison), Tsuge validation, and item-level profiling |
+| `environment/.env.example` | Placeholder environment variables (copy to `.env` before reruns) |
 
-### 概要
-PRISMA-AI は、システマティックレビュー論文に対する PRISMA チェックリスト適合性評価を LLM で支援するための研究基盤です。モジュール化された評価パイプライン、Creative Commons ライセンス付きデータセット、およびフォーマット比較やアンサンブル評価のための実験スクリプトを提供します。
+## Environment Setup
 
-## Highlights
-- **Multi-format evaluation**: Markdown / JSON / XML / plaintext (`none`) checklists with per-format performance metrics.
-- **Model-agnostic pipeline**: OpenAI, OpenRouter, Gemini Direct, Qwen, Grok, and custom evaluators via a shared `BaseEvaluator` interface.
-- **Creative Commons datasets**: Enriched metadata (`creative_commons_license`, `cc_allows_commercial_use`, `cc_allows_derivatives`, `cc_requires_share_alike`) enables compliant redistribution.
-- **Experiment playbooks**: Reusable scripts for multi-model scaling, ensemble overrides, and evaluator schema alignment.
-- **Structured outputs**: Pydantic-validated schemas, detailed token usage, and processing-time telemetry for each run.
-
-## Architecture
-```mermaid
-%% protocol/fig/system-architecture.mmd
-flowchart LR
-    A[Data Management Module] --> B[Format Conversion Module]
-    B --> C[LLM Integration Module]
-    C --> D[Evaluation Collection Module]
-    D --> E[Analysis Module]
-```
-
-```mermaid
-%% protocol/fig/data-flow.mmd
-flowchart TD
-    A[Data Preparation] --> B[Input Format Conversion]
-    B --> C[AI Evaluation Execution]
-    C --> D[Comparison with Human Evaluation]
-```
-
-## Data & Licensing
-- Public artifacts live in `supplement/data/`, covering Suda2025 (emergency medicine) and Tsuge2025 (rehabilitation) corpora. Each record bundles LLM-ready sections plus human annotations.
-- Creative Commons attribution is enforced through `/legacy/analysis_scripts/filter_cc_license.py` and `/legacy/analysis_scripts/apply_cc_license_to_annotations.py`, which regenerate enriched JSON into `results/license_filter/enriched/`.
-- `cc-by` variants are prioritized; comparative analysis for `cc-by-nc(-nd)` items is supported via metadata flags.
-- Downstream consumers must retain the included license metadata and cite the original sources listed in the per-paper `metadata` section.
-
-## Quick Start
 ```bash
-python -m venv .venv
+cd /path/to/extracted/@toExport
+python3 -m venv .venv
 . .venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-
-# Optional: export any API keys before running evaluations
-export OPENROUTER_API_KEY=...
-export PRISMA_AI_DRIVE_PATH="$PWD/data"
+pip install -r ../requirements.txt        # run from the full PRISMA-AI repo if available
+cp environment/.env.example .env          # fill in your own keys; keep secrets private
 ```
 
-## Running Evaluations
+Required variables (defined in `.env.example`):
+
+- `PDF_SERVICES_CLIENT_ID`, `PDF_SERVICES_CLIENT_SECRET` (Adobe PDF Services)
+- `OPENROUTER_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `GEMINI_API_KEY` (LLM providers)
+- Optional throttles: `PRISMA_EVALUATOR_MAX_WORKERS`, `GPT_OSS_MAX_TOKENS`
+
+## Reproducing Figures
+
+All commands assume the bundle root as the working directory and `PYTHONPATH=.`.
+
+1. **Figure?1 ? Study overview**
+   - Assets: `figures/prisma-ai-figure1*.svg/png`
+   - SVG sanitization & PNG export commands are embedded in `manuscript/export_plan.md` (same as manuscript appendix). Re-run those steps if you need to regenerate from the original draw.io files.
+
+2. **Figure?2 ? Format macro metrics**
+   ```bash
+   PYTHONPATH=. .venv/bin/python figures/make_format_macro_chart.py
+   ```
+   - Inputs: `export/suda_multi_format_scaling/reports/format_metrics.md`
+   - Outputs: `figures/format_macro_metrics.(svg|png)`
+
+3. **Figure?3 ? Model macro metrics**
+   ```bash
+   PYTHONPATH=. .venv/bin/python figures/make_model_macro_chart.py
+   ```
+   - Inputs: `export/suda_multi_format_scaling/data/model_macro_metrics.csv`
+   - Outputs: `figures/model_macro_metrics.(svg|png)`
+
+4. **Figure?4 ? Validation macro metrics**
+   ```bash
+   PYTHONPATH=. .venv/bin/python figures/make_validation_macro_chart.py
+   ```
+   - Inputs: `test/issues/2025-10-23_tsuge_md_validation_metrics/results/*20251023_184404.json`
+   - Outputs: `figures/validation_macro_metrics.(svg|png)`
+
+## Reproducing Tables
+
+1. **Table?2 ? Runtime & API cost (Suda Markdown runs)**
+   ```bash
+   PYTHONPATH=. .venv/bin/python analysis/aggregate_table2_runtime_cost.py \
+     --results-dir test/issues/2025-09-27_suda_multi_format_scaling/results \
+     --output-json test/issues/2025-10-24_table2_runtime_cost/results/table2_runtime_cost.json \
+     --output-csv  test/issues/2025-10-24_table2_runtime_cost/results/table2_runtime_cost.csv
+   ```
+   - Relies on `data/pricing/model_pricing.toml` via `prisma_evaluator/analysis/costs.py`.
+
+2. **Table?3 ? Validation metrics with 95?% CIs**
+   ```bash
+   PYTHONPATH=. .venv/bin/python analysis/compute_validation_ci.py
+   ```
+   - Reads `test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_*.json`.
+   - Emits `test/issues/2025-10-24_validation_ci_update/reports/validation_ci_summary.md` (create directories as needed).
+
+3. **Tables?4a/4b ? Item-level FN/FP profiles**
+   ```bash
+   PYTHONPATH=. .venv/bin/python analysis/item_level_error_profile.py \
+     --dataset Suda=test/issues/2025-09-27_suda_multi_format_scaling/results/20250928_114923_gpt5_md_reasoning_high.json \
+     --dataset Tsuge=test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gpt-5_20251023_184404.json \
+     --output-dir test/issues/2025-10-31_item_level_error_profile/reports
+   ```
+   - Final Markdown summaries live in `test/issues/2025-10-31_item_level_error_profile/reports/item_level_summary.md`.
+
+## PDF Extraction & Licensing
+
+1. **Adobe PDF Services extraction**
+   ```bash
+   PDF_SERVICES_CLIENT_ID=... PDF_SERVICES_CLIENT_SECRET=... \
+   .venv/bin/python pdf_preprocessing/suda_04_pdf_to_json.py --help
+   ```
+   - Similar scripts exist for the Tsuge datasets. Use the paired `_05_unzip.py` and `_06_integrate_to_structured_data.py` to unpack and merge outputs.
+
+2. **Creative Commons metadata enrichment**
+   ```bash
+   PYTHONPATH=. .venv/bin/python analysis/filter_cc_license.py
+   PYTHONPATH=. .venv/bin/python analysis/apply_cc_license_to_annotations.py
+   ```
+   - Results land under `results/license_filter/enriched/` (already populated here).
+
+## Checklist Canonical Sources
+
+The PRISMA 2020 main and abstract checklists in JSON/MD/YAML within `checklists/canonical/` are the single sources of truth. Regenerate plain-text or XML derivatives (if needed) using the commands documented in `manuscript/export_plan.md`.
+
+## Protocol
+
+- Location: `protocol/`
+- Files:
+  - `protocol-english.md`: Study protocol (English, Markdown)
+  - `protocol-english.docx`: Pre-built Word export of the protocol
+  - `ref.bib`: Bibliography used for citations
+  - `vancouver.csl`: Vancouver citation style
+
+Rebuild the protocol document with Pandoc (optional):
+
 ```bash
-# Validate configuration and dataset availability
-python -m prisma_evaluator.cli.main validate-config
-python -m prisma_evaluator.cli.main validate-data
+# Generate Word document
+pandoc protocol/protocol-english.md \
+  --bibliography protocol/ref.bib \
+  --csl protocol/vancouver.csl \
+  --standalone \
+  -o protocol/protocol-english.docx
 
-# Minimal smoke test across two Suda2025 papers
-python -m prisma_evaluator.cli.main run \
-  --model openai/gpt-4o \
-  --dataset suda \
-  --paper-ids Suda2025_01,Suda2025_02 \
-  --schema-type simple \
-  --output-path results/sample_run.json
-
-# Disable section-mode for checklist experiments
-PRISMA_EVALUATOR_MAX_WORKERS=1 \
-python -m prisma_evaluator.cli.main run \
-  --dataset suda \
-  --format markdown \
-  --section-mode off
-
-# Enable BO∞ sampling only when needed
-python -m prisma_evaluator.cli.main run --bo-mode adaptive ...
+# Generate PDF (requires a LaTeX engine, e.g., XeLaTeX)
+pandoc protocol/protocol-english.md \
+  --bibliography protocol/ref.bib \
+  --csl protocol/vancouver.csl \
+  --pdf-engine=xelatex \
+  -o protocol/protocol-english.pdf
 ```
 
-## Experiment Workflows
-- **Format scaling (2025-09-27)**: `test/issues/2025-09-27_suda_multi_format_scaling/` with `scripts/update_multi_model_format_table.py` producing per-paper processing-time statistics.
-- **Checklist format re-evaluation (Suda CC-BY)**: Serialise evaluator calls (`PRISMA_EVALUATOR_MAX_WORKERS=1`) to avoid API rate limits.
-- **Ensemble overrides (2025-09-28)**: `test/issues/2025-09-28_md_gpt4o_gpt5_ensemble/` summarises Markdown-driven TRUE override strategies.
-- **API schema alignment tests**: `test/issues/2025-09-25_api_response_schema_alignment/scripts/test_single_paper_eval.py` validates Function Calling outputs; `run_openrouter_models.sh` batches OpenRouter evaluators.
-- After checklist-format experiments, refresh summary tables via  
-  ```bash
-  PYTHONPATH=. venv/bin/python \
-    test/issues/2025-09-27_gpt_oss_single_paper_formats/scripts/update_format_table.py
-  ```
+## Notes
 
-## Repository Layout
-```
-analysis/                        Reproducible aggregation notebooks and scripts
-annotation_data_processing/      Legacy merge utilities for structured datasets
-prisma_evaluator/                Core Typer CLI, pipeline, LLM connectors, metrics
-protocol/                        Study protocol, manuscript drafts, citation assets
-supplement/                      Public datasets and helper scripts (Creative Commons)
-test/issues/YYYY-MM-DD_*         Issue-tracking experiments with code + reports
-```
+- Keep `.env` files private?never commit them. Use `environment/.env.example` as the template.
+- All paths above are relative to this bundle root; adjust output destinations if you prefer to keep regenerated artifacts separate.
+- For end-to-end evaluator reruns, mount this bundle inside the full PRISMA-AI repository, activate the shared virtual environment, and run `prisma_evaluator/cli/main.py` as described in the manuscript.
 
-## Testing & Validation
-- Targeted tests reside under `test/issues/` following `YYYY-MM-DD_issue_name` conventions with paired reports and JSON outputs.
-- Use the provided virtual environment (`venv/`) to keep dependencies isolated.
-- Large experiments should configure sensible timeouts and clean temporary files to preserve reproducibility.
-
-## Roadmap
-1. Expand evaluator coverage to additional open-source models and fine-tuned baselines.
-2. Refine section-splitting and prompt templates for domain-specific PRISMA items.
-3. Publish multi-format benchmarking results and ensemble findings in the accompanying manuscript.
-4. Release a dataset card summarising licensing, provenance, and evaluation metrics.
-
-## Contributing
-- Follow the modular architecture in `prisma_evaluator/`; extend LLM providers by implementing `llm/base_evaluator.py`.
-- Keep new datasets within Creative Commons-compatible terms and update license metadata scripts accordingly.
-- Document new experiments under `test/issues/` and provide both Markdown and JSON outputs for reproducibility.
-- Never commit secrets; configuration overrides live in `.env` (do not edit the tracked template).
-
-## Citation
-If you build on PRISMA-AI, cite the protocol in `protocol/protocol-english.md` and reference entries from `protocol/ref.bib`. A formal citation string will be published alongside the manuscript.
-
-## Acknowledgements
-- Suda2025 and Tsuge2025 research teams for sharing PRISMA annotations under Creative Commons.
-- Contributors who refactored the evaluation pipeline into a Pydantic-first, CLI-driven architecture.
-- Open-source communities (Typer, Pydantic, OpenRouter) powering the tooling stack.
-
----
-
-For questions or collaboration requests, please open an issue or contact the maintainers listed in `AGENTS.md`.

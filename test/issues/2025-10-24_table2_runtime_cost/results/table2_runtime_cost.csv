@@ -1,0 +1,11 @@
+model,display_name,source_file,mean_time_seconds,median_time_seconds,total_cost_usd,mean_cost_per_sr_usd,notes
+claude-opus-4-1-20250805,Claude Opus 4.1,20250928_092722.json,101.289,91.535,5.982435,0.598244,
+claude-sonnet-4-5-20250929,Claude Sonnet 4.5,20250930_112632_claude_sonnet_md.json,183.576,150.805,1.781652,0.178165,
+gpt-4o,GPT‑4o,20250928_080643.json,31.71,29.057,0.471912,0.047191,
+gpt-5,GPT‑5,20250928_114923_gpt5_md_reasoning_high.json,282.358,292.21,1.794329,0.179433,
+openai/gpt-oss-120b,GPT‑OSS‑120B,20250928_080803.json,45.039,40.137,0.020618,0.002062,
+gemini-2.5-pro,Gemini 2.5 Pro,20250929_102627_gemini_md.json,81.963,82.393,0.480261,0.048026,
+x-ai/grok-4,Grok‑4,20250928_081159.json,102.96,104.392,1.061457,0.106146,
+x-ai/grok-4-fast,Grok‑4‑fast,20251006_120909.json,36.181,33.247,0.052235,0.005223,
+qwen/qwen3-235b-a22b-2507,Qwen3‑235B,20250928_080944.json,46.65,37.503,0.03726,0.003726,
+qwen/qwen3-max,Qwen3‑Max,20251006_113319.json,47.753,45.96,0.297136,0.029714,pricing_flag:variable_rate

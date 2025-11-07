@@ -1,0 +1,459 @@
+{
+  "parameters": {
+    "min_support": 8,
+    "topk": 5
+  },
+  "datasets": {
+    "Suda": {
+      "rankings": {
+        "fn_top": [
+          {
+            "item_id": "19",
+            "fn_rate": 0.625,
+            "fn_count": 5,
+            "fn_support": 8,
+            "top_fn_reasons": [
+              {
+                "reason": "Per-study effect estimates with precision are not fully presented for all outcomes.",
+                "count": 1
+              },
+              {
+                "reason": "Per-study outcome statistics and effect estimates are not explicitly presented.",
+                "count": 1
+              },
+              {
+                "reason": "Per-study summary statistics and effect estimates with precision for all outcomes are not fully presented.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "13a",
+            "fn_rate": 0.5555555555555556,
+            "fn_count": 5,
+            "fn_support": 9,
+            "top_fn_reasons": [
+              {
+                "reason": "No process described for deciding which studies were eligible for each synthesis.",
+                "count": 1
+              },
+              {
+                "reason": "No process described for assigning studies to specific syntheses.",
+                "count": 1
+              },
+              {
+                "reason": "No explicit process to determine eligibility for each synthesis beyond ‘when possible’ and by design.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "8",
+            "fn_rate": 0.375,
+            "fn_count": 3,
+            "fn_support": 8,
+            "top_fn_reasons": [
+              {
+                "reason": "Two reviewers screened titles/abstracts, but independence and full-text selection methods not specified.",
+                "count": 1
+              },
+              {
+                "reason": "Two reviewers screened independently, but automation tools used without details.",
+                "count": 1
+              },
+              {
+                "reason": "Screening methods lack details on reviewer numbers per record, independence, and any automation tools.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "13d",
+            "fn_rate": 0.375,
+            "fn_count": 3,
+            "fn_support": 8,
+            "top_fn_reasons": [
+              {
+                "reason": "Meta-analysis model, heterogeneity, and software reported, but no rationale for synthesis choices provided.",
+                "count": 1
+              },
+              {
+                "reason": "Meta-analysis model, heterogeneity methods, and software reported, but no rationale provided for synthesis choices.",
+                "count": 1
+              },
+              {
+                "reason": "Meta-analytic methods given (random-effects, heterogeneity metrics, software), but no rationale for model choice.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "5",
+            "fn_rate": 0.3333333333333333,
+            "fn_count": 3,
+            "fn_support": 9,
+            "top_fn_reasons": [
+              {
+                "reason": "Inclusion/exclusion criteria reported, but grouping of studies for syntheses not described.",
+                "count": 1
+              },
+              {
+                "reason": "Inclusion/exclusion given, but no explicit grouping for each synthesis.",
+                "count": 1
+              },
+              {
+                "reason": "Inclusion/exclusion are stated, but methods do not describe how studies were grouped for syntheses (groupings only reported in Results).",
+                "count": 1
+              }
+            ]
+          }
+        ],
+        "fp_top": [
+          {
+            "item_id": "A6",
+            "fp_rate": 0.75,
+            "fp_count": 6,
+            "fp_support": 8,
+            "top_fp_reasons": [
+              {
+                "reason": "States that Stata 16.0 was used for meta-analysis, indicating the synthesis approach.",
+                "count": 1
+              },
+              {
+                "reason": "Synthesis methods stated: random-effects meta-analysis, trial sequential analysis, and multivariate meta-regression.",
+                "count": 1
+              },
+              {
+                "reason": "Synthesis methods are specified: qualitative analysis and meta-analysis pooling using ratio of means.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "13b",
+            "fp_rate": 0.375,
+            "fp_count": 3,
+            "fp_support": 8,
+            "top_fp_reasons": [
+              {
+                "reason": "Data were converted to ratios of means prior to pooling.",
+                "count": 1
+              },
+              {
+                "reason": "Data preparation methods are described (continuity correction for zero events; avoiding transformations).",
+                "count": 1
+              },
+              {
+                "reason": "Data preparation described (unit conversion for hospital stay)",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "A9",
+            "fp_rate": 0.3333333333333333,
+            "fp_count": 3,
+            "fp_support": 9,
+            "top_fp_reasons": [
+              {
+                "reason": "Notes need for further well-designed studies with sufficient sample sizes, indicating limitations of the current evidence (imprecision).",
+                "count": 1
+              },
+              {
+                "reason": "States limitations: heterogeneity, study quality, and paucity of data.",
+                "count": 1
+              },
+              {
+                "reason": "Notes limited evidence due to an inadequate number of trials.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "A3",
+            "fp_rate": 0.1,
+            "fp_count": 1,
+            "fp_support": 10,
+            "top_fp_reasons": [
+              {
+                "reason": "Eligibility specified: adult non-trauma OHCA, English, ROSC outcome, RCT/observational designs, 2000–2020, mechanical vs manual.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "15",
+            "fp_rate": 0.0,
+            "fp_count": 0,
+            "fp_support": 8,
+            "top_fp_reasons": []
+          }
+        ]
+      },
+      "errors": null
+    },
+    "Tsuge": {
+      "rankings": {
+        "fn_top": [
+          {
+            "item_id": "19",
+            "fn_rate": 0.875,
+            "fn_count": 7,
+            "fn_support": 8,
+            "top_fn_reasons": [
+              {
+                "reason": "Per-study effect estimates with precision for all outcomes are not presented in structured tables/plots within text.",
+                "count": 1
+              },
+              {
+                "reason": "Per-study effect estimates with precision for all outcomes are not fully presented",
+                "count": 1
+              },
+              {
+                "reason": "Per-study effect estimates and precision not comprehensively presented",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "13a",
+            "fn_rate": 0.7,
+            "fn_count": 7,
+            "fn_support": 10,
+            "top_fn_reasons": [
+              {
+                "reason": "No explicit process for deciding study eligibility per synthesis beyond general inclusion.",
+                "count": 1
+              },
+              {
+                "reason": "Process to decide study eligibility for each synthesis not described beyond general pooling",
+                "count": 1
+              },
+              {
+                "reason": "Eligibility for each synthesis not described beyond general inclusion",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "20a",
+            "fn_rate": 0.25,
+            "fn_count": 2,
+            "fn_support": 8,
+            "top_fn_reasons": [
+              {
+                "reason": "Syntheses do not summarize characteristics and risk of bias of contributing studies per synthesis.",
+                "count": 1
+              },
+              {
+                "reason": "No summary of contributing studies’ risk of bias within syntheses",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "1",
+            "fn_rate": 0.125,
+            "fn_count": 1,
+            "fn_support": 8,
+            "top_fn_reasons": [
+              {
+                "reason": "Title not provided; cannot confirm it identifies as a systematic review.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "12",
+            "fn_rate": 0.1111111111111111,
+            "fn_count": 1,
+            "fn_support": 9,
+            "top_fn_reasons": [
+              {
+                "reason": "Effect measures per outcome are not explicitly specified (e.g., MD for each outcome) in methods",
+                "count": 1
+              }
+            ]
+          }
+        ],
+        "fp_top": [
+          {
+            "item_id": "A6",
+            "fp_rate": 0.7,
+            "fp_count": 7,
+            "fp_support": 10,
+            "top_fp_reasons": [
+              {
+                "reason": "States meta-analyses performed and mentions pooled analysis; synthesis method is clear.",
+                "count": 1
+              },
+              {
+                "reason": "States meta-analysis with standardized mean differences and CIs",
+                "count": 1
+              },
+              {
+                "reason": "Indicates meta-analysis with standardized mean differences, CIs, and p-values used to synthesize results.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "A7",
+            "fp_rate": 0.7,
+            "fp_count": 7,
+            "fp_support": 10,
+            "top_fp_reasons": [
+              {
+                "reason": "Reports 11 RCTs with 940 subjects; provides brief characteristics (post-TKA massage).",
+                "count": 1
+              },
+              {
+                "reason": "Reports six studies, total participants (158) and group allocation; context of RCTs provided.",
+                "count": 1
+              },
+              {
+                "reason": "Reports 33 randomized controlled trials and 2567 participants; prostate cancer population noted.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "13c",
+            "fp_rate": 0.5,
+            "fp_count": 4,
+            "fp_support": 8,
+            "top_fp_reasons": [
+              {
+                "reason": "Use of forest plots and tables (supplementary) to display results stated.",
+                "count": 1
+              },
+              {
+                "reason": "States use of tables and funnel plot; results tabulated in Tables 2–3 and Figure 2.",
+                "count": 1
+              },
+              {
+                "reason": "Use of tables/figures and forest plots stated for individual studies and syntheses.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "24b",
+            "fp_rate": 0.5,
+            "fp_count": 5,
+            "fp_support": 10,
+            "top_fp_reasons": [
+              {
+                "reason": "States protocol registered; implies access via PROSPERO; no separate protocol stated.",
+                "count": 1
+              },
+              {
+                "reason": "Protocol registration noted; PRISMA checklist in Supplementary File S6 referenced.",
+                "count": 1
+              },
+              {
+                "reason": "Protocol location/status addressed via PRISMA checklist reference; no separate protocol indicated.",
+                "count": 1
+              }
+            ]
+          },
+          {
+            "item_id": "A3",
+            "fp_rate": 0.2,
+            "fp_count": 2,
+            "fp_support": 10,
+            "top_fp_reasons": [
+              {
+                "reason": "Inclusion criteria reported (years 2016–2021, intervention components, population); no exclusions stated",
+                "count": 1
+              },
+              {
+                "reason": "Inclusion criteria reported: adult HF RCTs comparing eHealth vs usual care within specified dates; exclusion implied by non-RCT/adult.",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      },
+      "errors": null
+    }
+  },
+  "intersection": {
+    "fn_top": [
+      {
+        "item_id": "13a",
+        "fn_rate": 0.5555555555555556,
+        "fn_count": 5,
+        "fn_support": 9,
+        "top_fn_reasons": [
+          {
+            "reason": "No process described for deciding which studies were eligible for each synthesis.",
+            "count": 1
+          },
+          {
+            "reason": "No process described for assigning studies to specific syntheses.",
+            "count": 1
+          },
+          {
+            "reason": "No explicit process to determine eligibility for each synthesis beyond ‘when possible’ and by design.",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "item_id": "19",
+        "fn_rate": 0.625,
+        "fn_count": 5,
+        "fn_support": 8,
+        "top_fn_reasons": [
+          {
+            "reason": "Per-study effect estimates with precision are not fully presented for all outcomes.",
+            "count": 1
+          },
+          {
+            "reason": "Per-study outcome statistics and effect estimates are not explicitly presented.",
+            "count": 1
+          },
+          {
+            "reason": "Per-study summary statistics and effect estimates with precision for all outcomes are not fully presented.",
+            "count": 1
+          }
+        ]
+      }
+    ],
+    "fp_top": [
+      {
+        "item_id": "A3",
+        "fp_rate": 0.1,
+        "fp_count": 1,
+        "fp_support": 10,
+        "top_fp_reasons": [
+          {
+            "reason": "Eligibility specified: adult non-trauma OHCA, English, ROSC outcome, RCT/observational designs, 2000–2020, mechanical vs manual.",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "item_id": "A6",
+        "fp_rate": 0.75,
+        "fp_count": 6,
+        "fp_support": 8,
+        "top_fp_reasons": [
+          {
+            "reason": "States that Stata 16.0 was used for meta-analysis, indicating the synthesis approach.",
+            "count": 1
+          },
+          {
+            "reason": "Synthesis methods stated: random-effects meta-analysis, trial sequential analysis, and multivariate meta-regression.",
+            "count": 1
+          },
+          {
+            "reason": "Synthesis methods are specified: qualitative analysis and meta-analysis pooling using ratio of means.",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+currency = "USD"
+token_rate_unit = "per_million"
+
+[[models]]
+id = "openai/gpt-5"
+display_name = "GPT-5"
+provider = "OpenAI"
+billing_strategy = "simple"
+aliases = ["gpt-5"]
+input_rate = 1.25
+output_rate = 10.00
+notes = "Pricing snapshot 2024-08-06; input/output expressed as USD per million tokens."
+
+[[models]]
+id = "openai/gpt-4o"
+display_name = "GPT-4o"
+provider = "OpenAI"
+billing_strategy = "simple"
+aliases = ["gpt-4o", "openai/gpt-4o"]
+input_rate = 2.50
+output_rate = 10.00
+notes = "Standard pricing as of 2024-08-06."
+
+[[models]]
+id = "google/gemini-2.5-pro"
+display_name = "Gemini 2.5 Pro"
+provider = "Google"
+billing_strategy = "tiered"
+aliases = ["gemini-2.5-pro"]
+notes = "Includes thinking tokens in output usage."
+
+  [[models.tiers]]
+  max_tokens = 200000
+  input_rate = 1.25
+  output_rate = 10.00
+
+  [[models.tiers]]
+  min_tokens = 200001
+  input_rate = 2.50
+  output_rate = 15.00
+
+[[models]]
+id = "anthropic/claude-opus-4-1"
+display_name = "Claude Opus 4.1"
+provider = "Anthropic"
+billing_strategy = "simple"
+aliases = ["claude-opus-4-1", "claude-opus-4.1", "claude-opus-4-1-20250805"]
+input_rate = 15.00
+output_rate = 75.00
+
+[[models]]
+id = "anthropic/claude-sonnet-4-5"
+display_name = "Claude Sonnet 4.5"
+provider = "Anthropic"
+billing_strategy = "simple"
+aliases = ["claude-sonnet-4-5", "claude-sonnet-4.5", "claude-sonnet-4-5-20250929"]
+input_rate = 3.00
+output_rate = 15.00
+
+[[models]]
+id = "openrouter/gpt-oss-120b"
+display_name = "GPT-OSS-120B"
+provider = "OpenRouter"
+billing_strategy = "simple"
+aliases = ["gpt-oss-120b", "openai/gpt-oss-120b"]
+input_rate = 0.04
+output_rate = 0.40
+notes = "Based on OpenRouter listing; assumes provider-specific surcharges are already reflected."
+
+[[models]]
+id = "openrouter/qwen3-235b"
+display_name = "Qwen3-235B"
+provider = "OpenRouter"
+billing_strategy = "simple"
+aliases = ["qwen3-235b", "qwen3-235b-a22b", "qwen/qwen3-235b-a22b-2507"]
+input_rate = 0.18
+output_rate = 0.54
+
+[[models]]
+id = "openrouter/qwen3-max"
+display_name = "Qwen3-Max"
+provider = "OpenRouter"
+billing_strategy = "variable"
+aliases = ["qwen3-max", "qwen/qwen3-max"]
+input_rate = 1.20
+output_rate = 6.00
+notes = "OpenRouter \"starting at\" rate; actual cost may vary by upstream provider."
+
+[[models]]
+id = "openrouter/grok-4"
+display_name = "Grok-4"
+provider = "OpenRouter"
+billing_strategy = "tiered"
+aliases = ["grok-4", "x-ai/grok-4"]
+notes = "Starting rate with surcharge when total tokens exceed 128k."
+
+  [[models.tiers]]
+  max_tokens = 128000
+  input_rate = 3.00
+  output_rate = 15.00
+
+  [[models.tiers]]
+  min_tokens = 128001
+  multiplier = 2.0
+  notes = "Rate doubles once combined tokens exceed 128k."
+
+[[models]]
+id = "openrouter/grok-4-fast"
+display_name = "Grok-4 Fast"
+provider = "OpenRouter"
+billing_strategy = "tiered"
+aliases = ["grok-4-fast", "x-ai/grok-4-fast"]
+notes = "Starting rate; 2x multiplier beyond 128k total tokens. Free tier endpoints (e.g., :free) are not costed."
+
+  [[models.tiers]]
+  max_tokens = 128000
+  input_rate = 0.20
+  output_rate = 0.50
+
+  [[models.tiers]]
+  min_tokens = 128001
+  multiplier = 2.0

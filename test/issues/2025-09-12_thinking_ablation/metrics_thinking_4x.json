@@ -1,0 +1,18 @@
+{
+  "label": "thinking_4x",
+  "unified_path": "results/evaluator_output/20250912_113402.json",
+  "thinking_budget_tokens": null,
+  "thinking_multiplier": null,
+  "main": {
+    "accuracy": 80.0,
+    "precision": 82.6086956521739,
+    "recall": 94.40993788819875,
+    "f1": 88.1159420289855
+  },
+  "overall": {
+    "accuracy": 78.8679245283019,
+    "precision": 80.1762114537445,
+    "recall": 94.30051813471503,
+    "f1": 86.66666666666667
+  }
+}

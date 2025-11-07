@@ -1,0 +1,5490 @@
+{
+  "experiment_metadata": {
+    "experiment_id": "20250908_124752",
+    "start_time": "2025-09-08 12:47:52.407759",
+    "end_time": "2025-09-08 12:49:39.328219",
+    "total_processing_time": 106.92046,
+    "cli_parameters": {
+      "target_model_id": "claude-opus-4-1-20250805",
+      "target_format_type": null,
+      "num_papers_to_process": 5,
+      "gemini_params": {
+        "schema_type": "simple",
+        "force_claude_native": true,
+        "order_mode": "eande-first",
+        "section_mode": "off"
+      }
+    },
+    "actual_execution": {
+      "evaluator_type": "ClaudeEvaluator",
+      "model_id_to_use": "claude-opus-4-1-20250805",
+      "format_type_to_use": "refactored_pipeline_default",
+      "num_papers": 5,
+      "actual_model": "claude-opus-4-1-20250805",
+      "temperature": 1,
+      "max_tokens": 32000,
+      "thinking_budget_tokens": 30000
+    },
+    "dataset_info": {
+      "sources": [
+        "suda2025_merged"
+      ],
+      "total_papers_available": 5,
+      "evaluated_papers": [
+        "Suda2025_15",
+        "Suda2025_17",
+        "Suda2025_18",
+        "Suda2025_5",
+        "Suda2025_7"
+      ],
+      "num_papers_requested": 5
+    }
+  },
+  "paper_evaluations": [
+    {
+      "paper_id": "Suda2025_15",
+      "title": "Effect of Bougie Use on First-Attempt Success in Tracheal Intubations: A Systematic Review and Meta-Analysis.",
+      "dataset_source": "suda2025",
+      "overall_metadata": {
+        "model_id": "claude-opus-4-1-20250805",
+        "model_version": "claude-opus-4-1-20250805",
+        "format_type": "combined",
+        "prompt_version": "refactored_v1_core_task_combined",
+        "token_count": 20457,
+        "processing_time": 94.019374,
+        "timestamp": "2025-09-08 12:47:52.598176"
+      },
+      "evaluation_sets": {
+        "main": {
+          "evaluations": {
+            "1": {
+              "result": "yes",
+              "reason": "タイトルに「SYSTEMATIC REVIEW/META-ANALYSIS」と明記",
+              "raw_response": ""
+            },
+            "2": {
+              "result": "yes",
+              "reason": "構造化抄録が提供されている",
+              "raw_response": ""
+            },
+            "3": {
+              "result": "yes",
+              "reason": "既存知識の文脈で理論的根拠を説明",
+              "raw_response": ""
+            },
+            "4": {
+              "result": "yes",
+              "reason": "ブジー使用と初回成功率の関連評価という明確な目的を記載",
+              "raw_response": ""
+            },
+            "5": {
+              "result": "yes",
+              "reason": "適格基準と除外基準を詳細に記載",
+              "raw_response": ""
+            },
+            "6": {
+              "result": "yes",
+              "reason": "5つのデータベースと検索日（2022年10月、2023年6月更新）を明記",
+              "raw_response": ""
+            },
+            "7": {
+              "result": "yes",
+              "reason": "Appendix E1に詳細な検索戦略を提示と記載",
+              "raw_response": ""
+            },
+            "8": {
+              "result": "yes",
+              "reason": "2名の独立したレビュアーによる選択プロセスを記載",
+              "raw_response": ""
+            },
+            "9": {
+              "result": "yes",
+              "reason": "標準化フォームを用いた2名によるデータ収集方法を記載",
+              "raw_response": ""
+            },
+            "10a": {
+              "result": "yes",
+              "reason": "初回成功率と副次アウトカムを明確にリスト化",
+              "raw_response": ""
+            },
+            "10b": {
+              "result": "yes",
+              "reason": "抽出した変数（患者特性、介入詳細等）をリスト化",
+              "raw_response": ""
+            },
+            "11": {
+              "result": "yes",
+              "reason": "RCTにRoB 2、観察研究にNewcastle-Ottawaツール使用を明記",
+              "raw_response": ""
+            },
+            "12": {
+              "result": "yes",
+              "reason": "リスク比（RR）と95%信頼区間を効果指標として明記",
+              "raw_response": ""
+            },
+            "13a": {
+              "result": "no",
+              "reason": "各統合に適格な研究の決定プロセスが不明確",
+              "raw_response": ""
+            },
+            "13b": {
+              "result": "no",
+              "reason": "欠測データの処理方法について具体的記載なし",
+              "raw_response": ""
+            },
+            "13c": {
+              "result": "yes",
+              "reason": "フォレストプロットとファンネルプロットの使用を記載",
+              "raw_response": ""
+            },
+            "13d": {
+              "result": "yes",
+              "reason": "ランダム効果モデル、DerSimonian-Laird法、Review Manager使用を明記",
+              "raw_response": ""
+            },
+            "13e": {
+              "result": "yes",
+              "reason": "異質性探索のためのサブグループ解析を記載",
+              "raw_response": ""
+            },
+            "13f": {
+              "result": "yes",
+              "reason": "外れ値研究除外などの感度分析を記載",
+              "raw_response": ""
+            },
+            "14": {
+              "result": "yes",
+              "reason": "ファンネルプロットによる出版バイアス評価を記載",
+              "raw_response": ""
+            },
+            "15": {
+              "result": "yes",
+              "reason": "GRADEアプローチによるエビデンスの確実性評価を明記",
+              "raw_response": ""
+            },
+            "16a": {
+              "result": "yes",
+              "reason": "フローチャート（Figure 1）で2,699件から18件への選択過程を提示",
+              "raw_response": ""
+            },
+            "16b": {
+              "result": "no",
+              "reason": "除外された個別研究の引用と理由の記載なし",
+              "raw_response": ""
+            },
+            "17": {
+              "result": "yes",
+              "reason": "Table 1で全ての含まれた研究の特性を提示",
+              "raw_response": ""
+            },
+            "18": {
+              "result": "yes",
+              "reason": "全研究にバイアスリスクの懸念があることを記載、Appendix E3参照",
+              "raw_response": ""
+            },
+            "19": {
+              "result": "yes",
+              "reason": "フォレストプロットで各研究の結果を提示",
+              "raw_response": ""
+            },
+            "20a": {
+              "result": "yes",
+              "reason": "統合に寄与した研究の特性とバイアスリスクを要約",
+              "raw_response": ""
+            },
+            "20b": {
+              "result": "yes",
+              "reason": "メタ解析結果をRR、CI、I²値と共に提示",
+              "raw_response": ""
+            },
+            "20c": {
+              "result": "yes",
+              "reason": "Table 2でサブグループ解析結果を提示",
+              "raw_response": ""
+            },
+            "20d": {
+              "result": "yes",
+              "reason": "BOUGIE試験除外の感度分析結果を記載",
+              "raw_response": ""
+            },
+            "21": {
+              "result": "yes",
+              "reason": "ファンネルプロットの非対称性について言及",
+              "raw_response": ""
+            },
+            "22": {
+              "result": "yes",
+              "reason": "全体的に低い確実性、困難気道では中等度と評価",
+              "raw_response": ""
+            },
+            "23a": {
+              "result": "yes",
+              "reason": "他のエビデンスとの文脈で結果を解釈",
+              "raw_response": ""
+            },
+            "23b": {
+              "result": "yes",
+              "reason": "含まれた研究の質とバイアスの限界を議論",
+              "raw_response": ""
+            },
+            "23c": {
+              "result": "yes",
+              "reason": "レビュープロセスの限界を詳細に記載",
+              "raw_response": ""
+            },
+            "23d": {
+              "result": "yes",
+              "reason": "実践への示唆を議論",
+              "raw_response": ""
+            },
+            "24a": {
+              "result": "yes",
+              "reason": "PROSPERO登録（CRD42023403212）を明記",
+              "raw_response": ""
+            },
+            "24b": {
+              "result": "yes",
+              "reason": "PROSPERO登録番号でプロトコルアクセス可能",
+              "raw_response": ""
+            },
+            "24c": {
+              "result": "no",
+              "reason": "プロトコルからの変更について言及なし",
+              "raw_response": ""
+            },
+            "25": {
+              "result": "yes",
+              "reason": "資金提供なしと明記",
+              "raw_response": ""
+            },
+            "26": {
+              "result": "yes",
+              "reason": "利益相反なしと宣言",
+              "raw_response": ""
+            },
+            "27": {
+              "result": "yes",
+              "reason": "データは要求に応じて利用可能と記載",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 16355,
+            "processing_time": 65.1635242970001,
+            "timestamp": "2025-09-08 12:48:57.793106"
+          }
+        },
+        "abstract": {
+          "evaluations": {
+            "item_1": {
+              "result": "yes",
+              "reason": "タイトルに「Systematic Review and Meta-Analysis」と明記",
+              "raw_response": ""
+            },
+            "item_2": {
+              "result": "yes",
+              "reason": "bougie使用と初回挿管成功率の関連評価という目的が明確に記載",
+              "raw_response": ""
+            },
+            "item_3": {
+              "result": "yes",
+              "reason": "成人対象、比較対照設定、マネキン・死体研究除外と記載",
+              "raw_response": ""
+            },
+            "item_4": {
+              "result": "yes",
+              "reason": "5つのデータベース名と検索期間（開始から2023年6月）が明記",
+              "raw_response": ""
+            },
+            "item_5": {
+              "result": "no",
+              "reason": "バイアスリスク評価方法の記載なし",
+              "raw_response": ""
+            },
+            "item_6": {
+              "result": "yes",
+              "reason": "ランダム効果モデルのメタ分析とGRADE評価を使用と記載",
+              "raw_response": ""
+            },
+            "item_7": {
+              "result": "yes",
+              "reason": "18研究（RCT12件含む）、9,151患者と明記",
+              "raw_response": ""
+            },
+            "item_8": {
+              "result": "yes",
+              "reason": "主要アウトカムの結果、研究数、患者数、効果量、信頼区間を提示",
+              "raw_response": ""
+            },
+            "item_9": {
+              "result": "yes",
+              "reason": "エビデンスの確実性が低いことを明記",
+              "raw_response": ""
+            },
+            "item_10": {
+              "result": "yes",
+              "reason": "bougieを救急挿管で最初に使用すべきという臨床的示唆を提示",
+              "raw_response": ""
+            },
+            "item_11": {
+              "result": "no",
+              "reason": "資金源の記載なし",
+              "raw_response": ""
+            },
+            "item_12": {
+              "result": "no",
+              "reason": "登録名と登録番号の記載なし",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 4102,
+            "processing_time": 28.82370984599993,
+            "timestamp": "2025-09-08 12:49:26.617351"
+          }
+        }
+      },
+      "metrics": {
+        "cohen_kappa": 0.4568081991215227,
+        "accuracy": 86.79245283018868,
+        "precision": 91.30434782608695,
+        "recall": 93.33333333333333,
+        "f1_score": 92.3076923076923,
+        "specificity": 50.0
+      }
+    },
+    {
+      "paper_id": "Suda2025_17",
+      "title": "Efficacy of prescribed opioids for acute pain after being discharged from the emergency department: A systematic review and meta-analysis.",
+      "dataset_source": "suda2025",
+      "overall_metadata": {
+        "model_id": "claude-opus-4-1-20250805",
+        "model_version": "claude-opus-4-1-20250805",
+        "format_type": "combined",
+        "prompt_version": "refactored_v1_core_task_combined",
+        "token_count": 19906,
+        "processing_time": 87.426045,
+        "timestamp": "2025-09-08 12:47:52.635650"
+      },
+      "evaluation_sets": {
+        "main": {
+          "evaluations": {
+            "1": {
+              "result": "yes",
+              "reason": "タイトルに「systematic review and meta-analysis」と明記",
+              "raw_response": ""
+            },
+            "2": {
+              "result": "yes",
+              "reason": "構造化抄録が提供されている",
+              "raw_response": ""
+            },
+            "3": {
+              "result": "yes",
+              "reason": "既存知識の文脈でオピオイドとNSAIDsの比較について論理的根拠を説明",
+              "raw_response": ""
+            },
+            "4": {
+              "result": "yes",
+              "reason": "オピオイドの効果を合成する明確な目的が記載",
+              "raw_response": ""
+            },
+            "5": {
+              "result": "yes",
+              "reason": "「Eligibility criteria」セクションで包含・除外基準を明記",
+              "raw_response": ""
+            },
+            "6": {
+              "result": "yes",
+              "reason": "検索データベースと検索期間（開始から2023年1月）を明記",
+              "raw_response": ""
+            },
+            "7": {
+              "result": "yes",
+              "reason": "完全な検索戦略はSupplement Methods S1に記載",
+              "raw_response": ""
+            },
+            "8": {
+              "result": "yes",
+              "reason": "8名のレビュアー、独立した2名による選択、第3者による解決を記載",
+              "raw_response": ""
+            },
+            "9": {
+              "result": "yes",
+              "reason": "2名の独立レビュアーによるデータ抽出、著者への問い合わせを記載",
+              "raw_response": ""
+            },
+            "10a": {
+              "result": "yes",
+              "reason": "主要アウトカム（疼痛強度スコアまたは疼痛緩和の差）を明確に定義",
+              "raw_response": ""
+            },
+            "10b": {
+              "result": "yes",
+              "reason": "抽出した変数（年齢、包含基準、オピオイドの種類等）をリスト化",
+              "raw_response": ""
+            },
+            "11": {
+              "result": "yes",
+              "reason": "EPOCツール使用、2名の独立評価者、9つのドメインを評価",
+              "raw_response": ""
+            },
+            "12": {
+              "result": "yes",
+              "reason": "疼痛にはSMD、有害事象にはORを使用と明記",
+              "raw_response": ""
+            },
+            "13a": {
+              "result": "yes",
+              "reason": "統合に適格な研究の選択プロセスを記載",
+              "raw_response": ""
+            },
+            "13b": {
+              "result": "yes",
+              "reason": "パーセンテージデータのSMDへの変換方法を記載",
+              "raw_response": ""
+            },
+            "13c": {
+              "result": "yes",
+              "reason": "RevManを使用したフォレストプロットで結果表示",
+              "raw_response": ""
+            },
+            "13d": {
+              "result": "yes",
+              "reason": "ランダム効果モデル、逆分散重み付け法、使用ソフトウェアを記載",
+              "raw_response": ""
+            },
+            "13e": {
+              "result": "yes",
+              "reason": "コデインvs他のオピオイド、成人vs小児の感度分析を実施",
+              "raw_response": ""
+            },
+            "13f": {
+              "result": "yes",
+              "reason": "複数の感度分析（短期フォローアップ、高バイアスリスク除外等）を実施",
+              "raw_response": ""
+            },
+            "14": {
+              "result": "yes",
+              "reason": "研究数10未満のため出版バイアス評価は実施せずと明記",
+              "raw_response": ""
+            },
+            "15": {
+              "result": "no",
+              "reason": "GRADEなどエビデンスの確実性評価方法の記載なし",
+              "raw_response": ""
+            },
+            "16a": {
+              "result": "yes",
+              "reason": "PRISMAフローチャート（Figure 1）で選択過程を提示",
+              "raw_response": ""
+            },
+            "16b": {
+              "result": "no",
+              "reason": "除外研究の引用と理由の完全なリストなし",
+              "raw_response": ""
+            },
+            "17": {
+              "result": "yes",
+              "reason": "Table 1で全包含研究の特性を引用付きで提示",
+              "raw_response": ""
+            },
+            "18": {
+              "result": "yes",
+              "reason": "各研究のバイアスリスク評価結果を提示",
+              "raw_response": ""
+            },
+            "19": {
+              "result": "yes",
+              "reason": "Table 2で各研究の結果を提示",
+              "raw_response": ""
+            },
+            "20a": {
+              "result": "yes",
+              "reason": "統合に寄与した研究の特性を要約",
+              "raw_response": ""
+            },
+            "20b": {
+              "result": "yes",
+              "reason": "フォレストプロットでSMD/ORと信頼区間を提示",
+              "raw_response": ""
+            },
+            "20c": {
+              "result": "yes",
+              "reason": "異質性を探索する感度分析の結果を報告",
+              "raw_response": ""
+            },
+            "20d": {
+              "result": "yes",
+              "reason": "複数の感度分析結果を報告",
+              "raw_response": ""
+            },
+            "21": {
+              "result": "yes",
+              "reason": "研究数が少ないため正式評価せずと記載",
+              "raw_response": ""
+            },
+            "22": {
+              "result": "no",
+              "reason": "エビデンスの確実性の正式評価なし",
+              "raw_response": ""
+            },
+            "23a": {
+              "result": "yes",
+              "reason": "他のエビデンスとの文脈で結果を解釈",
+              "raw_response": ""
+            },
+            "23b": {
+              "result": "yes",
+              "reason": "異質性、外的妥当性等のエビデンスの限界を議論",
+              "raw_response": ""
+            },
+            "23c": {
+              "result": "yes",
+              "reason": "研究数が少ないため出版バイアス評価できない等の限界を議論",
+              "raw_response": ""
+            },
+            "23d": {
+              "result": "yes",
+              "reason": "実践と将来の研究への示唆を議論",
+              "raw_response": ""
+            },
+            "24a": {
+              "result": "yes",
+              "reason": "PROSPERO登録番号CRD42022332009を記載",
+              "raw_response": ""
+            },
+            "24b": {
+              "result": "no",
+              "reason": "プロトコルへのアクセス方法の記載なし",
+              "raw_response": ""
+            },
+            "24c": {
+              "result": "no",
+              "reason": "プロトコルの修正に関する記載なし",
+              "raw_response": ""
+            },
+            "25": {
+              "result": "yes",
+              "reason": "資金源と資金提供者の役割を記載",
+              "raw_response": ""
+            },
+            "26": {
+              "result": "yes",
+              "reason": "「利益相反なし」と明記",
+              "raw_response": ""
+            },
+            "27": {
+              "result": "no",
+              "reason": "データ、コード、資料の公開状況の記載なし",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 16017,
+            "processing_time": 60.34926758400002,
+            "timestamp": "2025-09-08 12:48:53.033800"
+          }
+        },
+        "abstract": {
+          "evaluations": {
+            "item_1": {
+              "result": "yes",
+              "reason": "タイトルに「systematic review and meta-analysis」と明記",
+              "raw_response": ""
+            },
+            "item_2": {
+              "result": "yes",
+              "reason": "オピオイドvs非オピオイド鎮痛薬の有効性比較という目的を明確に記述",
+              "raw_response": ""
+            },
+            "item_3": {
+              "result": "no",
+              "reason": "RCTを対象とした以外の詳細な選択・除外基準の記載なし",
+              "raw_response": ""
+            },
+            "item_4": {
+              "result": "yes",
+              "reason": "6つのデータベース名と検索期間（開始から2023年1月）を明記",
+              "raw_response": ""
+            },
+            "item_5": {
+              "result": "no",
+              "reason": "バイアスリスク評価実施は記載あるが、使用した評価ツールの記載なし",
+              "raw_response": ""
+            },
+            "item_6": {
+              "result": "yes",
+              "reason": "ランダム効果モデルと感度分析の実施方法を明記",
+              "raw_response": ""
+            },
+            "item_7": {
+              "result": "yes",
+              "reason": "6研究、1161名の患者を含むことを明記",
+              "raw_response": ""
+            },
+            "item_8": {
+              "result": "no",
+              "reason": "効果量と信頼区間は示すが、各アウトカムの研究数・参加者数の記載なし",
+              "raw_response": ""
+            },
+            "item_9": {
+              "result": "no",
+              "reason": "コデインの影響は言及するが、エビデンスの限界の体系的な要約なし",
+              "raw_response": ""
+            },
+            "item_10": {
+              "result": "yes",
+              "reason": "結果の解釈と今後の研究への示唆を明確に提示",
+              "raw_response": ""
+            },
+            "item_11": {
+              "result": "no",
+              "reason": "資金源に関する記載なし",
+              "raw_response": ""
+            },
+            "item_12": {
+              "result": "no",
+              "reason": "プロトコル登録番号の記載なし",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 3889,
+            "processing_time": 27.02732866800011,
+            "timestamp": "2025-09-08 12:49:20.061417"
+          }
+        }
+      },
+      "metrics": {
+        "cohen_kappa": 0.4613821138211381,
+        "accuracy": 81.13207547169812,
+        "precision": 87.8048780487805,
+        "recall": 87.8048780487805,
+        "f1_score": 87.8048780487805,
+        "specificity": 58.333333333333336
+      }
+    },
+    {
+      "paper_id": "Suda2025_18",
+      "title": "Intubation Rates following Prehospital Administration of Ketamine for Acute Agitation: A Systematic Review and Meta-Analysis.",
+      "dataset_source": "suda2025",
+      "overall_metadata": {
+        "model_id": "claude-opus-4-1-20250805",
+        "model_version": "claude-opus-4-1-20250805",
+        "format_type": "combined",
+        "prompt_version": "refactored_v1_core_task_combined",
+        "token_count": 21263,
+        "processing_time": 99.016087,
+        "timestamp": "2025-09-08 12:47:52.685995"
+      },
+      "evaluation_sets": {
+        "main": {
+          "evaluations": {
+            "1": {
+              "result": "yes",
+              "reason": "タイトルに「Systematic Review and Meta-Analysis」と明記",
+              "raw_response": ""
+            },
+            "2": {
+              "result": "yes",
+              "reason": "背景、目的、方法、結果、結論を含む構造化抄録あり",
+              "raw_response": ""
+            },
+            "3": {
+              "result": "yes",
+              "reason": "既存知識の文脈で急性興奮管理とケタミン使用の根拠を説明",
+              "raw_response": ""
+            },
+            "4": {
+              "result": "yes",
+              "reason": "一次目的と二次目的が明示的に記載",
+              "raw_response": ""
+            },
+            "5": {
+              "result": "yes",
+              "reason": "適格基準と除外基準が明確に記載",
+              "raw_response": ""
+            },
+            "6": {
+              "result": "yes",
+              "reason": "10データベースと検索日（2022年2月13日まで）明記",
+              "raw_response": ""
+            },
+            "7": {
+              "result": "no",
+              "reason": "検索戦略は付録Aに記載とあるが本文に提示なし",
+              "raw_response": ""
+            },
+            "8": {
+              "result": "yes",
+              "reason": "2名の独立レビュアー、κ係数算出、第3者による解決を記載",
+              "raw_response": ""
+            },
+            "9": {
+              "result": "yes",
+              "reason": "1名がデータ抽出、10%を別の1名が確認",
+              "raw_response": ""
+            },
+            "10a": {
+              "result": "yes",
+              "reason": "主要アウトカム（挿管）と副次アウトカムをリスト化",
+              "raw_response": ""
+            },
+            "10b": {
+              "result": "yes",
+              "reason": "有害事象、研究設定等の追加変数を明記",
+              "raw_response": ""
+            },
+            "11": {
+              "result": "yes",
+              "reason": "Newcastle-Ottawa尺度使用、2名の独立評価",
+              "raw_response": ""
+            },
+            "12": {
+              "result": "yes",
+              "reason": "比率メタ分析、95%信頼区間を明記",
+              "raw_response": ""
+            },
+            "13a": {
+              "result": "yes",
+              "reason": "適格性判定プロセスを記載",
+              "raw_response": ""
+            },
+            "13b": {
+              "result": "yes",
+              "reason": "Freeman-Tukey変換、欠測データ処理を記載",
+              "raw_response": ""
+            },
+            "13c": {
+              "result": "yes",
+              "reason": "フォレストプロット、表による結果表示を記載",
+              "raw_response": ""
+            },
+            "13d": {
+              "result": "yes",
+              "reason": "ランダム効果モデル使用、理由とStataソフトウェア明記",
+              "raw_response": ""
+            },
+            "13e": {
+              "result": "yes",
+              "reason": "外れ値研究のサブグループ分析を実施",
+              "raw_response": ""
+            },
+            "13f": {
+              "result": "yes",
+              "reason": "leave-one-out分析と代替逆変換感度分析を実施",
+              "raw_response": ""
+            },
+            "14": {
+              "result": "yes",
+              "reason": "出版バイアス評価せず、ファネルプロット不適切との理由明記",
+              "raw_response": ""
+            },
+            "15": {
+              "result": "yes",
+              "reason": "GRADEツール使用を明記",
+              "raw_response": ""
+            },
+            "16a": {
+              "result": "yes",
+              "reason": "PRISMAフローダイアグラム（図1）で検索・選択結果提示",
+              "raw_response": ""
+            },
+            "16b": {
+              "result": "yes",
+              "reason": "Friedman et al.研究の除外理由を説明",
+              "raw_response": ""
+            },
+            "17": {
+              "result": "yes",
+              "reason": "表1で18研究全ての特性を提示",
+              "raw_response": ""
+            },
+            "18": {
+              "result": "no",
+              "reason": "バイアスリスクの要約はあるが個別評価の詳細提示なし",
+              "raw_response": ""
+            },
+            "19": {
+              "result": "yes",
+              "reason": "表2で各研究の挿管率データを詳細に提示",
+              "raw_response": ""
+            },
+            "20a": {
+              "result": "yes",
+              "reason": "統合対象研究の特性とバイアスリスクを要約",
+              "raw_response": ""
+            },
+            "20b": {
+              "result": "yes",
+              "reason": "メタ分析結果、信頼区間、I²統計量を提示",
+              "raw_response": ""
+            },
+            "20c": {
+              "result": "yes",
+              "reason": "異質性探索のサブグループ分析結果（図5）を提示",
+              "raw_response": ""
+            },
+            "20d": {
+              "result": "yes",
+              "reason": "leave-one-out感度分析結果を記載",
+              "raw_response": ""
+            },
+            "21": {
+              "result": "yes",
+              "reason": "出版バイアス未評価の正当な理由を記載",
+              "raw_response": ""
+            },
+            "22": {
+              "result": "yes",
+              "reason": "GRADE評価「very low」として確実性評価を提示",
+              "raw_response": ""
+            },
+            "23a": {
+              "result": "yes",
+              "reason": "他のエビデンスと比較した結果の解釈を提供",
+              "raw_response": ""
+            },
+            "23b": {
+              "result": "yes",
+              "reason": "観察研究のみ等、エビデンスの限界を議論",
+              "raw_response": ""
+            },
+            "23c": {
+              "result": "yes",
+              "reason": "レビュープロセスの複数の限界を議論",
+              "raw_response": ""
+            },
+            "23d": {
+              "result": "yes",
+              "reason": "実践への示唆と今後の研究方向を議論",
+              "raw_response": ""
+            },
+            "24a": {
+              "result": "yes",
+              "reason": "PROSPERO登録番号（CRD42021248447）を記載",
+              "raw_response": ""
+            },
+            "24b": {
+              "result": "yes",
+              "reason": "PROSPEROリンクを提供",
+              "raw_response": ""
+            },
+            "24c": {
+              "result": "no",
+              "reason": "プロトコルからの変更に関する記載なし",
+              "raw_response": ""
+            },
+            "25": {
+              "result": "yes",
+              "reason": "特定の資金援助なしと明記",
+              "raw_response": ""
+            },
+            "26": {
+              "result": "yes",
+              "reason": "利益相反なしと宣言",
+              "raw_response": ""
+            },
+            "27": {
+              "result": "yes",
+              "reason": "データは各論文から公開入手可能と記載",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 17311,
+            "processing_time": 72.1174801950001,
+            "timestamp": "2025-09-08 12:49:04.815003"
+          }
+        },
+        "abstract": {
+          "evaluations": {
+            "item_1": {
+              "result": "yes",
+              "reason": "タイトルに「Systematic Review and Meta-Analysis」と明記",
+              "raw_response": ""
+            },
+            "item_2": {
+              "result": "yes",
+              "reason": "挿管率と設定を明らかにするという明確な目的を記載",
+              "raw_response": ""
+            },
+            "item_3": {
+              "result": "yes",
+              "reason": "院外でケタミン投与を受けた興奮患者という包含基準を明記",
+              "raw_response": ""
+            },
+            "item_4": {
+              "result": "yes",
+              "reason": "11のデータベース名と検索日（2022年2月13日まで）を明記",
+              "raw_response": ""
+            },
+            "item_5": {
+              "result": "yes",
+              "reason": "Newcastle-Ottawa尺度による質評価方法を明記",
+              "raw_response": ""
+            },
+            "item_6": {
+              "result": "yes",
+              "reason": "メタ分析による結果統合方法を明記",
+              "raw_response": ""
+            },
+            "item_7": {
+              "result": "yes",
+              "reason": "18研究、3476名の患者数と観察研究という特徴を記載",
+              "raw_response": ""
+            },
+            "item_8": {
+              "result": "yes",
+              "reason": "挿管率16%（95%CI:8-26%）等、信頼区間付きの結果を提示",
+              "raw_response": ""
+            },
+            "item_9": {
+              "result": "no",
+              "reason": "研究間のばらつきは言及するが、エビデンスの限界の明確な記述なし",
+              "raw_response": ""
+            },
+            "item_10": {
+              "result": "yes",
+              "reason": "挿管の多くがEDで行われたという結果の解釈を提示",
+              "raw_response": ""
+            },
+            "item_11": {
+              "result": "no",
+              "reason": "資金源に関する記載なし",
+              "raw_response": ""
+            },
+            "item_12": {
+              "result": "no",
+              "reason": "登録番号に関する記載なし",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 3952,
+            "processing_time": 26.88605222199999,
+            "timestamp": "2025-09-08 12:49:31.701657"
+          }
+        }
+      },
+      "metrics": {
+        "cohen_kappa": 0.4175824175824176,
+        "accuracy": 84.90566037735849,
+        "precision": 87.2340425531915,
+        "recall": 95.34883720930233,
+        "f1_score": 91.11111111111111,
+        "specificity": 40.0
+      }
+    },
+    {
+      "paper_id": "Suda2025_5",
+      "title": "Analgesic efficacy of nitrous oxide in adults in the emergency department: A meta-analysis of randomized controlled trials.",
+      "dataset_source": "suda2025",
+      "overall_metadata": {
+        "model_id": "claude-opus-4-1-20250805",
+        "model_version": "claude-opus-4-1-20250805",
+        "format_type": "combined",
+        "prompt_version": "refactored_v1_core_task_combined",
+        "token_count": 19289,
+        "processing_time": 106.621717,
+        "timestamp": "2025-09-08 12:47:52.700335"
+      },
+      "evaluation_sets": {
+        "main": {
+          "evaluations": {
+            "1": {
+              "result": "no",
+              "reason": "タイトルに「システマティックレビュー」の明記なし",
+              "raw_response": ""
+            },
+            "2": {
+              "result": "yes",
+              "reason": "構造化抄録が提供されている",
+              "raw_response": ""
+            },
+            "3": {
+              "result": "yes",
+              "reason": "既存知識の文脈で根拠が記載されている",
+              "raw_response": ""
+            },
+            "4": {
+              "result": "yes",
+              "reason": "明確な目的が述べられている",
+              "raw_response": ""
+            },
+            "5": {
+              "result": "yes",
+              "reason": "選択基準と除外基準が明記されている",
+              "raw_response": ""
+            },
+            "6": {
+              "result": "yes",
+              "reason": "全データベースと検索日が記載されている",
+              "raw_response": ""
+            },
+            "7": {
+              "result": "no",
+              "reason": "各データベースの完全な検索式が提示されていない",
+              "raw_response": ""
+            },
+            "8": {
+              "result": "no",
+              "reason": "スクリーニングプロセスの詳細が不明確",
+              "raw_response": ""
+            },
+            "9": {
+              "result": "yes",
+              "reason": "2名の独立した査読者によるデータ収集が記載",
+              "raw_response": ""
+            },
+            "10a": {
+              "result": "yes",
+              "reason": "データ収集したアウトカムがリストされている",
+              "raw_response": ""
+            },
+            "10b": {
+              "result": "yes",
+              "reason": "収集した他の変数がリストされている",
+              "raw_response": ""
+            },
+            "11": {
+              "result": "yes",
+              "reason": "Cochraneツールを用いたバイアス評価方法が記載",
+              "raw_response": ""
+            },
+            "12": {
+              "result": "yes",
+              "reason": "各アウトカムの効果測定が明記されている",
+              "raw_response": ""
+            },
+            "13a": {
+              "result": "no",
+              "reason": "統合への適格性判断プロセスが不明確",
+              "raw_response": ""
+            },
+            "13b": {
+              "result": "yes",
+              "reason": "データ変換方法が記載されている",
+              "raw_response": ""
+            },
+            "13c": {
+              "result": "yes",
+              "reason": "Forest plotによる結果表示が行われている",
+              "raw_response": ""
+            },
+            "13d": {
+              "result": "yes",
+              "reason": "統合方法とモデル選択基準が記載されている",
+              "raw_response": ""
+            },
+            "13e": {
+              "result": "yes",
+              "reason": "感度分析による異質性探索が記載されている",
+              "raw_response": ""
+            },
+            "13f": {
+              "result": "yes",
+              "reason": "感度分析の実施が記載されている",
+              "raw_response": ""
+            },
+            "14": {
+              "result": "no",
+              "reason": "報告バイアス評価方法の記載なし",
+              "raw_response": ""
+            },
+            "15": {
+              "result": "no",
+              "reason": "エビデンスの確実性評価方法の記載なし",
+              "raw_response": ""
+            },
+            "16a": {
+              "result": "yes",
+              "reason": "フローダイアグラムで検索・選択結果が示されている",
+              "raw_response": ""
+            },
+            "16b": {
+              "result": "yes",
+              "reason": "除外研究と理由がS1 Appendixに記載",
+              "raw_response": ""
+            },
+            "17": {
+              "result": "yes",
+              "reason": "Table 1で全研究の特徴が提示されている",
+              "raw_response": ""
+            },
+            "18": {
+              "result": "yes",
+              "reason": "Fig. 2で各研究のバイアス評価が提示",
+              "raw_response": ""
+            },
+            "19": {
+              "result": "yes",
+              "reason": "Table 1で各研究の結果が提示されている",
+              "raw_response": ""
+            },
+            "20a": {
+              "result": "yes",
+              "reason": "統合に含まれた研究の特徴とバイアスが要約",
+              "raw_response": ""
+            },
+            "20b": {
+              "result": "yes",
+              "reason": "メタ分析の統計結果が提示されている",
+              "raw_response": ""
+            },
+            "20c": {
+              "result": "yes",
+              "reason": "異質性調査の結果が提示されている",
+              "raw_response": ""
+            },
+            "20d": {
+              "result": "yes",
+              "reason": "感度分析の結果が提示されている",
+              "raw_response": ""
+            },
+            "21": {
+              "result": "no",
+              "reason": "報告バイアス評価結果の提示なし",
+              "raw_response": ""
+            },
+            "22": {
+              "result": "no",
+              "reason": "エビデンスの確実性評価の提示なし",
+              "raw_response": ""
+            },
+            "23a": {
+              "result": "yes",
+              "reason": "他のエビデンスとの文脈で結果が解釈されている",
+              "raw_response": ""
+            },
+            "23b": {
+              "result": "yes",
+              "reason": "含まれた研究のバイアスなどの限界が議論",
+              "raw_response": ""
+            },
+            "23c": {
+              "result": "yes",
+              "reason": "レビュープロセスの限界が議論されている",
+              "raw_response": ""
+            },
+            "23d": {
+              "result": "yes",
+              "reason": "実践と今後の研究への示唆が議論されている",
+              "raw_response": ""
+            },
+            "24a": {
+              "result": "yes",
+              "reason": "PROSPERO登録番号が記載されている",
+              "raw_response": ""
+            },
+            "24b": {
+              "result": "yes",
+              "reason": "プロトコルへのアクセス情報が記載されている",
+              "raw_response": ""
+            },
+            "24c": {
+              "result": "no",
+              "reason": "プロトコル変更に関する記載なし",
+              "raw_response": ""
+            },
+            "25": {
+              "result": "yes",
+              "reason": "資金源が記載されている",
+              "raw_response": ""
+            },
+            "26": {
+              "result": "yes",
+              "reason": "利益相反なしと宣言されている",
+              "raw_response": ""
+            },
+            "27": {
+              "result": "no",
+              "reason": "データ・コード等の公開に関する詳細記載なし",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 15359,
+            "processing_time": 83.14329157500015,
+            "timestamp": "2025-09-08 12:49:15.875366"
+          }
+        },
+        "abstract": {
+          "evaluations": {
+            "item_1": {
+              "result": "yes",
+              "reason": "タイトルに「meta-analysis」と明記されている",
+              "raw_response": ""
+            },
+            "item_2": {
+              "result": "yes",
+              "reason": "N2Oの鎮痛効果と安全性を調査すると明確に記載",
+              "raw_response": ""
+            },
+            "item_3": {
+              "result": "yes",
+              "reason": "RCTで成人EDでN2O対プラセボ/他の鎮痛法を比較と明記",
+              "raw_response": ""
+            },
+            "item_4": {
+              "result": "yes",
+              "reason": "6つのデータベースと検索日（2021年8月10日）を明記",
+              "raw_response": ""
+            },
+            "item_5": {
+              "result": "no",
+              "reason": "バイアスリスク評価方法の記載なし",
+              "raw_response": ""
+            },
+            "item_6": {
+              "result": "yes",
+              "reason": "プール解析、WMD、ORを用いたメタ解析方法を記載",
+              "raw_response": ""
+            },
+            "item_7": {
+              "result": "yes",
+              "reason": "14件のRCT、1751名の患者を含むと明記",
+              "raw_response": ""
+            },
+            "item_8": {
+              "result": "yes",
+              "reason": "主要アウトカムの効果量、95%CI、P値、I²値を詳細に報告",
+              "raw_response": ""
+            },
+            "item_9": {
+              "result": "no",
+              "reason": "エビデンスの限界についての記載なし",
+              "raw_response": ""
+            },
+            "item_10": {
+              "result": "yes",
+              "reason": "N2Oの効果と副作用について総合的な解釈を提示",
+              "raw_response": ""
+            },
+            "item_11": {
+              "result": "no",
+              "reason": "資金源の記載なし",
+              "raw_response": ""
+            },
+            "item_12": {
+              "result": "no",
+              "reason": "登録番号の記載なし",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 3930,
+            "processing_time": 23.445846359999905,
+            "timestamp": "2025-09-08 12:49:39.321913"
+          }
+        }
+      },
+      "metrics": {
+        "cohen_kappa": 0.39080459770114934,
+        "accuracy": 69.81132075471697,
+        "precision": 64.1025641025641,
+        "recall": 92.5925925925926,
+        "f1_score": 75.75757575757576,
+        "specificity": 46.15384615384615
+      }
+    },
+    {
+      "paper_id": "Suda2025_7",
+      "title": "Efficacy of Low-dose Ketamine for Control of Acute Pain in the Emergency Setting: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+      "dataset_source": "suda2025",
+      "overall_metadata": {
+        "model_id": "claude-opus-4-1-20250805",
+        "model_version": "claude-opus-4-1-20250805",
+        "format_type": "combined",
+        "prompt_version": "refactored_v1_core_task_combined",
+        "token_count": 18462,
+        "processing_time": 97.301621,
+        "timestamp": "2025-09-08 12:47:52.735157"
+      },
+      "evaluation_sets": {
+        "main": {
+          "evaluations": {
+            "1": {
+              "result": "yes",
+              "reason": "タイトルに「Systematic Review」と明記",
+              "raw_response": ""
+            },
+            "2": {
+              "result": "no",
+              "reason": "抄録がPRISMA形式に従っていない",
+              "raw_response": ""
+            },
+            "3": {
+              "result": "yes",
+              "reason": "急性疼痛管理の課題とケタミンの必要性が記載",
+              "raw_response": ""
+            },
+            "4": {
+              "result": "yes",
+              "reason": "低用量ケタミンの効果評価という明確な目的が記載",
+              "raw_response": ""
+            },
+            "5": {
+              "result": "yes",
+              "reason": "適格基準と除外基準が明確に記載",
+              "raw_response": ""
+            },
+            "6": {
+              "result": "yes",
+              "reason": "データベースと検索期日が明記",
+              "raw_response": ""
+            },
+            "7": {
+              "result": "no",
+              "reason": "完全な検索式が本文に記載されていない",
+              "raw_response": ""
+            },
+            "8": {
+              "result": "no",
+              "reason": "レビュアー数や独立性が明記されていない",
+              "raw_response": ""
+            },
+            "9": {
+              "result": "no",
+              "reason": "データ収集の独立性が不明確",
+              "raw_response": ""
+            },
+            "10a": {
+              "result": "yes",
+              "reason": "アウトカム項目が明確に列挙",
+              "raw_response": ""
+            },
+            "10b": {
+              "result": "yes",
+              "reason": "収集した変数が記載",
+              "raw_response": ""
+            },
+            "11": {
+              "result": "yes",
+              "reason": "RoB 2ツール使用と2名の評価者を明記",
+              "raw_response": ""
+            },
+            "12": {
+              "result": "yes",
+              "reason": "SMDとRRの使用を明記",
+              "raw_response": ""
+            },
+            "13a": {
+              "result": "no",
+              "reason": "各統合への研究選択プロセスが不明確",
+              "raw_response": ""
+            },
+            "13b": {
+              "result": "no",
+              "reason": "データ準備方法の記載なし",
+              "raw_response": ""
+            },
+            "13c": {
+              "result": "yes",
+              "reason": "フォレストプロットと表の使用を記載",
+              "raw_response": ""
+            },
+            "13d": {
+              "result": "yes",
+              "reason": "ランダム効果モデルと統計手法を記載",
+              "raw_response": ""
+            },
+            "13e": {
+              "result": "yes",
+              "reason": "サブグループ解析とメタ回帰の記載あり",
+              "raw_response": ""
+            },
+            "13f": {
+              "result": "yes",
+              "reason": "感度分析の実施を記載",
+              "raw_response": ""
+            },
+            "14": {
+              "result": "yes",
+              "reason": "ファネルプロットとEgger検定を使用",
+              "raw_response": ""
+            },
+            "15": {
+              "result": "yes",
+              "reason": "GRADEアプローチの使用を明記",
+              "raw_response": ""
+            },
+            "16a": {
+              "result": "yes",
+              "reason": "PRISMAフローチャートで数値を提示",
+              "raw_response": ""
+            },
+            "16b": {
+              "result": "no",
+              "reason": "除外研究とその理由の記載なし",
+              "raw_response": ""
+            },
+            "17": {
+              "result": "yes",
+              "reason": "全研究の特性を表で提示",
+              "raw_response": ""
+            },
+            "18": {
+              "result": "yes",
+              "reason": "バイアスリスク評価を表に記載",
+              "raw_response": ""
+            },
+            "19": {
+              "result": "yes",
+              "reason": "フォレストプロットで個別研究結果を提示",
+              "raw_response": ""
+            },
+            "20a": {
+              "result": "yes",
+              "reason": "研究特性とバイアスリスクを要約",
+              "raw_response": ""
+            },
+            "20b": {
+              "result": "yes",
+              "reason": "統合結果と統計値を明記",
+              "raw_response": ""
+            },
+            "20c": {
+              "result": "yes",
+              "reason": "異質性探索の結果を記載",
+              "raw_response": ""
+            },
+            "20d": {
+              "result": "yes",
+              "reason": "感度分析結果を補足図と共に提示",
+              "raw_response": ""
+            },
+            "21": {
+              "result": "yes",
+              "reason": "出版バイアス評価結果を記載",
+              "raw_response": ""
+            },
+            "22": {
+              "result": "yes",
+              "reason": "エビデンスの確実性評価を記載",
+              "raw_response": ""
+            },
+            "23a": {
+              "result": "yes",
+              "reason": "他のエビデンスとの関連で解釈を提供",
+              "raw_response": ""
+            },
+            "23b": {
+              "result": "yes",
+              "reason": "エビデンスの限界を議論",
+              "raw_response": ""
+            },
+            "23c": {
+              "result": "yes",
+              "reason": "レビュープロセスの限界を記載",
+              "raw_response": ""
+            },
+            "23d": {
+              "result": "yes",
+              "reason": "実践への示唆を記載",
+              "raw_response": ""
+            },
+            "24a": {
+              "result": "yes",
+              "reason": "PROSPERO登録番号を明記",
+              "raw_response": ""
+            },
+            "24b": {
+              "result": "yes",
+              "reason": "プロトコル登録情報を記載",
+              "raw_response": ""
+            },
+            "24c": {
+              "result": "no",
+              "reason": "プロトコル変更の記載なし",
+              "raw_response": ""
+            },
+            "25": {
+              "result": "no",
+              "reason": "資金源の記載なし",
+              "raw_response": ""
+            },
+            "26": {
+              "result": "yes",
+              "reason": "利益相反なしと明記",
+              "raw_response": ""
+            },
+            "27": {
+              "result": "no",
+              "reason": "データ等の公開情報なし",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 14344,
+            "processing_time": 68.65797908200011,
+            "timestamp": "2025-09-08 12:49:01.396865"
+          }
+        },
+        "abstract": {
+          "evaluations": {
+            "item_1": {
+              "result": "yes",
+              "reason": "タイトルに「Systematic Review and Meta-analysis」と明記",
+              "raw_response": ""
+            },
+            "item_2": {
+              "result": "yes",
+              "reason": "低用量ケタミンとオピオイドの有効性・安全性比較という目的を明示",
+              "raw_response": ""
+            },
+            "item_3": {
+              "result": "no",
+              "reason": "選択基準・除外基準の具体的記載なし",
+              "raw_response": ""
+            },
+            "item_4": {
+              "result": "yes",
+              "reason": "6つのデータベース名と検索期限（2021年11月まで）を明記",
+              "raw_response": ""
+            },
+            "item_5": {
+              "result": "yes",
+              "reason": "Cochrane risk-of-bias toolの使用を明記",
+              "raw_response": ""
+            },
+            "item_6": {
+              "result": "yes",
+              "reason": "ランダム効果モデルのメタ分析、SMDとRRの報告を明記",
+              "raw_response": ""
+            },
+            "item_7": {
+              "result": "yes",
+              "reason": "15研究、1,613名の参加者数と研究特性を記載",
+              "raw_response": ""
+            },
+            "item_8": {
+              "result": "no",
+              "reason": "結果にSMDとRRは示すが各アウトカムの研究数・参加者数の記載なし",
+              "raw_response": ""
+            },
+            "item_9": {
+              "result": "yes",
+              "reason": "異質性と研究の質の低さ、高バイアスリスクについて言及",
+              "raw_response": ""
+            },
+            "item_10": {
+              "result": "yes",
+              "reason": "ケタミンの有効性と今後の研究の必要性について解釈を提示",
+              "raw_response": ""
+            },
+            "item_11": {
+              "result": "no",
+              "reason": "資金源に関する記載なし",
+              "raw_response": ""
+            },
+            "item_12": {
+              "result": "no",
+              "reason": "プロトコル登録番号の記載なし",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "claude-opus-4-1-20250805",
+            "model_version": "claude-opus-4-1-20250805",
+            "format_type": "refactored_pipeline_default",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 4118,
+            "processing_time": 28.639293019000206,
+            "timestamp": "2025-09-08 12:49:30.036659"
+          }
+        }
+      },
+      "metrics": {
+        "cohen_kappa": 0.47992863514719003,
+        "accuracy": 79.24528301886792,
+        "precision": 82.5,
+        "recall": 89.1891891891892,
+        "f1_score": 85.71428571428571,
+        "specificity": 56.25
+      }
+    }
+  ],
+  "overall_metrics": {
+    "accuracy": 80.37735849056604,
+    "precision": 83.09859154929578,
+    "recall": 91.70984455958549,
+    "f1_score": 87.192118226601,
+    "specificity": 50.0,
+    "cohen_kappa": 0.4568816017657261,
+    "counts": {
+      "tp": 177,
+      "tn": 36,
+      "fp": 36,
+      "fn": 16,
+      "total_comparable": 265,
+      "correct": 213
+    }
+  },
+  "main_body_metrics": {
+    "accuracy": 81.46341463414633,
+    "precision": 85.54913294797689,
+    "recall": 91.92546583850931,
+    "f1_score": 88.62275449101796,
+    "specificity": 43.18181818181818,
+    "cohen_kappa": 0.38968975242870574,
+    "counts": {
+      "tp": 148,
+      "tn": 19,
+      "fp": 25,
+      "fn": 13,
+      "total_comparable": 205,
+      "correct": 167
+    }
+  },
+  "abstract_metrics": {
+    "accuracy": 76.66666666666667,
+    "precision": 72.5,
+    "recall": 90.625,
+    "f1_score": 80.55555555555554,
+    "specificity": 60.71428571428571,
+    "cohen_kappa": 0.5227272727272728,
+    "counts": {
+      "tp": 29,
+      "tn": 17,
+      "fp": 11,
+      "fn": 3,
+      "total_comparable": 60,
+      "correct": 46
+    }
+  },
+  "item_specific_metrics": {
+    "main_1": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 100.0,
+      "cohen_kappa": 1.0,
+      "counts": {
+        "tp": 4,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_3": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_4": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_5": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_6": {
+      "accuracy": 60.0,
+      "precision": 60.0,
+      "recall": 100.0,
+      "f1_score": 74.99999999999999,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 3,
+        "tn": 0,
+        "fp": 2,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "main_7": {
+      "accuracy": 80.0,
+      "precision": 100.0,
+      "recall": 66.66666666666666,
+      "f1_score": 80.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.6153846153846155,
+      "counts": {
+        "tp": 2,
+        "tn": 2,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_8": {
+      "accuracy": 80.0,
+      "precision": 66.66666666666666,
+      "recall": 100.0,
+      "f1_score": 80.0,
+      "specificity": 66.66666666666666,
+      "cohen_kappa": 0.6153846153846155,
+      "counts": {
+        "tp": 2,
+        "tn": 2,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_9": {
+      "accuracy": 60.0,
+      "precision": 50.0,
+      "recall": 100.0,
+      "f1_score": 66.66666666666666,
+      "specificity": 33.33333333333333,
+      "cohen_kappa": 0.2857142857142856,
+      "counts": {
+        "tp": 2,
+        "tn": 1,
+        "fp": 2,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "main_10a": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_10b": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_11": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_12": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_13a": {
+      "accuracy": 60.0,
+      "precision": 100.0,
+      "recall": 50.0,
+      "f1_score": 66.66666666666666,
+      "specificity": 100.0,
+      "cohen_kappa": 0.2857142857142856,
+      "counts": {
+        "tp": 2,
+        "tn": 1,
+        "fp": 0,
+        "fn": 2,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "main_13b": {
+      "accuracy": 60.0,
+      "precision": 33.33333333333333,
+      "recall": 100.0,
+      "f1_score": 50.0,
+      "specificity": 50.0,
+      "cohen_kappa": 0.2857142857142856,
+      "counts": {
+        "tp": 1,
+        "tn": 2,
+        "fp": 2,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "main_13c": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_13d": {
+      "accuracy": 60.0,
+      "precision": 60.0,
+      "recall": 100.0,
+      "f1_score": 74.99999999999999,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 3,
+        "tn": 0,
+        "fp": 2,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "main_13e": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_13f": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_14": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 100.0,
+      "cohen_kappa": 1.0,
+      "counts": {
+        "tp": 4,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_15": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 100.0,
+      "cohen_kappa": 1.0,
+      "counts": {
+        "tp": 3,
+        "tn": 2,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_16a": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_16b": {
+      "accuracy": 60.0,
+      "precision": 100.0,
+      "recall": 50.0,
+      "f1_score": 66.66666666666666,
+      "specificity": 100.0,
+      "cohen_kappa": 0.2857142857142856,
+      "counts": {
+        "tp": 2,
+        "tn": 1,
+        "fp": 0,
+        "fn": 2,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "main_17": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_18": {
+      "accuracy": 80.0,
+      "precision": 75.0,
+      "recall": 100.0,
+      "f1_score": 85.71428571428571,
+      "specificity": 50.0,
+      "cohen_kappa": 0.5454545454545455,
+      "counts": {
+        "tp": 3,
+        "tn": 1,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_19": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_20a": {
+      "accuracy": 40.0,
+      "precision": 40.0,
+      "recall": 100.0,
+      "f1_score": 57.14285714285715,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 2,
+        "tn": 0,
+        "fp": 3,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 2
+      }
+    },
+    "main_20b": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_20c": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_20d": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_21": {
+      "accuracy": 60.0,
+      "precision": 50.0,
+      "recall": 100.0,
+      "f1_score": 66.66666666666666,
+      "specificity": 33.33333333333333,
+      "cohen_kappa": 0.2857142857142856,
+      "counts": {
+        "tp": 2,
+        "tn": 1,
+        "fp": 2,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "main_22": {
+      "accuracy": 80.0,
+      "precision": 66.66666666666666,
+      "recall": 100.0,
+      "f1_score": 80.0,
+      "specificity": 66.66666666666666,
+      "cohen_kappa": 0.6153846153846155,
+      "counts": {
+        "tp": 2,
+        "tn": 2,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_23a": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_23b": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_23c": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_23d": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_24a": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_24b": {
+      "accuracy": 60.0,
+      "precision": 50.0,
+      "recall": 100.0,
+      "f1_score": 66.66666666666666,
+      "specificity": 33.33333333333333,
+      "cohen_kappa": 0.2857142857142856,
+      "counts": {
+        "tp": 2,
+        "tn": 1,
+        "fp": 2,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "main_24c": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 5,
+        "total_comparable": 5,
+        "correct": 0
+      }
+    },
+    "main_25": {
+      "accuracy": 80.0,
+      "precision": 100.0,
+      "recall": 80.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "main_26": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "main_27": {
+      "accuracy": 60.0,
+      "precision": 100.0,
+      "recall": 50.0,
+      "f1_score": 66.66666666666666,
+      "specificity": 100.0,
+      "cohen_kappa": 0.2857142857142856,
+      "counts": {
+        "tp": 2,
+        "tn": 1,
+        "fp": 0,
+        "fn": 2,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "abstract_item_1": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "abstract_item_2": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "abstract_item_3": {
+      "accuracy": 40.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 40.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 2,
+        "fp": 3,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 2
+      }
+    },
+    "abstract_item_4": {
+      "accuracy": 40.0,
+      "precision": 40.0,
+      "recall": 100.0,
+      "f1_score": 57.14285714285715,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 2,
+        "tn": 0,
+        "fp": 3,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 2
+      }
+    },
+    "abstract_item_5": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 100.0,
+      "cohen_kappa": 1.0,
+      "counts": {
+        "tp": 2,
+        "tn": 3,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "abstract_item_6": {
+      "accuracy": 60.0,
+      "precision": 60.0,
+      "recall": 100.0,
+      "f1_score": 74.99999999999999,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 3,
+        "tn": 0,
+        "fp": 2,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 3
+      }
+    },
+    "abstract_item_7": {
+      "accuracy": 80.0,
+      "precision": 80.0,
+      "recall": 100.0,
+      "f1_score": 88.8888888888889,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 4,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "abstract_item_8": {
+      "accuracy": 40.0,
+      "precision": 66.66666666666666,
+      "recall": 50.0,
+      "f1_score": 57.14285714285715,
+      "specificity": 0.0,
+      "cohen_kappa": -0.36363636363636376,
+      "counts": {
+        "tp": 2,
+        "tn": 0,
+        "fp": 1,
+        "fn": 2,
+        "total_comparable": 5,
+        "correct": 2
+      }
+    },
+    "abstract_item_9": {
+      "accuracy": 80.0,
+      "precision": 100.0,
+      "recall": 66.66666666666666,
+      "f1_score": 80.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.6153846153846155,
+      "counts": {
+        "tp": 2,
+        "tn": 2,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 5,
+        "correct": 4
+      }
+    },
+    "abstract_item_10": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "abstract_item_11": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 5,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    },
+    "abstract_item_12": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 5,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 5,
+        "correct": 5
+      }
+    }
+  },
+  "comparison_details": [
+    {
+      "paper_id": "Suda2025_15",
+      "title": "Effect of Bougie Use on First-Attempt Success in Tracheal Intubations: A Systematic Review and Meta-Analysis.",
+      "items": [
+        {
+          "item_id": "main_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「SYSTEMATIC REVIEW/META-ANALYSIS」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "既存知識の文脈で理論的根拠を説明",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ブジー使用と初回成功率の関連評価という明確な目的を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "適格基準と除外基準を詳細に記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "5つのデータベースと検索日（2022年10月、2023年6月更新）を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Appendix E1に詳細な検索戦略を提示と記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_8",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "2名の独立したレビュアーによる選択プロセスを記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "標準化フォームを用いた2名によるデータ収集方法を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_10a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "初回成功率と副次アウトカムを明確にリスト化",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_10b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "抽出した変数（患者特性、介入詳細等）をリスト化",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_11",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "RCTにRoB 2、観察研究にNewcastle-Ottawaツール使用を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_12",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "リスク比（RR）と95%信頼区間を効果指標として明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13a",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "各統合に適格な研究の決定プロセスが不明確",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_13b",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "欠測データの処理方法について具体的記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_13c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "フォレストプロットとファンネルプロットの使用を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ランダム効果モデル、DerSimonian-Laird法、Review Manager使用を明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13e",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "異質性探索のためのサブグループ解析を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13f",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "外れ値研究除外などの感度分析を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_14",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ファンネルプロットによる出版バイアス評価を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_15",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "GRADEアプローチによるエビデンスの確実性評価を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "フローチャート（Figure 1）で2,699件から18件への選択過程を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16b",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "除外された個別研究の引用と理由の記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_17",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Table 1で全ての含まれた研究の特性を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_18",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "全研究にバイアスリスクの懸念があることを記載、Appendix E3参照",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_19",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "フォレストプロットで各研究の結果を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "統合に寄与した研究の特性とバイアスリスクを要約",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "メタ解析結果をRR、CI、I²値と共に提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Table 2でサブグループ解析結果を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "BOUGIE試験除外の感度分析結果を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_21",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ファンネルプロットの非対称性について言及",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_22",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "全体的に低い確実性、困難気道では中等度と評価",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "他のエビデンスとの文脈で結果を解釈",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "含まれた研究の質とバイアスの限界を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "レビュープロセスの限界を詳細に記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "実践への示唆を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PROSPERO登録（CRD42023403212）を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PROSPERO登録番号でプロトコルアクセス可能",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_24c",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "プロトコルからの変更について言及なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_25",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "資金提供なしと明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_26",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "利益相反なしと宣言",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_27",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "データは要求に応じて利用可能と記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「Systematic Review and Meta-Analysis」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_2",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "bougie使用と初回挿管成功率の関連評価という目的が明確に記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "成人対象、比較対照設定、マネキン・死体研究除外と記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "5つのデータベース名と検索期間（開始から2023年6月）が明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_5",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "バイアスリスク評価方法の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ランダム効果モデルのメタ分析とGRADE評価を使用と記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "18研究（RCT12件含む）、9,151患者と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_8",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "主要アウトカムの結果、研究数、患者数、効果量、信頼区間を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "エビデンスの確実性が低いことを明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_10",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "bougieを救急挿管で最初に使用すべきという臨床的示唆を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_11",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "資金源の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_12",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "登録名と登録番号の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        }
+      ]
+    },
+    {
+      "paper_id": "Suda2025_17",
+      "title": "Efficacy of prescribed opioids for acute pain after being discharged from the emergency department: A systematic review and meta-analysis.",
+      "items": [
+        {
+          "item_id": "main_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「systematic review and meta-analysis」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "既存知識の文脈でオピオイドとNSAIDsの比較について論理的根拠を説明",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "オピオイドの効果を合成する明確な目的が記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "「Eligibility criteria」セクションで包含・除外基準を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "検索データベースと検索期間（開始から2023年1月）を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "完全な検索戦略はSupplement Methods S1に記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_8",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "8名のレビュアー、独立した2名による選択、第3者による解決を記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "2名の独立レビュアーによるデータ抽出、著者への問い合わせを記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_10a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "主要アウトカム（疼痛強度スコアまたは疼痛緩和の差）を明確に定義",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_10b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "抽出した変数（年齢、包含基準、オピオイドの種類等）をリスト化",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_11",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "EPOCツール使用、2名の独立評価者、9つのドメインを評価",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_12",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "疼痛にはSMD、有害事象にはORを使用と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "統合に適格な研究の選択プロセスを記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "パーセンテージデータのSMDへの変換方法を記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "RevManを使用したフォレストプロットで結果表示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ランダム効果モデル、逆分散重み付け法、使用ソフトウェアを記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13e",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "コデインvs他のオピオイド、成人vs小児の感度分析を実施",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13f",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "複数の感度分析（短期フォローアップ、高バイアスリスク除外等）を実施",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_14",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "研究数10未満のため出版バイアス評価は実施せずと明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_15",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "GRADEなどエビデンスの確実性評価方法の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_16a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PRISMAフローチャート（Figure 1）で選択過程を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16b",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "除外研究の引用と理由の完全なリストなし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_17",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Table 1で全包含研究の特性を引用付きで提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_18",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "各研究のバイアスリスク評価結果を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_19",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Table 2で各研究の結果を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "統合に寄与した研究の特性を要約",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_20b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "フォレストプロットでSMD/ORと信頼区間を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "異質性を探索する感度分析の結果を報告",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "複数の感度分析結果を報告",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_21",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "研究数が少ないため正式評価せずと記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_22",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "エビデンスの確実性の正式評価なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_23a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "他のエビデンスとの文脈で結果を解釈",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "異質性、外的妥当性等のエビデンスの限界を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "研究数が少ないため出版バイアス評価できない等の限界を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "実践と将来の研究への示唆を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PROSPERO登録番号CRD42022332009を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24b",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "プロトコルへのアクセス方法の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_24c",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "プロトコルの修正に関する記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_25",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "資金源と資金提供者の役割を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_26",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "「利益相反なし」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_27",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "データ、コード、資料の公開状況の記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "abstract_item_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「systematic review and meta-analysis」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_2",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "オピオイドvs非オピオイド鎮痛薬の有効性比較という目的を明確に記述",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_3",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "RCTを対象とした以外の詳細な選択・除外基準の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "6つのデータベース名と検索期間（開始から2023年1月）を明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_5",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "バイアスリスク評価実施は記載あるが、使用した評価ツールの記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ランダム効果モデルと感度分析の実施方法を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "6研究、1161名の患者を含むことを明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_8",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "効果量と信頼区間は示すが、各アウトカムの研究数・参加者数の記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "abstract_item_9",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "コデインの影響は言及するが、エビデンスの限界の体系的な要約なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "abstract_item_10",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "結果の解釈と今後の研究への示唆を明確に提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_11",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "資金源に関する記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_12",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "プロトコル登録番号の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        }
+      ]
+    },
+    {
+      "paper_id": "Suda2025_18",
+      "title": "Intubation Rates following Prehospital Administration of Ketamine for Acute Agitation: A Systematic Review and Meta-Analysis.",
+      "items": [
+        {
+          "item_id": "main_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「Systematic Review and Meta-Analysis」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "既存知識の文脈で急性興奮管理とケタミン使用の根拠を説明",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "一次目的と二次目的が明示的に記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "適格基準と除外基準が明確に記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "10データベースと検索日（2022年2月13日まで）明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_7",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "検索戦略は付録Aに記載とあるが本文に提示なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_8",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "2名の独立レビュアー、κ係数算出、第3者による解決を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "1名がデータ抽出、10%を別の1名が確認",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_10a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "主要アウトカム（挿管）と副次アウトカムをリスト化",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_10b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "有害事象、研究設定等の追加変数を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_11",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Newcastle-Ottawa尺度使用、2名の独立評価",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_12",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "比率メタ分析、95%信頼区間を明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "適格性判定プロセスを記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Freeman-Tukey変換、欠測データ処理を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "フォレストプロット、表による結果表示を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ランダム効果モデル使用、理由とStataソフトウェア明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13e",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "外れ値研究のサブグループ分析を実施",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13f",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "leave-one-out分析と代替逆変換感度分析を実施",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_14",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "出版バイアス評価せず、ファネルプロット不適切との理由明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_15",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "GRADEツール使用を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PRISMAフローダイアグラム（図1）で検索・選択結果提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Friedman et al.研究の除外理由を説明",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_17",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "表1で18研究全ての特性を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_18",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "バイアスリスクの要約はあるが個別評価の詳細提示なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_19",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "表2で各研究の挿管率データを詳細に提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "統合対象研究の特性とバイアスリスクを要約",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_20b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "メタ分析結果、信頼区間、I²統計量を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "異質性探索のサブグループ分析結果（図5）を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "leave-one-out感度分析結果を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_21",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "出版バイアス未評価の正当な理由を記載",
+          "human_result_raw": "該当なし",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_22",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "GRADE評価「very low」として確実性評価を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "他のエビデンスと比較した結果の解釈を提供",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "観察研究のみ等、エビデンスの限界を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "レビュープロセスの複数の限界を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "実践への示唆と今後の研究方向を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PROSPERO登録番号（CRD42021248447）を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PROSPEROリンクを提供",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24c",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "プロトコルからの変更に関する記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_25",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "特定の資金援助なしと明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_26",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "利益相反なしと宣言",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_27",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "データは各論文から公開入手可能と記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「Systematic Review and Meta-Analysis」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_2",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "挿管率と設定を明らかにするという明確な目的を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "院外でケタミン投与を受けた興奮患者という包含基準を明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "11のデータベース名と検索日（2022年2月13日まで）を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Newcastle-Ottawa尺度による質評価方法を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "メタ分析による結果統合方法を明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "18研究、3476名の患者数と観察研究という特徴を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_8",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "挿管率16%（95%CI:8-26%）等、信頼区間付きの結果を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_9",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "研究間のばらつきは言及するが、エビデンスの限界の明確な記述なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_10",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "挿管の多くがEDで行われたという結果の解釈を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_11",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "資金源に関する記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_12",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "登録番号に関する記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        }
+      ]
+    },
+    {
+      "paper_id": "Suda2025_5",
+      "title": "Analgesic efficacy of nitrous oxide in adults in the emergency department: A meta-analysis of randomized controlled trials.",
+      "items": [
+        {
+          "item_id": "main_1",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "タイトルに「システマティックレビュー」の明記なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "既存知識の文脈で根拠が記載されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "明確な目的が述べられている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "選択基準と除外基準が明記されている",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "全データベースと検索日が記載されている",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_7",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "各データベースの完全な検索式が提示されていない",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_8",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "スクリーニングプロセスの詳細が不明確",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "2名の独立した査読者によるデータ収集が記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_10a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "データ収集したアウトカムがリストされている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_10b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "収集した他の変数がリストされている",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_11",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Cochraneツールを用いたバイアス評価方法が記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_12",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "各アウトカムの効果測定が明記されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13a",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "統合への適格性判断プロセスが不明確",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_13b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "データ変換方法が記載されている",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Forest plotによる結果表示が行われている",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "統合方法とモデル選択基準が記載されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13e",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "感度分析による異質性探索が記載されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13f",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "感度分析の実施が記載されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_14",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "報告バイアス評価方法の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_15",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "エビデンスの確実性評価方法の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_16a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "フローダイアグラムで検索・選択結果が示されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "除外研究と理由がS1 Appendixに記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_17",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Table 1で全研究の特徴が提示されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_18",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Fig. 2で各研究のバイアス評価が提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_19",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Table 1で各研究の結果が提示されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "統合に含まれた研究の特徴とバイアスが要約",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_20b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "メタ分析の統計結果が提示されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "異質性調査の結果が提示されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "感度分析の結果が提示されている",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_21",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "報告バイアス評価結果の提示なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_22",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "エビデンスの確実性評価の提示なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_23a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "他のエビデンスとの文脈で結果が解釈されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "含まれた研究のバイアスなどの限界が議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "レビュープロセスの限界が議論されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "実践と今後の研究への示唆が議論されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PROSPERO登録番号が記載されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "プロトコルへのアクセス情報が記載されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24c",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "プロトコル変更に関する記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_25",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "資金源が記載されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_26",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "利益相反なしと宣言されている",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_27",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "データ・コード等の公開に関する詳細記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "abstract_item_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「meta-analysis」と明記されている",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_2",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "N2Oの鎮痛効果と安全性を調査すると明確に記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "RCTで成人EDでN2O対プラセボ/他の鎮痛法を比較と明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "6つのデータベースと検索日（2021年8月10日）を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_5",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "バイアスリスク評価方法の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "プール解析、WMD、ORを用いたメタ解析方法を記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "14件のRCT、1751名の患者を含むと明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_8",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "主要アウトカムの効果量、95%CI、P値、I²値を詳細に報告",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_9",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "エビデンスの限界についての記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_10",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "N2Oの効果と副作用について総合的な解釈を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_11",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "資金源の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_12",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "登録番号の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        }
+      ]
+    },
+    {
+      "paper_id": "Suda2025_7",
+      "title": "Efficacy of Low-dose Ketamine for Control of Acute Pain in the Emergency Setting: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+      "items": [
+        {
+          "item_id": "main_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「Systematic Review」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "急性疼痛管理の課題とケタミンの必要性が記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "低用量ケタミンの効果評価という明確な目的が記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "適格基準と除外基準が明確に記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "データベースと検索期日が明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_7",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "完全な検索式が本文に記載されていない",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_8",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "レビュアー数や独立性が明記されていない",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_9",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "データ収集の独立性が不明確",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_10a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "アウトカム項目が明確に列挙",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_10b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "収集した変数が記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_11",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "RoB 2ツール使用と2名の評価者を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_12",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "SMDとRRの使用を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13a",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "各統合への研究選択プロセスが不明確",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_13b",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "データ準備方法の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_13c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "フォレストプロットと表の使用を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ランダム効果モデルと統計手法を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13e",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "サブグループ解析とメタ回帰の記載あり",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13f",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "感度分析の実施を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_14",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ファネルプロットとEgger検定を使用",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_15",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "GRADEアプローチの使用を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PRISMAフローチャートで数値を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16b",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "除外研究とその理由の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_17",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "全研究の特性を表で提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_18",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "バイアスリスク評価を表に記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_19",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "フォレストプロットで個別研究結果を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "研究特性とバイアスリスクを要約",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "統合結果と統計値を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "異質性探索の結果を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "感度分析結果を補足図と共に提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_21",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "出版バイアス評価結果を記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_22",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "エビデンスの確実性評価を記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_23a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "他のエビデンスとの関連で解釈を提供",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "エビデンスの限界を議論",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "レビュープロセスの限界を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "実践への示唆を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "PROSPERO登録番号を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "プロトコル登録情報を記載",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_24c",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "プロトコル変更の記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_25",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "資金源の記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_26",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "利益相反なしと明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_27",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "データ等の公開情報なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "タイトルに「Systematic Review and Meta-analysis」と明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_2",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "低用量ケタミンとオピオイドの有効性・安全性比較という目的を明示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_3",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "選択基準・除外基準の具体的記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "6つのデータベース名と検索期限（2021年11月まで）を明記",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Cochrane risk-of-bias toolの使用を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ランダム効果モデルのメタ分析、SMDとRRの報告を明記",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "15研究、1,613名の参加者数と研究特性を記載",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_8",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "結果にSMDとRRは示すが各アウトカムの研究数・参加者数の記載なし",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "abstract_item_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "異質性と研究の質の低さ、高バイアスリスクについて言及",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_10",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "ケタミンの有効性と今後の研究の必要性について解釈を提示",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_11",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "資金源に関する記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_12",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "プロトコル登録番号の記載なし",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        }
+      ]
+    }
+  ]
+}

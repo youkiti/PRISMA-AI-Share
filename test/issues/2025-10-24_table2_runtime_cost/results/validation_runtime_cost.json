@@ -1,0 +1,134 @@
+[
+  {
+    "model_id": "claude-opus-4-1-20250805",
+    "display_name": "Claude Opus 4.1",
+    "source_file": "md_claude-opus-4-1-20250805_20251023_184404.json",
+    "mean_time_seconds": 122.432,
+    "median_time_seconds": 119.065,
+    "total_cost_usd": 5.62191,
+    "mean_cost_per_sr_usd": 0.562191,
+    "notes": []
+  },
+  {
+    "model_id": "claude-sonnet-4-5-20250929",
+    "display_name": "Claude Sonnet 4.5",
+    "source_file": "md_claude-sonnet-4-5-20250929_20251023_184404.json",
+    "mean_time_seconds": 207.807,
+    "median_time_seconds": 165.313,
+    "total_cost_usd": 1.628325,
+    "mean_cost_per_sr_usd": 0.162832,
+    "notes": []
+  },
+  {
+    "model_id": "gpt-4o",
+    "display_name": "GPT‑4o",
+    "source_file": "md_gpt-4o_20251023_184404.json",
+    "mean_time_seconds": 31.808,
+    "median_time_seconds": 32.708,
+    "total_cost_usd": 0.43408,
+    "mean_cost_per_sr_usd": 0.043408,
+    "notes": []
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT‑5",
+    "source_file": "md_gpt-5_20251023_184404.json",
+    "mean_time_seconds": 18.391,
+    "median_time_seconds": 18.256,
+    "total_cost_usd": 0.305707,
+    "mean_cost_per_sr_usd": 0.030571,
+    "notes": []
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT‑5",
+    "source_file": "md_gpt5_tsuge10_20251023_175646.json",
+    "mean_time_seconds": 13.467,
+    "median_time_seconds": 13.162,
+    "total_cost_usd": 0.0,
+    "mean_cost_per_sr_usd": 0.0,
+    "notes": []
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT‑5",
+    "source_file": "md_gpt5_tsuge10_20251023_180045.json",
+    "mean_time_seconds": 14.094,
+    "median_time_seconds": 14.039,
+    "total_cost_usd": 0.0,
+    "mean_cost_per_sr_usd": 0.0,
+    "notes": []
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT‑5",
+    "source_file": "md_gpt5_tsuge10_20251023_182924.json",
+    "mean_time_seconds": 16.822,
+    "median_time_seconds": 15.17,
+    "total_cost_usd": 0.247337,
+    "mean_cost_per_sr_usd": 0.024734,
+    "notes": []
+  },
+  {
+    "model_id": "openai/gpt-oss-120b",
+    "display_name": "GPT‑OSS‑120B",
+    "source_file": "md_openai_gpt-oss-120b_20251023_184404.json",
+    "mean_time_seconds": 42.826,
+    "median_time_seconds": 41.825,
+    "total_cost_usd": 0.020259,
+    "mean_cost_per_sr_usd": 0.002026,
+    "notes": []
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "source_file": "md_gemini-2.5-pro_20251023_184404.json",
+    "mean_time_seconds": 76.414,
+    "median_time_seconds": 76.952,
+    "total_cost_usd": 0.449269,
+    "mean_cost_per_sr_usd": 0.044927,
+    "notes": []
+  },
+  {
+    "model_id": "x-ai/grok-4",
+    "display_name": "Grok‑4",
+    "source_file": "md_x-ai_grok-4_20251023_184404.json",
+    "mean_time_seconds": 117.804,
+    "median_time_seconds": 123.01,
+    "total_cost_usd": 1.106199,
+    "mean_cost_per_sr_usd": 0.11062,
+    "notes": []
+  },
+  {
+    "model_id": "x-ai/grok-4-fast",
+    "display_name": "Grok‑4‑fast",
+    "source_file": "md_x-ai_grok-4-fast_20251023_184404.json",
+    "mean_time_seconds": 27.02,
+    "median_time_seconds": 26.165,
+    "total_cost_usd": 0.049889,
+    "mean_cost_per_sr_usd": 0.004989,
+    "notes": []
+  },
+  {
+    "model_id": "qwen/qwen3-235b-a22b-2507",
+    "display_name": "Qwen3‑235B",
+    "source_file": "md_qwen_qwen3-235b-a22b-2507_20251023_184404.json",
+    "mean_time_seconds": 53.712,
+    "median_time_seconds": 47.974,
+    "total_cost_usd": 0.034723,
+    "mean_cost_per_sr_usd": 0.003472,
+    "notes": []
+  },
+  {
+    "model_id": "qwen/qwen3-max",
+    "display_name": "Qwen3‑Max",
+    "source_file": "md_qwen_qwen3-max_20251023_184404.json",
+    "mean_time_seconds": 56.125,
+    "median_time_seconds": 57.154,
+    "total_cost_usd": 0.274088,
+    "mean_cost_per_sr_usd": 0.027409,
+    "notes": [
+      "pricing_flag:variable_rate"
+    ]
+  }
+]

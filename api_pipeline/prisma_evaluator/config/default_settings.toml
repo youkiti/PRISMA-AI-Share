@@ -1,0 +1,41 @@
+# Default settings for PRISMA Evaluator
+
+# --- API Keys (to be overridden by .env) ---
+# OPENROUTER_API_KEY = "your_openrouter_api_key_here" 
+
+# --- Paths (to be overridden by .env or absolute paths) ---
+# PRISMA_AI_DRIVE_PATH = "/path/to/your/prisma_ai_drive"
+# ANNOTATION_DATA_PATH = "/path/to/your/annotation_data"
+
+# --- Evaluation Parameters ---
+NUM_PAPERS_TO_EVALUATE = 5
+DEFAULT_MODEL_ID = "openai/gpt-4o"
+RETRY_COUNT = 3
+RETRY_DELAY_SECONDS = 5
+
+# --- Evaluation Retry Settings ---
+MAX_EVALUATION_RETRIES = 3
+RETRY_DELAY_BASE_SECONDS = 1.0
+TREAT_FAILED_AS_INCORRECT = true
+
+# --- Section-based Evaluation Settings ---
+ENABLE_SECTION_BASED_EVALUATION = true
+MAX_ITEMS_PER_SECTION = 12
+ENABLE_JSON_REPAIR = true
+
+# --- Gemini Direct API Settings ---
+ENABLE_GEMINI_DIRECT = true
+GEMINI_DIRECT_MODEL = "gemini-2.5-pro"
+
+# --- Directory Names (relative to PRISMA_AI_DRIVE_PATH or ANNOTATION_DATA_PATH if applicable) ---
+# Note: When using external data path, don't include "data/" prefix
+STRUCTURED_DATA_SUBDIR = "structured_data/structured_data/Suda2025-SR文献"
+ANNOTATION_FILE_NAME = "suda2025_merged.json" # Relative to ANNOTATION_DATA_PATH
+
+# --- Output Directories (relative to the project root or a configurable base output path) ---
+LOGS_DIR_NAME = "logs" # Relative to package or a base output dir
+RESULTS_DIR_NAME = "results/evaluator_output" # Relative to package or a base output dir
+
+# --- Checklist Files (relative to package resources) ---
+PRISMA_CHECKLIST_FILE = "PRISMA_2020_checklist.md"
+PRISMA_ABSTRACT_CHECKLIST_FILE = "PRISMA_2020_abstract_checklist.md"

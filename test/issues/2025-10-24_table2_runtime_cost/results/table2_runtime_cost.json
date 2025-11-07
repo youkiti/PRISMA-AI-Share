@@ -1,0 +1,104 @@
+[
+  {
+    "model_id": "claude-opus-4-1-20250805",
+    "display_name": "Claude Opus 4.1",
+    "source_file": "20250928_092722.json",
+    "mean_time_seconds": 101.289,
+    "median_time_seconds": 91.535,
+    "total_cost_usd": 5.982435,
+    "mean_cost_per_sr_usd": 0.598244,
+    "notes": []
+  },
+  {
+    "model_id": "claude-sonnet-4-5-20250929",
+    "display_name": "Claude Sonnet 4.5",
+    "source_file": "20250930_112632_claude_sonnet_md.json",
+    "mean_time_seconds": 183.576,
+    "median_time_seconds": 150.805,
+    "total_cost_usd": 1.781652,
+    "mean_cost_per_sr_usd": 0.178165,
+    "notes": []
+  },
+  {
+    "model_id": "gpt-4o",
+    "display_name": "GPT‑4o",
+    "source_file": "20250928_080643.json",
+    "mean_time_seconds": 31.71,
+    "median_time_seconds": 29.057,
+    "total_cost_usd": 0.471912,
+    "mean_cost_per_sr_usd": 0.047191,
+    "notes": []
+  },
+  {
+    "model_id": "gpt-5",
+    "display_name": "GPT‑5",
+    "source_file": "20250928_114923_gpt5_md_reasoning_high.json",
+    "mean_time_seconds": 282.358,
+    "median_time_seconds": 292.21,
+    "total_cost_usd": 1.794329,
+    "mean_cost_per_sr_usd": 0.179433,
+    "notes": []
+  },
+  {
+    "model_id": "openai/gpt-oss-120b",
+    "display_name": "GPT‑OSS‑120B",
+    "source_file": "20250928_080803.json",
+    "mean_time_seconds": 45.039,
+    "median_time_seconds": 40.137,
+    "total_cost_usd": 0.020618,
+    "mean_cost_per_sr_usd": 0.002062,
+    "notes": []
+  },
+  {
+    "model_id": "gemini-2.5-pro",
+    "display_name": "Gemini 2.5 Pro",
+    "source_file": "20250929_102627_gemini_md.json",
+    "mean_time_seconds": 81.963,
+    "median_time_seconds": 82.393,
+    "total_cost_usd": 0.480261,
+    "mean_cost_per_sr_usd": 0.048026,
+    "notes": []
+  },
+  {
+    "model_id": "x-ai/grok-4",
+    "display_name": "Grok‑4",
+    "source_file": "20250928_081159.json",
+    "mean_time_seconds": 102.96,
+    "median_time_seconds": 104.392,
+    "total_cost_usd": 1.061457,
+    "mean_cost_per_sr_usd": 0.106146,
+    "notes": []
+  },
+  {
+    "model_id": "x-ai/grok-4-fast",
+    "display_name": "Grok‑4‑fast",
+    "source_file": "20251006_120909.json",
+    "mean_time_seconds": 36.181,
+    "median_time_seconds": 33.247,
+    "total_cost_usd": 0.052235,
+    "mean_cost_per_sr_usd": 0.005223,
+    "notes": []
+  },
+  {
+    "model_id": "qwen/qwen3-235b-a22b-2507",
+    "display_name": "Qwen3‑235B",
+    "source_file": "20250928_080944.json",
+    "mean_time_seconds": 46.65,
+    "median_time_seconds": 37.503,
+    "total_cost_usd": 0.03726,
+    "mean_cost_per_sr_usd": 0.003726,
+    "notes": []
+  },
+  {
+    "model_id": "qwen/qwen3-max",
+    "display_name": "Qwen3‑Max",
+    "source_file": "20251006_113319.json",
+    "mean_time_seconds": 47.753,
+    "median_time_seconds": 45.96,
+    "total_cost_usd": 0.297136,
+    "mean_cost_per_sr_usd": 0.029714,
+    "notes": [
+      "pricing_flag:variable_rate"
+    ]
+  }
+]

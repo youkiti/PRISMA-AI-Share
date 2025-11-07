@@ -1,0 +1,169 @@
+{
+  "title": "PRISMA 2020 for Abstracts Checklist",
+  "source": "https://www.prisma-statement.org/",
+  "description": "An updated guideline for reporting abstracts of systematic reviews. The PRISMA 2020 for Abstracts checklist provides reporting guidance for abstracts of systematic reviews.",
+  "categories": [
+    {
+      "name": "TITLE",
+      "sections": [
+        {
+          "name": "Title",
+          "items": [
+            {
+              "item": "1",
+              "description": "Identify the report as a systematic review.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BACKGROUND",
+      "sections": [
+        {
+          "name": "Objectives",
+          "items": [
+            {
+              "item": "2",
+              "description": "Provide an explicit statement of the main objective(s) or question(s) the review addresses.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "METHODS",
+      "sections": [
+        {
+          "name": "Eligibility criteria",
+          "items": [
+            {
+              "item": "3",
+              "description": "Specify the inclusion and exclusion criteria for the review.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        },
+        {
+          "name": "Information sources",
+          "items": [
+            {
+              "item": "4",
+              "description": "Specify the information sources (e.g. databases, registers) used to identify studies and the date when each was last searched.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        },
+        {
+          "name": "Risk of bias",
+          "items": [
+            {
+              "item": "5",
+              "description": "Specify the methods used to assess risk of bias in the included studies.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        },
+        {
+          "name": "Synthesis of results",
+          "items": [
+            {
+              "item": "6",
+              "description": "Specify the methods used to present and synthesise results.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RESULTS",
+      "sections": [
+        {
+          "name": "Included studies",
+          "items": [
+            {
+              "item": "7",
+              "description": "Give the total number of included studies and participants and summarise relevant characteristics of studies.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        },
+        {
+          "name": "Synthesis of results",
+          "items": [
+            {
+              "item": "8",
+              "description": "Present results for main outcomes, preferably indicating the number of included studies and participants for each. If meta-analysis was done, report the summary estimate and confidence/credible interval. If comparing groups, indicate the direction of the effect (i.e. which group is favoured).",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DISCUSSION",
+      "sections": [
+        {
+          "name": "Limitations of evidence",
+          "items": [
+            {
+              "item": "9",
+              "description": "Provide a brief summary of the limitations of the evidence included in the review (e.g. study risk of bias, inconsistency and imprecision).",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        },
+        {
+          "name": "Interpretation",
+          "items": [
+            {
+              "item": "10",
+              "description": "Provide a general interpretation of the results and important implications.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OTHER",
+      "sections": [
+        {
+          "name": "Funding",
+          "items": [
+            {
+              "item": "11",
+              "description": "Specify the primary source of funding for the review.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        },
+        {
+          "name": "Registration",
+          "items": [
+            {
+              "item": "12",
+              "description": "Provide the register name and registration number.",
+              "type": "Essential",
+              "reportLocation": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+2025-10-26 11:19:21,979 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2025-10-26 11:19:21,980 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2025-10-26 11:19:21,980 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:223] - CLI 'run' command initiated.
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:232] - Dataset selection: Suda2025 dataset enabled
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:254] - Effective Model ID: gpt-5
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:260] - Specific Paper IDs: ['Suda2025_15', 'Suda2025_17', 'Suda2025_18', 'Suda2025_5', 'Suda2025_7'] (5 papers)
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:270] - Format Type: Using pipeline default.
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:296] - GPT-5 Reasoning Effort: minimal
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:313] - Function Calling Schema Type: simple
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:338] - Checklist format: md
+2025-10-26 11:19:21,980 - __main__ - INFO - [main.py:414] - BO∞ sampling disabled (use --bo-mode to enable).
+2025-10-26 11:19:21,980 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:59] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-10-26 11:19:21,980 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:65] - Starting evaluation pipeline for 5 papers. Model: 'gpt-5', Format Type: 'refactored_pipeline_default'.
+2025-10-26 11:19:21,980 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:74] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-10-26 11:19:21,981 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:90] - PRISMA checklists loaded successfully.
+2025-10-26 11:19:21,991 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:111] - Human annotations loaded successfully.
+2025-10-26 11:19:21,994 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:120] - Loading specific paper IDs: ['Suda2025_15', 'Suda2025_17', 'Suda2025_18', 'Suda2025_5', 'Suda2025_7']
+2025-10-26 11:19:21,998 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Suda2025_15: Suda2025-SR文献_15.json
+2025-10-26 11:19:22,000 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Suda2025_17: Suda2025-SR文献_17.json
+2025-10-26 11:19:22,001 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Suda2025_18: Suda2025-SR文献_18.json
+2025-10-26 11:19:22,002 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Suda2025_5: Suda2025-SR文献_5.json
+2025-10-26 11:19:22,004 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Suda2025_7: Suda2025-SR文献_7.json
+2025-10-26 11:19:22,006 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:140] - Found 5 structured data files to process (limit was 5).
+2025-10-26 11:19:22,006 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:168] - Using CLI reasoning effort: minimal
+2025-10-26 11:19:22,006 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:171] - Using CLI schema type: simple
+2025-10-26 11:19:22,007 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:174] - Using checklist format: md
+2025-10-26 11:19:22,310 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:102] - GPT5Evaluator initialized. Verbosity: low, Reasoning: minimal, CFG: True, Freeform: True, Schema: simple
+2025-10-26 11:19:22,310 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:180] - Initialized GPT-5 Evaluator for model: gpt-5
+2025-10-26 11:19:22,310 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:451] - Dispatching 5 paper evaluation tasks.
+2025-10-26 11:19:22,310 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Suda2025-SR文献_15.json
+2025-10-26 11:19:22,349 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Suda2025_15 (from file: Suda2025-SR文献_15.json)
+2025-10-26 11:19:22,357 - prisma_evaluator.core.tasks - INFO - [tasks.py:151] - Section split saved: /home/devcontainers/PRISMA-AI/results/section_splits/2025-10-26/Suda2025_15_split.json
+2025-10-26 11:19:22,357 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_15 (main)
+2025-10-26 11:19:22,357 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_15', type 'main', model 'gpt-5'.
+2025-10-26 11:19:22,361 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Suda2025-SR文献_17.json
+2025-10-26 11:19:22,410 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Suda2025_17 (from file: Suda2025-SR文献_17.json)
+2025-10-26 11:19:22,414 - prisma_evaluator.core.tasks - INFO - [tasks.py:151] - Section split saved: /home/devcontainers/PRISMA-AI/results/section_splits/2025-10-26/Suda2025_17_split.json
+2025-10-26 11:19:22,414 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_17 (main)
+2025-10-26 11:19:22,414 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_17', type 'main', model 'gpt-5'.
+2025-10-26 11:19:22,417 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Suda2025-SR文献_18.json
+2025-10-26 11:19:22,427 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Suda2025_18 (from file: Suda2025-SR文献_18.json)
+2025-10-26 11:19:22,432 - prisma_evaluator.core.tasks - INFO - [tasks.py:151] - Section split saved: /home/devcontainers/PRISMA-AI/results/section_splits/2025-10-26/Suda2025_18_split.json
+2025-10-26 11:19:22,432 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_18 (main)
+2025-10-26 11:19:22,432 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_18', type 'main', model 'gpt-5'.
+2025-10-26 11:19:22,435 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Suda2025-SR文献_5.json
+2025-10-26 11:19:22,458 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Suda2025_5 (from file: Suda2025-SR文献_5.json)
+2025-10-26 11:19:22,464 - prisma_evaluator.core.tasks - INFO - [tasks.py:151] - Section split saved: /home/devcontainers/PRISMA-AI/results/section_splits/2025-10-26/Suda2025_5_split.json
+2025-10-26 11:19:22,464 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_5 (main)
+2025-10-26 11:19:22,464 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_5', type 'main', model 'gpt-5'.
+2025-10-26 11:19:22,466 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Suda2025-SR文献_7.json
+2025-10-26 11:19:22,470 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Suda2025_7 (from file: Suda2025-SR文献_7.json)
+2025-10-26 11:19:22,475 - prisma_evaluator.core.tasks - INFO - [tasks.py:151] - Section split saved: /home/devcontainers/PRISMA-AI/results/section_splits/2025-10-26/Suda2025_7_split.json
+2025-10-26 11:19:22,475 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_7 (main)
+2025-10-26 11:19:22,475 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_7', type 'main', model 'gpt-5'.
+2025-10-26 11:19:45,307 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_17', type 'main'. Items: 1
+2025-10-26 11:19:45,308 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-10-26 11:19:45,308 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_17: 42 total items, 0 final failures, 0 retry attempts, 22.89s
+2025-10-26 11:19:45,308 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Suda2025_17'.
+2025-10-26 11:19:45,308 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Suda2025_17' for abstract evaluation.
+2025-10-26 11:19:45,308 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_17 (abstract)
+2025-10-26 11:19:45,308 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_17', type 'abstract', model 'gpt-5'.
+2025-10-26 11:19:45,579 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_15', type 'main'. Items: 1
+2025-10-26 11:19:45,579 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-10-26 11:19:45,580 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_15: 42 total items, 0 final failures, 0 retry attempts, 23.22s
+2025-10-26 11:19:45,580 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Suda2025_15'.
+2025-10-26 11:19:45,580 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Suda2025_15' for abstract evaluation.
+2025-10-26 11:19:45,580 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_15 (abstract)
+2025-10-26 11:19:45,580 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_15', type 'abstract', model 'gpt-5'.
+2025-10-26 11:19:50,285 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_15', type 'abstract'. Items: 1
+2025-10-26 11:19:50,286 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-10-26 11:19:50,286 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_15: 12 total items, 0 final failures, 0 retry attempts, 4.71s
+2025-10-26 11:19:50,287 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Suda2025_15'.
+2025-10-26 11:19:50,287 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Suda2025_15'.
+2025-10-26 11:19:51,014 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_18', type 'main'. Items: 1
+2025-10-26 11:19:51,015 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-10-26 11:19:51,015 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_18: 42 total items, 0 final failures, 0 retry attempts, 28.58s
+2025-10-26 11:19:51,015 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Suda2025_18'.
+2025-10-26 11:19:51,015 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Suda2025_18' for abstract evaluation.
+2025-10-26 11:19:51,016 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_18 (abstract)
+2025-10-26 11:19:51,016 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_18', type 'abstract', model 'gpt-5'.
+2025-10-26 11:19:51,729 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_7', type 'main'. Items: 1
+2025-10-26 11:19:51,730 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-10-26 11:19:51,730 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_7: 42 total items, 0 final failures, 0 retry attempts, 29.25s
+2025-10-26 11:19:51,730 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Suda2025_7'.
+2025-10-26 11:19:51,730 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Suda2025_7' for abstract evaluation.
+2025-10-26 11:19:51,730 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_7 (abstract)
+2025-10-26 11:19:51,731 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_7', type 'abstract', model 'gpt-5'.
+2025-10-26 11:19:53,052 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_5', type 'main'. Items: 1
+2025-10-26 11:19:53,054 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-10-26 11:19:53,054 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_5: 42 total items, 0 final failures, 0 retry attempts, 30.59s
+2025-10-26 11:19:53,054 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Suda2025_5'.
+2025-10-26 11:19:53,055 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Suda2025_5' for abstract evaluation.
+2025-10-26 11:19:53,055 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_5 (abstract)
+2025-10-26 11:19:53,055 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Suda2025_5', type 'abstract', model 'gpt-5'.
+2025-10-26 11:19:56,171 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_7', type 'abstract'. Items: 1
+2025-10-26 11:19:56,172 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-10-26 11:19:56,172 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_7: 12 total items, 0 final failures, 0 retry attempts, 4.44s
+2025-10-26 11:19:56,172 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Suda2025_7'.
+2025-10-26 11:19:56,172 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Suda2025_7'.
+2025-10-26 11:20:07,721 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_17', type 'abstract'. Items: 1
+2025-10-26 11:20:07,721 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-10-26 11:20:07,721 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_17: 12 total items, 0 final failures, 0 retry attempts, 22.41s
+2025-10-26 11:20:07,722 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Suda2025_17'.
+2025-10-26 11:20:07,722 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Suda2025_17'.
+2025-10-26 11:20:10,645 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_18', type 'abstract'. Items: 1
+2025-10-26 11:20:10,646 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-10-26 11:20:10,646 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_18: 12 total items, 0 final failures, 0 retry attempts, 19.63s
+2025-10-26 11:20:10,646 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Suda2025_18'.
+2025-10-26 11:20:10,647 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Suda2025_18'.
+2025-10-26 11:20:29,588 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Suda2025_5', type 'abstract'. Items: 1
+2025-10-26 11:20:29,589 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-10-26 11:20:29,589 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_5: 12 total items, 0 final failures, 0 retry attempts, 36.53s
+2025-10-26 11:20:29,589 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Suda2025_5'.
+2025-10-26 11:20:29,590 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Suda2025_5'.
+2025-10-26 11:20:29,590 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:476] - Successfully completed 5 AI paper evaluations.
+2025-10-26 11:20:29,596 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:529] - Calculating accuracy metrics...
+2025-10-26 11:20:29,597 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 5 AI-evaluated papers.
+2025-10-26 11:20:29,597 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Suda2025_15: Extra AI evaluations for main items: ['2']
+2025-10-26 11:20:29,597 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Suda2025_15: AI evaluated 42 main items, expected 41 items
+2025-10-26 11:20:29,598 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Suda2025_15: AI evaluated 12 abstract items, expected 12 items
+2025-10-26 11:20:29,599 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Suda2025_17: Extra AI evaluations for main items: ['2']
+2025-10-26 11:20:29,599 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Suda2025_17: AI evaluated 42 main items, expected 41 items
+2025-10-26 11:20:29,599 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Suda2025_17: AI evaluated 12 abstract items, expected 12 items
+2025-10-26 11:20:29,600 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Suda2025_18: Extra AI evaluations for main items: ['2']
+2025-10-26 11:20:29,600 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Suda2025_18: AI evaluated 42 main items, expected 41 items
+2025-10-26 11:20:29,602 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Suda2025_18: AI evaluated 12 abstract items, expected 12 items
+2025-10-26 11:20:29,603 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Suda2025_5: Extra AI evaluations for main items: ['2']
+2025-10-26 11:20:29,603 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Suda2025_5: AI evaluated 42 main items, expected 41 items
+2025-10-26 11:20:29,603 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Suda2025_5: AI evaluated 12 abstract items, expected 12 items
+2025-10-26 11:20:29,604 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Suda2025_7: Extra AI evaluations for main items: ['2']
+2025-10-26 11:20:29,606 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Suda2025_7: AI evaluated 42 main items, expected 41 items
+2025-10-26 11:20:29,607 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Suda2025_7: AI evaluated 12 abstract items, expected 12 items
+2025-10-26 11:20:29,608 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 75.47% (200/265)
+2025-10-26 11:20:29,609 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:550] - Accuracy metrics calculated.
+2025-10-26 11:20:29,609 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:573] - Creating unified evaluation result...
+2025-10-26 11:20:29,609 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:590] - Saving unified evaluation result...
+2025-10-26 11:20:29,609 - prisma_evaluator.data_io.savers - INFO - [savers.py:193] - Saving unified evaluation result to /home/devcontainers/PRISMA-AI/results/evaluator_output/20251026_112029.json
+2025-10-26 11:20:29,646 - prisma_evaluator.data_io.savers - INFO - [savers.py:207] - Unified evaluation result saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/20251026_112029.json
+2025-10-26 11:20:29,647 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:595] - Unified evaluation result saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/20251026_112029.json
+2025-10-26 11:20:29,647 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:599] - Evaluation pipeline finished for experiment '20251026_111921', model 'gpt-5', format 'refactored_pipeline_default'.
+2025-10-26 11:20:29,651 - __main__ - INFO - [main.py:442] - PRISMA evaluation pipeline completed successfully via CLI.
