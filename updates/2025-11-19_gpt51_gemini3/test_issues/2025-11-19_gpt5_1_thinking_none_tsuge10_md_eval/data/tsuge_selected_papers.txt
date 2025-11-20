@@ -1,0 +1,13 @@
+# Tsuge2025 PRISMA random 10-paper subset for GPT-5.1 evaluation
+# seed: 20250928 (copied from test/issues/2025-09-28_tsuge_random10_gpt4o_qwen_ensemble/data/selected_papers.txt)
+# dataset: tsuge-prisma (ENABLE_TSUGE_PRISMA=true)
+Tsuge2025_PRISMA2020_14
+Tsuge2025_PRISMA2020_20
+Tsuge2025_PRISMA2020_22
+Tsuge2025_PRISMA2020_26
+Tsuge2025_PRISMA2020_68
+Tsuge2025_PRISMA2020_74
+Tsuge2025_PRISMA2020_76
+Tsuge2025_PRISMA2020_80
+Tsuge2025_PRISMA2020_89
+Tsuge2025_PRISMA2020_120

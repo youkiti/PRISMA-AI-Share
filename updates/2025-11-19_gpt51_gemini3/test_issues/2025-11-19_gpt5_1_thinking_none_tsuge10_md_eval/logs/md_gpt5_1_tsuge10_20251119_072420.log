@@ -1,0 +1,6 @@
+[info] start Tsuge md × GPT-5.1 none-reasoning run (md_gpt5_1_tsuge10_20251119_072420)
+Usage: python -m prisma_evaluator.cli.main run [OPTIONS]
+Try 'python -m prisma_evaluator.cli.main run --help' for help.
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ No such option: --schema-type                                                │
+╰──────────────────────────────────────────────────────────────────────────────╯

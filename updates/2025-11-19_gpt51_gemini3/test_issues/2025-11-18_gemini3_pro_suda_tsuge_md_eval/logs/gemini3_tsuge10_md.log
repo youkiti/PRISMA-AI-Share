@@ -1,0 +1,240 @@
+2025-11-19 06:54:11,155 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2025-11-19 06:54:11,155 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2025-11-19 06:54:11,155 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2025-11-19 06:54:11,155 - __main__ - INFO - [main.py:96] - CLI 'run' command initiated.
+2025-11-19 06:54:11,155 - __main__ - INFO - [main.py:115] - Dataset selection: Tsuge2025-PRISMA dataset enabled
+2025-11-19 06:54:11,155 - __main__ - INFO - [main.py:127] - Effective Model ID: gemini-2.5-pro
+2025-11-19 06:54:11,155 - __main__ - INFO - [main.py:128] - Effective Number of Papers: 5
+2025-11-19 06:54:11,155 - __main__ - INFO - [main.py:131] - Checklist format override: md
+2025-11-19 06:54:11,155 - __main__ - INFO - [main.py:143] - Restricting evaluation to 10 paper IDs.
+2025-11-19 06:54:11,155 - __main__ - INFO - [main.py:149] - Gemini Model: gemini-3-pro-preview
+2025-11-19 06:54:11,156 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:36] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-11-19 06:54:11,156 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:42] - Starting evaluation pipeline for 5 papers. Model: 'gemini-2.5-pro', Format Type: 'md'.
+2025-11-19 06:54:11,156 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:51] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-11-19 06:54:11,157 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:67] - PRISMA checklists loaded successfully.
+2025-11-19 06:54:11,181 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:88] - Human annotations loaded successfully.
+2025-11-19 06:54:11,183 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_14: Tsuge2025-PRISMA_14.json
+2025-11-19 06:54:11,190 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_20: Tsuge2025-PRISMA_20.json
+2025-11-19 06:54:11,192 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_22: Tsuge2025-PRISMA_22.json
+2025-11-19 06:54:11,193 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_26: Tsuge2025-PRISMA_26.json
+2025-11-19 06:54:11,194 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_68: Tsuge2025-PRISMA_68.json
+2025-11-19 06:54:11,195 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_74: Tsuge2025-PRISMA_74.json
+2025-11-19 06:54:11,196 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_76: Tsuge2025-PRISMA_76.json
+2025-11-19 06:54:11,197 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_80: Tsuge2025-PRISMA_80.json
+2025-11-19 06:54:11,198 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_89: Tsuge2025-PRISMA_89.json
+2025-11-19 06:54:11,199 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_120: Tsuge2025-PRISMA_120.json
+2025-11-19 06:54:11,199 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:123] - Paper ID filter active: requested 10 paper(s), located 10 file(s).
+2025-11-19 06:54:11,199 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:143] - Found 10 structured data files to process (limit was 5).
+2025-11-19 06:54:11,199 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:158] - Using CLI-specified Gemini model: gemini-3-pro-preview
+2025-11-19 06:54:11,200 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:86] - Model: gemini-3-pro-preview, Temperature: 1.0, Thinking Level: high, Thinking Budget: None
+2025-11-19 06:54:11,521 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:98] - Google Gemini Direct API client initialized with model: gemini-3-pro-preview
+2025-11-19 06:54:11,522 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:183] - Initialized Gemini Direct Evaluator: gemini-3-pro-preview
+2025-11-19 06:54:11,522 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:215] - Paper-level concurrency limit: 3
+2025-11-19 06:54:11,522 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:258] - Dispatching 10 paper evaluation tasks.
+2025-11-19 06:54:11,522 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_120.json
+2025-11-19 06:54:11,561 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_120 (from file: Tsuge2025-PRISMA_120.json)
+2025-11-19 06:54:11,561 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (main)
+2025-11-19 06:54:11,564 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_120: 42項目
+2025-11-19 06:54:11,596 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_14.json
+2025-11-19 06:54:11,601 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_14 (from file: Tsuge2025-PRISMA_14.json)
+2025-11-19 06:54:11,601 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (main)
+2025-11-19 06:54:11,602 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_14: 42項目
+2025-11-19 06:54:11,604 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_20.json
+2025-11-19 06:54:11,608 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_20 (from file: Tsuge2025-PRISMA_20.json)
+2025-11-19 06:54:11,608 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (main)
+2025-11-19 06:54:11,609 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_20: 42項目
+2025-11-19 06:55:20,534 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 68.93s
+2025-11-19 06:55:20,535 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:55:20,535 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 42 total items, 0 final failures, 0 retry attempts, 63.21s
+2025-11-19 06:55:20,535 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 06:55:20,535 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_14' for abstract evaluation.
+2025-11-19 06:55:20,535 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (abstract)
+2025-11-19 06:55:20,536 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_14: 12項目
+2025-11-19 06:55:34,951 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 83.39s
+2025-11-19 06:55:34,952 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:55:34,952 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 42 total items, 0 final failures, 0 retry attempts, 77.67s
+2025-11-19 06:55:34,952 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2025-11-19 06:55:34,953 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_120' for abstract evaluation.
+2025-11-19 06:55:34,953 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (abstract)
+2025-11-19 06:55:34,954 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_120: 12項目
+2025-11-19 06:55:37,071 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 16.53s
+2025-11-19 06:55:37,072 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:55:37,072 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 12 total items, 0 final failures, 0 retry attempts, 16.54s
+2025-11-19 06:55:37,072 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 06:55:37,073 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 06:55:37,073 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_22.json
+2025-11-19 06:55:37,120 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_22 (from file: Tsuge2025-PRISMA_22.json)
+2025-11-19 06:55:37,120 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (main)
+2025-11-19 06:55:37,121 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_22: 42項目
+2025-11-19 06:55:41,428 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 89.82s
+2025-11-19 06:55:41,428 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:55:41,429 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 42 total items, 0 final failures, 0 retry attempts, 84.10s
+2025-11-19 06:55:41,429 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2025-11-19 06:55:41,429 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_20' for abstract evaluation.
+2025-11-19 06:55:41,429 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (abstract)
+2025-11-19 06:55:41,430 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_20: 12項目
+2025-11-19 06:55:54,054 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 19.10s
+2025-11-19 06:55:54,055 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:55:54,055 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 12 total items, 0 final failures, 0 retry attempts, 16.79s
+2025-11-19 06:55:54,055 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2025-11-19 06:55:54,056 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_120'.
+2025-11-19 06:55:54,056 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_26.json
+2025-11-19 06:55:54,074 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_26 (from file: Tsuge2025-PRISMA_26.json)
+2025-11-19 06:55:54,076 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (main)
+2025-11-19 06:55:54,079 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_26: 42項目
+2025-11-19 06:56:19,865 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 38.43s
+2025-11-19 06:56:19,866 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:56:19,866 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 12 total items, 0 final failures, 0 retry attempts, 36.13s
+2025-11-19 06:56:19,866 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2025-11-19 06:56:19,866 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_20'.
+2025-11-19 06:56:19,866 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_68.json
+2025-11-19 06:56:19,889 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_68 (from file: Tsuge2025-PRISMA_68.json)
+2025-11-19 06:56:19,889 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (main)
+2025-11-19 06:56:19,891 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_68: 42項目
+2025-11-19 06:57:26,178 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 92.10s
+2025-11-19 06:57:26,187 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:57:26,187 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 42 total items, 0 final failures, 0 retry attempts, 86.54s
+2025-11-19 06:57:26,188 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2025-11-19 06:57:26,188 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_26' for abstract evaluation.
+2025-11-19 06:57:26,188 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (abstract)
+2025-11-19 06:57:26,189 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_26: 12項目
+2025-11-19 06:57:44,748 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 84.86s
+2025-11-19 06:57:44,749 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:57:44,749 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 42 total items, 0 final failures, 0 retry attempts, 76.35s
+2025-11-19 06:57:44,749 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2025-11-19 06:57:44,750 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_68' for abstract evaluation.
+2025-11-19 06:57:44,750 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (abstract)
+2025-11-19 06:57:44,752 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_68: 12項目
+2025-11-19 06:57:50,903 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 133.78s
+2025-11-19 06:57:50,904 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:57:50,904 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 42 total items, 0 final failures, 0 retry attempts, 122.96s
+2025-11-19 06:57:50,904 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2025-11-19 06:57:50,904 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_22' for abstract evaluation.
+2025-11-19 06:57:50,904 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (abstract)
+2025-11-19 06:57:50,905 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_22: 12項目
+2025-11-19 06:57:52,324 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 26.13s
+2025-11-19 06:57:52,324 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:57:52,325 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 12 total items, 0 final failures, 0 retry attempts, 23.20s
+2025-11-19 06:57:52,325 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2025-11-19 06:57:52,325 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_26'.
+2025-11-19 06:57:52,325 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_74.json
+2025-11-19 06:57:52,353 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_74 (from file: Tsuge2025-PRISMA_74.json)
+2025-11-19 06:57:52,354 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (main)
+2025-11-19 06:57:52,356 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_74: 42項目
+2025-11-19 06:58:02,971 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 18.22s
+2025-11-19 06:58:02,972 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:58:02,972 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 12 total items, 0 final failures, 0 retry attempts, 18.22s
+2025-11-19 06:58:02,972 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2025-11-19 06:58:02,972 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_68'.
+2025-11-19 06:58:02,973 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_76.json
+2025-11-19 06:58:03,016 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_76 (from file: Tsuge2025-PRISMA_76.json)
+2025-11-19 06:58:03,016 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (main)
+2025-11-19 06:58:03,017 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_76: 42項目
+2025-11-19 06:58:23,120 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 32.21s
+2025-11-19 06:58:23,120 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:58:23,121 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 12 total items, 0 final failures, 0 retry attempts, 29.28s
+2025-11-19 06:58:23,121 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2025-11-19 06:58:23,121 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_22'.
+2025-11-19 06:58:23,121 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_80.json
+2025-11-19 06:58:23,150 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_80 (from file: Tsuge2025-PRISMA_80.json)
+2025-11-19 06:58:23,150 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (main)
+2025-11-19 06:58:23,152 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_80: 42項目
+2025-11-19 06:59:01,665 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 69.31s
+2025-11-19 06:59:01,666 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:59:01,667 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 42 total items, 0 final failures, 0 retry attempts, 63.44s
+2025-11-19 06:59:01,667 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2025-11-19 06:59:01,667 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_74' for abstract evaluation.
+2025-11-19 06:59:01,667 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (abstract)
+2025-11-19 06:59:01,668 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_74: 12項目
+2025-11-19 06:59:13,510 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 70.49s
+2025-11-19 06:59:13,511 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:59:13,511 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 42 total items, 0 final failures, 0 retry attempts, 64.63s
+2025-11-19 06:59:13,511 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2025-11-19 06:59:13,511 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_76' for abstract evaluation.
+2025-11-19 06:59:13,512 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (abstract)
+2025-11-19 06:59:13,513 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_76: 12項目
+2025-11-19 06:59:25,759 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 24.09s
+2025-11-19 06:59:25,761 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:59:25,761 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 12 total items, 0 final failures, 0 retry attempts, 21.14s
+2025-11-19 06:59:25,761 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2025-11-19 06:59:25,761 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_74'.
+2025-11-19 06:59:25,762 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_89.json
+2025-11-19 06:59:25,794 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_89 (from file: Tsuge2025-PRISMA_89.json)
+2025-11-19 06:59:25,795 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (main)
+2025-11-19 06:59:25,796 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_89: 42項目
+2025-11-19 06:59:32,333 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 18.82s
+2025-11-19 06:59:32,333 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:59:32,333 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 12 total items, 0 final failures, 0 retry attempts, 15.87s
+2025-11-19 06:59:32,334 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2025-11-19 06:59:32,334 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_76'.
+2025-11-19 06:59:54,653 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 91.50s
+2025-11-19 06:59:54,654 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:59:54,654 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 42 total items, 0 final failures, 0 retry attempts, 85.62s
+2025-11-19 06:59:54,654 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2025-11-19 06:59:54,654 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_80' for abstract evaluation.
+2025-11-19 06:59:54,654 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (abstract)
+2025-11-19 06:59:54,655 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_80: 12項目
+2025-11-19 07:00:25,611 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 30.96s
+2025-11-19 07:00:25,612 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:00:25,612 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 12 total items, 0 final failures, 0 retry attempts, 28.03s
+2025-11-19 07:00:25,612 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2025-11-19 07:00:25,613 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_80'.
+2025-11-19 07:00:59,367 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 93.57s
+2025-11-19 07:00:59,368 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:00:59,368 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 42 total items, 0 final failures, 0 retry attempts, 87.70s
+2025-11-19 07:00:59,368 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2025-11-19 07:00:59,369 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_89' for abstract evaluation.
+2025-11-19 07:00:59,369 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (abstract)
+2025-11-19 07:00:59,370 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_89: 12項目
+2025-11-19 07:01:26,846 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 27.47s
+2025-11-19 07:01:26,846 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:01:26,847 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 12 total items, 0 final failures, 0 retry attempts, 24.54s
+2025-11-19 07:01:26,850 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2025-11-19 07:01:26,850 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_89'.
+2025-11-19 07:01:26,851 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:283] - Successfully completed 10 AI paper evaluations.
+2025-11-19 07:01:26,851 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:288] - Calculating accuracy metrics...
+2025-11-19 07:01:26,851 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 10 AI-evaluated papers.
+2025-11-19 07:01:26,851 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_120: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,852 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,852 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,853 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_14: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,853 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,853 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,853 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_20: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,853 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,854 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,854 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_22: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,854 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,854 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,854 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_26: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,855 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,855 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,855 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_68: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,855 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,855 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,856 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_74: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,856 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,856 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,856 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_76: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,856 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,856 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,857 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_80: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,857 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,866 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,866 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_89: Extra AI evaluations for main items: ['2']
+2025-11-19 07:01:26,866 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:01:26,867 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:01:26,867 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 81.32% (431/530)
+2025-11-19 07:01:26,867 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:309] - Accuracy metrics calculated.
+2025-11-19 07:01:26,867 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:317] - Saving all processed results...
+2025-11-19 07:01:26,867 - prisma_evaluator.data_io.savers - INFO - [savers.py:45] - Saving AI evaluations to /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,875 - prisma_evaluator.data_io.savers - INFO - [savers.py:51] - AI evaluation results saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,877 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:322] - AI evaluations saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,883 - prisma_evaluator.data_io.savers - INFO - [savers.py:71] - Saving accuracy summary to /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,884 - prisma_evaluator.data_io.savers - INFO - [savers.py:83] - Accuracy summary saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,884 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:329] - Accuracy summary saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,885 - prisma_evaluator.data_io.savers - INFO - [savers.py:107] - Saving comparison details to /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,891 - prisma_evaluator.data_io.savers - INFO - [savers.py:112] - Comparison details saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,891 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:337] - Comparison details saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gemini-2.5-pro_md_20251119_070126.json
+2025-11-19 07:01:26,891 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:342] - Evaluation pipeline finished for model 'gemini-2.5-pro', format 'md'.
+2025-11-19 07:01:26,897 - __main__ - INFO - [main.py:182] - PRISMA evaluation pipeline completed successfully via CLI.
