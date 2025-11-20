@@ -1,0 +1,240 @@
+[info] start Tsuge md × GPT-5.1 high-reasoning run (md_gpt5_1_tsuge10_high_20251119_073254)
+2025-11-19 07:32:55,079 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2025-11-19 07:32:55,079 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2025-11-19 07:32:55,079 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2025-11-19 07:32:55,079 - __main__ - INFO - [main.py:96] - CLI 'run' command initiated.
+2025-11-19 07:32:55,079 - __main__ - INFO - [main.py:115] - Dataset selection: Tsuge2025-PRISMA dataset enabled
+2025-11-19 07:32:55,079 - __main__ - INFO - [main.py:127] - Effective Model ID: gpt-5.1
+2025-11-19 07:32:55,079 - __main__ - INFO - [main.py:128] - Effective Number of Papers: 5
+2025-11-19 07:32:55,079 - __main__ - INFO - [main.py:131] - Checklist format override: md
+2025-11-19 07:32:55,079 - __main__ - INFO - [main.py:143] - Restricting evaluation to 10 paper IDs.
+2025-11-19 07:32:55,080 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:37] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-11-19 07:32:55,080 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:43] - Starting evaluation pipeline for 5 papers. Model: 'gpt-5.1', Format Type: 'md'.
+2025-11-19 07:32:55,080 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:52] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-11-19 07:32:55,080 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:68] - PRISMA checklists loaded successfully.
+2025-11-19 07:32:55,097 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:89] - Human annotations loaded successfully.
+2025-11-19 07:32:55,097 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:120] - Using structured data override directories: [PosixPath('/home/devcontainers/PRISMA-AI/supplement/data/tsuge2025/structured_prisma')]
+2025-11-19 07:32:55,099 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_14: Tsuge2025-PRISMA_14.json
+2025-11-19 07:32:55,099 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_20: Tsuge2025-PRISMA_20.json
+2025-11-19 07:32:55,100 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_22: Tsuge2025-PRISMA_22.json
+2025-11-19 07:32:55,101 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_26: Tsuge2025-PRISMA_26.json
+2025-11-19 07:32:55,102 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_68: Tsuge2025-PRISMA_68.json
+2025-11-19 07:32:55,103 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_74: Tsuge2025-PRISMA_74.json
+2025-11-19 07:32:55,103 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_76: Tsuge2025-PRISMA_76.json
+2025-11-19 07:32:55,104 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_80: Tsuge2025-PRISMA_80.json
+2025-11-19 07:32:55,105 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_89: Tsuge2025-PRISMA_89.json
+2025-11-19 07:32:55,105 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_120: Tsuge2025-PRISMA_120.json
+2025-11-19 07:32:55,105 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:124] - Paper ID filter active: requested 10 paper(s), located 10 file(s).
+2025-11-19 07:32:55,105 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:144] - Found 10 structured data files to process (limit was 5).
+2025-11-19 07:32:55,255 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:102] - GPT5Evaluator initialized. Verbosity: low, Reasoning: high, CFG: True, Freeform: True, Schema: simple
+2025-11-19 07:32:55,256 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:193] - Initialized GPT-5 Evaluator for model: gpt-5.1
+2025-11-19 07:32:55,256 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:342] - Paper-level concurrency limit: 3
+2025-11-19 07:32:55,256 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:385] - Dispatching 10 paper evaluation tasks.
+2025-11-19 07:32:55,257 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_120.json
+2025-11-19 07:32:55,283 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_120 (from file: Tsuge2025-PRISMA_120.json)
+2025-11-19 07:32:55,284 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (main)
+2025-11-19 07:32:55,284 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'main', model 'gpt-5.1'.
+2025-11-19 07:32:55,289 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_14.json
+2025-11-19 07:32:55,292 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_14 (from file: Tsuge2025-PRISMA_14.json)
+2025-11-19 07:32:55,292 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (main)
+2025-11-19 07:32:55,293 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_14', type 'main', model 'gpt-5.1'.
+2025-11-19 07:32:55,295 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_20.json
+2025-11-19 07:32:55,298 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_20 (from file: Tsuge2025-PRISMA_20.json)
+2025-11-19 07:32:55,298 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (main)
+2025-11-19 07:32:55,298 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_20', type 'main', model 'gpt-5.1'.
+2025-11-19 07:34:43,367 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_14', type 'main'. Items: 1
+2025-11-19 07:34:43,367 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:34:43,367 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 42 total items, 0 final failures, 0 retry attempts, 99.26s
+2025-11-19 07:34:43,367 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 07:34:43,367 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_14' for abstract evaluation.
+2025-11-19 07:34:43,367 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (abstract)
+2025-11-19 07:34:43,367 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_14', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:34:45,999 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_120', type 'main'. Items: 1
+2025-11-19 07:34:45,999 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:34:45,999 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 42 total items, 0 final failures, 0 retry attempts, 101.90s
+2025-11-19 07:34:45,999 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2025-11-19 07:34:45,999 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_120' for abstract evaluation.
+2025-11-19 07:34:45,999 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (abstract)
+2025-11-19 07:34:46,000 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:35:02,172 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_120', type 'abstract'. Items: 1
+2025-11-19 07:35:02,174 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:35:02,175 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 12 total items, 0 final failures, 0 retry attempts, 16.18s
+2025-11-19 07:35:02,175 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2025-11-19 07:35:02,175 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_120'.
+2025-11-19 07:35:02,175 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_22.json
+2025-11-19 07:35:02,205 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_22 (from file: Tsuge2025-PRISMA_22.json)
+2025-11-19 07:35:02,205 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (main)
+2025-11-19 07:35:02,205 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_22', type 'main', model 'gpt-5.1'.
+2025-11-19 07:35:10,167 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_14', type 'abstract'. Items: 1
+2025-11-19 07:35:10,168 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:35:10,168 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 12 total items, 0 final failures, 0 retry attempts, 23.87s
+2025-11-19 07:35:10,168 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 07:35:10,168 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 07:35:10,168 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_26.json
+2025-11-19 07:35:10,174 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_26 (from file: Tsuge2025-PRISMA_26.json)
+2025-11-19 07:35:10,175 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (main)
+2025-11-19 07:35:10,175 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_26', type 'main', model 'gpt-5.1'.
+2025-11-19 07:36:01,144 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_20', type 'main'. Items: 1
+2025-11-19 07:36:01,145 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:36:01,145 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 42 total items, 0 final failures, 0 retry attempts, 171.16s
+2025-11-19 07:36:01,146 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2025-11-19 07:36:01,146 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_20' for abstract evaluation.
+2025-11-19 07:36:01,146 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (abstract)
+2025-11-19 07:36:01,146 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_20', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:36:21,267 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_20', type 'abstract'. Items: 1
+2025-11-19 07:36:21,268 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:36:21,268 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 12 total items, 0 final failures, 0 retry attempts, 17.18s
+2025-11-19 07:36:21,269 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2025-11-19 07:36:21,269 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_20'.
+2025-11-19 07:36:21,269 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_68.json
+2025-11-19 07:36:21,287 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_68 (from file: Tsuge2025-PRISMA_68.json)
+2025-11-19 07:36:21,288 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (main)
+2025-11-19 07:36:21,288 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_68', type 'main', model 'gpt-5.1'.
+2025-11-19 07:36:43,800 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_22', type 'main'. Items: 1
+2025-11-19 07:36:43,801 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:36:43,801 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 42 total items, 0 final failures, 0 retry attempts, 92.78s
+2025-11-19 07:36:43,802 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2025-11-19 07:36:43,802 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_22' for abstract evaluation.
+2025-11-19 07:36:43,802 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (abstract)
+2025-11-19 07:36:43,802 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_22', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:37:12,139 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_22', type 'abstract'. Items: 1
+2025-11-19 07:37:12,140 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:37:12,140 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 12 total items, 0 final failures, 0 retry attempts, 25.40s
+2025-11-19 07:37:12,140 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2025-11-19 07:37:12,141 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_22'.
+2025-11-19 07:37:12,141 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_74.json
+2025-11-19 07:37:12,146 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_74 (from file: Tsuge2025-PRISMA_74.json)
+2025-11-19 07:37:12,146 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (main)
+2025-11-19 07:37:12,146 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_74', type 'main', model 'gpt-5.1'.
+2025-11-19 07:37:33,280 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_26', type 'main'. Items: 1
+2025-11-19 07:37:33,290 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:37:33,290 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 42 total items, 0 final failures, 0 retry attempts, 131.36s
+2025-11-19 07:37:33,290 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2025-11-19 07:37:33,291 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_26' for abstract evaluation.
+2025-11-19 07:37:33,291 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (abstract)
+2025-11-19 07:37:33,291 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_26', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:37:49,907 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_26', type 'abstract'. Items: 1
+2025-11-19 07:37:49,908 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:37:49,908 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 12 total items, 0 final failures, 0 retry attempts, 16.62s
+2025-11-19 07:37:49,908 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2025-11-19 07:37:49,908 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_26'.
+2025-11-19 07:37:49,909 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_76.json
+2025-11-19 07:37:49,950 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_76 (from file: Tsuge2025-PRISMA_76.json)
+2025-11-19 07:37:49,951 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (main)
+2025-11-19 07:37:49,952 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_76', type 'main', model 'gpt-5.1'.
+2025-11-19 07:37:57,072 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_68', type 'main'. Items: 1
+2025-11-19 07:37:57,073 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:37:57,073 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 42 total items, 0 final failures, 0 retry attempts, 89.91s
+2025-11-19 07:37:57,073 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2025-11-19 07:37:57,074 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_68' for abstract evaluation.
+2025-11-19 07:37:57,074 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (abstract)
+2025-11-19 07:37:57,074 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_68', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:38:49,433 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_68', type 'abstract'. Items: 1
+2025-11-19 07:38:49,434 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:38:49,434 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 12 total items, 0 final failures, 0 retry attempts, 46.48s
+2025-11-19 07:38:49,435 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2025-11-19 07:38:49,435 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_68'.
+2025-11-19 07:38:49,435 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_80.json
+2025-11-19 07:38:49,455 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_80 (from file: Tsuge2025-PRISMA_80.json)
+2025-11-19 07:38:49,455 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (main)
+2025-11-19 07:38:49,456 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_80', type 'main', model 'gpt-5.1'.
+2025-11-19 07:38:56,407 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_74', type 'main'. Items: 1
+2025-11-19 07:38:56,408 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:38:56,408 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 42 total items, 0 final failures, 0 retry attempts, 95.44s
+2025-11-19 07:38:56,408 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2025-11-19 07:38:56,408 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_74' for abstract evaluation.
+2025-11-19 07:38:56,409 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (abstract)
+2025-11-19 07:38:56,409 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_74', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:39:16,059 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_74', type 'abstract'. Items: 1
+2025-11-19 07:39:16,059 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:39:16,060 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 12 total items, 0 final failures, 0 retry attempts, 16.86s
+2025-11-19 07:39:16,060 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2025-11-19 07:39:16,060 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_74'.
+2025-11-19 07:39:16,061 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_89.json
+2025-11-19 07:39:16,086 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_89 (from file: Tsuge2025-PRISMA_89.json)
+2025-11-19 07:39:16,091 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (main)
+2025-11-19 07:39:16,092 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_89', type 'main', model 'gpt-5.1'.
+2025-11-19 07:39:28,563 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_76', type 'main'. Items: 1
+2025-11-19 07:39:28,563 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:39:28,563 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 42 total items, 0 final failures, 0 retry attempts, 89.94s
+2025-11-19 07:39:28,563 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2025-11-19 07:39:28,563 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_76' for abstract evaluation.
+2025-11-19 07:39:28,563 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (abstract)
+2025-11-19 07:39:28,563 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_76', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:39:46,949 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_76', type 'abstract'. Items: 1
+2025-11-19 07:39:46,949 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:39:46,949 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 12 total items, 0 final failures, 0 retry attempts, 18.39s
+2025-11-19 07:39:46,950 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2025-11-19 07:39:46,950 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_76'.
+2025-11-19 07:40:32,221 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_80', type 'main'. Items: 1
+2025-11-19 07:40:32,221 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:40:32,222 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 42 total items, 0 final failures, 0 retry attempts, 94.30s
+2025-11-19 07:40:32,222 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2025-11-19 07:40:32,222 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_80' for abstract evaluation.
+2025-11-19 07:40:32,222 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (abstract)
+2025-11-19 07:40:32,222 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_80', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:40:48,391 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_89', type 'main'. Items: 1
+2025-11-19 07:40:48,392 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 07:40:48,392 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 42 total items, 0 final failures, 0 retry attempts, 86.63s
+2025-11-19 07:40:48,392 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2025-11-19 07:40:48,392 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_89' for abstract evaluation.
+2025-11-19 07:40:48,392 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (abstract)
+2025-11-19 07:40:48,392 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_89', type 'abstract', model 'gpt-5.1'.
+2025-11-19 07:40:50,779 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_80', type 'abstract'. Items: 1
+2025-11-19 07:40:50,779 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:40:50,779 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 12 total items, 0 final failures, 0 retry attempts, 18.56s
+2025-11-19 07:40:50,779 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2025-11-19 07:40:50,779 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_80'.
+2025-11-19 07:41:32,171 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:585] - Successfully parsed GPT-5 response for 'Tsuge2025_PRISMA2020_89', type 'abstract'. Items: 1
+2025-11-19 07:41:32,171 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 07:41:32,171 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 12 total items, 0 final failures, 0 retry attempts, 40.85s
+2025-11-19 07:41:32,171 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2025-11-19 07:41:32,172 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_89'.
+2025-11-19 07:41:32,172 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:410] - Successfully completed 10 AI paper evaluations.
+2025-11-19 07:41:32,172 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:415] - Calculating accuracy metrics...
+2025-11-19 07:41:32,172 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 10 AI-evaluated papers.
+2025-11-19 07:41:32,172 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_120: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,172 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,172 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_14: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_20: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_22: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_26: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,173 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_68: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_74: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_76: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_80: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,174 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,175 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,175 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_89: Extra AI evaluations for main items: ['2']
+2025-11-19 07:41:32,175 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 42 main items, expected 41 items
+2025-11-19 07:41:32,175 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 07:41:32,175 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 80.19% (425/530)
+2025-11-19 07:41:32,175 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:436] - Accuracy metrics calculated.
+2025-11-19 07:41:32,175 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:444] - Saving all processed results...
+2025-11-19 07:41:32,181 - prisma_evaluator.data_io.savers - INFO - [savers.py:45] - Saving AI evaluations to /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,198 - prisma_evaluator.data_io.savers - INFO - [savers.py:51] - AI evaluation results saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,198 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:449] - AI evaluations saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,198 - prisma_evaluator.data_io.savers - INFO - [savers.py:71] - Saving accuracy summary to /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,202 - prisma_evaluator.data_io.savers - INFO - [savers.py:83] - Accuracy summary saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,202 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:456] - Accuracy summary saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,202 - prisma_evaluator.data_io.savers - INFO - [savers.py:107] - Saving comparison details to /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,207 - prisma_evaluator.data_io.savers - INFO - [savers.py:112] - Comparison details saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,207 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:464] - Comparison details saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gpt-5.1_md_20251119_074132.json
+2025-11-19 07:41:32,207 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:469] - Evaluation pipeline finished for model 'gpt-5.1', format 'md'.
+2025-11-19 07:41:32,210 - __main__ - INFO - [main.py:182] - PRISMA evaluation pipeline completed successfully via CLI.
+[info] copied comparison_details_gpt-5.1_md_20251119_074132.json -> /home/devcontainers/PRISMA-AI/test/issues/2025-11-19_gpt5_1_thinking_high_tsuge10_md_eval/results/md_gpt5_1_tsuge10_high_20251119_073254.json

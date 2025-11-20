@@ -1,0 +1,60 @@
+2025-11-19 06:52:33,580 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2025-11-19 06:52:33,580 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2025-11-19 06:52:33,580 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2025-11-19 06:52:33,580 - __main__ - INFO - [main.py:96] - CLI 'run' command initiated.
+2025-11-19 06:52:33,580 - __main__ - INFO - [main.py:115] - Dataset selection: Tsuge2025-PRISMA dataset enabled
+2025-11-19 06:52:33,580 - __main__ - INFO - [main.py:127] - Effective Model ID: gemini-2.5-pro
+2025-11-19 06:52:33,580 - __main__ - INFO - [main.py:128] - Effective Number of Papers: 5
+2025-11-19 06:52:33,580 - __main__ - INFO - [main.py:131] - Checklist format override: md
+2025-11-19 06:52:33,580 - __main__ - INFO - [main.py:143] - Restricting evaluation to 1 paper IDs.
+2025-11-19 06:52:33,580 - __main__ - INFO - [main.py:149] - Gemini Model: gemini-3-pro-preview
+2025-11-19 06:52:33,580 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:36] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-11-19 06:52:33,580 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:42] - Starting evaluation pipeline for 5 papers. Model: 'gemini-2.5-pro', Format Type: 'md'.
+2025-11-19 06:52:33,580 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:51] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-11-19 06:52:33,581 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:67] - PRISMA checklists loaded successfully.
+2025-11-19 06:52:33,596 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:88] - Human annotations loaded successfully.
+2025-11-19 06:52:33,597 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_14: Tsuge2025-PRISMA_14.json
+2025-11-19 06:52:33,597 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:123] - Paper ID filter active: requested 1 paper(s), located 1 file(s).
+2025-11-19 06:52:33,597 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:143] - Found 1 structured data files to process (limit was 5).
+2025-11-19 06:52:33,597 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:158] - Using CLI-specified Gemini model: gemini-3-pro-preview
+2025-11-19 06:52:33,598 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:86] - Model: gemini-3-pro-preview, Temperature: 1.0, Thinking Level: high, Thinking Budget: None
+2025-11-19 06:52:33,887 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:98] - Google Gemini Direct API client initialized with model: gemini-3-pro-preview
+2025-11-19 06:52:33,887 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:183] - Initialized Gemini Direct Evaluator: gemini-3-pro-preview
+2025-11-19 06:52:33,887 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:215] - Paper-level concurrency limit: 3
+2025-11-19 06:52:33,887 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:258] - Dispatching 1 paper evaluation tasks.
+2025-11-19 06:52:33,887 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_14.json
+2025-11-19 06:52:33,894 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_14 (from file: Tsuge2025-PRISMA_14.json)
+2025-11-19 06:52:33,895 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (main)
+2025-11-19 06:52:33,897 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_14: 42項目
+2025-11-19 06:53:19,226 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 42/42 items in 45.33s
+2025-11-19 06:53:19,226 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2025-11-19 06:53:19,226 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 42 total items, 0 final failures, 0 retry attempts, 42.49s
+2025-11-19 06:53:19,226 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 06:53:19,226 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_14' for abstract evaluation.
+2025-11-19 06:53:19,226 - GeminiDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (abstract)
+2025-11-19 06:53:19,227 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:715] - Starting Gemini Direct evaluation for Tsuge2025_PRISMA2020_14: 12項目
+2025-11-19 06:53:37,931 - prisma_evaluator.llm.gemini_direct_evaluator - INFO - [gemini_direct_evaluator.py:741] - Gemini Direct evaluation completed: 12/12 items in 18.70s
+2025-11-19 06:53:37,931 - GeminiDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2025-11-19 06:53:37,931 - GeminiDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 12 total items, 0 final failures, 0 retry attempts, 15.84s
+2025-11-19 06:53:37,931 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 06:53:37,931 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_14'.
+2025-11-19 06:53:37,931 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:283] - Successfully completed 1 AI paper evaluations.
+2025-11-19 06:53:37,931 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:288] - Calculating accuracy metrics...
+2025-11-19 06:53:37,931 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 1 AI-evaluated papers.
+2025-11-19 06:53:37,932 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_14: Extra AI evaluations for main items: ['2']
+2025-11-19 06:53:37,932 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 42 main items, expected 41 items
+2025-11-19 06:53:37,932 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 12 abstract items, expected 12 items
+2025-11-19 06:53:37,932 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 96.23% (51/53)
+2025-11-19 06:53:37,932 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:309] - Accuracy metrics calculated.
+2025-11-19 06:53:37,932 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:317] - Saving all processed results...
+2025-11-19 06:53:37,932 - prisma_evaluator.data_io.savers - INFO - [savers.py:45] - Saving AI evaluations to /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,938 - prisma_evaluator.data_io.savers - INFO - [savers.py:51] - AI evaluation results saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,938 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:322] - AI evaluations saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,938 - prisma_evaluator.data_io.savers - INFO - [savers.py:71] - Saving accuracy summary to /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,941 - prisma_evaluator.data_io.savers - INFO - [savers.py:83] - Accuracy summary saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,941 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:329] - Accuracy summary saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,941 - prisma_evaluator.data_io.savers - INFO - [savers.py:107] - Saving comparison details to /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,942 - prisma_evaluator.data_io.savers - INFO - [savers.py:112] - Comparison details saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,942 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:337] - Comparison details saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gemini-2.5-pro_md_20251119_065337.json
+2025-11-19 06:53:37,942 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:342] - Evaluation pipeline finished for model 'gemini-2.5-pro', format 'md'.
+2025-11-19 06:53:37,948 - __main__ - INFO - [main.py:182] - PRISMA evaluation pipeline completed successfully via CLI.

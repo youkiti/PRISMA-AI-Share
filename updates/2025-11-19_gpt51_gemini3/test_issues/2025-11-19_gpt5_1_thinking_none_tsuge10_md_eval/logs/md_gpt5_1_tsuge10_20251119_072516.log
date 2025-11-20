@@ -1,0 +1,36 @@
+[info] start Tsuge md × GPT-5.1 none-reasoning run (md_gpt5_1_tsuge10_20251119_072516)
+2025-11-19 07:25:16,420 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2025-11-19 07:25:16,425 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2025-11-19 07:25:16,425 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2025-11-19 07:25:16,425 - __main__ - INFO - [main.py:96] - CLI 'run' command initiated.
+2025-11-19 07:25:16,425 - __main__ - INFO - [main.py:115] - Dataset selection: Tsuge2025-PRISMA dataset enabled
+2025-11-19 07:25:16,425 - __main__ - INFO - [main.py:127] - Effective Model ID: gpt-5.1
+2025-11-19 07:25:16,425 - __main__ - INFO - [main.py:128] - Effective Number of Papers: 5
+2025-11-19 07:25:16,425 - __main__ - INFO - [main.py:131] - Checklist format override: md
+2025-11-19 07:25:16,425 - __main__ - INFO - [main.py:143] - Restricting evaluation to 10 paper IDs.
+2025-11-19 07:25:16,425 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:36] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-11-19 07:25:16,425 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:42] - Starting evaluation pipeline for 5 papers. Model: 'gpt-5.1', Format Type: 'md'.
+2025-11-19 07:25:16,425 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:51] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2025-11-19 07:25:16,426 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:67] - PRISMA checklists loaded successfully.
+2025-11-19 07:25:16,442 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:88] - Human annotations loaded successfully.
+2025-11-19 07:25:16,442 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:119] - Using structured data override directories: [PosixPath('/home/devcontainers/PRISMA-AI/supplement/data/tsuge2025/structured_prisma')]
+2025-11-19 07:25:16,443 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_14: Tsuge2025-PRISMA_14.json
+2025-11-19 07:25:16,443 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_20: Tsuge2025-PRISMA_20.json
+2025-11-19 07:25:16,444 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_22: Tsuge2025-PRISMA_22.json
+2025-11-19 07:25:16,445 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_26: Tsuge2025-PRISMA_26.json
+2025-11-19 07:25:16,446 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_68: Tsuge2025-PRISMA_68.json
+2025-11-19 07:25:16,447 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_74: Tsuge2025-PRISMA_74.json
+2025-11-19 07:25:16,448 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_76: Tsuge2025-PRISMA_76.json
+2025-11-19 07:25:16,449 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_80: Tsuge2025-PRISMA_80.json
+2025-11-19 07:25:16,449 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_89: Tsuge2025-PRISMA_89.json
+2025-11-19 07:25:16,450 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_120: Tsuge2025-PRISMA_120.json
+2025-11-19 07:25:16,450 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:123] - Paper ID filter active: requested 10 paper(s), located 10 file(s).
+2025-11-19 07:25:16,450 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:143] - Found 10 structured data files to process (limit was 5).
+2025-11-19 07:25:16,450 - prisma_evaluator.core.pipeline - ERROR - [pipeline.py:335] - Failed to initialize LLM Evaluator: name 'GPT5Evaluator' is not defined
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/core/pipeline.py", line 191, in run_evaluation_pipeline
+    evaluator: BaseEvaluator = GPT5Evaluator(**evaluator_kwargs)
+                               ^^^^^^^^^^^^^
+NameError: name 'GPT5Evaluator' is not defined. Did you mean: 'BaseEvaluator'?
+2025-11-19 07:25:16,452 - __main__ - INFO - [main.py:182] - PRISMA evaluation pipeline completed successfully via CLI.
+[warn] no new evaluator_output files were produced

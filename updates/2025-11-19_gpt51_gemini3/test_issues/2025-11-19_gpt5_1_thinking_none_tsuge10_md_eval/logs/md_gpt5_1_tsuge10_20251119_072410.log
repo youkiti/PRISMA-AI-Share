@@ -1,0 +1,17 @@
+[info] start Tsuge md × GPT-5.1 none-reasoning run (md_gpt5_1_tsuge10_20251119_072410)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/cli/main.py", line 8, in <module>
+    from ..logging_config import setup_logging
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/logging_config.py", line 6, in <module>
+    from prisma_evaluator.config.settings import settings # Import settings
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/config/__init__.py", line 2, in <module>
+    from .settings import settings
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/config/settings.py", line 12, in <module>
+    class Settings(BaseSettings):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/config/settings.py", line 40, in Settings
+    GPT5_VERBOSITY: Literal["low", "medium", "high"] = "low"  # Default low for yes/no responses
+                    ^^^^^^^
+NameError: name 'Literal' is not defined
