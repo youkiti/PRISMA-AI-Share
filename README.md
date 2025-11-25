@@ -151,3 +151,7 @@ The raw paper data used for evaluation is available at [https://doi.org/10.5281/
 
 This work was supported by a JSPS Grant-in-Aid for Scientific Research (Grant No. 25K13585) provided to Y.K.
 
+## Paper
+Kataoka Y, So R, Banno M, Tsujimoto Y, Takayama T, Yamagishi Y, Tsuge T, Yamamoto N, Suda C, Furukawa TA. Large language models for automated PRISMA 2020 adherence checking. arXiv. 2025. Available from: http://arxiv.org/abs/2511.16707
+  
+
