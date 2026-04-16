@@ -1,0 +1,65 @@
+cff-version: 1.2.0
+title: "PRISMA-AI: Large Language Models for Automated PRISMA 2020 Adherence Checking"
+message: "If you use this software, please cite both the software and the paper."
+type: software
+authors:
+  - family-names: Kataoka
+    given-names: Yuki
+    orcid: "https://orcid.org/0000-0001-8855-070X"
+  - family-names: So
+    given-names: Ryuhei
+  - family-names: Banno
+    given-names: Masahiro
+  - family-names: Tsujimoto
+    given-names: Yasushi
+  - family-names: Takayama
+    given-names: Takahiro
+  - family-names: Yamagishi
+    given-names: Yusuke
+  - family-names: Tsuge
+    given-names: Tomohisa
+  - family-names: Yamamoto
+    given-names: Nozomi
+  - family-names: Suda
+    given-names: Chisato
+  - family-names: Furukawa
+    given-names: "Toshi A."
+repository-code: "https://github.com/youkiti/PRISMA-AI-Share"
+license: MIT
+keywords:
+  - prisma
+  - systematic-review
+  - large-language-models
+  - automated-evaluation
+  - reporting-guidelines
+  - meta-analysis
+preferred-citation:
+  type: article
+  title: "Large language models for automated PRISMA 2020 adherence checking"
+  authors:
+    - family-names: Kataoka
+      given-names: Yuki
+    - family-names: So
+      given-names: Ryuhei
+    - family-names: Banno
+      given-names: Masahiro
+    - family-names: Tsujimoto
+      given-names: Yasushi
+    - family-names: Takayama
+      given-names: Takahiro
+    - family-names: Yamagishi
+      given-names: Yusuke
+    - family-names: Tsuge
+      given-names: Tomohisa
+    - family-names: Yamamoto
+      given-names: Nozomi
+    - family-names: Suda
+      given-names: Chisato
+    - family-names: Furukawa
+      given-names: "Toshi A."
+  year: 2025
+  url: "http://arxiv.org/abs/2511.16707"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.17547700"
+    description: "Evaluation dataset on Zenodo"

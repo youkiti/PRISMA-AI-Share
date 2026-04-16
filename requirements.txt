@@ -1,0 +1,24 @@
+# Core dependencies (pinned for reproducibility)
+pydantic>=2.11
+pydantic-settings>=2.10
+python-dotenv>=1.1
+typer>=0.17
+
+# AI/LLM dependencies
+openai>=1.100
+google-generativeai>=0.8
+anthropic>=0.66
+
+# Data processing
+pandas>=2.3
+numpy>=2.3
+
+# Metrics and evaluation
+scikit-learn>=1.7
+
+# Utilities
+pyyaml>=6.0
+toml>=0.10
+
+# Networking
+httpx>=0.28
