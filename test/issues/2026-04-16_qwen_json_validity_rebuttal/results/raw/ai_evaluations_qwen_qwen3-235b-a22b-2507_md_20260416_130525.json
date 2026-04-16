@@ -1,0 +1,346 @@
+[
+  {
+    "paper_id": "Suda2025_15",
+    "title": "Effect of Bougie Use on First-Attempt Success in Tracheal Intubations: A Systematic Review and Meta-Analysis.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "qwen/qwen3-235b-a22b-2507",
+      "model_version": "qwen/qwen3-235b-a22b-2507",
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 17489,
+      "token_usage": {
+        "prompt_tokens": 15460,
+        "input_tokens": 15460,
+        "completion_tokens": 2029,
+        "output_tokens": 2029,
+        "total_tokens": 17489,
+        "reasoning_tokens": 0
+      },
+      "processing_time": 28.638785,
+      "timestamp": "2026-04-16 13:04:57.329526"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "The title and text explicitly identify the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "The abstract is structured and includes key elements required by PRISMA 2020 for Abstracts, such as background, objectives, methods, results, and conclusions.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "The introduction provides context on endotracheal intubation, first-attempt success, and the role of the bougie, justifying the need for the review.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "The objective is explicitly stated: to assess the association between bougie use and first-attempt intubation success.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion and exclusion criteria are clearly specified, including study design, population, intervention, comparator, outcomes, and settings.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Databases (Ovid Cochrane, Embase, Medline, Scopus, Web of Science) and search dates (October 2022, updated June 2023) are reported.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "The search strategy is described in detail, including keywords and index terms; Appendix E1 is referenced for full strategies.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two reviewers independently screened titles/abstracts and full texts; disagreements resolved by consensus.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Data extraction was done by one investigator and cross-checked by a second; disagreements resolved by consensus.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary and secondary outcomes are listed and defined (e.g., first-attempt success, hypoxemia). It is implied all compatible results were sought.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "Other variables (e.g., setting, laryngoscopy type, Cormack-Lehane grade) are listed; assumptions about missing data are not explicitly described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "Risk of bias tools are specified (RoB 2 for RCTs, modified Newcastle-Ottawa for observational studies); one reviewer assessed, second cross-checked.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Risk ratio (RR) with 95% CI is stated as the effect measure for all outcomes.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Subgroup analyses are described (e.g., by setting, risk of bias), aligning with eligibility criteria.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "Methods for handling data (e.g., use of RR, random-effects model) are described, but handling of missing data is not detailed.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots and tables are used to display results; methods for tabulation are implied via software (Review Manager).",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects model is specified; heterogeneity assessed with I² and visual inspection; Review Manager software is named.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analyses (e.g., by setting, device, difficult airway) are described to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analyses are described, including exclusion of outlier studies like the BOUGIE trial.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plot was used to assess publication bias; asymmetry noted but not downgraded for certainty.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "yes",
+            "reason": "GRADE approach was used to assess certainty of evidence for each outcome.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Flow diagram (Figure 1) shows 2,699 records screened, 134 full-text assessed, 18 included; process clearly described.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "No list of excluded studies with reasons is provided in the main text or appendices.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 lists all 18 included studies with key characteristics (design, setting, population, etc.).",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias assessments are summarized in text and referenced in Appendix E3.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots (Figures 2–4) present effect estimates and CIs for each study; summary statistics are in Table 1 and text.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Characteristics and risk of bias of contributing studies are summarized for each synthesis (e.g., RCTs vs observational).",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled RRs, 95% CIs, and I² values are reported for all syntheses, including direction of effect.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Results of subgroup analyses (e.g., by setting, difficult airway) are presented to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analyses (e.g., excluding BOUGIE trial) are reported with results.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Funnel plot assessment of publication bias is presented in Appendix E4.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "yes",
+            "reason": "Certainty of evidence is graded as low overall and moderate for Cormack-Lehane III/IV subgroup.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Findings are interpreted in light of previous reviews (e.g., Sheu, Tollman) and clinical context.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included studies (risk of bias, heterogeneity, lack of experience reporting) are discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review limitations (e.g., inability to analyze by operator experience) are explicitly discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice (bougie-first strategy) and research (need for data on complications, training) are discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration number (CRD42023403212) is provided.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "Registration is mentioned, but no access point for the protocol is given.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No amendments to protocol are reported or explained.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "The study received no funding; sources of support and role of funders are clearly stated.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no conflicts of interest.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Data sharing statement indicates data and code are available upon request, but not publicly archived.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "model_version": "qwen/qwen3-235b-a22b-2507",
+          "format_type": "md",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 14778,
+          "token_usage": {
+            "prompt_tokens": 13228,
+            "input_tokens": 13228,
+            "completion_tokens": 1550,
+            "output_tokens": 1550,
+            "total_tokens": 14778,
+            "reasoning_tokens": 0
+          },
+          "processing_time": 21.23107848499967,
+          "timestamp": "2026-04-16 13:05:18.587005"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title includes 'A Systematic Review and Meta-Analysis', clearly identifying the report type.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "The discussion interprets results and suggests that bougie should probably be used first, not as a rescue device, indicating clinical implications.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "The abstract does not mention any funding source for the review.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "The abstract does not provide a registration name or number for the review.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The objective is explicitly stated: to evaluate the association between bougie use and first-attempt success in tracheal intubations.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Inclusion criteria are specified: studies on adults, comparing bougie vs no bougie; exclusion of manikin and cadaver studies is stated.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Databases used (Ovid Cochrane Central, Ovid Embase, etc.) and search date (inception to June 2023) are clearly reported.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "The abstract mentions that GRADE was used to assess certainty of evidence, which relates to risk of bias assessment.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Random-effects models for meta-analysis and use of risk ratios with confidence intervals are specified as synthesis methods.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Total included studies (18) and participants (9,151) are given, along with study design breakdown (12 RCTs).",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Main outcome results are presented with number of studies, participants, pooled RR (1.11), 95% CI, and direction of effect favoring bougie.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "Limitations are briefly summarized, including low certainty of evidence and variation in study settings.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "qwen/qwen3-235b-a22b-2507",
+          "model_version": "qwen/qwen3-235b-a22b-2507",
+          "format_type": "md",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 2711,
+          "token_usage": {
+            "prompt_tokens": 2232,
+            "input_tokens": 2232,
+            "completion_tokens": 479,
+            "output_tokens": 479,
+            "total_tokens": 2711,
+            "reasoning_tokens": 0
+          },
+          "processing_time": 7.792469270999391,
+          "timestamp": "2026-04-16 13:05:25.968108"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.4111111111111111,
+      "accuracy": 84.90566037735849,
+      "precision": 91.11111111111111,
+      "recall": 91.11111111111111,
+      "f1_score": 91.11111111111111,
+      "specificity": 50.0
+    }
+  }
+]

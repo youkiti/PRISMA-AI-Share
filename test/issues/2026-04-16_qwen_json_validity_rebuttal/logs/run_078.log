@@ -1,0 +1,66 @@
+[INFO] 2026-04-16T13:37:29+09:00 : Run 078/100
+2026-04-16 13:37:30,135 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2026-04-16 13:37:30,135 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2026-04-16 13:37:30,135 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2026-04-16 13:37:30,135 - __main__ - INFO - [main.py:107] - CLI 'run' command initiated.
+2026-04-16 13:37:30,135 - __main__ - INFO - [main.py:116] - Dataset selection: Suda2025 dataset enabled
+2026-04-16 13:37:30,135 - __main__ - INFO - [main.py:138] - Effective Model ID: qwen/qwen3-235b-a22b-2507
+2026-04-16 13:37:30,135 - __main__ - INFO - [main.py:139] - Effective Number of Papers: 5
+2026-04-16 13:37:30,135 - __main__ - INFO - [main.py:142] - Checklist format override: md
+2026-04-16 13:37:30,135 - __main__ - INFO - [main.py:154] - Restricting evaluation to 1 paper IDs.
+2026-04-16 13:37:30,135 - __main__ - INFO - [main.py:196] - Schema Type: simple
+2026-04-16 13:37:30,136 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:37] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-16 13:37:30,136 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:43] - Starting evaluation pipeline for 5 papers. Model: 'qwen/qwen3-235b-a22b-2507', Format Type: 'md'.
+2026-04-16 13:37:30,136 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:52] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-16 13:37:30,136 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:68] - PRISMA checklists loaded successfully.
+2026-04-16 13:37:30,142 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:89] - Human annotations loaded successfully.
+2026-04-16 13:37:30,143 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Suda2025_15: Suda2025-SR文献_15.json
+2026-04-16 13:37:30,143 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:124] - Paper ID filter active: requested 1 paper(s), located 1 file(s).
+2026-04-16 13:37:30,143 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:144] - Found 1 structured data files to process (limit was 5).
+2026-04-16 13:37:30,176 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:64] - OpenRouterEvaluator initialized. Base URL: https://openrouter.ai/api/v1, Retries: 3, Delay: 5s
+2026-04-16 13:37:30,176 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:336] - Initialized Standard OpenRouter Evaluator for model: qwen/qwen3-235b-a22b-2507
+2026-04-16 13:37:30,177 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:345] - Paper-level concurrency limit: 3
+2026-04-16 13:37:30,177 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:388] - Dispatching 1 paper evaluation tasks.
+2026-04-16 13:37:30,177 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Suda2025-SR文献_15.json
+2026-04-16 13:37:30,195 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Suda2025_15 (from file: Suda2025-SR文献_15.json)
+2026-04-16 13:37:30,195 - OpenRouterEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_15 (main)
+2026-04-16 13:37:30,195 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Suda2025_15', type 'main', model 'qwen/qwen3-235b-a22b-2507'.
+2026-04-16 13:37:48,014 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:505] - Successfully parsed OpenRouter response for 'Suda2025_15', type 'main'. Items: 41
+2026-04-16 13:37:48,014 - OpenRouterEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 41 success, 0 failed
+2026-04-16 13:37:48,014 - OpenRouterEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_15: 41 total items, 0 final failures, 0 retry attempts, 18.50s
+2026-04-16 13:37:48,014 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Suda2025_15'.
+2026-04-16 13:37:48,014 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Suda2025_15' for abstract evaluation.
+2026-04-16 13:37:48,014 - OpenRouterEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Suda2025_15 (abstract)
+2026-04-16 13:37:48,015 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Suda2025_15', type 'abstract', model 'qwen/qwen3-235b-a22b-2507'.
+2026-04-16 13:37:52,822 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:505] - Successfully parsed OpenRouter response for 'Suda2025_15', type 'abstract'. Items: 12
+2026-04-16 13:37:52,823 - OpenRouterEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 13:37:52,823 - OpenRouterEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Suda2025_15: 12 total items, 0 final failures, 0 retry attempts, 4.81s
+2026-04-16 13:37:52,823 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Suda2025_15'.
+2026-04-16 13:37:52,823 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Suda2025_15'.
+2026-04-16 13:37:52,823 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:413] - Successfully completed 1 AI paper evaluations.
+2026-04-16 13:37:52,823 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:418] - Calculating accuracy metrics...
+2026-04-16 13:37:52,823 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 1 AI-evaluated papers.
+2026-04-16 13:37:52,823 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:211] - Paper ID Suda2025_15: Missing AI evaluations for main items: ['23d']
+2026-04-16 13:37:52,823 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Suda2025_15: Extra AI evaluations for main items: ['2']
+2026-04-16 13:37:52,823 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Suda2025_15: AI evaluated 41 main items, expected 41 items
+2026-04-16 13:37:52,824 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_23d treated as FN (human said yes)
+2026-04-16 13:37:52,824 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_23d for paper Suda2025_15 to comparison_details
+2026-04-16 13:37:52,824 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Suda2025_15: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 13:37:52,824 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 81.13% (43/53)
+2026-04-16 13:37:52,824 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:439] - Accuracy metrics calculated.
+2026-04-16 13:37:52,824 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:447] - Saving all processed results...
+2026-04-16 13:37:52,825 - prisma_evaluator.data_io.savers - INFO - [savers.py:45] - Saving AI evaluations to /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,826 - prisma_evaluator.data_io.savers - INFO - [savers.py:51] - AI evaluation results saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,826 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:452] - AI evaluations saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,826 - prisma_evaluator.data_io.savers - INFO - [savers.py:71] - Saving accuracy summary to /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,830 - prisma_evaluator.data_io.savers - INFO - [savers.py:83] - Accuracy summary saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,830 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:459] - Accuracy summary saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,830 - prisma_evaluator.data_io.savers - INFO - [savers.py:107] - Saving comparison details to /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,837 - prisma_evaluator.data_io.savers - INFO - [savers.py:112] - Comparison details saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,837 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:467] - Comparison details saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+2026-04-16 13:37:52,837 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:472] - Evaluation pipeline finished for model 'qwen/qwen3-235b-a22b-2507', format 'md'.
+2026-04-16 13:37:52,839 - __main__ - INFO - [main.py:206] - PRISMA evaluation pipeline completed successfully via CLI.
+Executing: /home/devcontainers/PRISMA-AI/venv/bin/python -m prisma_evaluator.cli.main run -m qwen/qwen3-235b-a22b-2507 -d suda --paper-ids Suda2025_15 --schema-type simple --checklist-format md
+Copied results/evaluator_output/ai_evaluations_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json -> test/issues/2026-04-16_qwen_json_validity_rebuttal/results/raw/ai_evaluations_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+Validation succeeded for qwen/qwen3-235b-a22b-2507 on Suda2025_15. Elapsed 24.24s. Result: results/evaluator_output/ai_evaluations_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
+[INFO] 2026-04-16T13:37:54+09:00 : Copied test/issues/2026-04-16_qwen_json_validity_rebuttal/results/raw/ai_evaluations_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json -> test/issues/2026-04-16_qwen_json_validity_rebuttal/results/raw/run_078_ai_evaluations_qwen_qwen3-235b-a22b-2507_md_20260416_133752.json
