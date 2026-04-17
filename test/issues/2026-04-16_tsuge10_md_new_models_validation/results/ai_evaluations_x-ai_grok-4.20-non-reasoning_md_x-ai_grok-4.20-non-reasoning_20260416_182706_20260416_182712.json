@@ -1,0 +1,214 @@
+[
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_120",
+    "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.20-non-reasoning",
+      "model_version": "x-ai/grok-4.20-non-reasoning",
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 0,
+      "token_usage": {},
+      "processing_time": 5.674371,
+      "timestamp": "2026-04-16 18:27:06.502409"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "10": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "1": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "30": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "8": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "42": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "32": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "37": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "13": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "21": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "39": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "33": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "35": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "38": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "5": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "40": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "7": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "20": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "3": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "41": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "22": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "27": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "11": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "18": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "14": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "4": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "23": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "34": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "26": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "28": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "29": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "31": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "19": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "24": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "12": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "15": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "25": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "6": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "9": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "17": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "36": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "16": {
+            "reason": "Failed after 3 retry attempts"
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.20-non-reasoning",
+          "model_version": "x-ai/grok-4.20-non-reasoning",
+          "format_type": "md_x-ai_grok-4.20-non-reasoning_20260416_182706",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 0,
+          "token_usage": {},
+          "processing_time": 3.245014321000781,
+          "timestamp": "2026-04-16 18:27:09.782504"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_5": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_10": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_1": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_6": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_3": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_4": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_8": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_9": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_7": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_2": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_11": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "item_12": {
+            "reason": "Failed after 3 retry attempts"
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.20-non-reasoning",
+          "model_version": "x-ai/grok-4.20-non-reasoning",
+          "format_type": "md_x-ai_grok-4.20-non-reasoning_20260416_182706",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 0,
+          "token_usage": {},
+          "processing_time": 3.1186336190003203,
+          "timestamp": "2026-04-16 18:27:12.176368"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": -0.8134280180761779,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0
+    }
+  }
+]

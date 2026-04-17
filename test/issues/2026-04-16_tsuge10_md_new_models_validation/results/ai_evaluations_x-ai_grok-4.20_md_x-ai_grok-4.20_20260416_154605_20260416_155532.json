@@ -1,0 +1,135 @@
+[
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_120",
+    "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.20",
+      "model_version": "x-ai/grok-4.20",
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 11997,
+      "token_usage": {
+        "prompt_tokens": 11648,
+        "input_tokens": 11648,
+        "completion_tokens": 349,
+        "output_tokens": 349,
+        "total_tokens": 11997,
+        "reasoning_tokens": 0
+      },
+      "processing_time": 321.768467,
+      "timestamp": "2026-04-16 15:50:11.128262"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {},
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.20",
+          "model_version": "x-ai/grok-4.20",
+          "format_type": "md_x-ai_grok-4.20_20260416_154605",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 9491,
+          "token_usage": {
+            "prompt_tokens": 9468,
+            "input_tokens": 9468,
+            "completion_tokens": 23,
+            "output_tokens": 23,
+            "total_tokens": 9491,
+            "reasoning_tokens": 0
+          },
+          "processing_time": 329.01421704400127,
+          "timestamp": "2026-04-16 15:55:29.845951"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "Explicit statement: evaluate effectiveness of massage for postoperative rehabilitation after TKA.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Specifies inclusion of any randomized controlled trials on massage for postoperative TKA rehabilitation.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists databases (PubMed, Web of Science, EMBASE, Cochrane, CNKI) and last search date (May 2024).",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "Specifies use of Cochrane Risk of Bias Assessment Tool.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Specifies meta-analysis of outcomes including pain, ROM, D-dimer, and hospital stay.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Reports 11 RCTs with 940 subjects included.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Presents results for pain, ROM, D-dimer, hospital stay, adverse events; indicates direction of effects and subgroup differences.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "Mentions large heterogeneity of studies as a limitation.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Interprets results: massage effective for pain/ROM as adjunctive treatment but not for D-dimer.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No mention of funding source.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No mention of registration name or number.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.20",
+          "model_version": "x-ai/grok-4.20",
+          "format_type": "md_x-ai_grok-4.20_20260416_154605",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 2506,
+          "token_usage": {
+            "prompt_tokens": 2180,
+            "input_tokens": 2180,
+            "completion_tokens": 326,
+            "output_tokens": 326,
+            "total_tokens": 2506,
+            "reasoning_tokens": 0
+          },
+          "processing_time": 3.050463152998418,
+          "timestamp": "2026-04-16 15:55:32.896647"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.25,
+      "accuracy": 58.333333333333336,
+      "precision": 50.0,
+      "recall": 100.0,
+      "f1_score": 66.66666666666666,
+      "specificity": 28.57142857142857
+    }
+  }
+]

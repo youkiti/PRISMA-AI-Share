@@ -1,0 +1,15 @@
+[info] model=claude-opus-4-6 label=claude-opus-4-6 mode=full
+[cmd] PYTHONPATH=/home/devcontainers/PRISMA-AI /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py --model-id claude-opus-4-6 --run-label md_claude-opus-4-6_20260416_193159 --paper-ids-file /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt --expected-size full
+[info] run OK for model=claude-opus-4-6
+[info] model=gpt-5.4 label=gpt-5.4 mode=full
+[cmd] PYTHONPATH=/home/devcontainers/PRISMA-AI /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py --model-id gpt-5.4 --run-label md_gpt-5.4_20260416_193159 --paper-ids-file /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt --expected-size full --gpt5-reasoning none
+[info] run OK for model=gpt-5.4
+[info] model=gemini-3.1-pro-preview label=gemini-3.1-pro-preview mode=full
+[cmd] PYTHONPATH=/home/devcontainers/PRISMA-AI /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py --model-id gemini-3.1-pro-preview --run-label md_gemini-3.1-pro-preview_20260416_193159 --paper-ids-file /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt --expected-size full --gemini-model gemini-3.1-pro-preview --gemini-thinking-level high --gemini-temperature 1.0
+[info] run OK for model=gemini-3.1-pro-preview
+[info] model=x-ai/grok-4.20 label=x-ai/grok-4.20 mode=full
+[cmd] PYTHONPATH=/home/devcontainers/PRISMA-AI /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py --model-id x-ai/grok-4.20 --run-label md_x-ai_grok-4.20_20260416_193159 --paper-ids-file /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt --expected-size full
+[info] run OK for model=x-ai/grok-4.20
+[info] model=qwen/qwen3.6-plus label=qwen/qwen3.6-plus mode=full
+[cmd] PYTHONPATH=/home/devcontainers/PRISMA-AI /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py --model-id qwen/qwen3.6-plus --run-label md_qwen_qwen3.6-plus_20260416_193159 --paper-ids-file /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt --expected-size full
+[info] run OK for model=qwen/qwen3.6-plus

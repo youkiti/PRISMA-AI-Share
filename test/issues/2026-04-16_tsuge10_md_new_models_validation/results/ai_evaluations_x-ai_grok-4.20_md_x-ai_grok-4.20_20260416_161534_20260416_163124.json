@@ -1,0 +1,252 @@
+[
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_120",
+    "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.20",
+      "model_version": "x-ai/grok-4.20",
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 2499,
+      "token_usage": {
+        "prompt_tokens": 2180,
+        "input_tokens": 2180,
+        "completion_tokens": 319,
+        "output_tokens": 319,
+        "total_tokens": 2499,
+        "reasoning_tokens": 0
+      },
+      "processing_time": 949.761943,
+      "timestamp": "2026-04-16 16:15:34.793092"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "36": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "6": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "7": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "17": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "26": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "14": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "29": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "33": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "27": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "13": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "38": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "3": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "5": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "19": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "37": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "8": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "28": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "20": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "16": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "25": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "23": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "11": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "42": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "12": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "30": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "22": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "4": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "9": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "31": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "40": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "15": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "32": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "39": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "21": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "24": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "1": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "10": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "41": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "35": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "34": {
+            "reason": "Failed after 3 retry attempts"
+          },
+          "18": {
+            "reason": "Failed after 3 retry attempts"
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.20",
+          "model_version": "x-ai/grok-4.20",
+          "format_type": "md_x-ai_grok-4.20_20260416_161534",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 0,
+          "token_usage": {},
+          "processing_time": 971.7691439560003,
+          "timestamp": "2026-04-16 16:31:21.819020"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "Abstract states aim to evaluate effectiveness of massage for postoperative rehabilitation after TKA.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Specifies inclusion of any randomized controlled trials on massage for postoperative TKA rehabilitation.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists databases (PubMed, Web of Science, EMBASE, Cochrane, CNKI) and search date (to May 2024).",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "Specifies use of Cochrane Risk of Bias Assessment Tool.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Describes performing meta-analysis of outcomes and subgroup analysis.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Reports 11 RCTs with 940 subjects included.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Presents results for pain, ROM, D-dimer, hospital stay, adverse events; indicates direction of effects and subgroup differences.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "Notes large heterogeneity of studies as a limitation.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Interprets that massage is effective for pain and ROM as adjunctive treatment post-TKA.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No mention of funding source for the review.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No mention of review registration or protocol.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.20",
+          "model_version": "x-ai/grok-4.20",
+          "format_type": "md_x-ai_grok-4.20_20260416_161534",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 2499,
+          "token_usage": {
+            "prompt_tokens": 2180,
+            "input_tokens": 2180,
+            "completion_tokens": 319,
+            "output_tokens": 319,
+            "total_tokens": 2499,
+            "reasoning_tokens": 0
+          },
+          "processing_time": 2.7349321710025833,
+          "timestamp": "2026-04-16 16:31:24.554847"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": -0.6275033377837117,
+      "accuracy": 13.20754716981132,
+      "precision": 23.809523809523807,
+      "recall": 14.285714285714285,
+      "f1_score": 17.857142857142854,
+      "specificity": 11.11111111111111
+    }
+  }
+]

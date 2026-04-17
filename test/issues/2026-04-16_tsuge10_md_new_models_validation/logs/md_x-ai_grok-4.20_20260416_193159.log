@@ -1,0 +1,251 @@
+[info] model=x-ai/grok-4.20 label=x-ai/grok-4.20 mode=full
+[cmd] PYTHONPATH=/home/devcontainers/PRISMA-AI /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py --model-id x-ai/grok-4.20 --run-label md_x-ai_grok-4.20_20260416_193159 --paper-ids-file /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt --expected-size full
+2026-04-16 20:01:12,962 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2026-04-16 20:01:12,962 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2026-04-16 20:01:12,962 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2026-04-16 20:01:12,962 - run_validation_model - INFO - [run_validation_model.py:228] - Paper IDs (10): Tsuge2025_PRISMA2020_14, Tsuge2025_PRISMA2020_20, Tsuge2025_PRISMA2020_22, Tsuge2025_PRISMA2020_26, Tsuge2025_PRISMA2020_68, Tsuge2025_PRISMA2020_74, Tsuge2025_PRISMA2020_76, Tsuge2025_PRISMA2020_80, Tsuge2025_PRISMA2020_89, Tsuge2025_PRISMA2020_120
+2026-04-16 20:01:12,965 - run_validation_model - INFO - [run_validation_model.py:268] - Starting pipeline model=x-ai/grok-4.20 format=md_x-ai_grok-4.20_20260416_193159
+2026-04-16 20:01:12,965 - run_validation_model - INFO - [run_validation_model.py:269] - gemini_params={'schema_type': 'simple', 'checklist_format': 'md', 'order_mode': 'eande-first', 'section_mode': 'off'}
+2026-04-16 20:01:12,965 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:38] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-16 20:01:12,965 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:44] - Starting evaluation pipeline for 10 papers. Model: 'x-ai/grok-4.20', Format Type: 'md_x-ai_grok-4.20_20260416_193159'.
+2026-04-16 20:01:12,965 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:53] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-16 20:01:12,965 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:69] - PRISMA checklists loaded successfully.
+2026-04-16 20:01:12,979 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:90] - Human annotations loaded successfully.
+2026-04-16 20:01:12,979 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:121] - Using structured data override directories: [PosixPath('/home/devcontainers/PRISMA-AI/supplement/data/tsuge2025/structured_prisma')]
+2026-04-16 20:01:12,980 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_14: Tsuge2025-PRISMA_14.json
+2026-04-16 20:01:12,980 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_20: Tsuge2025-PRISMA_20.json
+2026-04-16 20:01:12,981 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_22: Tsuge2025-PRISMA_22.json
+2026-04-16 20:01:12,982 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_26: Tsuge2025-PRISMA_26.json
+2026-04-16 20:01:12,982 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_68: Tsuge2025-PRISMA_68.json
+2026-04-16 20:01:12,983 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_74: Tsuge2025-PRISMA_74.json
+2026-04-16 20:01:12,983 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_76: Tsuge2025-PRISMA_76.json
+2026-04-16 20:01:12,984 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_80: Tsuge2025-PRISMA_80.json
+2026-04-16 20:01:12,984 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_89: Tsuge2025-PRISMA_89.json
+2026-04-16 20:01:12,987 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_120: Tsuge2025-PRISMA_120.json
+2026-04-16 20:01:12,987 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:125] - Paper ID filter active: requested 10 paper(s), located 10 file(s).
+2026-04-16 20:01:12,987 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:145] - Found 10 structured data files to process (limit was 10).
+2026-04-16 20:01:13,021 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:64] - OpenRouterEvaluator initialized. Base URL: https://api.x.ai/v1, Retries: 3, Delay: 5s
+2026-04-16 20:01:13,042 - prisma_evaluator.llm.xai_direct_evaluator - INFO - [xai_direct_evaluator.py:81] - XAIDirectEvaluator initialized. Base URL: https://api.x.ai/v1
+2026-04-16 20:01:13,042 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:341] - Initialized xAI Direct Evaluator for model: x-ai/grok-4.20
+2026-04-16 20:01:13,042 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:406] - Dispatching 10 paper evaluation tasks.
+2026-04-16 20:01:13,042 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_120.json
+2026-04-16 20:01:13,060 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_120 (from file: Tsuge2025-PRISMA_120.json)
+2026-04-16 20:01:13,060 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (main)
+2026-04-16 20:01:13,060 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'main', model 'grok-4.20'.
+2026-04-16 20:01:49,610 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_120', type 'main'. Items: 42
+2026-04-16 20:01:49,610 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:01:49,610 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 42 total items, 0 final failures, 0 retry attempts, 37.54s
+2026-04-16 20:01:49,610 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-16 20:01:49,610 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_120' for abstract evaluation.
+2026-04-16 20:01:49,611 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (abstract)
+2026-04-16 20:01:49,611 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:02:09,083 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_120', type 'abstract'. Items: 12
+2026-04-16 20:02:09,083 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:02:09,084 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 12 total items, 0 final failures, 0 retry attempts, 20.49s
+2026-04-16 20:02:09,084 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-16 20:02:09,084 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-16 20:02:09,084 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_14.json
+2026-04-16 20:02:09,088 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_14 (from file: Tsuge2025-PRISMA_14.json)
+2026-04-16 20:02:09,088 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (main)
+2026-04-16 20:02:09,088 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_14', type 'main', model 'grok-4.20'.
+2026-04-16 20:02:40,271 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_14', type 'main'. Items: 42
+2026-04-16 20:02:40,271 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:02:40,271 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 42 total items, 0 final failures, 0 retry attempts, 32.21s
+2026-04-16 20:02:40,271 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-16 20:02:40,271 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_14' for abstract evaluation.
+2026-04-16 20:02:40,271 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (abstract)
+2026-04-16 20:02:40,271 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_14', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:02:59,449 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_14', type 'abstract'. Items: 12
+2026-04-16 20:02:59,450 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:02:59,450 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 12 total items, 0 final failures, 0 retry attempts, 20.12s
+2026-04-16 20:02:59,450 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-16 20:02:59,450 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-16 20:02:59,450 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_20.json
+2026-04-16 20:02:59,461 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_20 (from file: Tsuge2025-PRISMA_20.json)
+2026-04-16 20:02:59,461 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (main)
+2026-04-16 20:02:59,461 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_20', type 'main', model 'grok-4.20'.
+2026-04-16 20:03:41,549 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_20', type 'main'. Items: 42
+2026-04-16 20:03:41,549 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:03:41,549 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 42 total items, 0 final failures, 0 retry attempts, 43.08s
+2026-04-16 20:03:41,550 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-16 20:03:41,550 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_20' for abstract evaluation.
+2026-04-16 20:03:41,550 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (abstract)
+2026-04-16 20:03:41,550 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_20', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:03:58,945 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_20', type 'abstract'. Items: 12
+2026-04-16 20:03:58,945 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:03:58,946 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 12 total items, 0 final failures, 0 retry attempts, 18.39s
+2026-04-16 20:03:58,946 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-16 20:03:58,946 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-16 20:03:58,946 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_22.json
+2026-04-16 20:03:58,969 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_22 (from file: Tsuge2025-PRISMA_22.json)
+2026-04-16 20:03:58,969 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (main)
+2026-04-16 20:03:58,969 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_22', type 'main', model 'grok-4.20'.
+2026-04-16 20:04:43,952 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_22', type 'main'. Items: 42
+2026-04-16 20:04:43,952 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:04:43,953 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 42 total items, 0 final failures, 0 retry attempts, 45.98s
+2026-04-16 20:04:43,953 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-16 20:04:43,953 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_22' for abstract evaluation.
+2026-04-16 20:04:43,953 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (abstract)
+2026-04-16 20:04:43,953 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_22', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:04:59,381 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_22', type 'abstract'. Items: 12
+2026-04-16 20:04:59,381 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:04:59,382 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 12 total items, 0 final failures, 0 retry attempts, 15.43s
+2026-04-16 20:04:59,382 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-16 20:04:59,382 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-16 20:04:59,382 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_26.json
+2026-04-16 20:04:59,394 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_26 (from file: Tsuge2025-PRISMA_26.json)
+2026-04-16 20:04:59,396 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (main)
+2026-04-16 20:04:59,396 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_26', type 'main', model 'grok-4.20'.
+2026-04-16 20:05:38,446 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_26', type 'main'. Items: 42
+2026-04-16 20:05:38,447 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:05:38,447 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 42 total items, 0 final failures, 0 retry attempts, 41.05s
+2026-04-16 20:05:38,447 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-16 20:05:38,448 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_26' for abstract evaluation.
+2026-04-16 20:05:38,448 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (abstract)
+2026-04-16 20:05:38,448 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_26', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:05:55,343 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_26', type 'abstract'. Items: 12
+2026-04-16 20:05:55,343 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:05:55,343 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 12 total items, 0 final failures, 0 retry attempts, 16.90s
+2026-04-16 20:05:55,344 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-16 20:05:55,344 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-16 20:05:55,344 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_68.json
+2026-04-16 20:05:55,356 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_68 (from file: Tsuge2025-PRISMA_68.json)
+2026-04-16 20:05:55,356 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (main)
+2026-04-16 20:05:55,356 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_68', type 'main', model 'grok-4.20'.
+2026-04-16 20:06:32,881 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_68', type 'main'. Items: 42
+2026-04-16 20:06:32,882 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:06:32,882 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 42 total items, 0 final failures, 0 retry attempts, 38.50s
+2026-04-16 20:06:32,882 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-16 20:06:32,882 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_68' for abstract evaluation.
+2026-04-16 20:06:32,882 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (abstract)
+2026-04-16 20:06:32,882 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_68', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:06:48,181 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_68', type 'abstract'. Items: 12
+2026-04-16 20:06:48,182 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:06:48,182 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 12 total items, 0 final failures, 0 retry attempts, 16.29s
+2026-04-16 20:06:48,182 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-16 20:06:48,182 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-16 20:06:48,183 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_74.json
+2026-04-16 20:06:48,186 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_74 (from file: Tsuge2025-PRISMA_74.json)
+2026-04-16 20:06:48,187 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (main)
+2026-04-16 20:06:48,187 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_74', type 'main', model 'grok-4.20'.
+2026-04-16 20:07:17,888 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_74', type 'main'. Items: 42
+2026-04-16 20:07:17,889 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:07:17,889 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 42 total items, 0 final failures, 0 retry attempts, 30.70s
+2026-04-16 20:07:17,889 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-16 20:07:17,889 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_74' for abstract evaluation.
+2026-04-16 20:07:17,889 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (abstract)
+2026-04-16 20:07:17,890 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_74', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:07:32,810 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_74', type 'abstract'. Items: 12
+2026-04-16 20:07:32,810 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:07:32,810 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 12 total items, 0 final failures, 0 retry attempts, 14.92s
+2026-04-16 20:07:32,810 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-16 20:07:32,810 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-16 20:07:32,811 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_76.json
+2026-04-16 20:07:32,826 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_76 (from file: Tsuge2025-PRISMA_76.json)
+2026-04-16 20:07:32,826 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (main)
+2026-04-16 20:07:32,826 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_76', type 'main', model 'grok-4.20'.
+2026-04-16 20:08:10,411 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_76', type 'main'. Items: 42
+2026-04-16 20:08:10,412 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:08:10,412 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 42 total items, 0 final failures, 0 retry attempts, 39.51s
+2026-04-16 20:08:10,412 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-16 20:08:10,412 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_76' for abstract evaluation.
+2026-04-16 20:08:10,412 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (abstract)
+2026-04-16 20:08:10,412 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_76', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:08:27,765 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_76', type 'abstract'. Items: 12
+2026-04-16 20:08:27,765 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:08:27,765 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 12 total items, 0 final failures, 0 retry attempts, 17.35s
+2026-04-16 20:08:27,765 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-16 20:08:27,765 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-16 20:08:27,765 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_80.json
+2026-04-16 20:08:27,772 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_80 (from file: Tsuge2025-PRISMA_80.json)
+2026-04-16 20:08:27,772 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (main)
+2026-04-16 20:08:27,772 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_80', type 'main', model 'grok-4.20'.
+2026-04-16 20:08:58,283 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_80', type 'main'. Items: 42
+2026-04-16 20:08:58,291 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:08:58,292 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 42 total items, 0 final failures, 0 retry attempts, 31.51s
+2026-04-16 20:08:58,292 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-16 20:08:58,292 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_80' for abstract evaluation.
+2026-04-16 20:08:58,292 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (abstract)
+2026-04-16 20:08:58,292 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_80', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:09:15,890 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_80', type 'abstract'. Items: 12
+2026-04-16 20:09:15,891 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:09:15,891 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 12 total items, 0 final failures, 0 retry attempts, 18.58s
+2026-04-16 20:09:15,891 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-16 20:09:15,891 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-16 20:09:15,891 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_89.json
+2026-04-16 20:09:15,903 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_89 (from file: Tsuge2025-PRISMA_89.json)
+2026-04-16 20:09:15,903 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (main)
+2026-04-16 20:09:15,904 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_89', type 'main', model 'grok-4.20'.
+2026-04-16 20:09:49,149 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_89', type 'main'. Items: 42
+2026-04-16 20:09:49,150 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 42 success, 0 failed
+2026-04-16 20:09:49,150 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 42 total items, 0 final failures, 0 retry attempts, 34.23s
+2026-04-16 20:09:49,150 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-16 20:09:49,150 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_89' for abstract evaluation.
+2026-04-16 20:09:49,151 - XAIDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (abstract)
+2026-04-16 20:09:49,151 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:348] - Starting OpenRouter evaluation for paper 'Tsuge2025_PRISMA2020_89', type 'abstract', model 'grok-4.20'.
+2026-04-16 20:10:08,091 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:534] - Successfully parsed OpenRouter response for 'Tsuge2025_PRISMA2020_89', type 'abstract'. Items: 12
+2026-04-16 20:10:08,092 - XAIDirectEvaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 12 success, 0 failed
+2026-04-16 20:10:08,092 - XAIDirectEvaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 12 total items, 0 final failures, 0 retry attempts, 18.94s
+2026-04-16 20:10:08,092 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-16 20:10:08,092 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-16 20:10:08,093 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:431] - Successfully completed 10 AI paper evaluations.
+2026-04-16 20:10:08,093 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:436] - Calculating accuracy metrics...
+2026-04-16 20:10:08,093 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 10 AI-evaluated papers.
+2026-04-16 20:10:08,094 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_120: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,094 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,094 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,095 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_14: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,095 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,096 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,096 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_20: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,096 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,096 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,097 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_22: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,097 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,100 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,101 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_26: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,101 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,101 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,101 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_68: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,101 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,102 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,102 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_74: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,102 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,102 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,103 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_76: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,103 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,103 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,103 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_80: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,103 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,104 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,104 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_89: Extra AI evaluations for main items: ['2']
+2026-04-16 20:10:08,104 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 42 main items, expected 41 items
+2026-04-16 20:10:08,104 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 20:10:08,104 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 86.04% (456/530)
+2026-04-16 20:10:08,105 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:457] - Accuracy metrics calculated.
+2026-04-16 20:10:08,105 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:465] - Saving all processed results...
+2026-04-16 20:10:08,105 - prisma_evaluator.data_io.savers - INFO - [savers.py:45] - Saving AI evaluations to /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,117 - prisma_evaluator.data_io.savers - INFO - [savers.py:51] - AI evaluation results saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,117 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:470] - AI evaluations saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,117 - prisma_evaluator.data_io.savers - INFO - [savers.py:71] - Saving accuracy summary to /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,119 - prisma_evaluator.data_io.savers - INFO - [savers.py:83] - Accuracy summary saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,119 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:477] - Accuracy summary saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,119 - prisma_evaluator.data_io.savers - INFO - [savers.py:107] - Saving comparison details to /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,130 - prisma_evaluator.data_io.savers - INFO - [savers.py:112] - Comparison details saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,130 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:485] - Comparison details saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,130 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:490] - Evaluation pipeline finished for model 'x-ai/grok-4.20', format 'md_x-ai_grok-4.20_20260416_193159'.
+2026-04-16 20:10:08,140 - run_validation_model - INFO - [run_validation_model.py:287] - raw trio resolved: {'ai_evaluations': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json'), 'accuracy_summary': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json'), 'comparison_details': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json')}
+2026-04-16 20:10:08,143 - run_validation_model - INFO - [run_validation_model.py:297] - copied ai_evaluations_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/ai_evaluations_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,143 - run_validation_model - INFO - [run_validation_model.py:297] - copied accuracy_summary_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/accuracy_summary_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,144 - run_validation_model - INFO - [run_validation_model.py:297] - copied comparison_details_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/comparison_details_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json
+2026-04-16 20:10:08,145 - run_validation_model - INFO - [run_validation_model.py:170] - running: /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/build_unified_validation_json.py --model-id x-ai/grok-4.20 --format-type md_x-ai_grok-4.20_20260416_193159 --run-timestamp 20260416_201008 --ai-evaluations /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/ai_evaluations_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json --accuracy-summary /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/accuracy_summary_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json --comparison-details /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/comparison_details_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json --output-dir /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results --cli-parameters {"num_papers_to_process": 10, "paper_ids_file": "/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt", "schema_type": "simple", "checklist_format": "md", "order_mode": "eande-first", "section_mode": "off", "gpt5_reasoning": null, "gemini_model": null, "thinking_level": null, "force_claude_native": false, "openrouter_max_tokens": null} --actual-execution {"runner_script": "test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py", "raw_ai_evaluations": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/ai_evaluations_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json", "raw_accuracy_summary": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/accuracy_summary_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json", "raw_comparison_details": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/comparison_details_x-ai_grok-4.20_md_x-ai_grok-4.20_20260416_193159_20260416_201008.json"} --dataset-info {"sources": ["tsuge2025_merged"], "total_papers_available": 10, "evaluated_papers": ["Tsuge2025_PRISMA2020_14", "Tsuge2025_PRISMA2020_20", "Tsuge2025_PRISMA2020_22", "Tsuge2025_PRISMA2020_26", "Tsuge2025_PRISMA2020_68", "Tsuge2025_PRISMA2020_74", "Tsuge2025_PRISMA2020_76", "Tsuge2025_PRISMA2020_80", "Tsuge2025_PRISMA2020_89", "Tsuge2025_PRISMA2020_120"], "num_papers_requested": 10}
+unified_json=/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_x-ai_grok-4.20_20260416_201008.json
+2026-04-16 20:10:08,232 - run_validation_model - INFO - [run_validation_model.py:170] - running: /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/check_validation_counts.py /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_x-ai_grok-4.20_20260416_201008.json --expected-size full
+file=/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_x-ai_grok-4.20_20260416_201008.json
+expected_counts={'overall_metrics': 530, 'main_body_metrics': 410, 'abstract_metrics': 120}
+observed_model_ids={'cli_target_model_id': 'x-ai/grok-4.20', 'actual_model_id_to_use': 'x-ai/grok-4.20', 'paper_model_ids': ['x-ai/grok-4.20']}
+overall_metrics.counts={'tp': 265, 'tn': 191, 'fp': 42, 'fn': 32, 'total_comparable': 530, 'correct': 456}
+main_body_metrics.counts={'tp': 222, 'tn': 124, 'fp': 32, 'fn': 32, 'total_comparable': 410, 'correct': 346}
+abstract_metrics.counts={'tp': 43, 'tn': 67, 'fp': 10, 'fn': 0, 'total_comparable': 120, 'correct': 110}
+OK
+unified_json=/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_x-ai_grok-4.20_20260416_201008.json

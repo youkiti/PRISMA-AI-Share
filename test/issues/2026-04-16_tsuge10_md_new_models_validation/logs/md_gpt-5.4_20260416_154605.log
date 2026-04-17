@@ -1,0 +1,360 @@
+[info] model=gpt-5.4 label=gpt-5.4 mode=smoke
+[cmd] PYTHONPATH=/home/devcontainers/PRISMA-AI /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py --model-id gpt-5.4 --run-label md_gpt-5.4_20260416_154605 --paper-ids Tsuge2025_PRISMA2020_120 --expected-size smoke --gpt5-reasoning none
+2026-04-16 15:47:01,460 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2026-04-16 15:47:01,460 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2026-04-16 15:47:01,460 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2026-04-16 15:47:01,461 - run_validation_model - INFO - [run_validation_model.py:228] - Paper IDs (1): Tsuge2025_PRISMA2020_120
+2026-04-16 15:47:01,463 - run_validation_model - INFO - [run_validation_model.py:268] - Starting pipeline model=gpt-5.4 format=md_gpt-5.4_20260416_154605
+2026-04-16 15:47:01,463 - run_validation_model - INFO - [run_validation_model.py:269] - gemini_params={'schema_type': 'simple', 'checklist_format': 'md', 'order_mode': 'eande-first', 'section_mode': 'off', 'reasoning_effort': 'none'}
+2026-04-16 15:47:01,464 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:37] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-16 15:47:01,464 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:43] - Starting evaluation pipeline for 1 papers. Model: 'gpt-5.4', Format Type: 'md_gpt-5.4_20260416_154605'.
+2026-04-16 15:47:01,464 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:52] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-16 15:47:01,465 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:68] - PRISMA checklists loaded successfully.
+2026-04-16 15:47:01,477 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:89] - Human annotations loaded successfully.
+2026-04-16 15:47:01,477 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:120] - Using structured data override directories: [PosixPath('/home/devcontainers/PRISMA-AI/supplement/data/tsuge2025/structured_prisma')]
+2026-04-16 15:47:01,479 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_120: Tsuge2025-PRISMA_120.json
+2026-04-16 15:47:01,479 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:124] - Paper ID filter active: requested 1 paper(s), located 1 file(s).
+2026-04-16 15:47:01,479 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:144] - Found 1 structured data files to process (limit was 1).
+2026-04-16 15:47:01,479 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:181] - Using CLI reasoning effort: none
+2026-04-16 15:47:01,479 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:184] - Using CLI schema type: simple
+2026-04-16 15:47:01,479 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:187] - Using checklist format: md
+2026-04-16 15:47:01,751 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:102] - GPT5Evaluator initialized. Verbosity: low, Reasoning: none, CFG: True, Freeform: True, Schema: simple
+2026-04-16 15:47:01,752 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:193] - Initialized GPT-5 Evaluator for model: gpt-5.4
+2026-04-16 15:47:01,752 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:388] - Dispatching 1 paper evaluation tasks.
+2026-04-16 15:47:01,752 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_120.json
+2026-04-16 15:47:01,792 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_120 (from file: Tsuge2025-PRISMA_120.json)
+2026-04-16 15:47:01,793 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (main)
+2026-04-16 15:47:01,793 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'main', model 'gpt-5.4'.
+2026-04-16 15:47:09,220 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:456] - GPT-5 API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:09,220 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:632] - Unexpected GPT-5 error for 'Tsuge2025_PRISMA2020_120': GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 354, in _call_gpt5_api
+    completion = await asyncio.to_thread(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/resources/responses/responses.py", line 828, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 546, in evaluate_paper
+    api_response = await self._call_gpt5_api(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 457, in _call_gpt5_api
+    raise LLMAPIError(f"GPT-5 API error: {str(e)}")
+prisma_evaluator.exceptions.LLMAPIError: GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:19,788 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:456] - GPT-5 API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:19,788 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:632] - Unexpected GPT-5 error for 'Tsuge2025_PRISMA2020_120': GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 354, in _call_gpt5_api
+    completion = await asyncio.to_thread(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/resources/responses/responses.py", line 828, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 546, in evaluate_paper
+    api_response = await self._call_gpt5_api(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 457, in _call_gpt5_api
+    raise LLMAPIError(f"GPT-5 API error: {str(e)}")
+prisma_evaluator.exceptions.LLMAPIError: GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:28,839 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:456] - GPT-5 API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:28,840 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:632] - Unexpected GPT-5 error for 'Tsuge2025_PRISMA2020_120': GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 354, in _call_gpt5_api
+    completion = await asyncio.to_thread(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/resources/responses/responses.py", line 828, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 546, in evaluate_paper
+    api_response = await self._call_gpt5_api(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 457, in _call_gpt5_api
+    raise LLMAPIError(f"GPT-5 API error: {str(e)}")
+prisma_evaluator.exceptions.LLMAPIError: GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:28,842 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:933] - GPT-5 evaluate_paper_content failed for 'Tsuge2025_PRISMA2020_120': GPT-5 evaluation failed: GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:28,842 - GPT5Evaluator - WARNING - [base_evaluator.py:219] - Initial evaluation completely failed, marking all 41 items for retry
+2026-04-16 15:47:28,843 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 0 success, 41 failed
+2026-04-16 15:47:28,843 - GPT5Evaluator - INFO - [base_evaluator.py:234] - Retry attempt 1/3 for 41 failed items
+2026-04-16 15:47:28,843 - GPT5Evaluator - INFO - [gpt5_evaluator.py:951] - GPT-5: Evaluating 41 failed items for Tsuge2025_PRISMA2020_120 (main)
+2026-04-16 15:47:28,843 - GPT5Evaluator - ERROR - [gpt5_evaluator.py:1008] - GPT-5 partial evaluation failed: Responses.create() got an unexpected keyword argument 'verbosity'
+2026-04-16 15:47:28,843 - GPT5Evaluator - WARNING - [base_evaluator.py:268] - Retry 1 returned no results
+2026-04-16 15:47:29,857 - GPT5Evaluator - INFO - [base_evaluator.py:234] - Retry attempt 2/3 for 41 failed items
+2026-04-16 15:47:29,858 - GPT5Evaluator - INFO - [gpt5_evaluator.py:951] - GPT-5: Evaluating 41 failed items for Tsuge2025_PRISMA2020_120 (main)
+2026-04-16 15:47:29,859 - GPT5Evaluator - ERROR - [gpt5_evaluator.py:1008] - GPT-5 partial evaluation failed: Responses.create() got an unexpected keyword argument 'verbosity'
+2026-04-16 15:47:29,859 - GPT5Evaluator - WARNING - [base_evaluator.py:268] - Retry 2 returned no results
+2026-04-16 15:47:31,867 - GPT5Evaluator - INFO - [base_evaluator.py:234] - Retry attempt 3/3 for 41 failed items
+2026-04-16 15:47:31,867 - GPT5Evaluator - INFO - [gpt5_evaluator.py:951] - GPT-5: Evaluating 41 failed items for Tsuge2025_PRISMA2020_120 (main)
+2026-04-16 15:47:31,868 - GPT5Evaluator - ERROR - [gpt5_evaluator.py:1008] - GPT-5 partial evaluation failed: Responses.create() got an unexpected keyword argument 'verbosity'
+2026-04-16 15:47:31,868 - GPT5Evaluator - WARNING - [base_evaluator.py:268] - Retry 3 returned no results
+2026-04-16 15:47:31,868 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 41 total items, 41 final failures, 3 retry attempts, 31.10s
+2026-04-16 15:47:31,868 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-16 15:47:31,868 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_120' for abstract evaluation.
+2026-04-16 15:47:31,868 - GPT5Evaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (abstract)
+2026-04-16 15:47:31,868 - prisma_evaluator.llm.gpt5_evaluator - INFO - [gpt5_evaluator.py:532] - Starting GPT-5 evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'abstract', model 'gpt-5.4'.
+2026-04-16 15:47:35,149 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:456] - GPT-5 API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:35,150 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:632] - Unexpected GPT-5 error for 'Tsuge2025_PRISMA2020_120': GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 354, in _call_gpt5_api
+    completion = await asyncio.to_thread(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/resources/responses/responses.py", line 828, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 546, in evaluate_paper
+    api_response = await self._call_gpt5_api(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 457, in _call_gpt5_api
+    raise LLMAPIError(f"GPT-5 API error: {str(e)}")
+prisma_evaluator.exceptions.LLMAPIError: GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:43,449 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:456] - GPT-5 API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:43,449 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:632] - Unexpected GPT-5 error for 'Tsuge2025_PRISMA2020_120': GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 354, in _call_gpt5_api
+    completion = await asyncio.to_thread(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/resources/responses/responses.py", line 828, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 546, in evaluate_paper
+    api_response = await self._call_gpt5_api(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 457, in _call_gpt5_api
+    raise LLMAPIError(f"GPT-5 API error: {str(e)}")
+prisma_evaluator.exceptions.LLMAPIError: GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:51,300 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:456] - GPT-5 API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:51,300 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:632] - Unexpected GPT-5 error for 'Tsuge2025_PRISMA2020_120': GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 354, in _call_gpt5_api
+    completion = await asyncio.to_thread(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/resources/responses/responses.py", line 828, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/venv/lib/python3.12/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 546, in evaluate_paper
+    api_response = await self._call_gpt5_api(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devcontainers/PRISMA-AI/prisma_evaluator/llm/gpt5_evaluator.py", line 457, in _call_gpt5_api
+    raise LLMAPIError(f"GPT-5 API error: {str(e)}")
+prisma_evaluator.exceptions.LLMAPIError: GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:51,303 - prisma_evaluator.llm.gpt5_evaluator - ERROR - [gpt5_evaluator.py:933] - GPT-5 evaluate_paper_content failed for 'Tsuge2025_PRISMA2020_120': GPT-5 evaluation failed: GPT-5 API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-16 15:47:51,303 - GPT5Evaluator - WARNING - [base_evaluator.py:219] - Initial evaluation completely failed, marking all 12 items for retry
+2026-04-16 15:47:51,303 - GPT5Evaluator - INFO - [base_evaluator.py:226] - Initial evaluation: 0 success, 12 failed
+2026-04-16 15:47:51,303 - GPT5Evaluator - INFO - [base_evaluator.py:234] - Retry attempt 1/3 for 12 failed items
+2026-04-16 15:47:51,303 - GPT5Evaluator - INFO - [gpt5_evaluator.py:951] - GPT-5: Evaluating 12 failed items for Tsuge2025_PRISMA2020_120 (abstract)
+2026-04-16 15:47:51,304 - GPT5Evaluator - ERROR - [gpt5_evaluator.py:1008] - GPT-5 partial evaluation failed: Responses.create() got an unexpected keyword argument 'verbosity'
+2026-04-16 15:47:51,304 - GPT5Evaluator - WARNING - [base_evaluator.py:268] - Retry 1 returned no results
+2026-04-16 15:47:52,314 - GPT5Evaluator - INFO - [base_evaluator.py:234] - Retry attempt 2/3 for 12 failed items
+2026-04-16 15:47:52,315 - GPT5Evaluator - INFO - [gpt5_evaluator.py:951] - GPT-5: Evaluating 12 failed items for Tsuge2025_PRISMA2020_120 (abstract)
+2026-04-16 15:47:52,315 - GPT5Evaluator - ERROR - [gpt5_evaluator.py:1008] - GPT-5 partial evaluation failed: Responses.create() got an unexpected keyword argument 'verbosity'
+2026-04-16 15:47:52,315 - GPT5Evaluator - WARNING - [base_evaluator.py:268] - Retry 2 returned no results
+2026-04-16 15:47:54,348 - GPT5Evaluator - INFO - [base_evaluator.py:234] - Retry attempt 3/3 for 12 failed items
+2026-04-16 15:47:54,349 - GPT5Evaluator - INFO - [gpt5_evaluator.py:951] - GPT-5: Evaluating 12 failed items for Tsuge2025_PRISMA2020_120 (abstract)
+2026-04-16 15:47:54,349 - GPT5Evaluator - ERROR - [gpt5_evaluator.py:1008] - GPT-5 partial evaluation failed: Responses.create() got an unexpected keyword argument 'verbosity'
+2026-04-16 15:47:54,349 - GPT5Evaluator - WARNING - [base_evaluator.py:268] - Retry 3 returned no results
+2026-04-16 15:47:54,350 - GPT5Evaluator - INFO - [base_evaluator.py:302] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 12 total items, 12 final failures, 3 retry attempts, 23.52s
+2026-04-16 15:47:54,350 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-16 15:47:54,350 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-16 15:47:54,351 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:413] - Successfully completed 1 AI paper evaluations.
+2026-04-16 15:47:54,351 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:418] - Calculating accuracy metrics...
+2026-04-16 15:47:54,351 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 1 AI-evaluated papers.
+2026-04-16 15:47:54,352 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:211] - Paper ID Tsuge2025_PRISMA2020_120: Missing AI evaluations for main items: ['10a', '10b', '13a', '13b', '13c', '13d', '13e', '13f', '16a', '16b', '20a', '20b', '20c', '20d', '23a', '23b', '23c', '23d', '24a', '24b', '24c']
+2026-04-16 15:47:54,352 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_120: Extra AI evaluations for main items: ['10', '13', '16', '20', '23', '24', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42']
+2026-04-16 15:47:54,352 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 41 main items, expected 41 items
+2026-04-16 15:47:54,353 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_1, treating as FN (human said yes)
+2026-04-16 15:47:54,353 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:264] - AI evaluation failed for main_11, treating as FP (human said no)
+2026-04-16 15:47:54,353 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_26, treating as FN (human said yes)
+2026-04-16 15:47:54,353 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:264] - AI evaluation failed for main_22, treating as FP (human said no)
+2026-04-16 15:47:54,353 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_5, treating as FN (human said yes)
+2026-04-16 15:47:54,353 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_14, treating as FN (human said yes)
+2026-04-16 15:47:54,353 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:264] - AI evaluation failed for main_15, treating as FP (human said no)
+2026-04-16 15:47:54,353 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_3, treating as FN (human said yes)
+2026-04-16 15:47:54,354 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_17, treating as FN (human said yes)
+2026-04-16 15:47:54,354 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_7, treating as FN (human said yes)
+2026-04-16 15:47:54,354 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_12, treating as FN (human said yes)
+2026-04-16 15:47:54,354 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_25, treating as FN (human said yes)
+2026-04-16 15:47:54,354 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_18, treating as FN (human said yes)
+2026-04-16 15:47:54,354 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:264] - AI evaluation failed for main_6, treating as FP (human said no)
+2026-04-16 15:47:54,354 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_27, treating as FN (human said yes)
+2026-04-16 15:47:54,354 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_9, treating as FN (human said yes)
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_4, treating as FN (human said yes)
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_21, treating as FN (human said yes)
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_8, treating as FN (human said yes)
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:260] - AI evaluation failed for main_19, treating as FN (human said yes)
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:327] - Missing item main_10a treated as FP (human said no)
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_10a for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_23b treated as FN (human said yes)
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_23b for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,355 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:327] - Missing item main_20d treated as FP (human said no)
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_20d for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_16b treated as FN (human said yes)
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_16b for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:327] - Missing item main_13b treated as FP (human said no)
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_13b for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_24c treated as FN (human said yes)
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_24c for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:327] - Missing item main_24b treated as FP (human said no)
+2026-04-16 15:47:54,356 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_24b for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_24a treated as FN (human said yes)
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_24a for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:327] - Missing item main_13f treated as FP (human said no)
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_13f for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_13d treated as FN (human said yes)
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_13d for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_16a treated as FN (human said yes)
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_16a for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,357 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_13e treated as FN (human said yes)
+2026-04-16 15:47:54,358 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_13e for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,358 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_20c treated as FN (human said yes)
+2026-04-16 15:47:54,358 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_20c for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,358 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:327] - Missing item main_13c treated as FP (human said no)
+2026-04-16 15:47:54,363 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_13c for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,364 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_23c treated as FN (human said yes)
+2026-04-16 15:47:54,364 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_23c for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,364 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_23a treated as FN (human said yes)
+2026-04-16 15:47:54,364 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_23a for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,364 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_20a treated as FN (human said yes)
+2026-04-16 15:47:54,364 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_20a for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,364 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:327] - Missing item main_10b treated as FP (human said no)
+2026-04-16 15:47:54,365 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_10b for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,365 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_23d treated as FN (human said yes)
+2026-04-16 15:47:54,365 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_23d for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,367 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_13a treated as FN (human said yes)
+2026-04-16 15:47:54,367 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_13a for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,367 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:319] - Missing item main_20b treated as FN (human said yes)
+2026-04-16 15:47:54,367 - prisma_evaluator.metrics.calculators - WARNING - [calculators.py:334] - Added missing main item main_20b for paper Tsuge2025_PRISMA2020_120 to comparison_details
+2026-04-16 15:47:54,367 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 12 abstract items, expected 12 items
+2026-04-16 15:47:54,368 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:410] - AI evaluation failed for abstract_item_9, treating as FN (human said yes)
+2026-04-16 15:47:54,368 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:410] - AI evaluation failed for abstract_item_2, treating as FN (human said yes)
+2026-04-16 15:47:54,368 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:414] - AI evaluation failed for abstract_item_8, treating as FP (human said no)
+2026-04-16 15:47:54,368 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:414] - AI evaluation failed for abstract_item_3, treating as FP (human said no)
+2026-04-16 15:47:54,369 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:410] - AI evaluation failed for abstract_item_10, treating as FN (human said yes)
+2026-04-16 15:47:54,369 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:414] - AI evaluation failed for abstract_item_12, treating as FP (human said no)
+2026-04-16 15:47:54,369 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:414] - AI evaluation failed for abstract_item_4, treating as FP (human said no)
+2026-04-16 15:47:54,369 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:410] - AI evaluation failed for abstract_item_5, treating as FN (human said yes)
+2026-04-16 15:47:54,369 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:414] - AI evaluation failed for abstract_item_6, treating as FP (human said no)
+2026-04-16 15:47:54,369 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:414] - AI evaluation failed for abstract_item_7, treating as FP (human said no)
+2026-04-16 15:47:54,369 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:410] - AI evaluation failed for abstract_item_1, treating as FN (human said yes)
+2026-04-16 15:47:54,369 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:414] - AI evaluation failed for abstract_item_11, treating as FP (human said no)
+2026-04-16 15:47:54,370 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 0.00% (0/53)
+2026-04-16 15:47:54,370 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:439] - Accuracy metrics calculated.
+2026-04-16 15:47:54,370 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:447] - Saving all processed results...
+2026-04-16 15:47:54,371 - prisma_evaluator.data_io.savers - INFO - [savers.py:45] - Saving AI evaluations to /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,374 - prisma_evaluator.data_io.savers - INFO - [savers.py:51] - AI evaluation results saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,374 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:452] - AI evaluations saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,374 - prisma_evaluator.data_io.savers - INFO - [savers.py:71] - Saving accuracy summary to /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,377 - prisma_evaluator.data_io.savers - INFO - [savers.py:83] - Accuracy summary saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,377 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:459] - Accuracy summary saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,378 - prisma_evaluator.data_io.savers - INFO - [savers.py:107] - Saving comparison details to /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,380 - prisma_evaluator.data_io.savers - INFO - [savers.py:112] - Comparison details saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,380 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:467] - Comparison details saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,380 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:472] - Evaluation pipeline finished for model 'gpt-5.4', format 'md_gpt-5.4_20260416_154605'.
+2026-04-16 15:47:54,395 - run_validation_model - INFO - [run_validation_model.py:287] - raw trio resolved: {'ai_evaluations': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json'), 'accuracy_summary': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json'), 'comparison_details': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json')}
+2026-04-16 15:47:54,396 - run_validation_model - INFO - [run_validation_model.py:297] - copied ai_evaluations_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/ai_evaluations_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,396 - run_validation_model - INFO - [run_validation_model.py:297] - copied accuracy_summary_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/accuracy_summary_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,396 - run_validation_model - INFO - [run_validation_model.py:297] - copied comparison_details_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/comparison_details_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json
+2026-04-16 15:47:54,397 - run_validation_model - INFO - [run_validation_model.py:170] - running: /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/build_unified_validation_json.py --model-id gpt-5.4 --format-type md_gpt-5.4_20260416_154605 --run-timestamp 20260416_154754 --ai-evaluations /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/ai_evaluations_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json --accuracy-summary /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/accuracy_summary_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json --comparison-details /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/comparison_details_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json --output-dir /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results --cli-parameters {"num_papers_to_process": 1, "paper_ids_file": "/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt", "schema_type": "simple", "checklist_format": "md", "order_mode": "eande-first", "section_mode": "off", "gpt5_reasoning": "none", "gemini_model": null, "thinking_level": null, "force_claude_native": false, "openrouter_max_tokens": null} --actual-execution {"runner_script": "test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py", "raw_ai_evaluations": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/ai_evaluations_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json", "raw_accuracy_summary": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/accuracy_summary_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json", "raw_comparison_details": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/comparison_details_gpt-5.4_md_gpt-5.4_20260416_154605_20260416_154754.json"} --dataset-info {"sources": ["tsuge2025_merged"], "total_papers_available": 1, "evaluated_papers": ["Tsuge2025_PRISMA2020_120"], "num_papers_requested": 1}
+unified_json=/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_gpt-5.4_20260416_154754.json
+2026-04-16 15:47:54,467 - run_validation_model - INFO - [run_validation_model.py:170] - running: /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/check_validation_counts.py /home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_gpt-5.4_20260416_154754.json --expected-size smoke
+file=/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_gpt-5.4_20260416_154754.json
+expected_counts={'overall_metrics': 53, 'main_body_metrics': 41, 'abstract_metrics': 12}
+observed_model_ids={'cli_target_model_id': 'gpt-5.4', 'actual_model_id_to_use': 'gpt-5.4', 'paper_model_ids': ['gpt-5.4']}
+overall_metrics.counts={'tp': 0, 'tn': 0, 'fp': 18, 'fn': 35, 'total_comparable': 53, 'correct': 0}
+main_body_metrics.counts={'tp': 0, 'tn': 0, 'fp': 11, 'fn': 30, 'total_comparable': 41, 'correct': 0}
+abstract_metrics.counts={'tp': 0, 'tn': 0, 'fp': 7, 'fn': 5, 'total_comparable': 12, 'correct': 0}
+OK
+unified_json=/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_gpt-5.4_20260416_154754.json

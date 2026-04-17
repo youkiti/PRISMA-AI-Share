@@ -1,0 +1,140 @@
+[
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_120",
+    "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+    "items": [
+      {
+        "item_id": "abstract_item_1",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Title explicitly identifies the report as a systematic review and meta-analysis.",
+        "human_result_raw": "Yes",
+        "human_result_normalized": "yes",
+        "is_comparable": true,
+        "is_correct": true,
+        "classification": "tp"
+      },
+      {
+        "item_id": "abstract_item_2",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Explicit statement: evaluate effectiveness of massage for postoperative rehabilitation after TKA.",
+        "human_result_raw": "Yes",
+        "human_result_normalized": "yes",
+        "is_comparable": true,
+        "is_correct": true,
+        "classification": "tp"
+      },
+      {
+        "item_id": "abstract_item_3",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Specifies inclusion of any randomized controlled trials on massage for postoperative TKA rehabilitation.",
+        "human_result_raw": "No",
+        "human_result_normalized": "no",
+        "is_comparable": true,
+        "is_correct": false,
+        "classification": "fp"
+      },
+      {
+        "item_id": "abstract_item_4",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Lists databases (PubMed, Web of Science, EMBASE, Cochrane, CNKI) and last search date (May 2024).",
+        "human_result_raw": "No",
+        "human_result_normalized": "no",
+        "is_comparable": true,
+        "is_correct": false,
+        "classification": "fp"
+      },
+      {
+        "item_id": "abstract_item_5",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Specifies use of Cochrane Risk of Bias Assessment Tool.",
+        "human_result_raw": "Yes",
+        "human_result_normalized": "yes",
+        "is_comparable": true,
+        "is_correct": true,
+        "classification": "tp"
+      },
+      {
+        "item_id": "abstract_item_6",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Specifies meta-analysis of outcomes including pain, ROM, D-dimer, and hospital stay.",
+        "human_result_raw": "No",
+        "human_result_normalized": "no",
+        "is_comparable": true,
+        "is_correct": false,
+        "classification": "fp"
+      },
+      {
+        "item_id": "abstract_item_7",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Reports 11 RCTs with 940 subjects included.",
+        "human_result_raw": "No",
+        "human_result_normalized": "no",
+        "is_comparable": true,
+        "is_correct": false,
+        "classification": "fp"
+      },
+      {
+        "item_id": "abstract_item_8",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Presents results for pain, ROM, D-dimer, hospital stay, adverse events; indicates direction of effects and subgroup differences.",
+        "human_result_raw": "No",
+        "human_result_normalized": "no",
+        "is_comparable": true,
+        "is_correct": false,
+        "classification": "fp"
+      },
+      {
+        "item_id": "abstract_item_9",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Mentions large heterogeneity of studies as a limitation.",
+        "human_result_raw": "Yes",
+        "human_result_normalized": "yes",
+        "is_comparable": true,
+        "is_correct": true,
+        "classification": "tp"
+      },
+      {
+        "item_id": "abstract_item_10",
+        "ai_result_raw": "yes",
+        "ai_result_normalized": "yes",
+        "ai_reason": "Interprets results: massage effective for pain/ROM as adjunctive treatment but not for D-dimer.",
+        "human_result_raw": "Yes",
+        "human_result_normalized": "yes",
+        "is_comparable": true,
+        "is_correct": true,
+        "classification": "tp"
+      },
+      {
+        "item_id": "abstract_item_11",
+        "ai_result_raw": "no",
+        "ai_result_normalized": "no",
+        "ai_reason": "No mention of funding source.",
+        "human_result_raw": "No",
+        "human_result_normalized": "no",
+        "is_comparable": true,
+        "is_correct": true,
+        "classification": "tn"
+      },
+      {
+        "item_id": "abstract_item_12",
+        "ai_result_raw": "no",
+        "ai_result_normalized": "no",
+        "ai_reason": "No mention of registration name or number.",
+        "human_result_raw": "No",
+        "human_result_normalized": "no",
+        "is_comparable": true,
+        "is_correct": true,
+        "classification": "tn"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1894 @@
+{
+  "experiment_metadata": {
+    "experiment_id": "20260416_155010",
+    "start_time": "2026-04-16 15:47:55.501028",
+    "end_time": "2026-04-16 15:47:55.501028",
+    "total_processing_time": 134.932767,
+    "total_token_count": 25782,
+    "token_count_summary": {
+      "mean": 25782.0,
+      "sd": 0.0,
+      "median": 25782.0,
+      "iqr": 0.0,
+      "usage_breakdown": {
+        "input_tokens": 14051.0,
+        "output_tokens": 1877.0,
+        "total_tokens": 25782.0
+      }
+    },
+    "cli_parameters": {
+      "target_model_id": "gemini-3.1-pro-preview",
+      "target_format_type": "md_gemini-3.1-pro-preview_20260416_154605",
+      "num_papers_to_process": 1,
+      "paper_ids_file": "/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt",
+      "schema_type": "simple",
+      "checklist_format": "md",
+      "order_mode": "eande-first",
+      "section_mode": "off",
+      "gpt5_reasoning": null,
+      "gemini_model": "gemini-3.1-pro-preview",
+      "thinking_level": "high",
+      "force_claude_native": false,
+      "openrouter_max_tokens": null
+    },
+    "actual_execution": {
+      "model_id_to_use": "gemini-3.1-pro-preview",
+      "format_type_to_use": "md_gemini-3.1-pro-preview_20260416_154605",
+      "runner_script": "test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py",
+      "raw_ai_evaluations": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/ai_evaluations_gemini-3.1-pro-preview_md_gemini-3.1-pro-preview_20260416_154605_20260416_155010.json",
+      "raw_accuracy_summary": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/accuracy_summary_gemini-3.1-pro-preview_md_gemini-3.1-pro-preview_20260416_154605_20260416_155010.json",
+      "raw_comparison_details": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/comparison_details_gemini-3.1-pro-preview_md_gemini-3.1-pro-preview_20260416_154605_20260416_155010.json"
+    },
+    "dataset_info": {
+      "sources": [
+        "tsuge2025_merged"
+      ],
+      "total_papers_available": 1,
+      "evaluated_papers": [
+        "Tsuge2025_PRISMA2020_120"
+      ],
+      "num_papers_requested": 1
+    }
+  },
+  "paper_evaluations": [
+    {
+      "paper_id": "Tsuge2025_PRISMA2020_120",
+      "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+      "dataset_source": "tsuge2025_prisma",
+      "overall_metadata": {
+        "model_id": "gemini-3.1-pro-preview",
+        "model_version": "gemini-3.1-pro-preview",
+        "format_type": "combined",
+        "prompt_version": "refactored_v1_core_task_combined",
+        "token_count": 25782,
+        "token_usage": {
+          "prompt_token_count": 14051,
+          "prompt_tokens": 14051,
+          "input_tokens": 14051,
+          "candidates_token_count": 1877,
+          "completion_tokens": 1877,
+          "output_tokens": 1877,
+          "total_token_count": 25782,
+          "total_tokens": 25782
+        },
+        "processing_time": 134.932767,
+        "timestamp": "2026-04-16 15:47:55.501028"
+      },
+      "evaluation_sets": {
+        "main": {
+          "evaluations": {
+            "23c": {
+              "result": "yes",
+              "reason": "Notes structural limitations of the review process, such as geographical skewness and absence of sensitivity analyses.",
+              "raw_response": ""
+            },
+            "5": {
+              "result": "yes",
+              "reason": "Clear inclusion and exclusion metrics adhere accurately to defined standards derived from the PICOS mechanism.",
+              "raw_response": ""
+            },
+            "24b": {
+              "result": "yes",
+              "reason": "Presenting the PROSPERO registry directly dictates where interested readers log access to the protocol.",
+              "raw_response": ""
+            },
+            "13e": {
+              "result": "yes",
+              "reason": "Subgroup analyses stratified by country type are specified to explore causes of heterogeneity.",
+              "raw_response": ""
+            },
+            "24c": {
+              "result": "no",
+              "reason": "The manuscript contains no explanation or description characterizing prospective amendments from the protocol.",
+              "raw_response": ""
+            },
+            "2": {
+              "result": "yes",
+              "reason": "The structured abstract appropriately covers the objectives, selection, extraction, syntheses, results, and general conclusions.",
+              "raw_response": ""
+            },
+            "26": {
+              "result": "yes",
+              "reason": "The declaration section formally asserts no competing interests fundamentally exist among listed authors.",
+              "raw_response": ""
+            },
+            "13f": {
+              "result": "no",
+              "reason": "The authors explicitly state that no sensitivity analyses were performed due to limited literature.",
+              "raw_response": ""
+            },
+            "20d": {
+              "result": "no",
+              "reason": "Zero sensitivity analyses results are presented because the authors bypassed performing them.",
+              "raw_response": ""
+            },
+            "23a": {
+              "result": "yes",
+              "reason": "General interpretation functionally intertwines the results with the context of other existing scientific literature.",
+              "raw_response": ""
+            },
+            "20b": {
+              "result": "yes",
+              "reason": "All syntheses feature presented summary estimates, confidence intervals, p-values, and statistical heterogeneity metrics.",
+              "raw_response": ""
+            },
+            "8": {
+              "result": "yes",
+              "reason": "Dual independent screenings and arbitration via a third distinct researcher defined properly inside methods.",
+              "raw_response": ""
+            },
+            "1": {
+              "result": "yes",
+              "reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+              "raw_response": ""
+            },
+            "11": {
+              "result": "no",
+              "reason": "The methods do not specify how many reviewers completed the risk of bias assessment or if they worked independently.",
+              "raw_response": ""
+            },
+            "22": {
+              "result": "no",
+              "reason": "No formal presentation of certainty or confidence assessments (e.g., Summary of Findings tables) is provided.",
+              "raw_response": ""
+            },
+            "10a": {
+              "result": "yes",
+              "reason": "Primary outcomes such as postoperative pain, ROM, and D-dimer levels are explicitly listed and targeted.",
+              "raw_response": ""
+            },
+            "23d": {
+              "result": "yes",
+              "reason": "Provides insights highlighting implications applicable to practice alongside clear recommendations mapped for future research.",
+              "raw_response": ""
+            },
+            "16b": {
+              "result": "no",
+              "reason": "Although counts and reasons for exclusions are given, the specific excluded full-text studies are not cited.",
+              "raw_response": ""
+            },
+            "21": {
+              "result": "yes",
+              "reason": "Assessments reflecting publication bias risks, via Begg's and Egger's metrics, are explicitly reported.",
+              "raw_response": ""
+            },
+            "14": {
+              "result": "yes",
+              "reason": "Begg's and Egger's tests are listed as the methods used to assess publication and reporting biases.",
+              "raw_response": ""
+            },
+            "16a": {
+              "result": "yes",
+              "reason": "A PRISMA flow diagram and detailed text outline the step-by-step search and screening yields.",
+              "raw_response": ""
+            },
+            "18": {
+              "result": "yes",
+              "reason": "Risk of bias assessments for each included study are provided natively in Figure 2.",
+              "raw_response": ""
+            },
+            "13a": {
+              "result": "yes",
+              "reason": "Studies were grouped and deemed eligible based on clearly defined clinical outcomes like pain and ROM.",
+              "raw_response": ""
+            },
+            "12": {
+              "result": "yes",
+              "reason": "Effect measures correctly specified as mean difference (MD) and standardized mean difference (SMD).",
+              "raw_response": ""
+            },
+            "6": {
+              "result": "yes",
+              "reason": "Dates indicating limits reaching up to May 2024 and names of all five screened databases provided.",
+              "raw_response": ""
+            },
+            "10b": {
+              "result": "no",
+              "reason": "Variables are listed, but no methods or assumptions regarding missing or unclear information are described.",
+              "raw_response": ""
+            },
+            "7": {
+              "result": "yes",
+              "reason": "A supplementary file (S1) is referenced showing full strategic search paths incorporating terms and filters.",
+              "raw_response": ""
+            },
+            "17": {
+              "result": "yes",
+              "reason": "Study characteristics, including samples and interventions, are comprehensively detailed in Table 1.",
+              "raw_response": ""
+            },
+            "27": {
+              "result": "no",
+              "reason": "Data is strictly classified reachable upon reasonable request rather than guaranteeing open public availability explicitly.",
+              "raw_response": ""
+            },
+            "13b": {
+              "result": "yes",
+              "reason": "The authors state that studies lacking statistical data that could not be integrated were excluded.",
+              "raw_response": ""
+            },
+            "9": {
+              "result": "yes",
+              "reason": "Outlines that two researchers independently handled data extraction tasks to prevent systematic biases reliably.",
+              "raw_response": ""
+            },
+            "24a": {
+              "result": "yes",
+              "reason": "The PROSPERO registration identifier (CRD42023411680) is provided in the registered report.",
+              "raw_response": ""
+            },
+            "4": {
+              "result": "yes",
+              "reason": "The objectives distinctly aim to assess massage efficacy corresponding to specific postoperative criteria for TKA.",
+              "raw_response": ""
+            },
+            "20a": {
+              "result": "no",
+              "reason": "Characteristics and specific risks of bias among contributing studies are not briefly summarized for each individual synthesis.",
+              "raw_response": ""
+            },
+            "13d": {
+              "result": "yes",
+              "reason": "Models based on I2 thresholds and statistical software (RevMan, Stata) are thoroughly described.",
+              "raw_response": ""
+            },
+            "19": {
+              "result": "yes",
+              "reason": "Forest plots effectively depict individual study effect estimates, precision, and group statistics.",
+              "raw_response": ""
+            },
+            "25": {
+              "result": "yes",
+              "reason": "Financial obligations correctly default to acknowledging no applicable sources of external funding or sponsorships.",
+              "raw_response": ""
+            },
+            "23b": {
+              "result": "yes",
+              "reason": "Limitations regarding the included evidence, such as the impossibility of complete double-blinding, are discussed.",
+              "raw_response": ""
+            },
+            "15": {
+              "result": "no",
+              "reason": "No methods for assessing overall certainty of evidence (e.g., GRADE) are described.",
+              "raw_response": ""
+            },
+            "20c": {
+              "result": "yes",
+              "reason": "Results from subgroup analyses regarding country groupings correctly present heterogeneity investigations.",
+              "raw_response": ""
+            },
+            "13c": {
+              "result": "yes",
+              "reason": "The review relies on forest plots and structured tables to visually display study results implicitly.",
+              "raw_response": ""
+            },
+            "3": {
+              "result": "yes",
+              "reason": "Rationalizes exploring postoperative massage treatments filling an established gap since no prior reviews existed.",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "gemini-3.1-pro-preview",
+            "model_version": "gemini-3.1-pro-preview",
+            "format_type": "md_gemini-3.1-pro-preview_20260416_154605",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 20999,
+            "token_usage": {
+              "prompt_token_count": 12212,
+              "prompt_tokens": 12212,
+              "input_tokens": 12212,
+              "candidates_token_count": 1359,
+              "completion_tokens": 1359,
+              "output_tokens": 1359,
+              "total_token_count": 20999,
+              "total_tokens": 20999
+            },
+            "processing_time": 112.91219919099967,
+            "timestamp": "2026-04-16 15:49:45.312408"
+          }
+        },
+        "abstract": {
+          "evaluations": {
+            "item_1": {
+              "result": "yes",
+              "reason": "The title explicitly states that the report is a \"systematic review and meta-analysis.\"",
+              "raw_response": ""
+            },
+            "item_2": {
+              "result": "yes",
+              "reason": "The abstract clearly states the main objective: to evaluate the effectiveness of massage for postoperative rehabilitation after total knee arthroplasty (TKA).",
+              "raw_response": ""
+            },
+            "item_11": {
+              "result": "no",
+              "reason": "There is no mention of the primary source of funding or financial support for the review within the abstract.",
+              "raw_response": ""
+            },
+            "item_5": {
+              "result": "yes",
+              "reason": "The abstract specifies that the Cochrane Risk of Bias Assessment Tool was used to assess the risk of bias in the included studies.",
+              "raw_response": ""
+            },
+            "item_9": {
+              "result": "yes",
+              "reason": "The abstract acknowledges limitations in the synthesized evidence by explicitly stating that \"the heterogeneity of the studies was large.\"",
+              "raw_response": ""
+            },
+            "item_7": {
+              "result": "yes",
+              "reason": "The abstract clearly gives the total numbers, noting that \"Eleven randomized controlled clinical trials with 940 subjects were included.\"",
+              "raw_response": ""
+            },
+            "item_4": {
+              "result": "yes",
+              "reason": "The abstract lists the five specific databases searched (PubMed, Web of Science, EMBASE, Cochrane Library, and CNKI) and the search date range (inception to May 2024).",
+              "raw_response": ""
+            },
+            "item_6": {
+              "result": "yes",
+              "reason": "The text states that a meta-analysis was performed for specific clinical outcomes (postoperative pain, ROM, D-dimer levels, hospital stay) alongside subgroup analysis.",
+              "raw_response": ""
+            },
+            "item_12": {
+              "result": "no",
+              "reason": "The abstract does not provide a systematic review register name (such as PROSPERO) or a registration number.",
+              "raw_response": ""
+            },
+            "item_3": {
+              "result": "yes",
+              "reason": "The authors specify inclusion criteria by stating that any randomized controlled trials focusing on the use of massage for postoperative TKA rehabilitation were included.",
+              "raw_response": ""
+            },
+            "item_10": {
+              "result": "yes",
+              "reason": "The authors provide a clear conclusion, maintaining that based on current evidence, massage can be successfully used as an adjunctive treatment for rehabilitation after TKA.",
+              "raw_response": ""
+            },
+            "item_8": {
+              "result": "no",
+              "reason": "Although a meta-analysis was supposedly performed and the direction of effect is described, the abstract completely omits numerical summary estimates and confidence intervals for any outcome.",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "gemini-3.1-pro-preview",
+            "model_version": "gemini-3.1-pro-preview",
+            "format_type": "md_gemini-3.1-pro-preview_20260416_154605",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 4783,
+            "token_usage": {
+              "prompt_token_count": 1839,
+              "prompt_tokens": 1839,
+              "input_tokens": 1839,
+              "candidates_token_count": 518,
+              "completion_tokens": 518,
+              "output_tokens": 518,
+              "total_token_count": 4783,
+              "total_tokens": 4783
+            },
+            "processing_time": 26.14633404400047,
+            "timestamp": "2026-04-16 15:50:10.433616"
+          }
+        }
+      },
+      "metrics": {
+        "cohen_kappa": 0.4136170212765959,
+        "accuracy": 75.47169811320755,
+        "precision": 77.5,
+        "recall": 88.57142857142857,
+        "f1_score": 82.66666666666667,
+        "specificity": 50.0
+      }
+    }
+  ],
+  "overall_metrics": {
+    "accuracy": 75.47169811320755,
+    "precision": 77.5,
+    "recall": 88.57142857142857,
+    "f1_score": 82.66666666666667,
+    "specificity": 50.0,
+    "cohen_kappa": 0.4136170212765959,
+    "counts": {
+      "tp": 31,
+      "tn": 9,
+      "fp": 9,
+      "fn": 4,
+      "total_comparable": 53,
+      "correct": 40
+    }
+  },
+  "main_body_metrics": {
+    "accuracy": 78.04878048780488,
+    "precision": 83.87096774193549,
+    "recall": 86.66666666666667,
+    "f1_score": 85.24590163934425,
+    "specificity": 54.54545454545454,
+    "cohen_kappa": 0.4243369734789394,
+    "counts": {
+      "tp": 26,
+      "tn": 6,
+      "fp": 5,
+      "fn": 4,
+      "total_comparable": 41,
+      "correct": 32
+    }
+  },
+  "abstract_metrics": {
+    "accuracy": 66.66666666666666,
+    "precision": 55.55555555555556,
+    "recall": 100.0,
+    "f1_score": 71.42857142857143,
+    "specificity": 42.857142857142854,
+    "cohen_kappa": 0.3846153846153845,
+    "counts": {
+      "tp": 5,
+      "tn": 3,
+      "fp": 4,
+      "fn": 0,
+      "total_comparable": 12,
+      "correct": 8
+    }
+  },
+  "item_specific_metrics": {
+    "main_23c": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_5": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_24b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13e": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_24c": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_26": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_13f": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_20d": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_23a": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_20b": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_8": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_1": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_11": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_22": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_10a": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_23d": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_16b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_21": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_14": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_16a": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_18": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_13a": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_12": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_6": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_10b": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_7": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_17": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_27": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_9": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_24a": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_4": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_20a": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13d": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_19": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_25": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_23b": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_15": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_20c": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "main_13c": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_3": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_1": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_2": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_11": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_5": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_9": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_7": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_4": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_6": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_12": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_3": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_10": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_8": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    }
+  },
+  "comparison_details": [
+    {
+      "paper_id": "Tsuge2025_PRISMA2020_120",
+      "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+      "items": [
+        {
+          "item_id": "main_23c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Notes structural limitations of the review process, such as geographical skewness and absence of sensitivity analyses.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Clear inclusion and exclusion metrics adhere accurately to defined standards derived from the PICOS mechanism.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Presenting the PROSPERO registry directly dictates where interested readers log access to the protocol.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13e",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Subgroup analyses stratified by country type are specified to explore causes of heterogeneity.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24c",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "The manuscript contains no explanation or description characterizing prospective amendments from the protocol.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_26",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The declaration section formally asserts no competing interests fundamentally exist among listed authors.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13f",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "The authors explicitly state that no sensitivity analyses were performed due to limited literature.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_20d",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "Zero sensitivity analyses results are presented because the authors bypassed performing them.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_23a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "General interpretation functionally intertwines the results with the context of other existing scientific literature.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "All syntheses feature presented summary estimates, confidence intervals, p-values, and statistical heterogeneity metrics.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_8",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Dual independent screenings and arbitration via a third distinct researcher defined properly inside methods.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_11",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "The methods do not specify how many reviewers completed the risk of bias assessment or if they worked independently.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_22",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "No formal presentation of certainty or confidence assessments (e.g., Summary of Findings tables) is provided.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_10a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Primary outcomes such as postoperative pain, ROM, and D-dimer levels are explicitly listed and targeted.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_23d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Provides insights highlighting implications applicable to practice alongside clear recommendations mapped for future research.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16b",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "Although counts and reasons for exclusions are given, the specific excluded full-text studies are not cited.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_21",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Assessments reflecting publication bias risks, via Begg's and Egger's metrics, are explicitly reported.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_14",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Begg's and Egger's tests are listed as the methods used to assess publication and reporting biases.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_16a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "A PRISMA flow diagram and detailed text outline the step-by-step search and screening yields.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_18",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Risk of bias assessments for each included study are provided natively in Figure 2.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Studies were grouped and deemed eligible based on clearly defined clinical outcomes like pain and ROM.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_12",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Effect measures correctly specified as mean difference (MD) and standardized mean difference (SMD).",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Dates indicating limits reaching up to May 2024 and names of all five screened databases provided.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_10b",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "Variables are listed, but no methods or assumptions regarding missing or unclear information are described.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "A supplementary file (S1) is referenced showing full strategic search paths incorporating terms and filters.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_17",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Study characteristics, including samples and interventions, are comprehensively detailed in Table 1.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_27",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "Data is strictly classified reachable upon reasonable request rather than guaranteeing open public availability explicitly.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_13b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The authors state that studies lacking statistical data that could not be integrated were excluded.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Outlines that two researchers independently handled data extraction tasks to prevent systematic biases reliably.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_24a",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The PROSPERO registration identifier (CRD42023411680) is provided in the registered report.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The objectives distinctly aim to assess massage efficacy corresponding to specific postoperative criteria for TKA.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_20a",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "Characteristics and specific risks of bias among contributing studies are not briefly summarized for each individual synthesis.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_13d",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Models based on I2 thresholds and statistical software (RevMan, Stata) are thoroughly described.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_19",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Forest plots effectively depict individual study effect estimates, precision, and group statistics.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_25",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Financial obligations correctly default to acknowledging no applicable sources of external funding or sponsorships.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_23b",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Limitations regarding the included evidence, such as the impossibility of complete double-blinding, are discussed.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_15",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "No methods for assessing overall certainty of evidence (e.g., GRADE) are described.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "main_20c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Results from subgroup analyses regarding country groupings correctly present heterogeneity investigations.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "main_13c",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The review relies on forest plots and structured tables to visually display study results implicitly.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Rationalizes exploring postoperative massage treatments filling an established gap since no prior reviews existed.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The title explicitly states that the report is a \"systematic review and meta-analysis.\"",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_2",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The abstract clearly states the main objective: to evaluate the effectiveness of massage for postoperative rehabilitation after total knee arthroplasty (TKA).",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_11",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "There is no mention of the primary source of funding or financial support for the review within the abstract.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The abstract specifies that the Cochrane Risk of Bias Assessment Tool was used to assess the risk of bias in the included studies.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The abstract acknowledges limitations in the synthesized evidence by explicitly stating that \"the heterogeneity of the studies was large.\"",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The abstract clearly gives the total numbers, noting that \"Eleven randomized controlled clinical trials with 940 subjects were included.\"",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The abstract lists the five specific databases searched (PubMed, Web of Science, EMBASE, Cochrane Library, and CNKI) and the search date range (inception to May 2024).",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The text states that a meta-analysis was performed for specific clinical outcomes (postoperative pain, ROM, D-dimer levels, hospital stay) alongside subgroup analysis.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_12",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "The abstract does not provide a systematic review register name (such as PROSPERO) or a registration number.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The authors specify inclusion criteria by stating that any randomized controlled trials focusing on the use of massage for postoperative TKA rehabilitation were included.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_10",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "The authors provide a clear conclusion, maintaining that based on current evidence, massage can be successfully used as an adjunctive treatment for rehabilitation after TKA.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_8",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "Although a meta-analysis was supposedly performed and the direction of effect is described, the abstract completely omits numerical summary estimates and confidence intervals for any outcome.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        }
+      ]
+    }
+  ]
+}

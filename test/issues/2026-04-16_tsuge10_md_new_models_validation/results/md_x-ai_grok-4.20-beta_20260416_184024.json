@@ -1,0 +1,2025 @@
+{
+  "experiment_metadata": {
+    "experiment_id": "20260416_184024",
+    "start_time": "2026-04-16 18:35:07.302493",
+    "end_time": "2026-04-16 18:35:07.302493",
+    "total_processing_time": 316.995405,
+    "total_token_count": 2505,
+    "token_count_summary": {
+      "mean": 2505.0,
+      "sd": 0.0,
+      "median": 2505.0,
+      "iqr": 0.0,
+      "usage_breakdown": {
+        "input_tokens": 2180.0,
+        "output_tokens": 325.0,
+        "total_tokens": 2505.0
+      }
+    },
+    "cli_parameters": {
+      "target_model_id": "x-ai/grok-4.20-beta",
+      "target_format_type": "md_x-ai_grok-4.20-beta_20260416_183507",
+      "num_papers_to_process": 1,
+      "paper_ids_file": "/home/devcontainers/PRISMA-AI/test/issues/2026-04-16_tsuge10_md_new_models_validation/data/tsuge_selected10.txt",
+      "schema_type": "simple",
+      "checklist_format": "md",
+      "order_mode": "eande-first",
+      "section_mode": "off",
+      "gpt5_reasoning": null,
+      "gemini_model": null,
+      "thinking_level": null,
+      "force_claude_native": false,
+      "openrouter_max_tokens": 60000
+    },
+    "actual_execution": {
+      "model_id_to_use": "x-ai/grok-4.20-beta",
+      "format_type_to_use": "md_x-ai_grok-4.20-beta_20260416_183507",
+      "runner_script": "test/issues/2026-04-16_tsuge10_md_new_models_validation/scripts/run_validation_model.py",
+      "raw_ai_evaluations": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/ai_evaluations_x-ai_grok-4.20-beta_md_x-ai_grok-4.20-beta_20260416_183507_20260416_184024.json",
+      "raw_accuracy_summary": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/accuracy_summary_x-ai_grok-4.20-beta_md_x-ai_grok-4.20-beta_20260416_183507_20260416_184024.json",
+      "raw_comparison_details": "test/issues/2026-04-16_tsuge10_md_new_models_validation/results/comparison_details_x-ai_grok-4.20-beta_md_x-ai_grok-4.20-beta_20260416_183507_20260416_184024.json"
+    },
+    "dataset_info": {
+      "sources": [
+        "tsuge2025_merged"
+      ],
+      "total_papers_available": 1,
+      "evaluated_papers": [
+        "Tsuge2025_PRISMA2020_120"
+      ],
+      "num_papers_requested": 1
+    }
+  },
+  "paper_evaluations": [
+    {
+      "paper_id": "Tsuge2025_PRISMA2020_120",
+      "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+      "dataset_source": "tsuge2025_prisma",
+      "overall_metadata": {
+        "model_id": "x-ai/grok-4.20-beta",
+        "model_version": "x-ai/grok-4.20-beta",
+        "format_type": "combined",
+        "prompt_version": "refactored_v1_core_task_combined",
+        "token_count": 2505,
+        "token_usage": {
+          "prompt_tokens": 2180,
+          "input_tokens": 2180,
+          "completion_tokens": 325,
+          "output_tokens": 325,
+          "total_tokens": 2505,
+          "reasoning_tokens": 0
+        },
+        "processing_time": 316.995405,
+        "timestamp": "2026-04-16 18:35:07.302493"
+      },
+      "evaluation_sets": {
+        "main": {
+          "evaluations": {
+            "27": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "21": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "9": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "1": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "18": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "38": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "12": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "23": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "35": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "10": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "17": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "39": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "3": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "30": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "15": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "24": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "32": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "40": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "13": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "11": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "36": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "14": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "25": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "8": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "41": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "22": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "7": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "5": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "29": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "31": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "20": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "42": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "16": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "37": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "19": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "33": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "26": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "34": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "28": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "6": {
+              "reason": "Failed after 3 retry attempts"
+            },
+            "4": {
+              "reason": "Failed after 3 retry attempts"
+            }
+          },
+          "processing_metadata": {
+            "model_id": "x-ai/grok-4.20-beta",
+            "model_version": "x-ai/grok-4.20-beta",
+            "format_type": "md_x-ai_grok-4.20-beta_20260416_183507",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 0,
+            "token_usage": {},
+            "processing_time": 322.1198526240005,
+            "timestamp": "2026-04-16 18:40:22.499872"
+          }
+        },
+        "abstract": {
+          "evaluations": {
+            "item_1": {
+              "result": "yes",
+              "reason": "Title explicitly identifies the report as a systematic review and meta-analysis.",
+              "raw_response": ""
+            },
+            "item_2": {
+              "result": "yes",
+              "reason": "Explicit statement: evaluate effectiveness of massage for postoperative rehabilitation after TKA.",
+              "raw_response": ""
+            },
+            "item_3": {
+              "result": "yes",
+              "reason": "Specifies inclusion of any randomized controlled trials on massage for postoperative TKA rehabilitation.",
+              "raw_response": ""
+            },
+            "item_4": {
+              "result": "yes",
+              "reason": "Lists databases (PubMed, Web of Science, EMBASE, Cochrane, CNKI) and last search date (May 2024).",
+              "raw_response": ""
+            },
+            "item_5": {
+              "result": "yes",
+              "reason": "Specifies use of Cochrane Risk of Bias Assessment Tool.",
+              "raw_response": ""
+            },
+            "item_6": {
+              "result": "yes",
+              "reason": "Describes meta-analysis of outcomes including pain, ROM, D-dimer, hospital stay; mentions subgroup analysis.",
+              "raw_response": ""
+            },
+            "item_7": {
+              "result": "yes",
+              "reason": "Reports 11 RCTs with 940 subjects included.",
+              "raw_response": ""
+            },
+            "item_8": {
+              "result": "yes",
+              "reason": "Presents results for pain, ROM, D-dimer, hospital stay, adverse events; indicates direction of effects and subgroup differences.",
+              "raw_response": ""
+            },
+            "item_9": {
+              "result": "yes",
+              "reason": "Mentions large heterogeneity of studies as a limitation.",
+              "raw_response": ""
+            },
+            "item_10": {
+              "result": "yes",
+              "reason": "Interprets results and states massage can be used as adjunctive treatment for TKA rehabilitation.",
+              "raw_response": ""
+            },
+            "item_11": {
+              "result": "no",
+              "reason": "No mention of funding source.",
+              "raw_response": ""
+            },
+            "item_12": {
+              "result": "no",
+              "reason": "No mention of review registration.",
+              "raw_response": ""
+            }
+          },
+          "processing_metadata": {
+            "model_id": "x-ai/grok-4.20-beta",
+            "model_version": "x-ai/grok-4.20-beta",
+            "format_type": "md_x-ai_grok-4.20-beta_20260416_183507",
+            "prompt_version": "item_level_retry_v1",
+            "token_count": 2505,
+            "token_usage": {
+              "prompt_tokens": 2180,
+              "input_tokens": 2180,
+              "completion_tokens": 325,
+              "output_tokens": 325,
+              "total_tokens": 2505,
+              "reasoning_tokens": 0
+            },
+            "processing_time": 2.575099333000253,
+            "timestamp": "2026-04-16 18:40:24.297411"
+          }
+        }
+      },
+      "metrics": {
+        "cohen_kappa": -0.6275033377837117,
+        "accuracy": 13.20754716981132,
+        "precision": 23.809523809523807,
+        "recall": 14.285714285714285,
+        "f1_score": 17.857142857142854,
+        "specificity": 11.11111111111111
+      }
+    }
+  ],
+  "overall_metrics": {
+    "accuracy": 13.20754716981132,
+    "precision": 23.809523809523807,
+    "recall": 14.285714285714285,
+    "f1_score": 17.857142857142854,
+    "specificity": 11.11111111111111,
+    "cohen_kappa": -0.6275033377837117,
+    "counts": {
+      "tp": 5,
+      "tn": 2,
+      "fp": 16,
+      "fn": 30,
+      "total_comparable": 53,
+      "correct": 7
+    }
+  },
+  "main_body_metrics": {
+    "accuracy": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "specificity": 0.0,
+    "cohen_kappa": -0.6464250734573946,
+    "counts": {
+      "tp": 0,
+      "tn": 0,
+      "fp": 11,
+      "fn": 30,
+      "total_comparable": 41,
+      "correct": 0
+    }
+  },
+  "abstract_metrics": {
+    "accuracy": 58.333333333333336,
+    "precision": 50.0,
+    "recall": 100.0,
+    "f1_score": 66.66666666666666,
+    "specificity": 28.57142857142857,
+    "cohen_kappa": 0.25,
+    "counts": {
+      "tp": 5,
+      "tn": 2,
+      "fp": 5,
+      "fn": 0,
+      "total_comparable": 12,
+      "correct": 7
+    }
+  },
+  "item_specific_metrics": {
+    "main_27": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_21": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_9": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_1": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_18": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_12": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_17": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_3": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_15": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_11": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_14": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_25": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_8": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_22": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_7": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_5": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_19": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_26": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_6": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_4": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_20d": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13c": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_20a": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_20c": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_24b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_16b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_20b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_10b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_23d": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_16a": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13d": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13f": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_23c": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_10a": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_24a": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_23b": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_24c": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13e": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_13a": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "main_23a": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_1": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_2": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_3": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_4": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_5": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_6": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_7": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_8": {
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 1,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 0
+      }
+    },
+    "abstract_item_9": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_10": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "specificity": 0.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 1,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_11": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    },
+    "abstract_item_12": {
+      "accuracy": 100.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "specificity": 100.0,
+      "cohen_kappa": 0.0,
+      "counts": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0,
+        "total_comparable": 1,
+        "correct": 1
+      }
+    }
+  },
+  "comparison_details": [
+    {
+      "paper_id": "Tsuge2025_PRISMA2020_120",
+      "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+      "items": [
+        {
+          "item_id": "main_27",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_21",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_9",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_1",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_18",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_38",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_12",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_23",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_35",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_10",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_17",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_39",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_3",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_30",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_15",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_24",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_32",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_40",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_13",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_11",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_36",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_14",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_25",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_8",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_41",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_22",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_7",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_5",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_29",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_31",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_20",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_42",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_16",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_37",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_19",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_33",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_26",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_34",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_28",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": null,
+          "human_result_normalized": null,
+          "is_comparable": false,
+          "is_correct": null,
+          "classification": null
+        },
+        {
+          "item_id": "main_6",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_4",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "Failed after 3 retry attempts",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_20d",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13c",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_13b",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_20a",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_20c",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_24b",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_16b",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_20b",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_10b",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_23d",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_16a",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_13d",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_13f",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_23c",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_10a",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "main_24a",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_23b",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_24c",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_13e",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_13a",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "main_23a",
+          "ai_result_raw": null,
+          "ai_result_normalized": null,
+          "ai_reason": "AI evaluation failed - item not returned by x-ai/grok-4.20-beta",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fn"
+        },
+        {
+          "item_id": "abstract_item_1",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Title explicitly identifies the report as a systematic review and meta-analysis.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_2",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Explicit statement: evaluate effectiveness of massage for postoperative rehabilitation after TKA.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_3",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Specifies inclusion of any randomized controlled trials on massage for postoperative TKA rehabilitation.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_4",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Lists databases (PubMed, Web of Science, EMBASE, Cochrane, CNKI) and last search date (May 2024).",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_5",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Specifies use of Cochrane Risk of Bias Assessment Tool.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_6",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Describes meta-analysis of outcomes including pain, ROM, D-dimer, hospital stay; mentions subgroup analysis.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_7",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Reports 11 RCTs with 940 subjects included.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_8",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Presents results for pain, ROM, D-dimer, hospital stay, adverse events; indicates direction of effects and subgroup differences.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": false,
+          "classification": "fp"
+        },
+        {
+          "item_id": "abstract_item_9",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Mentions large heterogeneity of studies as a limitation.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_10",
+          "ai_result_raw": "yes",
+          "ai_result_normalized": "yes",
+          "ai_reason": "Interprets results and states massage can be used as adjunctive treatment for TKA rehabilitation.",
+          "human_result_raw": "Yes",
+          "human_result_normalized": "yes",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tp"
+        },
+        {
+          "item_id": "abstract_item_11",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "No mention of funding source.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        },
+        {
+          "item_id": "abstract_item_12",
+          "ai_result_raw": "no",
+          "ai_result_normalized": "no",
+          "ai_reason": "No mention of review registration.",
+          "human_result_raw": "No",
+          "human_result_normalized": "no",
+          "is_comparable": true,
+          "is_correct": true,
+          "classification": "tn"
+        }
+      ]
+    }
+  ]
+}
