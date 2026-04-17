@@ -1,0 +1,14 @@
+#
+# Tsuge PRISMA validation set (10 papers)
+# Source: test/issues/2025-09-28_tsuge_random10_gpt4o_qwen_ensemble/data/selected_papers.txt
+# Seed: 20250928
+Tsuge2025_PRISMA2020_14
+Tsuge2025_PRISMA2020_20
+Tsuge2025_PRISMA2020_22
+Tsuge2025_PRISMA2020_26
+Tsuge2025_PRISMA2020_68
+Tsuge2025_PRISMA2020_74
+Tsuge2025_PRISMA2020_76
+Tsuge2025_PRISMA2020_80
+Tsuge2025_PRISMA2020_89
+Tsuge2025_PRISMA2020_120

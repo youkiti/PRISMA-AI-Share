@@ -1,0 +1,234 @@
+[Fri Apr 17 07:43:01 JST 2026] ====== effort=medium start ======
+2026-04-17 07:43:02,118 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2026-04-17 07:43:02,118 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2026-04-17 07:43:02,118 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2026-04-17 07:43:02,119 - run_validation_model - INFO - [run_validation_model.py:231] - Paper IDs (10): Tsuge2025_PRISMA2020_14, Tsuge2025_PRISMA2020_20, Tsuge2025_PRISMA2020_22, Tsuge2025_PRISMA2020_26, Tsuge2025_PRISMA2020_68, Tsuge2025_PRISMA2020_74, Tsuge2025_PRISMA2020_76, Tsuge2025_PRISMA2020_80, Tsuge2025_PRISMA2020_89, Tsuge2025_PRISMA2020_120
+2026-04-17 07:43:02,122 - run_validation_model - INFO - [run_validation_model.py:274] - Starting pipeline model=claude-opus-4-7 format=md_claude-opus-4-7_medium_20260417_074302
+2026-04-17 07:43:02,123 - run_validation_model - INFO - [run_validation_model.py:275] - gemini_params={'schema_type': 'simple', 'checklist_format': 'md', 'order_mode': 'eande-first', 'section_mode': 'off', 'claude_effort': 'medium'}
+2026-04-17 07:43:02,123 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:38] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-17 07:43:02,123 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:44] - Starting evaluation pipeline for 10 papers. Model: 'claude-opus-4-7', Format Type: 'md_claude-opus-4-7_medium_20260417_074302'.
+2026-04-17 07:43:02,123 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:53] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-17 07:43:02,125 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:69] - PRISMA checklists loaded successfully.
+2026-04-17 07:43:02,146 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:90] - Human annotations loaded successfully.
+2026-04-17 07:43:02,146 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:121] - Using structured data override directories: [PosixPath('/home/devcontainers/PRISMA-AI/supplement/data/tsuge2025/structured_prisma')]
+2026-04-17 07:43:02,148 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_14: Tsuge2025-PRISMA_14.json
+2026-04-17 07:43:02,149 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_20: Tsuge2025-PRISMA_20.json
+2026-04-17 07:43:02,150 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_22: Tsuge2025-PRISMA_22.json
+2026-04-17 07:43:02,151 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_26: Tsuge2025-PRISMA_26.json
+2026-04-17 07:43:02,151 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_68: Tsuge2025-PRISMA_68.json
+2026-04-17 07:43:02,152 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_74: Tsuge2025-PRISMA_74.json
+2026-04-17 07:43:02,153 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_76: Tsuge2025-PRISMA_76.json
+2026-04-17 07:43:02,154 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_80: Tsuge2025-PRISMA_80.json
+2026-04-17 07:43:02,155 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_89: Tsuge2025-PRISMA_89.json
+2026-04-17 07:43:02,156 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_120: Tsuge2025-PRISMA_120.json
+2026-04-17 07:43:02,156 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:125] - Paper ID filter active: requested 10 paper(s), located 10 file(s).
+2026-04-17 07:43:02,156 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:145] - Found 10 structured data files to process (limit was 10).
+2026-04-17 07:43:02,457 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:243] - Using CLI schema type for Claude: simple
+2026-04-17 07:43:02,458 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:246] - Using checklist format for Claude: md
+2026-04-17 07:43:02,466 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:253] - Using prompt order mode: eande-first
+2026-04-17 07:43:02,468 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:264] - Using Claude effort (Opus 4.7+ adaptive thinking): medium
+2026-04-17 07:43:02,613 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:160] - ClaudeEvaluator initialized. Model: claude-opus-4-7, Max tokens: 64000, Adaptive thinking effort: medium, Schema: simple, Retries: 3, Delay: 5s
+2026-04-17 07:43:02,613 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:277] - Initialized Claude Native Evaluator for model: claude-opus-4-7
+2026-04-17 07:43:02,613 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:409] - Dispatching 10 paper evaluation tasks.
+2026-04-17 07:43:02,613 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_120.json
+2026-04-17 07:43:02,668 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_120 (from file: Tsuge2025-PRISMA_120.json)
+2026-04-17 07:43:02,668 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (main)
+2026-04-17 07:43:02,668 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:43:24,102 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:43:24,103 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 42 total items, 0 final failures, 0 retry attempts, 24.05s
+2026-04-17 07:43:24,103 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-17 07:43:24,103 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_120' for abstract evaluation.
+2026-04-17 07:43:24,103 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (abstract)
+2026-04-17 07:43:24,103 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:43:30,208 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:43:30,208 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 12 total items, 0 final failures, 0 retry attempts, 6.11s
+2026-04-17 07:43:30,209 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-17 07:43:30,209 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-17 07:43:30,209 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_14.json
+2026-04-17 07:43:30,233 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_14 (from file: Tsuge2025-PRISMA_14.json)
+2026-04-17 07:43:30,234 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (main)
+2026-04-17 07:43:30,234 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_14', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:43:53,280 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:43:53,288 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 42 total items, 0 final failures, 0 retry attempts, 25.78s
+2026-04-17 07:43:53,289 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-17 07:43:53,289 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_14' for abstract evaluation.
+2026-04-17 07:43:53,289 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (abstract)
+2026-04-17 07:43:53,289 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_14', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:44:00,087 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:44:00,087 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 12 total items, 0 final failures, 0 retry attempts, 6.80s
+2026-04-17 07:44:00,088 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-17 07:44:00,088 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-17 07:44:00,088 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_20.json
+2026-04-17 07:44:00,107 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_20 (from file: Tsuge2025-PRISMA_20.json)
+2026-04-17 07:44:00,108 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (main)
+2026-04-17 07:44:00,108 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_20', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:44:17,394 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:44:17,394 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 42 total items, 0 final failures, 0 retry attempts, 19.89s
+2026-04-17 07:44:17,394 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-17 07:44:17,394 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_20' for abstract evaluation.
+2026-04-17 07:44:17,394 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (abstract)
+2026-04-17 07:44:17,394 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_20', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:44:24,498 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:44:24,499 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 12 total items, 0 final failures, 0 retry attempts, 7.10s
+2026-04-17 07:44:24,499 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-17 07:44:24,499 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-17 07:44:24,500 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_22.json
+2026-04-17 07:44:24,548 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_22 (from file: Tsuge2025-PRISMA_22.json)
+2026-04-17 07:44:24,548 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (main)
+2026-04-17 07:44:24,548 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_22', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:44:48,561 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:44:48,562 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 42 total items, 0 final failures, 0 retry attempts, 26.62s
+2026-04-17 07:44:48,562 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-17 07:44:48,562 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_22' for abstract evaluation.
+2026-04-17 07:44:48,563 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (abstract)
+2026-04-17 07:44:48,563 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_22', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:44:57,136 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:44:57,137 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 12 total items, 0 final failures, 0 retry attempts, 8.57s
+2026-04-17 07:44:57,137 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-17 07:44:57,137 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-17 07:44:57,138 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_26.json
+2026-04-17 07:44:57,155 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_26 (from file: Tsuge2025-PRISMA_26.json)
+2026-04-17 07:44:57,155 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (main)
+2026-04-17 07:44:57,155 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_26', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:45:20,122 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:45:20,123 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 42 total items, 0 final failures, 0 retry attempts, 25.64s
+2026-04-17 07:45:20,123 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-17 07:45:20,123 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_26' for abstract evaluation.
+2026-04-17 07:45:20,123 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (abstract)
+2026-04-17 07:45:20,123 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_26', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:45:27,287 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:45:27,287 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 12 total items, 0 final failures, 0 retry attempts, 7.16s
+2026-04-17 07:45:27,287 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-17 07:45:27,287 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-17 07:45:27,287 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_68.json
+2026-04-17 07:45:27,316 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_68 (from file: Tsuge2025-PRISMA_68.json)
+2026-04-17 07:45:27,316 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (main)
+2026-04-17 07:45:27,316 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_68', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:45:50,962 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:45:50,963 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 42 total items, 0 final failures, 0 retry attempts, 26.25s
+2026-04-17 07:45:50,963 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-17 07:45:50,963 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_68' for abstract evaluation.
+2026-04-17 07:45:50,964 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (abstract)
+2026-04-17 07:45:50,964 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_68', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:45:57,250 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:45:57,250 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 12 total items, 0 final failures, 0 retry attempts, 6.29s
+2026-04-17 07:45:57,250 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-17 07:45:57,251 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-17 07:45:57,252 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_74.json
+2026-04-17 07:45:57,313 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_74 (from file: Tsuge2025-PRISMA_74.json)
+2026-04-17 07:45:57,313 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (main)
+2026-04-17 07:45:57,313 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_74', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:46:17,823 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:46:17,824 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 42 total items, 0 final failures, 0 retry attempts, 23.25s
+2026-04-17 07:46:17,825 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-17 07:46:17,825 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_74' for abstract evaluation.
+2026-04-17 07:46:17,826 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (abstract)
+2026-04-17 07:46:17,826 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_74', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:46:23,933 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:46:23,934 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 12 total items, 0 final failures, 0 retry attempts, 6.11s
+2026-04-17 07:46:23,934 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-17 07:46:23,934 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-17 07:46:23,935 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_76.json
+2026-04-17 07:46:24,031 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_76 (from file: Tsuge2025-PRISMA_76.json)
+2026-04-17 07:46:24,031 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (main)
+2026-04-17 07:46:24,031 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_76', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:46:45,221 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:46:45,221 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 42 total items, 0 final failures, 0 retry attempts, 23.82s
+2026-04-17 07:46:45,221 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-17 07:46:45,221 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_76' for abstract evaluation.
+2026-04-17 07:46:45,221 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (abstract)
+2026-04-17 07:46:45,221 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_76', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:46:51,965 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:46:51,965 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 12 total items, 0 final failures, 0 retry attempts, 6.74s
+2026-04-17 07:46:51,965 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-17 07:46:51,965 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-17 07:46:51,965 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_80.json
+2026-04-17 07:46:51,979 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_80 (from file: Tsuge2025-PRISMA_80.json)
+2026-04-17 07:46:51,980 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (main)
+2026-04-17 07:46:51,980 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_80', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:47:12,631 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:47:12,633 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 42 total items, 0 final failures, 0 retry attempts, 23.45s
+2026-04-17 07:47:12,633 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-17 07:47:12,633 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_80' for abstract evaluation.
+2026-04-17 07:47:12,633 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (abstract)
+2026-04-17 07:47:12,633 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_80', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:47:19,224 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:47:19,225 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 12 total items, 0 final failures, 0 retry attempts, 6.59s
+2026-04-17 07:47:19,225 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-17 07:47:19,226 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-17 07:47:19,226 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_89.json
+2026-04-17 07:47:19,271 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_89 (from file: Tsuge2025-PRISMA_89.json)
+2026-04-17 07:47:19,272 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (main)
+2026-04-17 07:47:19,272 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_89', type 'main', model 'claude-opus-4-7'.
+2026-04-17 07:47:42,444 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-17 07:47:42,445 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 42 total items, 0 final failures, 0 retry attempts, 25.89s
+2026-04-17 07:47:42,445 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-17 07:47:42,446 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_89' for abstract evaluation.
+2026-04-17 07:47:42,446 - ClaudeEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (abstract)
+2026-04-17 07:47:42,446 - prisma_evaluator.llm.claude_evaluator - INFO - [claude_evaluator.py:625] - Starting Claude evaluation for paper 'Tsuge2025_PRISMA2020_89', type 'abstract', model 'claude-opus-4-7'.
+2026-04-17 07:47:49,603 - ClaudeEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-17 07:47:49,603 - ClaudeEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 12 total items, 0 final failures, 0 retry attempts, 7.16s
+2026-04-17 07:47:49,603 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-17 07:47:49,603 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-17 07:47:49,603 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:434] - Successfully completed 10 AI paper evaluations.
+2026-04-17 07:47:49,603 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:439] - Calculating accuracy metrics...
+2026-04-17 07:47:49,603 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 10 AI-evaluated papers.
+2026-04-17 07:47:49,604 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_120: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,604 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,604 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,605 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_14: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,605 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,605 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,605 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_20: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,605 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,606 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,606 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_22: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,606 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,606 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,606 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_26: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,606 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,607 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,607 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_68: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,607 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,607 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,607 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_74: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,607 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,607 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,608 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_76: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,608 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,608 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,608 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_80: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,608 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,609 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,609 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_89: Extra AI evaluations for main items: ['2']
+2026-04-17 07:47:49,609 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 42 main items, expected 41 items
+2026-04-17 07:47:49,609 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 12 abstract items, expected 12 items
+2026-04-17 07:47:49,609 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 80.38% (426/530)
+2026-04-17 07:47:49,609 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:460] - Accuracy metrics calculated.
+2026-04-17 07:47:49,609 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:468] - Saving all processed results...
+2026-04-17 07:47:49,609 - prisma_evaluator.data_io.savers - INFO - [savers.py:45] - Saving AI evaluations to /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,619 - prisma_evaluator.data_io.savers - INFO - [savers.py:51] - AI evaluation results saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,619 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:473] - AI evaluations saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,619 - prisma_evaluator.data_io.savers - INFO - [savers.py:71] - Saving accuracy summary to /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,621 - prisma_evaluator.data_io.savers - INFO - [savers.py:83] - Accuracy summary saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,621 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:480] - Accuracy summary saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,621 - prisma_evaluator.data_io.savers - INFO - [savers.py:107] - Saving comparison details to /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,630 - prisma_evaluator.data_io.savers - INFO - [savers.py:112] - Comparison details saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,630 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:488] - Comparison details saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,631 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:493] - Evaluation pipeline finished for model 'claude-opus-4-7', format 'md_claude-opus-4-7_medium_20260417_074302'.
+2026-04-17 07:47:49,644 - run_validation_model - INFO - [run_validation_model.py:293] - raw trio resolved: {'ai_evaluations': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json'), 'accuracy_summary': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json'), 'comparison_details': PosixPath('/home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json')}
+2026-04-17 07:47:49,645 - run_validation_model - INFO - [run_validation_model.py:303] - copied ai_evaluations_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/ai_evaluations_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,646 - run_validation_model - INFO - [run_validation_model.py:303] - copied accuracy_summary_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/accuracy_summary_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,646 - run_validation_model - INFO - [run_validation_model.py:303] - copied comparison_details_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json -> /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/comparison_details_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json
+2026-04-17 07:47:49,647 - run_validation_model - INFO - [run_validation_model.py:170] - running: /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/scripts/build_unified_validation_json.py --model-id claude-opus-4-7 --format-type md_claude-opus-4-7_medium_20260417_074302 --run-timestamp 20260417_074749 --ai-evaluations /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/ai_evaluations_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json --accuracy-summary /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/accuracy_summary_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json --comparison-details /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/comparison_details_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json --output-dir /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results --cli-parameters {"num_papers_to_process": 10, "paper_ids_file": "/home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/data/tsuge_selected10.txt", "schema_type": "simple", "checklist_format": "md", "order_mode": "eande-first", "section_mode": "off", "gpt5_reasoning": null, "gemini_model": null, "thinking_level": null, "force_claude_native": false, "claude_effort": "medium", "openrouter_max_tokens": null} --actual-execution {"runner_script": "test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/scripts/run_validation_model.py", "raw_ai_evaluations": "test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/ai_evaluations_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json", "raw_accuracy_summary": "test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/accuracy_summary_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json", "raw_comparison_details": "test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/comparison_details_claude-opus-4-7_md_claude-opus-4-7_medium_20260417_074302_20260417_074749.json"} --dataset-info {"sources": ["tsuge2025_merged"], "total_papers_available": 10, "evaluated_papers": ["Tsuge2025_PRISMA2020_14", "Tsuge2025_PRISMA2020_20", "Tsuge2025_PRISMA2020_22", "Tsuge2025_PRISMA2020_26", "Tsuge2025_PRISMA2020_68", "Tsuge2025_PRISMA2020_74", "Tsuge2025_PRISMA2020_76", "Tsuge2025_PRISMA2020_80", "Tsuge2025_PRISMA2020_89", "Tsuge2025_PRISMA2020_120"], "num_papers_requested": 10}
+unified_json=/home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/md_claude-opus-4-7_20260417_074749.json
+2026-04-17 07:47:49,744 - run_validation_model - INFO - [run_validation_model.py:170] - running: /home/devcontainers/PRISMA-AI/venv/bin/python /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/scripts/check_validation_counts.py /home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/md_claude-opus-4-7_20260417_074749.json --expected-size full
+file=/home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/md_claude-opus-4-7_20260417_074749.json
+expected_counts={'overall_metrics': 530, 'main_body_metrics': 410, 'abstract_metrics': 120}
+observed_model_ids={'cli_target_model_id': 'claude-opus-4-7', 'actual_model_id_to_use': 'claude-opus-4-7', 'paper_model_ids': ['claude-opus-4-7']}
+overall_metrics.counts={'tp': 277, 'tn': 149, 'fp': 84, 'fn': 20, 'total_comparable': 530, 'correct': 426}
+main_body_metrics.counts={'tp': 235, 'tn': 100, 'fp': 56, 'fn': 19, 'total_comparable': 410, 'correct': 335}
+abstract_metrics.counts={'tp': 42, 'tn': 49, 'fp': 28, 'fn': 1, 'total_comparable': 120, 'correct': 91}
+OK
+unified_json=/home/devcontainers/PRISMA-AI/test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/results/md_claude-opus-4-7_20260417_074749.json
+[Fri Apr 17 07:47:49 JST 2026] ====== effort=medium done ======

@@ -120,3 +120,87 @@ notes = "Starting rate; 2x multiplier beyond 128k total tokens. Free tier endpoi
   [[models.tiers]]
   min_tokens = 128001
   multiplier = 2.0
+
+# --- 2026-04-16 Tsuge10 MD validation: new-model additions ---
+# NOTE: The rates below are provisional. Verify against each provider's public
+# pricing page at run time and update before finalizing Table 2 / cost totals.
+
+[[models]]
+id = "anthropic/claude-opus-4-6"
+display_name = "Claude Opus 4.6"
+provider = "Anthropic"
+billing_strategy = "simple"
+aliases = ["claude-opus-4-6", "claude-opus-4.6"]
+input_rate = 5.00
+output_rate = 25.00
+notes = "Base token pricing aligned to Anthropic's Claude Opus 4.6 pricing table; cache write/hit rates are not represented in this simple billing entry."
+
+[[models]]
+id = "anthropic/claude-opus-4-7"
+display_name = "Claude Opus 4.7"
+provider = "Anthropic"
+billing_strategy = "simple"
+aliases = ["claude-opus-4-7", "claude-opus-4.7"]
+input_rate = 5.00
+output_rate = 25.00
+notes = "Base token pricing matches Claude Opus 4.6 per Anthropic's migration guide ($5/$25 per MTok). Adaptive thinking output tokens are billed as output tokens."
+
+[[models]]
+id = "openai/gpt-5.4"
+display_name = "GPT-5.4"
+provider = "OpenAI"
+billing_strategy = "tiered"
+aliases = ["gpt-5.4"]
+notes = "Standard pricing aligned to OpenAI's GPT-5.4 pricing table. Short context applies below 272k input tokens; long context applies above that threshold. Cached input, batch, and priority rates are not represented here."
+
+  [[models.tiers]]
+  max_tokens = 272000
+  token_basis = "prompt_tokens"
+  input_rate = 2.50
+  output_rate = 15.00
+  notes = "Short context pricing for requests with up to 272k input tokens."
+
+  [[models.tiers]]
+  min_tokens = 272001
+  token_basis = "prompt_tokens"
+  input_rate = 5.00
+  output_rate = 22.50
+  notes = "Long context pricing for requests exceeding 272k input tokens."
+
+[[models]]
+id = "google/gemini-3.1-pro-preview"
+display_name = "Gemini 3.1 Pro Preview"
+provider = "Google"
+billing_strategy = "tiered"
+aliases = ["gemini-3.1-pro-preview", "gemini-3.1-pro"]
+notes = "Provisional rates mirroring Gemini 2.5 Pro tiering; confirm against Google AI pricing page before publication."
+
+  [[models.tiers]]
+  max_tokens = 200000
+  input_rate = 2
+  output_rate = 12.00
+
+  [[models.tiers]]
+  min_tokens = 200001
+  input_rate = 4.00
+  output_rate = 18.00
+
+[[models]]
+id = "openrouter/grok-4-20"
+display_name = "Grok-4.20"
+provider = "OpenRouter"
+billing_strategy = "simple"
+aliases = ["grok-4.20", "grok-4-20", "x-ai/grok-4.20", "x-ai/grok-4-20"]
+input_rate = 0.615
+output_rate = 6.00
+notes = "Weighted average effective pricing from OpenRouter provider mix snapshot; provider-specific routing may still vary over time."
+
+[[models]]
+id = "openrouter/qwen3-6-plus"
+display_name = "Qwen3.6 Plus"
+provider = "OpenRouter"
+billing_strategy = "variable"
+aliases = ["qwen3.6-plus", "qwen3-6-plus", "qwen/qwen3.6-plus", "qwen/qwen3-6-plus"]
+input_rate = 0.705
+output_rate = 3.02
+notes = "Provisional rates mirroring Qwen3-Max; confirm against OpenRouter listing before publication."

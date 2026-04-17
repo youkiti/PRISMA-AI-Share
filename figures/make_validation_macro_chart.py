@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[1]
 # Validation results directory
 VALIDATION_DIR = REPO_ROOT / "test/issues/2025-10-23_tsuge_md_validation_metrics/results"
 OUTPUT_PATH = Path(__file__).with_name("validation_macro_metrics.svg")
@@ -27,16 +27,35 @@ OUTPUT_PATH = Path(__file__).with_name("validation_macro_metrics.svg")
 METRICS = ["accuracy", "sensitivity", "specificity"]
 # Table 3の順序（上から下への表示のため、Y軸用に逆順で定義）
 MODEL_DISPLAY_ORDER = [
-    "x-ai/grok-4-fast",
-    "x-ai/grok-4",
+    # First entry = bottom of chart. List is the reverse of the top→bottom
+    # reading order used by compute_validation_ci.py so the figure matches
+    # the CI table exactly.
+    # Qwen family (at bottom of chart)
+    "qwen/qwen3.6-plus",
     "qwen/qwen3-max",
     "qwen/qwen3-235b-a22b-2507",
+    # GPT-OSS
     "openai/gpt-oss-120b",
-    "claude-sonnet-4-5-20250929",
-    "claude-opus-4-1-20250805",
+    # Grok family
+    "x-ai/grok-4.20",
+    "x-ai/grok-4.1-fast",
+    "x-ai/grok-4",
+    "x-ai/grok-4-fast",
+    # Gemini
+    "gemini-3.1-pro-preview",
+    "gemini-3-flash-preview",
+    "gemini-3-pro",
     "gemini-2.5-pro",
-    "gpt-4o",
+    # Claude Opus
+    "claude-opus-4-7",
+    "claude-opus-4-1-20250805",
+    # Claude Sonnet
+    "claude-sonnet-4-5-20250929",
+    # GPT (at top of chart)
+    "gpt-5.4",
+    "gpt-5.1",
     "gpt-5",
+    "gpt-4o",
 ]
 
 
@@ -115,8 +134,9 @@ def read_validation_results() -> Dict[str, Dict[str, float]]:
         if json_file.name.startswith("."):
             continue
 
-        # Skip old/test files - only use files with timestamp 20251023_184404
-        if "20251023_184404" not in json_file.name:
+        # Skip old/test files - only use files with proper timestamps
+        valid_timestamps = ["20251023_184404", "20251119_070126", "20251119_074132", "20251120_152819", "20251218_082141", "20260416_194607", "20260416_200112", "20260416_201008", "20260416_205101", "20260417_075422"]
+        if not any(ts in json_file.name for ts in valid_timestamps):
             continue
 
         metrics = extract_metrics_from_json(json_file)
@@ -140,15 +160,24 @@ def draw_chart(stats: Dict[str, Dict[str, float]], output_path: Path) -> None:
     def clean_model_name(model: str) -> str:
         name_map = {
             "gpt-5": "GPT‑5",
+            "gpt-5.1": "GPT‑5.1",
+            "gpt-5.4": "GPT‑5.4",
             "gpt-4o": "GPT‑4o",
             "gemini-2.5-pro": "Gemini 2.5 Pro",
+            "gemini-3-pro": "Gemini 3 Pro",
+            "gemini-3-flash-preview": "Gemini 3 Flash",
+            "gemini-3.1-pro-preview": "Gemini 3.1 Pro",
             "claude-opus-4-1-20250805": "Claude Opus 4.1",
+            "claude-opus-4-7": "Claude Opus 4.7",
             "claude-sonnet-4-5-20250929": "Claude Sonnet 4.5",
             "openai/gpt-oss-120b": "GPT‑OSS‑120B",
             "qwen/qwen3-235b-a22b-2507": "Qwen3‑235B",
             "qwen/qwen3-max": "Qwen3‑Max",
+            "qwen/qwen3.6-plus": "Qwen3.6 Plus",
             "x-ai/grok-4": "Grok‑4",
             "x-ai/grok-4-fast": "Grok‑4‑fast",
+            "x-ai/grok-4.1-fast": "Grok‑4.1‑fast",
+            "x-ai/grok-4.20": "Grok‑4.20",
         }
         return name_map.get(model, model)
 
@@ -160,7 +189,7 @@ def draw_chart(stats: Dict[str, Dict[str, float]], output_path: Path) -> None:
     fig, axes = plt.subplots(
         nrows=len(METRICS),
         ncols=1,
-        figsize=(9.2, 7.2),
+        figsize=(9.6, 12.0),  # Height sized for 18 models
         sharex=True,
         constrained_layout=True,
     )

@@ -24,15 +24,24 @@ DEFAULT_RESULTS_DIR = PROJECT_ROOT / "test/issues/2025-09-27_suda_multi_format_s
 # Mapping from CLI model IDs to manuscript display names
 MODEL_DISPLAY_NAMES: Dict[str, str] = {
     "gpt-5": "GPT‑5",
+    "gpt-5.1": "GPT‑5.1",
+    "gpt-5.4": "GPT‑5.4",
     "gpt-4o": "GPT‑4o",
     "gemini-2.5-pro": "Gemini 2.5 Pro",
+    "gemini-3-pro": "Gemini 3 Pro",
+    "gemini-3-flash-preview": "Gemini 3 Flash",
+    "gemini-3.1-pro-preview": "Gemini 3.1 Pro",
     "claude-opus-4-1-20250805": "Claude Opus 4.1",
     "claude-sonnet-4-5-20250929": "Claude Sonnet 4.5",
+    "claude-opus-4-7": "Claude Opus 4.7",
     "openai/gpt-oss-120b": "GPT‑OSS‑120B",
     "qwen/qwen3-235b-a22b-2507": "Qwen3‑235B",
     "qwen/qwen3-max": "Qwen3‑Max",
+    "qwen/qwen3.6-plus": "Qwen3.6 Plus",
     "x-ai/grok-4": "Grok‑4",
     "x-ai/grok-4-fast": "Grok‑4‑fast",
+    "x-ai/grok-4.1-fast": "Grok‑4.1‑fast",
+    "x-ai/grok-4.20": "Grok‑4.20",
 }
 
 FORMAT_KEY = "md"
