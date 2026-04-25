@@ -1,0 +1,11 @@
+[info] DeepSeek V4 Pro smoke test
+  model        : deepseek/deepseek-v4-pro
+  paper        : Tsuge2025_PRISMA2020_14
+  run_label    : md_deepseek_deepseek-v4-pro_smoke_20260425_075353
+  result_dest  : /home/devcontainers/PRISMA-AI/test/issues/2026-04-25_deepseek_v4_pro_tsuge10_validation/results
+Usage: python -m prisma_evaluator.cli.main run [OPTIONS]
+Try 'python -m prisma_evaluator.cli.main run --help' for help.
+╭─ Error ──────────────────────────────────────────────────────────────────────╮
+│ No such option: --order-mode (Possible options: --gemini-model, --model)     │
+╰──────────────────────────────────────────────────────────────────────────────╯
+[warn] smoke test exited non-zero; see /home/devcontainers/PRISMA-AI/test/issues/2026-04-25_deepseek_v4_pro_tsuge10_validation/logs/md_deepseek_deepseek-v4-pro_smoke_20260425_075353.log

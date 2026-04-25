@@ -204,3 +204,83 @@ aliases = ["qwen3.6-plus", "qwen3-6-plus", "qwen/qwen3.6-plus", "qwen/qwen3-6-pl
 input_rate = 0.705
 output_rate = 3.02
 notes = "Provisional rates mirroring Qwen3-Max; confirm against OpenRouter listing before publication."
+
+# --- 2026-04-25 leaderboard additions: pricing entries previously missing ---
+# These complete the leaderboard's Cost/SR column for all 21 models that have a
+# Tsuge 10-paper validation result. Verify rates against each provider's public
+# pricing page before publication.
+
+[[models]]
+id = "openai/gpt-5.1"
+display_name = "GPT-5.1"
+provider = "OpenAI"
+billing_strategy = "simple"
+aliases = ["gpt-5.1"]
+input_rate = 1.25
+output_rate = 10.00
+notes = "Mirrors OpenAI's GPT-5 standard pricing; confirm against the GPT-5.1 entry on OpenAI's pricing page before publication."
+
+[[models]]
+id = "google/gemini-3-pro"
+display_name = "Gemini 3 Pro"
+provider = "Google"
+billing_strategy = "tiered"
+aliases = ["gemini-3-pro", "gemini-3-pro-preview"]
+notes = "Provisional rates mirroring Gemini 3.1 Pro Preview tiering; confirm against Google AI pricing page before publication."
+
+  [[models.tiers]]
+  max_tokens = 200000
+  input_rate = 2.00
+  output_rate = 12.00
+
+  [[models.tiers]]
+  min_tokens = 200001
+  input_rate = 4.00
+  output_rate = 18.00
+
+[[models]]
+id = "google/gemini-3-flash"
+display_name = "Gemini 3 Flash"
+provider = "Google"
+billing_strategy = "simple"
+aliases = ["gemini-3-flash", "gemini-3-flash-preview"]
+input_rate = 0.50
+output_rate = 3.00
+notes = "Provisional rates per CLAUDE.md note (approximately one third of Gemini 3 Pro); confirm against Google AI pricing page before publication."
+
+[[models]]
+id = "openrouter/grok-4-1-fast"
+display_name = "Grok-4.1-fast"
+provider = "OpenRouter"
+billing_strategy = "tiered"
+aliases = ["grok-4.1-fast", "grok-4-1-fast", "x-ai/grok-4.1-fast", "x-ai/grok-4-1-fast"]
+notes = "Provisional rates mirroring Grok-4-fast (128k tier with 2x multiplier above); confirm against OpenRouter listing."
+
+  [[models.tiers]]
+  max_tokens = 128000
+  input_rate = 0.20
+  output_rate = 0.50
+
+  [[models.tiers]]
+  min_tokens = 128001
+  multiplier = 2.0
+
+[[models]]
+id = "moonshotai/kimi-k2.6"
+display_name = "Kimi K2.6"
+provider = "Moonshot"
+billing_strategy = "simple"
+aliases = ["kimi-k2.6", "moonshotai/kimi-k2.6"]
+input_rate = 0.60
+output_rate = 2.50
+notes = "Provisional rates based on the Moonshot direct API listing for the K2 family; confirm against the official Moonshot price page before publication."
+
+[[models]]
+id = "deepseek/deepseek-v4-pro"
+display_name = "DeepSeek V4 Pro"
+provider = "DeepSeek"
+billing_strategy = "simple"
+aliases = ["deepseek-v4-pro", "deepseek/deepseek-v4-pro"]
+input_rate = 1.74
+output_rate = 3.48
+notes = "Per-token rates published at https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro/endpoints (DeepSeek first-party endpoint deepseek-v4-pro-20260423); 2026-04-25 capture."

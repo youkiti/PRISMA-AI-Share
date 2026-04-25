@@ -1,0 +1,245 @@
+# PRISMA-AI Tsuge MD Validation Leaderboard - Model Manifest
+#
+# Each entry points to a unified validation JSON produced by the locked Tsuge
+# Markdown validation pipeline (10 SRs x 53 items = 530 comparable decisions).
+# The aggregator script `analysis/build_leaderboard.py` reads this manifest plus
+# `data/pricing/model_pricing.toml` to produce `leaderboard/leaderboard.{md,csv,json}`
+# and the per-model experiment logs under `leaderboard/experiments/`.
+#
+# To add a new model:
+#   1. Run the locked Markdown validation on the 10 Tsuge SRs and capture the
+#      unified `md_<slug>_<ts>.json` under `test/issues/<issue_dir>/results/`.
+#   2. Append a block to this file. `unified_json` is the path relative to the
+#      repository root.
+#   3. (Optional) add a pricing entry to `data/pricing/model_pricing.toml`.
+#   4. Re-run the aggregator with `python analysis/build_leaderboard.py`.
+
+cohort:
+  name: tsuge_md_validation_10
+  papers:
+    - Tsuge2025_PRISMA2020_14
+    - Tsuge2025_PRISMA2020_20
+    - Tsuge2025_PRISMA2020_22
+    - Tsuge2025_PRISMA2020_26
+    - Tsuge2025_PRISMA2020_68
+    - Tsuge2025_PRISMA2020_74
+    - Tsuge2025_PRISMA2020_76
+    - Tsuge2025_PRISMA2020_80
+    - Tsuge2025_PRISMA2020_89
+    - Tsuge2025_PRISMA2020_120
+  expected_total_comparable: 530
+  expected_main_comparable: 410
+  expected_abstract_comparable: 120
+  schema: simple
+  checklist_format: md
+  order_mode: eande-first
+  section_mode: "off"
+
+models:
+  - id: gpt-5
+    display_name: GPT-5
+    provider: OpenAI
+    pricing_id: openai/gpt-5
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gpt-5_20251023_184404.json
+    parameters:
+      reasoning_effort: high
+    notes: ""
+
+  - id: gpt-5.1
+    display_name: GPT-5.1
+    provider: OpenAI
+    pricing_id: openai/gpt-5.1
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gpt-5.1_20251119_074132.json
+    parameters:
+      verbosity: low
+      reasoning_effort: high
+    notes: ""
+
+  - id: gpt-5.4
+    display_name: GPT-5.4
+    provider: OpenAI
+    pricing_id: openai/gpt-5.4
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gpt-5.4_20260416_194607.json
+    parameters:
+      verbosity: low
+      reasoning_effort: none
+    notes: ""
+
+  - id: gpt-4o
+    display_name: GPT-4o
+    provider: OpenAI
+    pricing_id: openai/gpt-4o
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gpt-4o_20251023_184404.json
+    parameters: {}
+    notes: ""
+
+  - id: gemini-2.5-pro
+    display_name: Gemini 2.5 Pro
+    provider: Google
+    pricing_id: google/gemini-2.5-pro
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gemini-2.5-pro_20251023_184404.json
+    parameters:
+      temperature: 0.0
+      thinking_budget: -1
+    notes: ""
+
+  - id: gemini-3-pro
+    display_name: Gemini 3 Pro
+    provider: Google
+    pricing_id: google/gemini-3-pro
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gemini-3-pro_20251119_070126.json
+    parameters:
+      temperature: 1.0
+      thinking_level: HIGH
+    notes: ""
+
+  - id: gemini-3-flash-preview
+    display_name: Gemini 3 Flash
+    provider: Google
+    pricing_id: google/gemini-3-flash
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gemini-3-flash-preview_20251218_082141.json
+    parameters:
+      temperature: 1.0
+      thinking_level: LOW
+    notes: ""
+
+  - id: gemini-3.1-pro-preview
+    display_name: Gemini 3.1 Pro
+    provider: Google
+    pricing_id: google/gemini-3.1-pro-preview
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gemini-3.1-pro-preview_20260416_200112.json
+    parameters:
+      temperature: 1.0
+      thinking_level: HIGH
+    notes: ""
+
+  - id: claude-opus-4-1-20250805
+    display_name: Claude Opus 4.1
+    provider: Anthropic
+    pricing_id: anthropic/claude-opus-4-1
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_claude-opus-4-1-20250805_20251023_184404.json
+    parameters:
+      thinking_budget_tokens: 28000
+    notes: ""
+
+  - id: claude-opus-4-7
+    display_name: Claude Opus 4.7
+    provider: Anthropic
+    pricing_id: anthropic/claude-opus-4-7
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_claude-opus-4-7_20260417_075422.json
+    parameters:
+      effort: high
+    notes: "Effort level chosen by Tsuge sweep (low/medium/high/xhigh/max); see test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/."
+
+  - id: claude-sonnet-4-5-20250929
+    display_name: Claude Sonnet 4.5
+    provider: Anthropic
+    pricing_id: anthropic/claude-sonnet-4-5
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_claude-sonnet-4-5-20250929_20251023_184404.json
+    parameters:
+      thinking_budget_tokens: 28000
+    notes: ""
+
+  - id: openai/gpt-oss-120b
+    display_name: GPT-OSS-120B
+    provider: OpenAI (via OpenRouter)
+    pricing_id: openrouter/gpt-oss-120b
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_openai_gpt-oss-120b_20251023_184404.json
+    parameters:
+      reasoning_effort: high
+    notes: ""
+
+  - id: qwen/qwen3-235b-a22b-2507
+    display_name: Qwen3-235B
+    provider: Alibaba (via OpenRouter)
+    pricing_id: openrouter/qwen3-235b
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_qwen_qwen3-235b-a22b-2507_20251023_184404.json
+    parameters: {}
+    notes: ""
+
+  - id: qwen/qwen3-max
+    display_name: Qwen3-Max
+    provider: Alibaba (via OpenRouter)
+    pricing_id: openrouter/qwen3-max
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_qwen_qwen3-max_20251023_184404.json
+    parameters: {}
+    notes: "32k output cap; reasoning disabled (provider does not expose it)."
+
+  - id: qwen/qwen3.6-plus
+    display_name: Qwen3.6 Plus
+    provider: Alibaba (via OpenRouter)
+    pricing_id: openrouter/qwen3-6-plus
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_qwen_qwen3.6-plus_20260416_205101.json
+    parameters: {}
+    notes: ""
+
+  - id: x-ai/grok-4
+    display_name: Grok-4
+    provider: xAI (via OpenRouter)
+    pricing_id: openrouter/grok-4
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_x-ai_grok-4_20251023_184404.json
+    parameters: {}
+    notes: ""
+
+  - id: x-ai/grok-4-fast
+    display_name: Grok-4-fast
+    provider: xAI (via OpenRouter)
+    pricing_id: openrouter/grok-4-fast
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_x-ai_grok-4-fast_20251023_184404.json
+    parameters: {}
+    notes: ""
+
+  - id: x-ai/grok-4.1-fast
+    display_name: Grok-4.1-fast
+    provider: xAI (via OpenRouter)
+    pricing_id: openrouter/grok-4-1-fast
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_x-ai_grok-4.1-fast_20251120_152819.json
+    parameters: {}
+    notes: ""
+
+  - id: x-ai/grok-4.20
+    display_name: Grok-4.20
+    provider: xAI
+    pricing_id: openrouter/grok-4-20
+    schema_type: simple
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_x-ai_grok-4.20_20260416_201008.json
+    parameters: {}
+    notes: "Routed via xAI direct (OpenRouter upstream times out on long tool calls)."
+
+  - id: moonshotai/kimi-k2.6
+    display_name: Kimi K2.6
+    provider: Moonshot
+    pricing_id: moonshotai/kimi-k2.6
+    schema_type: simple
+    unified_json: test/issues/2026-04-22_kimi_k2_6_moonshot_tsuge10_validation/results/md_moonshotai_kimi-k2.6_20260422_192742.json
+    parameters: {}
+    notes: "Routed via Moonshot direct API; OpenRouter routes hung on long tool calls (see test/issues/2026-04-22_kimi_k2_6_openrouter_structured_output/)."
+
+  - id: deepseek/deepseek-v4-pro
+    display_name: DeepSeek V4 Pro
+    provider: DeepSeek (via OpenRouter)
+    pricing_id: deepseek/deepseek-v4-pro
+    schema_type: simple
+    unified_json: test/issues/2026-04-25_deepseek_v4_pro_tsuge10_validation/results/md_deepseek_deepseek-v4-pro_20260425_094204.json
+    parameters:
+      tool_choice: auto
+      reasoning_exclude: true
+    notes: "Tool calling via tool_choice=auto (forced rejected upstream); see test/issues/2026-04-25_deepseek_v4_pro_openrouter_capability_check/ for capability probes."

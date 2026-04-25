@@ -1,0 +1,243 @@
+2026-04-22 18:00:32,485 - prisma_evaluator - INFO - [logging_config.py:74] - Logging setup complete. Effective log level: INFO.
+2026-04-22 18:00:32,485 - prisma_evaluator - INFO - [logging_config.py:78] - Logging to file: /home/devcontainers/PRISMA-AI/logs/prisma_evaluator_run.log
+2026-04-22 18:00:32,485 - prisma_evaluator - INFO - [logging_config.py:80] - Logging to console enabled.
+2026-04-22 18:00:32,485 - __main__ - INFO - [main.py:118] - CLI 'run' command initiated.
+2026-04-22 18:00:32,486 - __main__ - INFO - [main.py:137] - Dataset selection: Tsuge2025-PRISMA dataset enabled
+2026-04-22 18:00:32,486 - __main__ - INFO - [main.py:149] - Effective Model ID: moonshotai/kimi-k2.6
+2026-04-22 18:00:32,486 - __main__ - INFO - [main.py:150] - Effective Number of Papers: 5
+2026-04-22 18:00:32,486 - __main__ - INFO - [main.py:153] - Checklist format override: md
+2026-04-22 18:00:32,486 - __main__ - INFO - [main.py:165] - Restricting evaluation to 10 paper IDs.
+2026-04-22 18:00:32,486 - __main__ - INFO - [main.py:207] - Schema Type: simple
+2026-04-22 18:00:32,486 - __main__ - INFO - [main.py:210] - Checklist Format Param: md
+2026-04-22 18:00:32,486 - __main__ - INFO - [main.py:217] - Kimi Thinking: enabled
+2026-04-22 18:00:32,486 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:39] - DEBUG PIPELINE: Effective output_base_dir from settings: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-22 18:00:32,486 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:45] - Starting evaluation pipeline for 5 papers. Model: 'moonshotai/kimi-k2.6', Format Type: 'md'.
+2026-04-22 18:00:32,486 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:54] - Results will be saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output
+2026-04-22 18:00:32,488 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:70] - PRISMA checklists loaded successfully.
+2026-04-22 18:00:32,508 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:91] - Human annotations loaded successfully.
+2026-04-22 18:00:32,512 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_14: Tsuge2025-PRISMA_14.json
+2026-04-22 18:00:32,513 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_20: Tsuge2025-PRISMA_20.json
+2026-04-22 18:00:32,514 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_22: Tsuge2025-PRISMA_22.json
+2026-04-22 18:00:32,515 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_26: Tsuge2025-PRISMA_26.json
+2026-04-22 18:00:32,516 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_68: Tsuge2025-PRISMA_68.json
+2026-04-22 18:00:32,517 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_74: Tsuge2025-PRISMA_74.json
+2026-04-22 18:00:32,518 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_76: Tsuge2025-PRISMA_76.json
+2026-04-22 18:00:32,519 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_80: Tsuge2025-PRISMA_80.json
+2026-04-22 18:00:32,520 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_89: Tsuge2025-PRISMA_89.json
+2026-04-22 18:00:32,521 - prisma_evaluator.data_io.loaders - INFO - [loaders.py:263] - Found file for Tsuge2025_PRISMA2020_120: Tsuge2025-PRISMA_120.json
+2026-04-22 18:00:32,521 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:126] - Paper ID filter active: requested 10 paper(s), located 10 file(s).
+2026-04-22 18:00:32,522 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:146] - Found 10 structured data files to process (limit was 5).
+2026-04-22 18:00:32,522 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:348] - Using CLI schema type for Moonshot: simple
+2026-04-22 18:00:32,522 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:351] - Using checklist format for Moonshot: md
+2026-04-22 18:00:32,522 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:357] - Using Moonshot thinking type: enabled
+2026-04-22 18:00:32,823 - prisma_evaluator.llm.openrouter_evaluator - INFO - [openrouter_evaluator.py:67] - OpenRouterEvaluator initialized. Base URL: https://api.moonshot.ai/v1, Retries: 3, Delay: 5s
+2026-04-22 18:00:32,848 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:90] - MoonshotDirectEvaluator initialized. Base URL: https://api.moonshot.ai/v1, thinking=enabled
+2026-04-22 18:00:32,848 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:360] - Initialized Moonshot Direct Evaluator for model: moonshotai/kimi-k2.6
+2026-04-22 18:00:32,848 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:450] - Dispatching 10 paper evaluation tasks.
+2026-04-22 18:00:32,848 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_120.json
+2026-04-22 18:00:32,880 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_120 (from file: Tsuge2025-PRISMA_120.json)
+2026-04-22 18:00:32,880 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (main)
+2026-04-22 18:00:32,880 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:09:12,497 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_120', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 18:09:12,499 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 18:09:12,499 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 42 total items, 0 final failures, 0 retry attempts, 531.06s
+2026-04-22 18:09:12,500 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-22 18:09:12,500 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_120' for abstract evaluation.
+2026-04-22 18:09:12,500 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_120 (abstract)
+2026-04-22 18:09:12,500 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_120', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:12:36,597 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_120', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 18:12:36,610 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 18:12:36,610 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_120: 12 total items, 0 final failures, 0 retry attempts, 208.27s
+2026-04-22 18:12:36,611 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-22 18:12:36,611 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_120'.
+2026-04-22 18:12:36,611 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_14.json
+2026-04-22 18:12:36,632 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_14 (from file: Tsuge2025-PRISMA_14.json)
+2026-04-22 18:12:36,632 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (main)
+2026-04-22 18:12:36,632 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_14', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:18:50,519 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_14', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 18:18:50,542 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 18:18:50,543 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 42 total items, 0 final failures, 0 retry attempts, 382.30s
+2026-04-22 18:18:50,543 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-22 18:18:50,543 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_14' for abstract evaluation.
+2026-04-22 18:18:50,544 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_14 (abstract)
+2026-04-22 18:18:50,544 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_14', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:21:54,636 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_14', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 18:21:54,637 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 18:21:54,638 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_14: 12 total items, 0 final failures, 0 retry attempts, 188.27s
+2026-04-22 18:21:54,639 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-22 18:21:54,639 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_14'.
+2026-04-22 18:21:54,641 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_20.json
+2026-04-22 18:21:54,675 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_20 (from file: Tsuge2025-PRISMA_20.json)
+2026-04-22 18:21:54,675 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (main)
+2026-04-22 18:21:54,675 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_20', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:28:08,078 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_20', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 18:28:08,081 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 18:28:08,082 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 42 total items, 0 final failures, 0 retry attempts, 381.98s
+2026-04-22 18:28:08,082 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-22 18:28:08,082 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_20' for abstract evaluation.
+2026-04-22 18:28:08,082 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_20 (abstract)
+2026-04-22 18:28:08,083 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_20', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:29:59,287 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_20', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 18:29:59,294 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 18:29:59,294 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_20: 12 total items, 0 final failures, 0 retry attempts, 113.37s
+2026-04-22 18:29:59,294 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-22 18:29:59,294 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_20'.
+2026-04-22 18:29:59,294 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_22.json
+2026-04-22 18:29:59,317 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_22 (from file: Tsuge2025-PRISMA_22.json)
+2026-04-22 18:29:59,320 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (main)
+2026-04-22 18:29:59,320 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_22', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:38:04,753 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_22', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 18:38:04,760 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 18:38:04,761 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 42 total items, 0 final failures, 0 retry attempts, 496.66s
+2026-04-22 18:38:04,761 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-22 18:38:04,761 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_22' for abstract evaluation.
+2026-04-22 18:38:04,762 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_22 (abstract)
+2026-04-22 18:38:04,762 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_22', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:39:35,289 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_22', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 18:39:35,290 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 18:39:35,290 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_22: 12 total items, 0 final failures, 0 retry attempts, 92.77s
+2026-04-22 18:39:35,290 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-22 18:39:35,291 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_22'.
+2026-04-22 18:39:35,292 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_26.json
+2026-04-22 18:39:35,314 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_26 (from file: Tsuge2025-PRISMA_26.json)
+2026-04-22 18:39:35,315 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (main)
+2026-04-22 18:39:35,315 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_26', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:47:37,396 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_26', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 18:47:37,398 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 18:47:37,398 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 42 total items, 0 final failures, 0 retry attempts, 494.45s
+2026-04-22 18:47:37,398 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-22 18:47:37,398 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_26' for abstract evaluation.
+2026-04-22 18:47:37,398 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_26 (abstract)
+2026-04-22 18:47:37,398 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_26', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:50:05,992 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_26', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 18:50:05,992 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 18:50:05,996 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_26: 12 total items, 0 final failures, 0 retry attempts, 151.69s
+2026-04-22 18:50:05,996 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-22 18:50:05,996 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_26'.
+2026-04-22 18:50:05,997 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_68.json
+2026-04-22 18:50:06,016 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_68 (from file: Tsuge2025-PRISMA_68.json)
+2026-04-22 18:50:06,017 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (main)
+2026-04-22 18:50:06,017 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_68', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:54:26,678 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_68', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 18:54:26,686 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 18:54:26,686 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 42 total items, 0 final failures, 0 retry attempts, 266.99s
+2026-04-22 18:54:26,686 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-22 18:54:26,686 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_68' for abstract evaluation.
+2026-04-22 18:54:26,687 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_68 (abstract)
+2026-04-22 18:54:26,687 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_68', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 18:56:49,398 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_68', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 18:56:49,399 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 18:56:49,399 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_68: 12 total items, 0 final failures, 0 retry attempts, 146.63s
+2026-04-22 18:56:49,400 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-22 18:56:49,400 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_68'.
+2026-04-22 18:56:49,402 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_74.json
+2026-04-22 18:56:49,416 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_74 (from file: Tsuge2025-PRISMA_74.json)
+2026-04-22 18:56:49,416 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (main)
+2026-04-22 18:56:49,417 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_74', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 19:02:25,881 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_74', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 19:02:25,884 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 19:02:25,884 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 42 total items, 0 final failures, 0 retry attempts, 345.30s
+2026-04-22 19:02:25,884 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-22 19:02:25,886 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_74' for abstract evaluation.
+2026-04-22 19:02:25,886 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_74 (abstract)
+2026-04-22 19:02:25,886 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_74', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 19:04:28,772 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_74', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 19:04:28,774 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 19:04:28,775 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_74: 12 total items, 0 final failures, 0 retry attempts, 125.38s
+2026-04-22 19:04:28,775 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-22 19:04:28,775 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_74'.
+2026-04-22 19:04:28,775 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_76.json
+2026-04-22 19:04:28,804 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_76 (from file: Tsuge2025-PRISMA_76.json)
+2026-04-22 19:04:28,805 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (main)
+2026-04-22 19:04:28,805 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_76', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 19:11:28,421 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_76', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 19:11:28,424 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 19:11:28,424 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 42 total items, 0 final failures, 0 retry attempts, 431.22s
+2026-04-22 19:11:28,425 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-22 19:11:28,426 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_76' for abstract evaluation.
+2026-04-22 19:11:28,427 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_76 (abstract)
+2026-04-22 19:11:28,427 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_76', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 19:13:36,035 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_76', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 19:13:36,036 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 19:13:36,036 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_76: 12 total items, 0 final failures, 0 retry attempts, 130.90s
+2026-04-22 19:13:36,036 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-22 19:13:36,037 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_76'.
+2026-04-22 19:13:36,037 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_80.json
+2026-04-22 19:13:36,070 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_80 (from file: Tsuge2025-PRISMA_80.json)
+2026-04-22 19:13:36,071 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (main)
+2026-04-22 19:13:36,071 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_80', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 19:17:23,554 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_80', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 19:17:23,562 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 19:17:23,562 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 42 total items, 0 final failures, 0 retry attempts, 233.55s
+2026-04-22 19:17:23,562 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-22 19:17:23,566 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_80' for abstract evaluation.
+2026-04-22 19:17:23,568 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_80 (abstract)
+2026-04-22 19:17:23,568 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_80', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 19:20:27,977 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_80', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 19:20:27,978 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 19:20:27,979 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_80: 12 total items, 0 final failures, 0 retry attempts, 189.62s
+2026-04-22 19:20:27,979 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-22 19:20:27,979 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_80'.
+2026-04-22 19:20:27,983 - prisma_evaluator.core.tasks - INFO - [tasks.py:79] - Starting processing task for paper: Tsuge2025-PRISMA_89.json
+2026-04-22 19:20:28,022 - prisma_evaluator.core.tasks - INFO - [tasks.py:94] - Processing paper ID: Tsuge2025_PRISMA2020_89 (from file: Tsuge2025-PRISMA_89.json)
+2026-04-22 19:20:28,022 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (main)
+2026-04-22 19:20:28,022 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_89', type 'main', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 19:25:03,456 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_89', type 'main'. Items: 42. Thinking=enabled
+2026-04-22 19:25:03,464 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 42 success, 0 failed
+2026-04-22 19:25:03,464 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 42 total items, 0 final failures, 0 retry attempts, 283.38s
+2026-04-22 19:25:03,464 - prisma_evaluator.core.tasks - INFO - [tasks.py:226] - Main evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-22 19:25:03,466 - prisma_evaluator.text_processing - INFO - [text_processing.py:152] - Found title and abstract for paper ID 'Tsuge2025_PRISMA2020_89' for abstract evaluation.
+2026-04-22 19:25:03,467 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:188] - Starting item-level retry evaluation for Tsuge2025_PRISMA2020_89 (abstract)
+2026-04-22 19:25:03,467 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:107] - Starting Moonshot direct evaluation for paper 'Tsuge2025_PRISMA2020_89', type 'abstract', model 'moonshotai/kimi-k2.6' (native 'kimi-k2.6').
+2026-04-22 19:27:42,051 - prisma_evaluator.llm.moonshot_direct_evaluator - INFO - [moonshot_direct_evaluator.py:227] - Successfully parsed Moonshot direct output for 'Tsuge2025_PRISMA2020_89', type 'abstract'. Items: 12. Thinking=enabled
+2026-04-22 19:27:42,052 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:230] - Initial evaluation: 12 success, 0 failed
+2026-04-22 19:27:42,052 - MoonshotDirectEvaluator - INFO - [base_evaluator.py:312] - Item-level retry completed for Tsuge2025_PRISMA2020_89: 12 total items, 0 final failures, 0 retry attempts, 163.11s
+2026-04-22 19:27:42,052 - prisma_evaluator.core.tasks - INFO - [tasks.py:349] - Abstract evaluation successful for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-22 19:27:42,053 - prisma_evaluator.core.tasks - INFO - [tasks.py:412] - Successfully completed processing task for paper ID 'Tsuge2025_PRISMA2020_89'.
+2026-04-22 19:27:42,056 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:475] - Successfully completed 10 AI paper evaluations.
+2026-04-22 19:27:42,056 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:480] - Calculating accuracy metrics...
+2026-04-22 19:27:42,060 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:104] - Starting metrics calculation for 10 AI-evaluated papers.
+2026-04-22 19:27:42,073 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_120: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,074 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,075 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_120: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,077 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_14: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,078 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,078 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_14: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,079 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_20: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,080 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,080 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_20: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,081 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_22: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,081 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,082 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_22: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,083 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_26: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,083 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,083 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_26: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,084 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_68: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,084 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,086 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_68: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,086 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_74: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,086 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,087 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_74: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,087 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_76: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,087 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,088 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_76: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,088 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_80: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,088 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,089 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_80: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,090 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:213] - Paper ID Tsuge2025_PRISMA2020_89: Extra AI evaluations for main items: ['2']
+2026-04-22 19:27:42,090 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:215] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 42 main items, expected 41 items
+2026-04-22 19:27:42,090 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:368] - Paper ID Tsuge2025_PRISMA2020_89: AI evaluated 12 abstract items, expected 12 items
+2026-04-22 19:27:42,090 - prisma_evaluator.metrics.calculators - INFO - [calculators.py:524] - Metrics calculation complete. Overall accuracy: 77.55% (411/530)
+2026-04-22 19:27:42,090 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:501] - Accuracy metrics calculated.
+2026-04-22 19:27:42,091 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:509] - Saving all processed results...
+2026-04-22 19:27:42,092 - prisma_evaluator.data_io.savers - INFO - [savers.py:45] - Saving AI evaluations to /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,111 - prisma_evaluator.data_io.savers - INFO - [savers.py:51] - AI evaluation results saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,111 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:514] - AI evaluations saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/ai_evaluations_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,112 - prisma_evaluator.data_io.savers - INFO - [savers.py:71] - Saving accuracy summary to /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,116 - prisma_evaluator.data_io.savers - INFO - [savers.py:83] - Accuracy summary saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,116 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:521] - Accuracy summary saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/accuracy_summary_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,119 - prisma_evaluator.data_io.savers - INFO - [savers.py:107] - Saving comparison details to /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,128 - prisma_evaluator.data_io.savers - INFO - [savers.py:112] - Comparison details saved successfully to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,137 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:529] - Comparison details saved to: /home/devcontainers/PRISMA-AI/results/evaluator_output/comparison_details_moonshotai_kimi-k2.6_md_20260422_192742.json
+2026-04-22 19:27:42,137 - prisma_evaluator.core.pipeline - INFO - [pipeline.py:534] - Evaluation pipeline finished for model 'moonshotai/kimi-k2.6', format 'md'.
+2026-04-22 19:27:42,175 - __main__ - INFO - [main.py:236] - PRISMA evaluation pipeline completed successfully via CLI.
