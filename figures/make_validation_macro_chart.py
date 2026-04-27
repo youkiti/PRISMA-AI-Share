@@ -52,7 +52,7 @@ MODEL_DISPLAY_ORDER = [
     # Claude Sonnet
     "claude-sonnet-4-5-20250929",
     # GPT (at top of chart)
-    "gpt-5.4",
+    "gpt-5.5",
     "gpt-5.1",
     "gpt-5",
     "gpt-4o",
@@ -135,7 +135,7 @@ def read_validation_results() -> Dict[str, Dict[str, float]]:
             continue
 
         # Skip old/test files - only use files with proper timestamps
-        valid_timestamps = ["20251023_184404", "20251119_070126", "20251119_074132", "20251120_152819", "20251218_082141", "20260416_194607", "20260416_200112", "20260416_201008", "20260416_205101", "20260417_074300"]
+        valid_timestamps = ["20251023_184404", "20251119_070126", "20251119_074132", "20251120_152819", "20251218_082141", "20260425_070226", "20260416_200112", "20260416_201008", "20260416_205101", "20260417_074300"]
         if not any(ts in json_file.name for ts in valid_timestamps):
             continue
 
@@ -161,7 +161,7 @@ def draw_chart(stats: Dict[str, Dict[str, float]], output_path: Path) -> None:
         name_map = {
             "gpt-5": "GPT‑5",
             "gpt-5.1": "GPT‑5.1",
-            "gpt-5.4": "GPT‑5.4",
+            "gpt-5.5": "GPT‑5.5",
             "gpt-4o": "GPT‑4o",
             "gemini-2.5-pro": "Gemini 2.5 Pro",
             "gemini-3-pro": "Gemini 3 Pro",
