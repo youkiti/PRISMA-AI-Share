@@ -1,0 +1,11 @@
+#
+# Suda PRISMA parameter optimization set (5 papers)
+# This is the canonical 5-paper Suda subset used as the parameter
+# optimization cohort throughout the manuscript (referenced as
+# "5 randomly sampled SRs from the Suda et al. dataset (emergency medicine)").
+# Source listings: CLAUDE.md, test/issues/2025-09-11_checklist_format_*/, test/issues/2025-09-12_thinking_ablation/
+Suda2025_5
+Suda2025_7
+Suda2025_15
+Suda2025_17
+Suda2025_18

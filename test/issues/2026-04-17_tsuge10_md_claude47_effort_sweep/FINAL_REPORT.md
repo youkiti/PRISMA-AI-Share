@@ -1,5 +1,16 @@
 # FINAL REPORT — 2026-04-17 Claude Opus 4.7 Effort Sweep (Tsuge 10 papers)
 
+> **2026-04-27 amendment.** This sweep was originally exploratory. The
+> manuscript's locked effort level for Opus 4.7 was subsequently selected on
+> the canonical 5-paper Suda parameter optimization cohort
+> ([2026-04-26_suda5_md_claude47_effort_sweep](../2026-04-26_suda5_md_claude47_effort_sweep/FINAL_REPORT.md))
+> as `low` (Pareto-superior to `high` at the same sensitivity). The
+> validation row for Opus 4.7 in Figure 4 now uses
+> `md_claude-opus-4-7_20260417_074300.json` (`effort=low`) from the table
+> below, replacing the earlier `md_claude-opus-4-7_20260417_075422.json`
+> (`effort=high`). The recommendations at the bottom of this report reflect
+> the original exploratory framing and are superseded by the Suda selection.
+
 ## Setup
 
 - **Model**: `claude-opus-4-7` via Anthropic Native API

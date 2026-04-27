@@ -135,7 +135,7 @@ def read_validation_results() -> Dict[str, Dict[str, float]]:
             continue
 
         # Skip old/test files - only use files with proper timestamps
-        valid_timestamps = ["20251023_184404", "20251119_070126", "20251119_074132", "20251120_152819", "20251218_082141", "20260416_194607", "20260416_200112", "20260416_201008", "20260416_205101", "20260417_075422"]
+        valid_timestamps = ["20251023_184404", "20251119_070126", "20251119_074132", "20251120_152819", "20251218_082141", "20260416_194607", "20260416_200112", "20260416_201008", "20260416_205101", "20260417_074300"]
         if not any(ts in json_file.name for ts in valid_timestamps):
             continue
 

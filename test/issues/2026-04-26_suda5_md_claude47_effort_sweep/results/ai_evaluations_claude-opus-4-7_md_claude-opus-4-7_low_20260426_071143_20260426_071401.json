@@ -1,0 +1,1752 @@
+[
+  {
+    "paper_id": "Suda2025_15",
+    "title": "Effect of Bougie Use on First-Attempt Success in Tracheal Intubations: A Systematic Review and Meta-Analysis.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 26088,
+      "token_usage": {
+        "input_tokens": 23890,
+        "output_tokens": 2198,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 26088
+      },
+      "processing_time": 31.969695,
+      "timestamp": "2026-04-26 07:11:43.586197"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Identified as systematic review/meta-analysis in header and title area.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract with background, methods, results, conclusions provided.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Background and Importance sections describe rationale in context of existing knowledge.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit objective stated in 'Goals of This Investigation'.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Eligibility criteria section specifies inclusion/exclusion and subgroups.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Lists databases with date last searched (June 15, 2023).",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Appendix E1 provides full search strategies.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two independent reviewers screened titles/abstracts and full text with consensus.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "One extractor with second reviewer cross-check; standardized form used.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary and secondary outcomes defined.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Lists variables extracted (setting, RSI, age, sex, etc.).",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "RoB 2 and modified Newcastle-Ottawa described; one assessor cross-checked.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Risk ratios with 95% CI specified.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Eligibility for syntheses described, including subgroups.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "No description of handling missing summary statistics or data conversions.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots and tables described.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects DerSimonian-Laird, I2, Review Manager 5.4.1 reported.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analyses described.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analyses excluding outlier (BOUGIE) described.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plot used to assess publication bias.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "yes",
+            "reason": "GRADE approach described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Numbers reported with flow diagram (Figure 1).",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Excluded studies after full-text review not individually cited with reasons.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 presents each included study characteristics.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias presented in Appendix E3 and summarized in text.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots show study-level data with effect estimates and CIs.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Characteristics and risk of bias of contributing studies summarized.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled RRs, CIs, and I2 reported.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup results presented in Table 2.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analysis excluding BOUGIE trial reported.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Funnel plot asymmetry assessment reported in Appendix E4.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "yes",
+            "reason": "GRADE certainty ratings reported (low, moderate).",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion compares findings with prior meta-analyses.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of evidence (RoB, heterogeneity) discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review limitations discussed (inability to do subgroup by experience, etc.).",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice and future research discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO CRD42023403212 registered.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "Protocol available on PROSPERO; mentioned as registered there.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "yes",
+            "reason": "Post hoc difficult-airway subgroup analysis explicitly noted as amendment.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "States study received no funding.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors report no conflicts of interest.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "yes",
+            "reason": "Data sharing statement indicates data, protocol, code available on request.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 21774,
+          "token_usage": {
+            "input_tokens": 20090,
+            "output_tokens": 1684,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 21774
+          },
+          "processing_time": 21.172598549999748,
+          "timestamp": "2026-04-26 07:12:04.804864"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title states 'Systematic Review and Meta-Analysis'",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "States aim to evaluate evidence on bougie use and first-attempt intubation success",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Adults, RCTs/observational, manikin/cadaver excluded",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists databases and search date through June 2023",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "GRADE mentioned for certainty but no risk of bias tool specified",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Random-effects meta-analysis, GRADE",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "18 studies, 9,151 patients, 12 RCTs",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Pooled RR 1.11 (95% CI 1.06-1.17) reported",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "Notes low certainty of evidence",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Suggests bougie should be used first, not as rescue",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No funding source mentioned",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No registration provided",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 4314,
+          "token_usage": {
+            "input_tokens": 3800,
+            "output_tokens": 514,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 4314
+          },
+          "processing_time": 5.413175549999323,
+          "timestamp": "2026-04-26 07:12:15.555462"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.5648604269293926,
+      "accuracy": 90.56603773584906,
+      "precision": 91.66666666666666,
+      "recall": 97.77777777777777,
+      "f1_score": 94.6236559139785,
+      "specificity": 50.0
+    }
+  },
+  {
+    "paper_id": "Suda2025_17",
+    "title": "Efficacy of prescribed opioids for acute pain after being discharged from the emergency department: A systematic review and meta-analysis.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 25738,
+      "token_usage": {
+        "input_tokens": 23708,
+        "output_tokens": 2030,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 25738
+      },
+      "processing_time": 23.020393,
+      "timestamp": "2026-04-26 07:12:15.556330"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title includes 'systematic review and meta-analysis'",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract with background/methods/results/conclusions provided",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction describes existing evidence and rationale for review",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit objective stated at end of introduction",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria specified",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Databases listed with search dates",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Search strategy in Supplement S1 with themes described",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two independent reviewers, third for conflicts, Covidence used",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Two independent reviewers extracted data, authors contacted",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary and secondary outcomes defined",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Lists variables extracted (sample size, age, criteria, etc.)",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "EPOC tool, two independent reviewers described",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "SMD and OR specified",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Describes which studies/comparisons included in syntheses",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Conversion of percentages to SMD described",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots and tables described",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects model, I2/tau/Q, RevMan described",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup/sensitivity analyses described",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analyses described",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "no",
+            "reason": "Stated no funnel plot/publication bias test performed; no method to assess missing-result reporting bias",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No GRADE or certainty assessment described",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "PRISMA flow diagram (Figure 1) provided",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "yes",
+            "reason": "Excluded dextropropoxyphene study cited with reason",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 presents characteristics of included studies",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias presented in Supplement Figure S1",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Table 2 presents results per study; forest plots show estimates",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Synthesis describes contributing studies and risk of bias",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "SMDs, ORs with CIs and I2 reported",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup analyses (codeine, pediatric/adult) reported",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analysis results reported in supplements",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "No assessment of reporting biases performed",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty/GRADE assessment presented",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Comparison with previous reviews section",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of evidence discussed",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review limitations discussed (heterogeneity, etc.)",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice and future research discussed",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO CRD42022332009 reported",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "PROSPERO registration provides protocol access",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No amendments described",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Funding source and role declared",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no competing interests",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "No statement about availability of data/code/forms",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 21319,
+          "token_usage": {
+            "input_tokens": 19864,
+            "output_tokens": 1455,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 21319
+          },
+          "processing_time": 16.730145879999327,
+          "timestamp": "2026-04-26 07:12:32.393566"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title states 'systematic review and meta-analysis'",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "States purpose to synthesize evidence on efficacy of prescribed opioids vs nonopioids for ED-discharged patients",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "RCTs on prescribed opioids for ED-discharged patients specified",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists MEDLINE, EMBASE, CINAHL, PsycINFO, CENTRAL, gray literature, searched to January 2023",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "States two reviewers assessed risk of bias",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Random-effects meta-analysis with sensitivity analyses described",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Six studies, 1161 patients reported",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Reports SMDs with 95% CIs and OR for adverse events",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No discussion of limitations of evidence (inconsistency, imprecision, etc.)",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Interpretation provided: opioids not more effective overall, driven by codeine",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No funding source mentioned in abstract",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No registration name/number provided",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 4419,
+          "token_usage": {
+            "input_tokens": 3844,
+            "output_tokens": 575,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 4419
+          },
+          "processing_time": 6.182884205999471,
+          "timestamp": "2026-04-26 07:12:38.576629"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.23188405797101433,
+      "accuracy": 75.47169811320755,
+      "precision": 81.81818181818183,
+      "recall": 87.8048780487805,
+      "f1_score": 84.70588235294119,
+      "specificity": 33.33333333333333
+    }
+  },
+  {
+    "paper_id": "Suda2025_18",
+    "title": "Intubation Rates following Prehospital Administration of Ketamine for Acute Agitation: A Systematic Review and Meta-Analysis.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 26719,
+      "token_usage": {
+        "input_tokens": 24745,
+        "output_tokens": 1974,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 26719
+      },
+      "processing_time": 28.330879,
+      "timestamp": "2026-04-26 07:12:38.576805"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title identifies as 'Systematic Review and Meta-Analysis'",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract with background, objective, methods, results, conclusions",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Background discusses existing knowledge and rationale",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit primary and secondary aims stated",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria specified",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Ten databases listed with last search date 13/Feb/2022",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Search strategy summarized in Appendix A using Burgess prehospital filter",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two independent reviewers, third resolved conflicts, Covidence used",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "One author extracted, 10% double-checked by another; authors contacted for missing data",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary outcome intubation defined; additional outcomes listed",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Other variables listed (dose, indications, setting, etc.)",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "Newcastle-Ottawa scale used by two independent authors",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Pooled proportions with 95% CIs specified",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Eligibility for synthesis described (data items required)",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Freeman-Tukey transformation, handling of pre-ketamine intubations described",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots and tables described",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects DerSimonian-Laird, Stata 13.1, I² described",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analysis of outliers described",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Leave-one-out and alternative back-transformation sensitivity analyses described",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "no",
+            "reason": "Publication bias/funnel plots explicitly not assessed; no alternative method",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "yes",
+            "reason": "GRADE used by two authors",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "PRISMA flow diagram (Figure 1) presented",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "yes",
+            "reason": "Friedman et al. cited and excluded with reason",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 presents study characteristics",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias presented for each study",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Table 2 presents intubation rates per study",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Synthesis results summarize contributing studies and outliers",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates with 95% CI and I² presented",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup analysis of outliers presented (Figure 5)",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Leave-one-out results reported",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "Publication bias not assessed",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "yes",
+            "reason": "GRADE rated 'very low' reported",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion interprets results vs other evidence",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of evidence discussed (observational, heterogeneity)",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review process limitations discussed",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice and future research provided",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO CRD42021248447 reported",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "PROSPERO link provided",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No mention of amendments to protocol",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "States no specific grant funding received",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no competing interests",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "yes",
+            "reason": "States data publicly available from included journal articles",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 22433,
+          "token_usage": {
+            "input_tokens": 20931,
+            "output_tokens": 1502,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 22433
+          },
+          "processing_time": 18.803420577999532,
+          "timestamp": "2026-04-26 07:13:00.721083"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title says 'Systematic Review and Meta-Analysis'",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "States aim to determine rate and settings of intubation",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Inclusion criteria described",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists databases and search date 13/Feb/2022",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "Newcastle-Ottawa scale used",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Meta-analysis and GRADE mentioned",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "18 studies, 3476 patients, observational, mostly USA",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Pooled rates with 95% CIs reported",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No explicit limitations of evidence discussed",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Interpretation about ED being site of intubations",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No funding source mentioned",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No registration info given",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 4286,
+          "token_usage": {
+            "input_tokens": 3814,
+            "output_tokens": 472,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 4286
+          },
+          "processing_time": 6.186099338000531,
+          "timestamp": "2026-04-26 07:13:06.907517"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.4175824175824176,
+      "accuracy": 84.90566037735849,
+      "precision": 87.2340425531915,
+      "recall": 95.34883720930233,
+      "f1_score": 91.11111111111111,
+      "specificity": 40.0
+    }
+  },
+  {
+    "paper_id": "Suda2025_5",
+    "title": "Analgesic efficacy of nitrous oxide in adults in the emergency department: A meta-analysis of randomized controlled trials.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 23158,
+      "token_usage": {
+        "input_tokens": 20942,
+        "output_tokens": 2216,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 23158
+      },
+      "processing_time": 32.242875,
+      "timestamp": "2026-04-26 07:13:06.907867"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "no",
+            "reason": "Title not provided in extracted text; identifies as meta-analysis in keywords but no explicit 'systematic review' label in title.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract with background, methods, results, conclusions provided.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction explains pain in ED, opioid concerns, and gap with no prior meta-analysis on N2O in adults.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit objectives stated: efficacy, adverse effects, satisfaction and procedure duration.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria specified (RCTs, adults, ED/prehospital, N2O/O2 vs placebo or other).",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Six databases listed with search date August 10, 2021, plus reference list checking.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Search terms presented in methods.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "no",
+            "reason": "States two authors examined articles and agreed but does not specify independent screening procedure clearly.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Two independent authors extracted data using Excel.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary outcome (pain score VAS/NRS, pain relief) and secondary outcomes defined.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Lists extracted variables: author, year, sample size, age, diagnosis, N2O/O2 ratio, control method.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "Cochrane risk of bias tool used by two independent authors.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "OR for dichotomous, WMD for continuous, with 95% CI.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Studies grouped by comparison (placebo vs other analgesic methods).",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "VAS to NRS conversion, 0-100 to 0-10 scale, last time point selection described.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots and tables used.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Fixed-effect model, random-effects if I2>50%, RevMan 5.3, I2 for heterogeneity.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Sensitivity/subgroup analyses by comparator type discussed.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analyses mentioned for high heterogeneity.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "no",
+            "reason": "No methods to assess reporting bias (e.g., funnel plot) described.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No GRADE or certainty assessment described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Flowchart Fig.1 with numbers (208+9, 26 full-text, 14 included).",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "yes",
+            "reason": "Reasons for exclusion in S1 Appendix.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 presents characteristics of included studies.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Fig. 2 risk of bias presented.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots show study-level data with effect estimates and CIs.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Does not explicitly summarize risk of bias among contributing studies for each synthesis.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates with CIs and I2 reported for all syntheses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Sensitivity/subgroup analyses for heterogeneity reported in results and limitations.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analysis results presented (e.g., N2O vs fentanyl subgroup).",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "No reporting bias assessment presented.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty/GRADE assessment presented.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion interprets findings in context of prior literature.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of evidence (bias, heterogeneity) discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "no",
+            "reason": "Review process limitations not specifically discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice and future RCTs discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration 270963 provided.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "Protocol accessible via PROSPERO link.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No mention of amendments to protocol.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "no",
+            "reason": "Funding source given but role of funders not described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Declaration of Competing Interest: None.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "No statement on availability of data, code, forms beyond supplementary appendices.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 18593,
+          "token_usage": {
+            "input_tokens": 16857,
+            "output_tokens": 1736,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 18593
+          },
+          "processing_time": 24.175924140999996,
+          "timestamp": "2026-04-26 07:13:34.094111"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title states meta-analysis of RCTs",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "States purpose to investigate analgesic efficacy and safety of N2O",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "RCTs comparing N2O/O2 to placebo or other analgesics in adults in ED",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists databases and search date Aug 10, 2021",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "No risk of bias assessment method mentioned",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Pooled analysis with WMD/OR reported",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "14 RCTs, 1751 patients",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Summary estimates with CIs reported",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No discussion of limitations",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Concludes N2O provides better analgesia than placebo with side effects",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No funding info",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No registration info",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 4565,
+          "token_usage": {
+            "input_tokens": 4085,
+            "output_tokens": 480,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 4565
+          },
+          "processing_time": 5.0556625760000315,
+          "timestamp": "2026-04-26 07:13:39.150341"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.27709978463747315,
+      "accuracy": 64.15094339622641,
+      "precision": 60.526315789473685,
+      "recall": 85.18518518518519,
+      "f1_score": 70.76923076923076,
+      "specificity": 42.30769230769231
+    }
+  },
+  {
+    "paper_id": "Suda2025_7",
+    "title": "Efficacy of Low-dose Ketamine for Control of Acute Pain in the Emergency Setting: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 22771,
+      "token_usage": {
+        "input_tokens": 20992,
+        "output_tokens": 1779,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 22771
+      },
+      "processing_time": 22.720385,
+      "timestamp": "2026-04-26 07:13:39.151001"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Identified as Systematic Review",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract provided",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Rationale described in introduction",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit objective stated",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria specified",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Databases and search dates specified",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Search strategy in supplementary appendix",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "no",
+            "reason": "Number of reviewers and independence for screening not specified",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Primary investigator extracted, secondary checked",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Outcomes listed",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Variables extracted listed",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "RoB 2 by two independent investigators",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "SMD and RR specified",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Eligibility for synthesis described",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "No description of handling missing data/conversions",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots mentioned",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects, I2, STATA described",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup and meta-regression described",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analyses described",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plot and Egger's test",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "yes",
+            "reason": "GRADE described",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "PRISMA flowchart provided",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Excluded studies not cited individually",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 with study characteristics",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias in Table 1",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots present individual study results",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Synthesis sections summarize contributing studies",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates with CI and I2",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup/meta-regression results reported",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analysis results reported",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Egger's test and funnel plot reported",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "yes",
+            "reason": "GRADE certainty reported per outcome",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion compares with prior evidence",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of evidence discussed",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review process limitations discussed",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for future research stated",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO CRD42021289270",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "Protocol access location not stated",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No mention of amendments",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "States no funding sources",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "No conflicts declared",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Data/code availability not addressed",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 18276,
+          "token_usage": {
+            "input_tokens": 17021,
+            "output_tokens": 1255,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 18276
+          },
+          "processing_time": 14.245594206000533,
+          "timestamp": "2026-04-26 07:13:53.408132"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title says 'Systematic Review and Meta-analysis'",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "States goal to estimate efficacy and safety of low-dose ketamine vs opioids",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Specifies low-dose ketamine vs opioids, RCTs, acute pain in emergency setting",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists databases and search date November 2021",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "Cochrane risk-of-bias tool mentioned",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Random-effects meta-analysis with SMD and RR",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "15 studies, 1613 participants",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Pooled SMDs and RRs with 95% CIs reported",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "Mentions heterogeneity and poor quality/high risk of bias",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Concludes low-dose ketamine may have equivalent efficacy/safety",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No funding source stated",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No registration provided",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "low",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_low_20260426_071143",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 4495,
+          "token_usage": {
+            "input_tokens": 3971,
+            "output_tokens": 524,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 4495
+          },
+          "processing_time": 5.157259470000099,
+          "timestamp": "2026-04-26 07:14:01.871266"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.47834645669291354,
+      "accuracy": 81.13207547169812,
+      "precision": 80.0,
+      "recall": 97.2972972972973,
+      "f1_score": 87.8048780487805,
+      "specificity": 43.75
+    }
+  }
+]

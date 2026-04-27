@@ -1,0 +1,1752 @@
+[
+  {
+    "paper_id": "Suda2025_15",
+    "title": "Effect of Bougie Use on First-Attempt Success in Tracheal Intubations: A Systematic Review and Meta-Analysis.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 33233,
+      "token_usage": {
+        "input_tokens": 23890,
+        "output_tokens": 9343,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 33233
+      },
+      "processing_time": 115.359463,
+      "timestamp": "2026-04-26 07:24:04.351210"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Header identifies the report as 'SYSTEMATIC REVIEW/META-ANALYSIS' and the abstract explicitly calls it 'a systematic review and meta-analysis'.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract includes background, objectives, methods, results with effect estimates and CIs, and conclusions.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction describes existing knowledge on intubation success, bougie use, and rationale that bougie's effect on first-attempt success remains debated.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit objective stated: 'to assess the association between the use of a bougie during endotracheal intubations and first-attempt success proportions.'",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Detailed inclusion/exclusion criteria provided including study design, population, intervention, comparator, language, and exclusion of manikin/cadaver studies.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Specifies databases (Ovid Cochrane Central, Embase, Medline, Scopus, Web of Science) with search dates (October 5, 2022, updated June 15, 2023) and reference list checking.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Keywords described in text and full search strategies provided in Appendix E1; filters mentioned for excluding animal studies and case reports.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Pairs of reviewers independently screened titles/abstracts and full texts; disagreements resolved by consensus; Covidence used for management.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Standardized form used; one investigator extracted, second reviewer cross-checked; disagreements resolved by consensus; data obtained from DEVICE trial authors.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary outcome (first-attempt intubation success) and secondary outcomes (hypoxemia, postintubation arrest, intubation duration, injuries, esophageal intubation, sore throat) are listed and defined.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Variables listed include setting, RSI use, laryngoscopy type, blade type, intubator experience, age, sex, indications, and Cormack-Lehane grades.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "Cochrane RoB 2 tool used for RCTs and modified Newcastle-Ottawa scale for observational studies; one investigator assessed, methodologist cross-checked.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Risk ratios (RRs) with 95% CIs specified as the effect measure for synthesis.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Studies were grouped for syntheses based on setting, design, risk of bias, device type, and difficult airway status as reflected in subgroup analyses.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "No explicit description of methods to handle missing summary statistics or data conversions for synthesis preparation.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots used (Figures 2, 3, 4), funnel plot for publication bias, and tables for study characteristics and pooled estimates.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects model (DerSimonian and Laird) used; I2 statistic for heterogeneity; Review Manager 5.4.1 software specified.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analyses planned by study design, risk of bias, setting, training, and device type to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analyses described including visual inspection of forest plots and excluding outlier studies (e.g., BOUGIE trial).",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plot used to assess potential publication bias for the primary outcome meta-analysis.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "yes",
+            "reason": "GRADE approach explicitly used to evaluate certainty of evidence at the outcome level.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Search identified 2,699 studies, 134 selected for full-text review, 18 included; Figure 1 shows the flow diagram.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "No specific excluded studies that might appear to meet inclusion criteria are cited with reasons for exclusion in the text.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 presents main baseline characteristics for each of the 18 included studies, including design, setting, population, device, and group sizes.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias results summarized in text (all observational high risk, RCTs had some concerns) with detailed assessments in Appendix E3.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots (Figures 2-4) display individual study results with effect estimates and confidence intervals; Table 3 shows individual intubation times.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Each synthesis briefly describes contributing studies' characteristics and risk of bias (e.g., emergency intubations, RCTs only, difficult airways).",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled RRs with 95% CIs and I2 heterogeneity measures presented for primary outcome and all subgroups (Table 2, Figures 2-4).",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Results of multiple subgroup analyses presented in Table 2 exploring causes of heterogeneity (design, setting, device, etc.).",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analysis excluding BOUGIE trial reported (RR 1.12, 95% CI 1.10-1.15, I2=6%) with reference to Appendix E5.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Funnel plot asymmetry findings presented (Appendix E4) with explicit decision not to downgrade certainty for this domain.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "yes",
+            "reason": "GRADE certainty levels reported (low for overall, moderate for Cormack-Lehane III/IV subgroup) with reasons (risk of bias, inconsistency).",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion compares findings with previous systematic reviews by Sheu et al and Tollman et al, interpreting results in context.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of evidence discussed including risk of bias of included studies, statistical heterogeneity, and lack of reporting on intubator experience.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review limitations discussed including inability to perform subgroup analysis by intubator experience and incomplete reporting in primary studies.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice (bougie used first, not as rescue) and future research (focus on first-attempt success without complications) discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "Protocol registered on PROSPERO with registration number CRD42023403212 explicitly provided.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "Protocol accessible via PROSPERO registration; data sharing statement notes protocol can be provided on request.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "yes",
+            "reason": "Post hoc amendment described: 'The analysis of studies that reported the subset of difficult airway patients was planned post hoc.'",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Funding statement explicitly indicates 'This study received no funding.'",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors explicitly declare 'The authors report no conflicts of interest.'",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "yes",
+            "reason": "Data sharing statement specifies that derived data, study protocol, statistical analysis plan, and analytic code can be provided on request from corresponding author.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 27395,
+          "token_usage": {
+            "input_tokens": 20090,
+            "output_tokens": 7305,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 27395
+          },
+          "processing_time": 82.03307781999956,
+          "timestamp": "2026-04-26 07:25:33.629123"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title explicitly identifies the report as 'A Systematic Review and Meta-Analysis'.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "States: 'We aimed to evaluate the available evidence on the association of bougie use in the first attempt and success in tracheal intubations.'",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Specifies inclusion (adults, RCTs and comparative observational studies, bougie vs. without bougie) and exclusion (manikin and cadaver studies) criteria.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists databases (Ovid Cochrane Central, Ovid Embase, Ovid Medline, Scopus, Web of Science) and the search end date (June 2023).",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "The abstract mentions GRADE for certainty of evidence at the outcome level but does not specify a tool or method to assess risk of bias in included studies.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Reports use of meta-analysis with random-effects models and GRADE to assess certainty of evidence.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Reports 18 included studies (12 RCTs) with 9,151 patients, including subgroup characteristics like emergency intubations and Cormack-Lehane grade.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Reports pooled RR 1.11 (95% CI 1.06 to 1.17) favoring bougie use, with subgroup estimates and number of studies/patients.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "The abstract notes 'low certainty evidence' but does not explicitly describe specific limitations such as risk of bias, inconsistency, or imprecision in the evidence base.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Provides interpretation: 'these data suggest that a bougie should probably be used first and not as a rescue device in emergency intubations.'",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No information on the primary source of funding is mentioned in the abstract.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No registration name or registration number is provided in the abstract.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 5838,
+          "token_usage": {
+            "input_tokens": 3800,
+            "output_tokens": 2038,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 5838
+          },
+          "processing_time": 21.563926289999472,
+          "timestamp": "2026-04-26 07:25:59.710363"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.5077399380804954,
+      "accuracy": 88.67924528301887,
+      "precision": 91.48936170212765,
+      "recall": 95.55555555555556,
+      "f1_score": 93.47826086956522,
+      "specificity": 50.0
+    }
+  },
+  {
+    "paper_id": "Suda2025_17",
+    "title": "Efficacy of prescribed opioids for acute pain after being discharged from the emergency department: A systematic review and meta-analysis.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 34421,
+      "token_usage": {
+        "input_tokens": 23708,
+        "output_tokens": 10713,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 34421
+      },
+      "processing_time": 128.329527,
+      "timestamp": "2026-04-26 07:25:59.710955"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title explicitly identifies the report as 'A systematic review and meta-analysis'.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract is provided with Background, Methods, Results, and Conclusions sections.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction describes opioid prescribing context, adverse events of opioids and NSAIDs, and conflicting evidence on short-term opioid efficacy after ED discharge.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit objective stated: 'to synthesize the evidence regarding the efficacy of prescribed opioids compared to nonopioid analgesics for acute pain relief in ED-discharged patients.'",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion (RCTs/cluster RCTs evaluating opioids vs nonopioids in ED-discharged patients) and exclusion criteria (substance use disorder, chronic pain, head-to-head opioid comparisons, abstracts only) are clearly specified.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "MEDLINE, EMBASE, CINAHL, PsycINFO, CENTRAL, ClinicalTrials.gov, ISRCTN, Google Scholar searched from inception to May 5, 2022, updated January 2023.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Four search themes described and full search strategies referenced as available in Supplement Methods S1.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two independent reviewers screened titles/abstracts and full texts; a third reviewer (RD or AC) resolved discrepancies. Covidence software was used.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Two reviewers (JP and MM) independently extracted data using standardized electronic sheet, conflicts resolved by consensus, authors contacted for incomplete data.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary outcome (pain intensity/relief) and secondary outcomes (adverse events, rescue analgesics) defined; final single time point used for main analysis.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Variables extracted listed: sample size, age range, inclusion/exclusion criteria, type of opioid/nonopioid, outcomes; authors contacted for missing data.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "EPOC risk-of-bias tool used; two reviewers (JP, MM) assessed independently, conflicts resolved with third reviewer (RD); nine domains assessed.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "SMD specified for pain intensity/relief outcomes and odds ratios for adverse events outcomes.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "States 'If data were available for at least three studies, results for the main outcome and for adverse events were pooled and meta-analyzed.'",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Describes converting percentages of patients with pain relief or treatment failure to SMD using Comprehensive Meta-analysis software.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Describes use of forest plots and tables to display individual studies and synthesis results.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects model with inverse variance weighting used; heterogeneity assessed using I2, tau-square, Cochran's Q; RevMan 5.4 software specified.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analyses described comparing codeine vs other opioids, and pediatric vs adult populations using chi-square tests for differences.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Multiple sensitivity analyses described: short-term follow-up (≤3 days), excluding high-risk-of-bias studies, codeine vs other opioids, pediatric vs adult, and excluding placebo comparators.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Authors explicitly address publication bias assessment, stating no funnel plot tests were done because power is too low with fewer than 10 studies.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No GRADE or other formal certainty/confidence assessment method is described or used.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Describes search results (5942 references, 47 full texts, 7 then 6 studies retained) with PRISMA flowchart in Figure 1.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "yes",
+            "reason": "Cites and explains exclusion of dextropropoxyphene study (withdrawn from market) and discusses partial inclusion of two studies (oxycodone vs placebo only, oxycodone vs NSAID only).",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Each included study cited and characteristics presented in Table 1 (sample size, age, inclusion criteria, treatments, outcomes).",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk-of-bias assessments presented for each study in Supplement Figure S1 with EPOC tool, with summary statement in text.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Table 2 presents results for each included study including primary results, adverse events, and rescue analgesics.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Discussion summarizes contributing study characteristics and notes risk of bias was low for five studies and high for one.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Summary estimates with 95% CIs and I2 for heterogeneity reported (e.g., SMD 0.12, 95% CI −0.10 to 0.34, I2=62%; OR 2.64, 95% CI 2.04-3.42).",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Results of subgroup investigations presented (codeine vs other opioids: χ2=7.47, p=0.006; pediatric vs adult: χ2=1.78, p=0.18).",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analyses results presented including short-term follow-up, excluding high-risk study, excluding placebo comparator, with effect sizes and CIs.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "No formal assessment of risk of bias due to missing results was conducted; no funnel plot or other reporting bias assessment results are presented.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty/confidence assessment (e.g., GRADE) was performed or presented for any outcome.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion provides interpretation in context of other evidence, with detailed comparison with previous systematic reviews.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of evidence discussed including study population heterogeneity, North American context, exclusion of fractures, combination treatments confounding effects.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "no",
+            "reason": "Limitations of review processes not specifically discussed (e.g., no certainty assessment, no publication bias assessment, no language restriction limitations).",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications discussed for practice (selective opioid prescribing) and future research (prospective studies on short-term opioid use, patient-centered outcomes).",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "Review prospectively registered with PROSPERO CRD42022332009.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "PROSPERO registration number provided, allowing protocol access via the PROSPERO registry.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No mention of any amendments to the protocol or registration is provided.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Funding source disclosed (Fonds des Urgentistes de l'Hôpital du Sacré-Coeur de Montréal) with statement that funders had no role in the study.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors explicitly declare no competing interests in the Conflict of Interest Statement.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "No statement about availability of data collection forms, extracted data, analytic code, or other materials is provided.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 27662,
+          "token_usage": {
+            "input_tokens": 19864,
+            "output_tokens": 7798,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 27662
+          },
+          "processing_time": 98.60514330500064,
+          "timestamp": "2026-04-26 07:27:41.007726"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as 'A systematic review and meta-analysis.'",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states: 'The purpose of this study was to synthesize the evidence regarding the efficacy of prescribed opioids compared to nonopioid analgesics for acute pain relief in ED-discharged patients.'",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Inclusion criteria are specified: randomized controlled trials investigating the efficacy of prescribed opioids for ED-discharged patients with comparison to nonopioid analgesics for acute pain relief outcomes.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Information sources are specified: 'MEDLINE, EMBASE, CINAHL, PsycINFO, CENTRAL, and gray literature databases were searched from inception to January 2023.'",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "The abstract states risk of bias was assessed but does not specify the method or tool used (e.g., Cochrane Risk of Bias tool) for assessment.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "The abstract specifies: 'All meta-analyses used a random-effect model and a sensitivity analysis compared patients treated with codeine versus those treated with other opioids.'",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "The abstract reports 'six studies enrolling 1161 patients were included' and identifies the population as ED-discharged patients with acute musculoskeletal pain.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Main outcomes are presented with summary estimates and CIs: SMD 0.12 (95% CI -0.10 to 0.34) for pain; adverse events OR 2.64 (95% CI 2.04-3.42), with directions of effect indicated.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "The abstract does not explicitly summarize limitations of the included evidence such as risk of bias, inconsistency, or imprecision in the discussion section.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "The abstract provides interpretation: opioids are not more effective than nonopioids for acute musculoskeletal pain, except non-codeine opioids, and notes implications for future research.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "The abstract does not mention any source of funding for the review.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "The abstract does not provide a register name or registration number for the systematic review protocol.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 6759,
+          "token_usage": {
+            "input_tokens": 3844,
+            "output_tokens": 2915,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 6759
+          },
+          "processing_time": 25.463827508000577,
+          "timestamp": "2026-04-26 07:28:08.040114"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.31317494600431967,
+      "accuracy": 77.35849056603774,
+      "precision": 83.72093023255815,
+      "recall": 87.8048780487805,
+      "f1_score": 85.71428571428572,
+      "specificity": 41.66666666666667
+    }
+  },
+  {
+    "paper_id": "Suda2025_18",
+    "title": "Intubation Rates following Prehospital Administration of Ketamine for Acute Agitation: A Systematic Review and Meta-Analysis.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 38584,
+      "token_usage": {
+        "input_tokens": 24745,
+        "output_tokens": 13839,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 38584
+      },
+      "processing_time": 173.335051,
+      "timestamp": "2026-04-26 07:28:08.040828"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title explicitly states 'A Systematic Review and Meta-Analysis'.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract provided with Background, Objective, Methods, Results, and Conclusions sections covering required elements.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Background section describes existing knowledge of ketamine, prior systematic reviews, and the gap regarding intubation rates and settings, providing rationale for review.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit primary aim (rates and settings of intubations) and secondary aim (indications and adverse events) stated at end of introduction.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Eligibility Criteria section lists three explicit inclusion criteria and detailed exclusion criteria.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Lists 10 databases, Google Scholar, manual bibliography, with date 13/February/2022 specified as last search date.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Mentions use of Burgess et al. prehospital search filter and refers readers to Appendix A for complete summary of search strategy across databases.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two authors (CL and AO) screened independently, with kappa reported, and a third author resolved disagreements.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Data extracted by one author (CL); 10% double-checked independently by another author (AO) for accuracy.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary outcomes (prehospital and ED intubations) specified, plus indications for intubation and adverse events.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Lists additional variables (study setting, methodology, doses, agitation scores, etc.) and describes handling missing data via email contact with authors.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "Newcastle-Ottawa scale used; two independent authors (CL and AO) assessed risk of bias and reached consensus.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Pooled proportions with 95% confidence intervals specified as effect measure for intubation rates.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "States studies were deemed eligible if they included necessary data items, with handling of missing data via author contact described.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Freeman-Tukey double arcsine transformation described to stabilize variance and allow inclusion of zero-event studies.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Tables for study characteristics and results, plus forest plots (Figures 2-5) used to visually display syntheses.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects model with DerSimonian-Laird estimator, Clopper-Pearson CIs, I² for heterogeneity, and Stata 13.1 software all specified with rationale.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analysis comparing statistical outliers with remaining studies described.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analyses described including alternative back-transformation and leave-one-out meta-analysis.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Explicitly states publication bias was not assessed and provides rationale (funnel plots inaccurate for proportional meta-analyses).",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "yes",
+            "reason": "GRADE tool used by two authors (CL and AO) separately with consensus to assess certainty of evidence.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "PRISMA flow diagram (Figure 1) presents 1915 records identified, 1462 screened, 50 full-texts assessed, and 18 included.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "yes",
+            "reason": "Friedman et al. study cited as appearing to meet inclusion criteria with explanation for exclusion (heterogeneous setting and patient population).",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 cites each included study and presents characteristics (citation, type, country, total patients, ketamine recipients, monotherapy status).",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "no",
+            "reason": "Only three studies named as high risk of bias; remaining 15 lumped as 'medium risk' without individual NOS scores or per-study assessment details presented.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Table 2 presents intubation rates with denominators for each study, and forest plots show effect estimates with confidence intervals.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Results sections summarize characteristics of studies contributing to each synthesis (overall, prehospital, ED), including risk of bias context.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates with 95% CIs presented (overall 16% CI 8-26%, prehospital 1% CI 0-2%, ED 19% CI 11-30%) with I² heterogeneity statistics.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup analysis results presented showing outliers had ED intubation rate of 52% vs 12% for remaining studies.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Leave-one-out meta-analysis result reported (no individual study influential on overall proportion).",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "Publication bias was not assessed; therefore no assessments of reporting bias are presented for any synthesis.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "yes",
+            "reason": "GRADE certainty rating of 'very low' presented with explanation of downgrading from low due to inconsistency.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion provides interpretation comparing findings to prior systematic reviews and ED-administered ketamine studies.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of evidence discussed including observational nature, low quality, dose variation, ambiguous indications, heterogeneity in agitation definitions.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "no",
+            "reason": "Listed limitations focus on the included evidence (study designs, dose data, terminology, mixed sedatives) rather than the review processes themselves.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications discussed for clinical practice (ED guidelines), and detailed future research directions including RCTs and qualitative research.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration provided with ID CRD42021248447.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "PROSPERO URL (https://www.crd.york.ac.uk/prospero) and registration ID provided for protocol access.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No mention of any amendments to the registered protocol.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Funding section states research did not receive any specific grant from public, commercial, or not-for-profit sectors.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Disclosure Statement states authors have no competing interests to declare.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "yes",
+            "reason": "Availability of Data section states all extracted data are publicly available from the respective journal articles.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 32862,
+          "token_usage": {
+            "input_tokens": 20931,
+            "output_tokens": 11931,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 32862
+          },
+          "processing_time": 144.98334242200053,
+          "timestamp": "2026-04-26 07:30:44.228128"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title explicitly states 'A Systematic Review and Meta-Analysis'.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "Abstract states the review aims to determine the rate and settings of intubation following prehospital ketamine administration for agitation, plus associated indications and adverse events.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Inclusion criteria are stated: 'studies to describe agitated patients who received ketamine in the prehospital setting as a first-line drug to control acute agitation'.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Multiple databases listed (PubMed, Scopus, Ovid MEDLINE, Embase, CINAHL Plus, PsycINFO, Cochrane Library, etc.) with last search date of 13/February/2022.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "States 'Study quality was assessed using the Newcastle-Ottawa quality assessment scale'.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "States 'Synthesis of results was completed via meta-analysis, and the GRADE tool was used for certainty assessment'.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Reports 18 included studies, 3476 total patients, all observational, with 15 from the USA.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Reports overall intubation rate 16% (95% CI 8%-26%), pooled prehospital rate 1% (95% CI 0%-2%), and pooled ED rate 19% (95% CI 11%-30%).",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "While wide variation between studies is noted, the abstract does not explicitly summarize limitations of evidence such as risk of bias, inconsistency, or imprecision in the formal sense required.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Provides interpretation: 'The majority of intubations performed following prehospital administration of ketamine for agitation took place in the ED'.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No mention of funding source in the abstract.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No registration name or registration number is provided in the abstract.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 5722,
+          "token_usage": {
+            "input_tokens": 3814,
+            "output_tokens": 1908,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 5722
+          },
+          "processing_time": 17.146916478000094,
+          "timestamp": "2026-04-26 07:31:01.375607"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.5124835742444153,
+      "accuracy": 86.79245283018868,
+      "precision": 89.13043478260869,
+      "recall": 95.34883720930233,
+      "f1_score": 92.13483146067418,
+      "specificity": 50.0
+    }
+  },
+  {
+    "paper_id": "Suda2025_5",
+    "title": "Analgesic efficacy of nitrous oxide in adults in the emergency department: A meta-analysis of randomized controlled trials.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 31502,
+      "token_usage": {
+        "input_tokens": 20942,
+        "output_tokens": 10560,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 31502
+      },
+      "processing_time": 130.926601,
+      "timestamp": "2026-04-26 07:31:01.376201"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Keywords explicitly list 'Meta-analysis' and the paper repeatedly refers to itself as a meta-analysis throughout the abstract and text.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "A structured abstract is provided with Background, Methods, Results, and Conclusions sections.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction describes the high incidence of pain in ED, limitations of opioids, properties of N2O, and conflicting evidence justifying the review.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Authors explicitly state aims: estimate (1) analgesic efficacy of N2O, (2) adverse effects, (3) patient satisfaction and procedure duration.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion criteria (RCTs comparing N2O/O2 to placebo or other analgesics in ED adults) and exclusion criteria (children <18, non-ED settings) are specified.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Lists databases (PubMed, Cochrane, Embase, Web of Science, CNKI, Wanfang) and search date (August 10, 2021); also mentions reference list checking.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Only a brief generic search string is presented; full search strategies with filters/limits for each individual database are not provided.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "no",
+            "reason": "States two authors examined articles and agreed but does not explicitly describe whether they screened independently or detail the screening process.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "States data were extracted by two independent authors using Excel 2010.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary outcome (pain score by VAS/NRS, number with pain relief) and secondary outcomes (adverse events, satisfaction, procedure duration) are defined; rule for time points specified.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Lists extracted variables including study author, year, sample size, age, diagnosis, N2O/O2 ratio, control method.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "States two authors independently performed critical appraisal using the Cochrane Collaboration's risk of bias tool.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Specifies OR with 95% CI for dichotomous data and WMD with 95% CI for continuous data.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "no",
+            "reason": "Process for deciding which studies were eligible for each specific synthesis (e.g., placebo vs other analgesics) is not explicitly described.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Describes conversion of pain scores from 0-100 mm VAS to 0-10 cm scale and rule for selecting time points (last data before N2O withdrawal).",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "no",
+            "reason": "Methods section does not describe approach for tabulating or visually displaying results, though forest plots and tables appear in results.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Describes fixed-effect model with switch to random-effects if I²>50%, I² heterogeneity measure, and use of RevMan 5.3 software.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "States sensitivity analysis was conducted when statistical or clinical heterogeneity was detected to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analysis is described as a method when heterogeneity is detected.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "no",
+            "reason": "No methods are described for assessing risk of bias due to missing results from reporting biases (e.g., funnel plots, Egger's test).",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods described for assessing certainty/confidence in the body of evidence (e.g., GRADE).",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Reports 208 articles identified, 9 additional sources, 191 excluded after abstract review, 26 full-text reviewed, 14 included; Fig. 1 provides flow diagram.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "yes",
+            "reason": "States the reason for exclusion of every identified study was reported in S1 Appendix.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 presents characteristics of all included studies including patients, age, intervention, control, and outcomes.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Fig. 2 presents the risk of bias assessment, with text noting seven RCTs had high risk of bias and reasons.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots (Figs. 3-8) display individual study results with effect estimates and confidence intervals for outcomes.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Results sections for each synthesis do not explicitly summarize characteristics and risk of bias among contributing studies for each synthesis.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Presents summary estimates with 95% CIs, p-values, and I² heterogeneity measures for all syntheses with direction of effect.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Sensitivity/subgroup-style analyses presented for the N2O vs other analgesic comparison (separating fentanyl studies from regional anesthesia/haematoma block studies).",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Results of sensitivity analyses for high-heterogeneity comparisons are reported (e.g., N2O vs fentanyl, N2O vs intravenous regional anesthesia).",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "No assessment of risk of bias due to missing results (e.g., funnel plot, publication bias test) is presented.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty/confidence assessment (e.g., GRADE) is presented for any outcome.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion interprets findings in context of other evidence including pharmacological properties of N2O, prior studies on opioids, fractures, and PONV.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations section discusses high risk of bias in seven studies, inclusion of patients ≥15 years, and high heterogeneity.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Limitations discusses heterogeneity sources (varying N2O/O2 ratios, different control drugs, varied populations) impacting the review's findings.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Conclusion suggests N2O as option for ED analgesia and notes need for future RCTs comparing N2O to ketamine, propofol, or other sedation.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "States the review was registered with PROSPERO with registration number 270963.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "Provides URL https://www.crd.york.ac.uk/PROSPERO/ where the protocol can be accessed.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No amendments to the registered protocol are described or explained.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "no",
+            "reason": "Funding source is mentioned (Jinan grants 202019018, 202019025) but the role of the funders/sponsors in the review is not described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Declaration of Competing Interest section explicitly states 'None'.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Only mentions supplementary appendices generally; does not explicitly address availability of data collection forms, extracted data, analytic code, or other materials.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 25488,
+          "token_usage": {
+            "input_tokens": 16857,
+            "output_tokens": 8631,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 25488
+          },
+          "processing_time": 102.07550874000026,
+          "timestamp": "2026-04-26 07:32:52.938670"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "Title identifies the report as 'A meta-analysis of randomized controlled trials,' which qualifies as a systematic review type per PRISMA conventions.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "Abstract explicitly states: 'The purpose of this meta-analysis is to investigate the analgesic efficacy and safety of N2O in adults in ED.'",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Inclusion criteria specified: RCTs comparing N2O/O2 to placebo or other analgesic methods for pain management in adults in ED or prehospital settings.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Lists databases (PubMed, Cochrane Library, Embase, Web of Science, CNKI, Wanfang) and last search date (August 10th, 2021).",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "The abstract does not mention any methods used to assess risk of bias in included studies.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "no",
+            "reason": "Abstract mentions 'pooled analysis' but does not specify synthesis methods (e.g., random/fixed effects model, heterogeneity assessment approach).",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Reports '14 RCTs with 1751 patients were included,' providing total number of studies and participants.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Provides summary estimates with 95% CIs and P-values for primary (pain score, pain relief) and secondary outcomes (nausea, vomiting, dizziness, procedure time), with direction of effect.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "Abstract does not provide any summary of limitations of the evidence (e.g., risk of bias, inconsistency, imprecision), despite high heterogeneity values reported.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Provides general interpretation: 'N2O could provide better analgesia than placebo and similar analgesia to other methods with more vomiting and dizziness in adults in ED.'",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No funding source is mentioned in the abstract.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No registration name or registration number is provided in the abstract.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 6014,
+          "token_usage": {
+            "input_tokens": 4085,
+            "output_tokens": 1929,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 6014
+          },
+          "processing_time": 19.363579306000247,
+          "timestamp": "2026-04-26 07:33:12.302396"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.4301075268817203,
+      "accuracy": 71.69811320754717,
+      "precision": 66.66666666666666,
+      "recall": 88.88888888888889,
+      "f1_score": 76.1904761904762,
+      "specificity": 53.84615384615385
+    }
+  },
+  {
+    "paper_id": "Suda2025_7",
+    "title": "Efficacy of Low-dose Ketamine for Control of Acute Pain in the Emergency Setting: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+    "dataset_source": "suda2025",
+    "overall_metadata": {
+      "model_id": "claude-opus-4-7",
+      "model_version": "claude-opus-4-7",
+      "max_tokens": 64000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 32929,
+      "token_usage": {
+        "input_tokens": 20992,
+        "output_tokens": 11937,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "total_tokens": 32929
+      },
+      "processing_time": 146.012956,
+      "timestamp": "2026-04-26 07:33:12.303278"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "The document is explicitly labeled 'Systematic Review' at the top and described throughout as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "A structured abstract with Introduction, Methods, Results, and Conclusion sections is provided, including objectives, search sources, statistical methods, and key findings with effect estimates.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction describes rationale: opioid complications, need for alternatives, ketamine's properties, and limitations of prior reviews with limited studies and inconclusive evidence.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit objective stated: 'evaluate the role of low-dose ketamine compared to opiates for the management of acute pain in the emergency setting.'",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria specified by study design (RCTs), participants (ED with acute pain), intervention (IV ketamine <0.5 mg/kg), comparison (opioids/placebo), and outcomes.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Six sources specified: PubMed Central, EMBASE, MEDLINE, Cochrane Library, ScienceDirect, Google Scholar, with date range from inception to October/November 2021.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Search strategy with Boolean operators and filters described, with full strategy referenced in the Supplementary Appendix.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "no",
+            "reason": "While disagreement resolution by discussion is mentioned, the specific number of reviewers screening each record and whether they worked independently is not explicitly stated.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "States primary investigator entered data and secondary investigator double-checked for accuracy, indicating two reviewers were involved in the data collection process.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Outcomes listed: pain score, need for rescue analgesic, adverse effects (gastrointestinal, neurological, psychological, cardiopulmonary). Time intervals were also analyzed.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Variables extracted listed: authors, title, year, study period, design, setting, country, sample size, outcome details, average age, primary/secondary outcomes.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "Cochrane RoB 2 tool used by two independent investigators with five domains specified.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Standardized mean difference (SMD) for continuous outcomes and risk ratio (RR) for dichotomous outcomes, both with 95% CI.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "no",
+            "reason": "The paper does not explicitly describe the processes used to decide which studies were eligible for each specific synthesis (e.g., for each time interval).",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Mentions SMD was used because different pain scales were used across studies, indicating handling of different scales as a data conversion approach.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "States 'Visual representation of these pooled estimates was done by forest plot' and tables present study characteristics.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects model with inverse variance method, I² statistic for heterogeneity, and STATA version 14.2 software specified.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "States subgroup analysis and meta-regression were performed to explore heterogeneity using covariates like ketamine dose and comparison group.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "no",
+            "reason": "While sensitivity analyses are reported in results, the methods section does not describe the sensitivity analysis approach or methodology.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Publication bias evaluated using funnel plot and Egger's test with P<0.10 considered statistically significant.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "yes",
+            "reason": "GRADE approach described with five components: risk of bias, indirectness, imprecision, inconsistency, and publication bias.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "PRISMA flowchart (Figure 1) referenced; 188 retrieved, 133 after duplicates, 3 from bibliography, 15 final included with 1,613 participants.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "The paper does not cite specific studies that appeared to meet inclusion criteria but were excluded, nor explain why they were excluded.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 presents characteristics of each included study including author, year, country, sample size, participants, pain scale, route, dose, comparator, age, and risk of bias.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias assessments shown in Table 1 for each included study (rated as 'High' or 'Some concerns').",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots (Figures 2-4) display individual study results with effect estimates and confidence intervals for each outcome.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "The paper does not specifically summarize the characteristics and risk of bias among contributing studies for each individual synthesis; only an overall summary is provided.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "All pooled estimates presented with 95% CIs and I² heterogeneity measures for each outcome and time interval.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup analyses by ketamine dose and comparison group reported, with meta-regression results mentioned for some outcomes.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analyses reported in supplementary figures and described in text for multiple outcomes (e.g., 'did not affect the significant findings').",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "Funnel plot and Egger's test reported only for one synthesis (45-minute pain score), not for all syntheses assessed.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "yes",
+            "reason": "GRADE quality of evidence assessment reported as 'low' for each outcome analyzed.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Discussion interprets results in context of previous reviews and explains mechanisms of action through NMDA receptor and opioid receptor binding.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations section discusses high risk of bias in half of studies and significant heterogeneity affecting generalizability.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Discusses inability to perform meta-regression for most outcomes due to fewer than 10 studies and inability to do subgroup analysis by pain type.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "States further studies are required and suggests comparing combinations of ketamine with specific opioids; mentions clinical implications for managing patients.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration with number CRD42021289270 explicitly stated.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "Registration in PROSPERO with specific registration number provides indication of where the protocol can be accessed.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "The paper does not describe or explain any amendments to the protocol or registration information.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "States 'There are no conflicts of interest or sources of funding to declare,' addressing the support sources.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "States 'No author has professional or financial relationships with any companies that are relevant to this study.'",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "The paper does not report on availability of data collection forms, extracted data, analytic code, or other materials used in the review.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 26117,
+          "token_usage": {
+            "input_tokens": 17021,
+            "output_tokens": 9096,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 26117
+          },
+          "processing_time": 109.21570362400053,
+          "timestamp": "2026-04-26 07:35:11.806590"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as 'A Systematic Review and Meta-analysis of Randomized Controlled Trials.'",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract clearly states the objective: to obtain a comprehensive estimate of the efficacy and safety of low-dose ketamine compared to opiates for control of acute pain in the emergency setting.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Eligibility criteria are specified including study type (RCTs), population (emergency setting), intervention (low-dose ketamine <0.5 mg/kg), and comparator (opiates), enabling identification of included studies.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Information sources are specified: PubMed Central, EMBASE, MEDLINE, Cochrane Library, ScienceDirect, and Google Scholar, searched from inception until November 2021.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "The abstract states the Cochrane risk-of-bias tool was used to assess the quality of included studies.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Synthesis methods are specified: meta-analysis with random-effects model, reporting pooled SMD and RR with 95% confidence intervals depending on outcome type.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Reports total of 15 studies with 1,613 participants, mentions half had high risk of bias, and indicates studies were conducted in the USA.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Pooled SMDs for pain at multiple time points and RRs for rescue analgesics and various side effects are reported with 95% CIs and heterogeneity statistics.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "Limitations are briefly noted, citing 'heterogeneity and poor quality of existing studies' that necessitate further research.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Interpretation is provided: low-dose ketamine might have higher or equivalent efficacy and safety compared to opioids for managing acute pain in emergency settings.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "The abstract does not mention any source of funding for the review.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "The abstract does not provide any registration name or registration number for the systematic review.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "claude-opus-4-7",
+          "model_version": "claude-opus-4-7",
+          "max_tokens": 64000,
+          "effort": "max",
+          "evaluator_type": "claude_native",
+          "api_provider": "anthropic",
+          "format_type": "md_claude-opus-4-7_max_20260426_072404",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 6812,
+          "token_usage": {
+            "input_tokens": 3971,
+            "output_tokens": 2841,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "total_tokens": 6812
+          },
+          "processing_time": 26.50767948400062,
+          "timestamp": "2026-04-26 07:35:38.315803"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.2986767485822305,
+      "accuracy": 73.58490566037736,
+      "precision": 76.74418604651163,
+      "recall": 89.1891891891892,
+      "f1_score": 82.5,
+      "specificity": 37.5
+    }
+  }
+]
