@@ -2,7 +2,7 @@
 
 This repository is the public companion to the PRISMA-AI manuscript ([arXiv:2511.16707](http://arxiv.org/abs/2511.16707)). It hosts the redistributable systematic-review benchmark, the locked evaluation pipeline, and a **living leaderboard** that grows whenever a new LLM is run through the same Tsuge 10-paper Markdown validation protocol.
 
-The 19-model figures, tables, and analyses cited in the manuscript are frozen and reproducible from the artifacts in this repository; see **[REPRODUCTION.md](REPRODUCTION.md)** for the manuscript-aligned reproduction guide. The leaderboard below extends that frozen evidence with subsequent runs (Kimi K2.6, DeepSeek V4 Pro, GPT-5.6 Terra/Luna, and any future additions); it is regenerated from the same unified validation JSONs and is independent from the manuscript.
+The 19-model figures, tables, and analyses cited in the manuscript are frozen and reproducible from the artifacts in this repository; see **[REPRODUCTION.md](REPRODUCTION.md)** for the manuscript-aligned reproduction guide. The leaderboard below extends that frozen evidence with subsequent runs (Kimi K2.6, DeepSeek V4 Pro, the GPT-5.6 series, and any future additions); it is regenerated from the same unified validation JSONs and is independent from the manuscript.
 
 ## Leaderboard
 
@@ -24,16 +24,17 @@ The 19-model figures, tables, and analyses cited in the manuscript are frozen an
 | 11 | GPT-OSS-120B | OpenAI (via OpenRouter) | 80.94 (77.38-84.06) | 89.56 | 69.96 | 84.04 | 0.606 | $0.002 | 42.8 | simple |  |
 | 12 | DeepSeek V4 Pro | DeepSeek (via OpenRouter) | 80.94 (77.38-84.06) | 76.43 | 86.70 | 81.80 | 0.620 | $0.053 | 177.3 | simple | Tool calling via tool_choice=auto (forced rejected upstream); see test/issues/2026-04-25_deepseek_v4_pro_openrouter_capability_check/ for capability probes. |
 | 13 | GPT-5.1 | OpenAI | 80.19 (76.58-83.36) | 87.21 | 71.24 | 83.15 | 0.592 | - | 140.4 | simple | (cost_unavailable:no_input_output_split) |
-| 14 | GPT-5.6 Luna | OpenAI | 79.81 (76.18-83.01) | 85.86 | 72.10 | 82.66 | 0.586 | $0.024 | 10.8 | simple | Effort=none chosen by Tsuge sweep (none/low/high/xhigh): accuracies within 0.6pt, none is fastest/cheapest; see test/issues/2026-07-10_tsuge10_md_gpt56_luna_effort_sweep/. |
-| 15 | Qwen3-235B | Alibaba (via OpenRouter) | 79.43 (75.79-82.66) | 93.94 | 60.94 | 83.66 | 0.568 | $0.003 | 53.7 | simple |  |
-| 16 | Gemini 2.5 Pro | Google | 79.06 (75.39-82.31) | 84.51 | 72.10 | 81.89 | 0.571 | $0.045 | 76.4 | simple |  |
-| 17 | Claude Opus 4.1 | Anthropic | 79.06 (75.39-82.31) | 82.49 | 74.68 | 81.53 | 0.574 | $0.562 | 122.4 | simple |  |
-| 18 | Claude Opus 4.7 | Anthropic | 78.68 (74.99-81.95) | 91.92 | 61.80 | 82.85 | 0.554 | $0.158 | 25.4 | simple | Effort=low locked by the Suda5 parameter-optimization sweep (2026-04-26): ties high on sensitivity, dominates on accuracy/specificity/kappa/latency; see test/issues/2026-04-26_suda5_md_claude47_effort_sweep/. |
-| 19 | GPT-5 | OpenAI | 78.11 (74.40-81.42) | 87.21 | 66.52 | 81.70 | 0.547 | $0.031 | 18.4 | simple |  |
-| 20 | Qwen3-Max | Alibaba (via OpenRouter) | 77.92 (74.20-81.25) | 95.96 | 54.94 | 82.97 | 0.532 | $0.027 | 56.1 | simple | 32k output cap; reasoning disabled (provider does not expose it). (pricing_flag:variable_rate) |
-| 21 | Kimi K2.6 | Moonshot | 77.55 (73.80-80.89) | 71.04 | 85.84 | 78.00 | 0.555 | $0.048 | 522.9 | simple | Routed via Moonshot direct API; OpenRouter routes hung on long tool calls (see test/issues/2026-04-22_kimi_k2_6_openrouter_structured_output/). |
-| 22 | Claude Sonnet 4.5 | Anthropic | 72.64 (68.69-76.26) | 74.75 | 69.96 | 75.38 | 0.446 | $0.163 | 207.8 | simple |  |
-| 23 | GPT-4o | OpenAI | 68.49 (64.41-72.30) | 96.97 | 32.19 | 77.52 | 0.313 | $0.043 | 31.8 | simple |  |
+| 14 | GPT-5.6 Sol | OpenAI | 80.00 (76.38-83.18) | 84.51 | 74.25 | 82.57 | 0.591 | $0.120 | 23.3 | simple | Effort=none chosen by Tsuge sweep (none/low): accuracies within 0.4pt, none is fastest/cheapest; see test/issues/2026-07-10_tsuge10_md_gpt56_sol_effort_sweep/. |
+| 15 | GPT-5.6 Luna | OpenAI | 79.81 (76.18-83.01) | 85.86 | 72.10 | 82.66 | 0.586 | $0.024 | 10.8 | simple | Effort=none chosen by Tsuge sweep (none/low/high/xhigh): accuracies within 0.6pt, none is fastest/cheapest; see test/issues/2026-07-10_tsuge10_md_gpt56_luna_effort_sweep/. |
+| 16 | Qwen3-235B | Alibaba (via OpenRouter) | 79.43 (75.79-82.66) | 93.94 | 60.94 | 83.66 | 0.568 | $0.003 | 53.7 | simple |  |
+| 17 | Gemini 2.5 Pro | Google | 79.06 (75.39-82.31) | 84.51 | 72.10 | 81.89 | 0.571 | $0.045 | 76.4 | simple |  |
+| 18 | Claude Opus 4.1 | Anthropic | 79.06 (75.39-82.31) | 82.49 | 74.68 | 81.53 | 0.574 | $0.562 | 122.4 | simple |  |
+| 19 | Claude Opus 4.7 | Anthropic | 78.68 (74.99-81.95) | 91.92 | 61.80 | 82.85 | 0.554 | $0.158 | 25.4 | simple | Effort=low locked by the Suda5 parameter-optimization sweep (2026-04-26): ties high on sensitivity, dominates on accuracy/specificity/kappa/latency; see test/issues/2026-04-26_suda5_md_claude47_effort_sweep/. |
+| 20 | GPT-5 | OpenAI | 78.11 (74.40-81.42) | 87.21 | 66.52 | 81.70 | 0.547 | $0.031 | 18.4 | simple |  |
+| 21 | Qwen3-Max | Alibaba (via OpenRouter) | 77.92 (74.20-81.25) | 95.96 | 54.94 | 82.97 | 0.532 | $0.027 | 56.1 | simple | 32k output cap; reasoning disabled (provider does not expose it). (pricing_flag:variable_rate) |
+| 22 | Kimi K2.6 | Moonshot | 77.55 (73.80-80.89) | 71.04 | 85.84 | 78.00 | 0.555 | $0.048 | 522.9 | simple | Routed via Moonshot direct API; OpenRouter routes hung on long tool calls (see test/issues/2026-04-22_kimi_k2_6_openrouter_structured_output/). |
+| 23 | Claude Sonnet 4.5 | Anthropic | 72.64 (68.69-76.26) | 74.75 | 69.96 | 75.38 | 0.446 | $0.163 | 207.8 | simple |  |
+| 24 | GPT-4o | OpenAI | 68.49 (64.41-72.30) | 96.97 | 32.19 | 77.52 | 0.313 | $0.043 | 31.8 | simple |  |
 
 <!-- LEADERBOARD:END -->
 

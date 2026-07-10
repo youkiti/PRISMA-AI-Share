@@ -807,6 +807,67 @@
     },
     {
       "rank": 14,
+      "model_id": "gpt-5.6-sol",
+      "display_name": "GPT-5.6 Sol",
+      "provider": "OpenAI",
+      "accuracy_pct": 80.0,
+      "accuracy_ci_lower_pct": 76.38405201223011,
+      "accuracy_ci_upper_pct": 83.18417946317383,
+      "sensitivity_pct": 84.51178451178451,
+      "specificity_pct": 74.2489270386266,
+      "f1_pct": 82.5657894736842,
+      "cohen_kappa": 0.5914360100650154,
+      "cost_per_sr_usd": 0.120407,
+      "cost_total_usd": 1.20407,
+      "mean_time_per_sr_sec": 23.3438931,
+      "schema_type": "simple",
+      "notes": "Effort=none chosen by Tsuge sweep (none/low): accuracies within 0.4pt, none is fastest/cheapest; see test/issues/2026-07-10_tsuge10_md_gpt56_sol_effort_sweep/.",
+      "unified_json": "test/issues/2026-07-10_tsuge10_md_gpt56_sol_effort_sweep/results/md_gpt-5.6-sol_20260710_110644.json",
+      "pricing_id": "openai/gpt-5.6-sol",
+      "cost_warnings": [],
+      "parameters": {
+        "verbosity": "low",
+        "reasoning_effort": "none"
+      },
+      "counts": {
+        "tp": 251,
+        "tn": 173,
+        "fp": 60,
+        "fn": 46,
+        "total_comparable": 530,
+        "correct": 424
+      },
+      "main_body": {
+        "accuracy": 79.75609756097562,
+        "precision": 84.89795918367346,
+        "recall": 81.88976377952756,
+        "f1_score": 83.36673346693388,
+        "specificity": 76.28205128205127,
+        "cohen_kappa": 0.5753151129414702,
+        "tp": 208,
+        "tn": 119,
+        "fp": 37,
+        "fn": 46,
+        "total_comparable": 410,
+        "correct": 327
+      },
+      "abstract": {
+        "accuracy": 80.83333333333333,
+        "precision": 65.15151515151516,
+        "recall": 100.0,
+        "f1_score": 78.89908256880734,
+        "specificity": 70.12987012987013,
+        "cohen_kappa": 0.6272285251215559,
+        "tp": 43,
+        "tn": 54,
+        "fp": 23,
+        "fn": 0,
+        "total_comparable": 120,
+        "correct": 97
+      }
+    },
+    {
+      "rank": 15,
       "model_id": "gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
       "provider": "OpenAI",
@@ -867,7 +928,7 @@
       }
     },
     {
-      "rank": 15,
+      "rank": 16,
       "model_id": "qwen/qwen3-235b-a22b-2507",
       "display_name": "Qwen3-235B",
       "provider": "Alibaba (via OpenRouter)",
@@ -925,7 +986,7 @@
       }
     },
     {
-      "rank": 16,
+      "rank": 17,
       "model_id": "gemini-2.5-pro",
       "display_name": "Gemini 2.5 Pro",
       "provider": "Google",
@@ -986,7 +1047,7 @@
       }
     },
     {
-      "rank": 17,
+      "rank": 18,
       "model_id": "claude-opus-4-1-20250805",
       "display_name": "Claude Opus 4.1",
       "provider": "Anthropic",
@@ -1046,7 +1107,7 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 19,
       "model_id": "claude-opus-4-7",
       "display_name": "Claude Opus 4.7",
       "provider": "Anthropic",
@@ -1106,7 +1167,7 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 20,
       "model_id": "gpt-5",
       "display_name": "GPT-5",
       "provider": "OpenAI",
@@ -1166,7 +1227,7 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 21,
       "model_id": "qwen/qwen3-max",
       "display_name": "Qwen3-Max",
       "provider": "Alibaba (via OpenRouter)",
@@ -1226,7 +1287,7 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 22,
       "model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
       "provider": "Moonshot",
@@ -1284,7 +1345,7 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 23,
       "model_id": "claude-sonnet-4-5-20250929",
       "display_name": "Claude Sonnet 4.5",
       "provider": "Anthropic",
@@ -1344,7 +1405,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 24,
       "model_id": "gpt-4o",
       "display_name": "GPT-4o",
       "provider": "OpenAI",
