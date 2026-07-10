@@ -62,7 +62,7 @@ models:
     provider: OpenAI
     pricing_id: openai/gpt-5.4
     schema_type: simple
-    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gpt-5.4_20260416_194607.json
+    unified_json: test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_gpt-5.4_20260416_194607.json
     parameters:
       verbosity: low
       reasoning_effort: none
@@ -136,10 +136,10 @@ models:
     provider: Anthropic
     pricing_id: anthropic/claude-opus-4-7
     schema_type: simple
-    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_claude-opus-4-7_20260417_075422.json
+    unified_json: test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_claude-opus-4-7_20260417_074300.json
     parameters:
-      effort: high
-    notes: "Effort level chosen by Tsuge sweep (low/medium/high/xhigh/max); see test/issues/2026-04-17_tsuge10_md_claude47_effort_sweep/."
+      effort: low
+    notes: "Effort=low locked by the Suda5 parameter-optimization sweep (2026-04-26): ties high on sensitivity, dominates on accuracy/specificity/kappa/latency; see test/issues/2026-04-26_suda5_md_claude47_effort_sweep/."
 
   - id: claude-sonnet-4-5-20250929
     display_name: Claude Sonnet 4.5
@@ -243,3 +243,25 @@ models:
       tool_choice: auto
       reasoning_exclude: true
     notes: "Tool calling via tool_choice=auto (forced rejected upstream); see test/issues/2026-04-25_deepseek_v4_pro_openrouter_capability_check/ for capability probes."
+
+  - id: gpt-5.6-terra
+    display_name: GPT-5.6 Terra
+    provider: OpenAI
+    pricing_id: openai/gpt-5.6-terra
+    schema_type: simple
+    unified_json: test/issues/2026-07-10_tsuge10_md_gpt56_terra_effort_sweep/results/md_gpt-5.6-terra_20260710_093129.json
+    parameters:
+      verbosity: low
+      reasoning_effort: none
+    notes: "Effort=none chosen by Tsuge sweep (none/low/high): best accuracy, fastest, cheapest; see test/issues/2026-07-10_tsuge10_md_gpt56_terra_effort_sweep/."
+
+  - id: gpt-5.6-luna
+    display_name: GPT-5.6 Luna
+    provider: OpenAI
+    pricing_id: openai/gpt-5.6-luna
+    schema_type: simple
+    unified_json: test/issues/2026-07-10_tsuge10_md_gpt56_luna_effort_sweep/results/md_gpt-5.6-luna_20260710_082734.json
+    parameters:
+      verbosity: low
+      reasoning_effort: none
+    notes: "Effort=none chosen by Tsuge sweep (none/low/high/xhigh): accuracies within 0.6pt, none is fastest/cheapest; see test/issues/2026-07-10_tsuge10_md_gpt56_luna_effort_sweep/."

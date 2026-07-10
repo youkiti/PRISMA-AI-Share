@@ -7,7 +7,7 @@
 - **Locked parameters**:
   - `verbosity`: `low`
   - `reasoning_effort`: `none`
-- **Unified JSON**: [`test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gpt-5.4_20260416_194607.json`](../../test/issues/2025-10-23_tsuge_md_validation_metrics/results/md_gpt-5.4_20260416_194607.json)
+- **Unified JSON**: [`test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_gpt-5.4_20260416_194607.json`](../../test/issues/2026-04-16_tsuge10_md_new_models_validation/results/md_gpt-5.4_20260416_194607.json)
 - **Pricing entry**: `openai/gpt-5.4`
 
 ## Metrics

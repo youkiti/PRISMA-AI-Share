@@ -284,3 +284,47 @@ aliases = ["deepseek-v4-pro", "deepseek/deepseek-v4-pro"]
 input_rate = 1.74
 output_rate = 3.48
 notes = "Per-token rates published at https://openrouter.ai/api/v1/models/deepseek/deepseek-v4-pro/endpoints (DeepSeek first-party endpoint deepseek-v4-pro-20260423); 2026-04-25 capture."
+
+[[models]]
+id = "openai/gpt-5.6-terra"
+display_name = "GPT-5.6 Terra"
+provider = "OpenAI"
+billing_strategy = "tiered"
+aliases = ["gpt-5.6-terra"]
+notes = "Standard pricing from OpenAI's GPT-5.6 pricing table (2026-07, confirmed at developers.openai.com/api/docs/pricing). Long context doubles rates; threshold mirrors the 272k convention used for GPT-5.4/5.5 entries. Cached input ($0.25/MTok), batch, and priority rates are not represented here."
+
+  [[models.tiers]]
+  max_tokens = 272000
+  token_basis = "prompt_tokens"
+  input_rate = 2.50
+  output_rate = 15.00
+  notes = "Short context pricing."
+
+  [[models.tiers]]
+  min_tokens = 272001
+  token_basis = "prompt_tokens"
+  input_rate = 5.00
+  output_rate = 30.00
+  notes = "Long context pricing (doubled rates)."
+
+[[models]]
+id = "openai/gpt-5.6-luna"
+display_name = "GPT-5.6 Luna"
+provider = "OpenAI"
+billing_strategy = "tiered"
+aliases = ["gpt-5.6-luna"]
+notes = "Standard pricing from OpenAI's GPT-5.6 pricing table (2026-07, confirmed at developers.openai.com/api/docs/pricing). Long context doubles rates; threshold mirrors the 272k convention used for GPT-5.4/5.5/5.6-terra entries. Cached input ($0.10/MTok), batch, and priority rates are not represented here."
+
+  [[models.tiers]]
+  max_tokens = 272000
+  token_basis = "prompt_tokens"
+  input_rate = 1.00
+  output_rate = 6.00
+  notes = "Short context pricing."
+
+  [[models.tiers]]
+  min_tokens = 272001
+  token_basis = "prompt_tokens"
+  input_rate = 2.00
+  output_rate = 12.00
+  notes = "Long context pricing (doubled rates)."
