@@ -1,6 +1,6 @@
 # PRISMA-AI Public Benchmark
 
-This repository is the public companion to the PRISMA-AI manuscript ([arXiv:2511.16707](http://arxiv.org/abs/2511.16707)). It hosts the redistributable systematic-review benchmark, the locked evaluation pipeline, and a **living leaderboard** that grows whenever a new LLM is run through the same Tsuge 10-paper Markdown validation protocol.
+This repository is the public companion to the PRISMA-AI paper, published in the *International Journal of Medical Informatics* ([doi:10.1016/j.ijmedinf.2026.106561](https://doi.org/10.1016/j.ijmedinf.2026.106561)). It hosts the redistributable systematic-review benchmark, the locked evaluation pipeline, and a **living leaderboard** that grows whenever a new LLM is run through the same Tsuge 10-paper Markdown validation protocol.
 
 The 19-model figures, tables, and analyses cited in the manuscript are frozen and reproducible from the artifacts in this repository; see **[REPRODUCTION.md](REPRODUCTION.md)** for the manuscript-aligned reproduction guide. The leaderboard below extends that frozen evidence with subsequent runs (Kimi K2.6, DeepSeek V4 Pro, the GPT-5.6 series, and any future additions); it is regenerated from the same unified validation JSONs and is independent from the manuscript.
 
@@ -124,6 +124,14 @@ Required variables (defined in `environment/.env.example`):
 
 For the leaderboard regenerator the only requirement is Python with `pyyaml` and `tomllib` (stdlib on 3.11+).
 
+## Try it without code (ChatGPT GPTs)
+
+The evaluation prompt is also published as a ChatGPT GPTs, so a single systematic review can be checked interactively without an API key or any programmatic setup:
+
+- **PRISMA checker GPTs**: [https://chatgpt.com/g/g-690d3c3487988191ac6a4870545c4bd3-prisma-checker-gpts](https://chatgpt.com/g/g-690d3c3487988191ac6a4870545c4bd3-prisma-checker-gpts)
+
+The GPTs is a convenience deployment of the same prompt and is not part of the locked benchmark pipeline; its output is not covered by the accuracy figures in the leaderboard or the paper, which were produced through the API pipeline in this repository.
+
 ## Raw data access
 
 The raw paper data used for evaluation is available at [https://doi.org/10.5281/zenodo.17547700](https://doi.org/10.5281/zenodo.17547700).
@@ -138,4 +146,6 @@ This work was supported by a JSPS Grant-in-Aid for Scientific Research (Grant No
 
 ## Paper
 
-Kataoka Y, So R, Banno M, Tsujimoto Y, Takayama T, Yamagishi Y, Tsuge T, Yamamoto N, Suda C, Furukawa TA. Large language models for automated PRISMA 2020 adherence checking. arXiv. 2025. Available from: http://arxiv.org/abs/2511.16707
+Kataoka Y, So R, Banno M, Tsujimoto Y, Takayama T, Yamagishi Y, Tsuge T, Yamamoto N, Suda C, Furukawa TA. Large language models for automated PRISMA 2020 adherence checking. Int J Med Inform. 2026;219:106561. doi: [10.1016/j.ijmedinf.2026.106561](https://doi.org/10.1016/j.ijmedinf.2026.106561)
+
+Preprint: [arXiv:2511.16707](http://arxiv.org/abs/2511.16707)

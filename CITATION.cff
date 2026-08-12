@@ -57,9 +57,23 @@ preferred-citation:
       given-names: Chisato
     - family-names: Furukawa
       given-names: "Toshi A."
-  year: 2025
-  url: "http://arxiv.org/abs/2511.16707"
+  journal: "International Journal of Medical Informatics"
+  volume: 219
+  start: 106561
+  year: 2026
+  month: 10
+  doi: "10.1016/j.ijmedinf.2026.106561"
+  url: "https://doi.org/10.1016/j.ijmedinf.2026.106561"
 identifiers:
+  - type: doi
+    value: "10.1016/j.ijmedinf.2026.106561"
+    description: "Journal article (International Journal of Medical Informatics)"
   - type: doi
     value: "10.5281/zenodo.17547700"
     description: "Evaluation dataset on Zenodo"
+  - type: other
+    value: "arXiv:2511.16707"
+    description: "Preprint on arXiv"
+  - type: url
+    value: "https://chatgpt.com/g/g-690d3c3487988191ac6a4870545c4bd3-prisma-checker-gpts"
+    description: "PRISMA checker GPTs (interactive ChatGPT deployment of the evaluation prompt)"
