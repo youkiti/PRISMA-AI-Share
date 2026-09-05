@@ -1,0 +1,89 @@
+#!/usr/bin/env bash
+# Serial sweep of Grok-4.6 across 2 reasoning-effort levels (low, medium) on the
+# 10-paper Tsuge PRISMA MD validation cohort.
+#
+# NOTE 1: Grok-4.6 only accepts effort low/medium/high/xhigh ('none'/'max' -> HTTP 400).
+#         The xAI API default is 'high'; this sweep covers the two cheaper levels.
+# NOTE 2: x-ai/grok-4.6 is routed to the xAI native API (XAIDirectEvaluator) by
+#         prisma_evaluator/core/pipeline.py whenever XAI_API_KEY is set, because
+#         OpenRouter times out on the long main-body tool call.
+# NOTE 3: max output tokens comes from GROK_4_6_MAX_TOKENS (default 128000);
+#         reasoning tokens are drawn from the same budget.
+set -euo pipefail
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../../.." && pwd)"
+ISSUE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$REPO_ROOT"
+
+MODE="full"
+if [[ "${1:-}" == "--smoke" ]]; then
+  MODE="smoke"
+fi
+
+if [[ -f "$REPO_ROOT/.env" ]]; then
+  set -a
+  # shellcheck disable=SC1090
+  source "$REPO_ROOT/.env"
+  set +a
+fi
+
+if [[ -z "${XAI_API_KEY:-}" ]]; then
+  echo "XAI_API_KEY not set (required for the xAI direct route)" >&2
+  exit 1
+fi
+
+MODEL_ID="x-ai/grok-4.6"
+PAPER_FILE="$ISSUE_DIR/data/tsuge_selected10.txt"
+LOG_DIR="$ISSUE_DIR/logs"
+mkdir -p "$LOG_DIR" "$ISSUE_DIR/results"
+
+EFFORTS=("low" "medium")
+
+RUNNER="$ISSUE_DIR/scripts/run_validation_model.py"
+
+run_one() {
+  local effort="$1"
+  local ts="$(date +%Y%m%d_%H%M%S)"
+  local log_file="$LOG_DIR/run_${effort}_${ts}.log"
+  echo "[$(date)] ====== effort=${effort} start (mode=${MODE}) ======" | tee -a "$log_file"
+
+  local cmd=(
+    PYTHONPATH=.
+    venv/bin/python "$RUNNER"
+    --model-id "$MODEL_ID"
+    --schema-type simple
+    --checklist-format md
+    --order-mode eande-first
+    --section-mode off
+    --gpt5-reasoning "$effort"
+    --log-level INFO
+  )
+  if [[ "$MODE" == "smoke" ]]; then
+    cmd+=(--paper-ids "Tsuge2025_PRISMA2020_120" --expected-size smoke)
+  else
+    cmd+=(--paper-ids-file "$PAPER_FILE" --expected-size full)
+  fi
+
+  if ! env "${cmd[@]}" 2>&1 | tee -a "$log_file"; then
+    echo "[$(date)] ====== effort=${effort} FAILED ======" | tee -a "$log_file"
+    return 1
+  fi
+  echo "[$(date)] ====== effort=${effort} done ======" | tee -a "$log_file"
+  return 0
+}
+
+FAILED=()
+for effort in "${EFFORTS[@]}"; do
+  if ! run_one "$effort"; then
+    FAILED+=("$effort")
+  fi
+done
+
+if [[ ${#FAILED[@]} -gt 0 ]]; then
+  echo "[warn] failed efforts: ${FAILED[*]}"
+  exit 2
+fi
+
+echo "all efforts done; aggregating..."
+PYTHONPATH=. venv/bin/python "$ISSUE_DIR/scripts/aggregate_effort_sweep.py" \
+  --model-id "$MODEL_ID"

@@ -82,6 +82,66 @@
     },
     {
       "rank": 2,
+      "model_id": "x-ai/grok-4.6",
+      "display_name": "Grok-4.6",
+      "provider": "xAI",
+      "accuracy_pct": 83.39622641509435,
+      "accuracy_ci_lower_pct": 79.99011714718107,
+      "accuracy_ci_upper_pct": 86.32168770279691,
+      "sensitivity_pct": 85.18518518518519,
+      "specificity_pct": 81.11587982832617,
+      "f1_pct": 85.18518518518519,
+      "cohen_kappa": 0.6630106501351137,
+      "cost_per_sr_usd": 0.0545462,
+      "cost_total_usd": 0.545462,
+      "mean_time_per_sr_sec": 59.2360173,
+      "schema_type": "simple",
+      "notes": "Routed via xAI direct (OpenRouter upstream times out on long tool calls). Effort=low chosen by Tsuge sweep (low/medium) on sensitivity: low misses fewer reported items (sensitivity 85.19%, 44 FN vs medium 83.84%, 48 FN) at 0.6x the cost and 0.4x the latency. Raising effort improves specificity (81.12 -> 85.84%) and accuracy (83.40 -> 84.72%), not sensitivity. reasoning_effort none/max are rejected by the API (HTTP 400). See test/issues/2026-09-05_tsuge10_md_grok46_effort_sweep/.",
+      "unified_json": "test/issues/2026-09-05_tsuge10_md_grok46_effort_sweep/results/md_x-ai_grok-4.6_20260905_110737.json",
+      "pricing_id": "xai/grok-4-6",
+      "cost_warnings": [],
+      "parameters": {
+        "reasoning_effort": "low"
+      },
+      "counts": {
+        "tp": 253,
+        "tn": 189,
+        "fp": 44,
+        "fn": 44,
+        "total_comparable": 530,
+        "correct": 442
+      },
+      "main_body": {
+        "accuracy": 81.21951219512195,
+        "precision": 86.41975308641975,
+        "recall": 82.67716535433071,
+        "f1_score": 84.50704225352112,
+        "specificity": 78.84615384615384,
+        "cohen_kappa": 0.6069765704753132,
+        "tp": 210,
+        "tn": 123,
+        "fp": 33,
+        "fn": 44,
+        "total_comparable": 410,
+        "correct": 333
+      },
+      "abstract": {
+        "accuracy": 90.83333333333333,
+        "precision": 79.62962962962963,
+        "recall": 100.0,
+        "f1_score": 88.65979381443299,
+        "specificity": 85.71428571428571,
+        "cohen_kappa": 0.8113207547169812,
+        "tp": 43,
+        "tn": 66,
+        "fp": 11,
+        "fn": 0,
+        "total_comparable": 120,
+        "correct": 109
+      }
+    },
+    {
+      "rank": 3,
       "model_id": "x-ai/grok-4-fast",
       "display_name": "Grok-4-fast",
       "provider": "xAI (via OpenRouter)",
@@ -139,7 +199,7 @@
       }
     },
     {
-      "rank": 3,
+      "rank": 4,
       "model_id": "gemini-3.8-flash",
       "display_name": "Gemini 3.8 Flash",
       "provider": "Google",
@@ -200,7 +260,7 @@
       }
     },
     {
-      "rank": 4,
+      "rank": 5,
       "model_id": "gpt-5.4",
       "display_name": "GPT-5.4",
       "provider": "OpenAI",
@@ -261,7 +321,7 @@
       }
     },
     {
-      "rank": 5,
+      "rank": 6,
       "model_id": "gpt-5.6-terra",
       "display_name": "GPT-5.6 Terra",
       "provider": "OpenAI",
@@ -322,7 +382,7 @@
       }
     },
     {
-      "rank": 6,
+      "rank": 7,
       "model_id": "gemini-3-flash-preview",
       "display_name": "Gemini 3 Flash",
       "provider": "Google",
@@ -383,7 +443,7 @@
       }
     },
     {
-      "rank": 7,
+      "rank": 8,
       "model_id": "gemini-3.1-pro-preview",
       "display_name": "Gemini 3.1 Pro",
       "provider": "Google",
@@ -444,7 +504,7 @@
       }
     },
     {
-      "rank": 8,
+      "rank": 9,
       "model_id": "gemini-3-pro",
       "display_name": "Gemini 3 Pro",
       "provider": "Google",
@@ -507,7 +567,7 @@
       }
     },
     {
-      "rank": 9,
+      "rank": 10,
       "model_id": "qwen/qwen3.6-plus",
       "display_name": "Qwen3.6 Plus",
       "provider": "Alibaba (via OpenRouter)",
@@ -567,7 +627,7 @@
       }
     },
     {
-      "rank": 10,
+      "rank": 11,
       "model_id": "x-ai/grok-4",
       "display_name": "Grok-4",
       "provider": "xAI (via OpenRouter)",
@@ -625,7 +685,7 @@
       }
     },
     {
-      "rank": 11,
+      "rank": 12,
       "model_id": "x-ai/grok-4.1-fast",
       "display_name": "Grok-4.1-fast",
       "provider": "xAI (via OpenRouter)",
@@ -683,7 +743,7 @@
       }
     },
     {
-      "rank": 12,
+      "rank": 13,
       "model_id": "openai/gpt-oss-120b",
       "display_name": "GPT-OSS-120B",
       "provider": "OpenAI (via OpenRouter)",
@@ -743,7 +803,7 @@
       }
     },
     {
-      "rank": 13,
+      "rank": 14,
       "model_id": "deepseek/deepseek-v4-pro",
       "display_name": "DeepSeek V4 Pro",
       "provider": "DeepSeek (via OpenRouter)",
@@ -804,7 +864,7 @@
       }
     },
     {
-      "rank": 14,
+      "rank": 15,
       "model_id": "gpt-5.1",
       "display_name": "GPT-5.1",
       "provider": "OpenAI",
@@ -867,7 +927,7 @@
       }
     },
     {
-      "rank": 15,
+      "rank": 16,
       "model_id": "gpt-5.6-sol",
       "display_name": "GPT-5.6 Sol",
       "provider": "OpenAI",
@@ -928,7 +988,7 @@
       }
     },
     {
-      "rank": 16,
+      "rank": 17,
       "model_id": "gpt-5.6-luna",
       "display_name": "GPT-5.6 Luna",
       "provider": "OpenAI",
@@ -989,7 +1049,7 @@
       }
     },
     {
-      "rank": 17,
+      "rank": 18,
       "model_id": "qwen/qwen3-235b-a22b-2507",
       "display_name": "Qwen3-235B",
       "provider": "Alibaba (via OpenRouter)",
@@ -1047,7 +1107,7 @@
       }
     },
     {
-      "rank": 18,
+      "rank": 19,
       "model_id": "gemini-2.5-pro",
       "display_name": "Gemini 2.5 Pro",
       "provider": "Google",
@@ -1108,7 +1168,7 @@
       }
     },
     {
-      "rank": 19,
+      "rank": 20,
       "model_id": "claude-opus-4-1-20250805",
       "display_name": "Claude Opus 4.1",
       "provider": "Anthropic",
@@ -1168,7 +1228,7 @@
       }
     },
     {
-      "rank": 20,
+      "rank": 21,
       "model_id": "claude-opus-4-7",
       "display_name": "Claude Opus 4.7",
       "provider": "Anthropic",
@@ -1228,7 +1288,7 @@
       }
     },
     {
-      "rank": 21,
+      "rank": 22,
       "model_id": "gpt-5",
       "display_name": "GPT-5",
       "provider": "OpenAI",
@@ -1288,7 +1348,7 @@
       }
     },
     {
-      "rank": 22,
+      "rank": 23,
       "model_id": "qwen/qwen3-max",
       "display_name": "Qwen3-Max",
       "provider": "Alibaba (via OpenRouter)",
@@ -1348,7 +1408,7 @@
       }
     },
     {
-      "rank": 23,
+      "rank": 24,
       "model_id": "moonshotai/kimi-k2.6",
       "display_name": "Kimi K2.6",
       "provider": "Moonshot",
@@ -1406,7 +1466,7 @@
       }
     },
     {
-      "rank": 24,
+      "rank": 25,
       "model_id": "gpt-6-astra",
       "display_name": "GPT-6 Astra",
       "provider": "OpenAI",
@@ -1467,7 +1527,7 @@
       }
     },
     {
-      "rank": 25,
+      "rank": 26,
       "model_id": "claude-sonnet-4-5-20250929",
       "display_name": "Claude Sonnet 4.5",
       "provider": "Anthropic",
@@ -1527,7 +1587,7 @@
       }
     },
     {
-      "rank": 26,
+      "rank": 27,
       "model_id": "gpt-4o",
       "display_name": "GPT-4o",
       "provider": "OpenAI",

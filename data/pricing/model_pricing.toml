@@ -382,3 +382,25 @@ aliases = ["gemini-3.8-flash", "gemini-3-8-flash"]
 input_rate = 0.75
 output_rate = 3.75
 notes = "Promotional rates in effect through 2026-12-31 (ai.google.dev/gemini-api/docs/pricing, checked 2026-09-05). From 2027-01-01 the rates double to $1.50 input / $7.50 output per MTok; update this entry then. Context caching ($0.075/MTok) and batch (50%) are not represented here."
+
+[[models]]
+id = "xai/grok-4-6"
+display_name = "Grok-4.6"
+provider = "xAI"
+billing_strategy = "tiered"
+aliases = ["grok-4.6", "grok-4-6", "x-ai/grok-4.6", "x-ai/grok-4-6"]
+notes = "xAI direct pricing (docs.x.ai, confirmed 2026-09-05). A prompt that reaches 200k tokens bills the entire request at the higher tier. Cached input ($0.50 / $1.00 per MTok) is not represented here."
+
+  [[models.tiers]]
+  max_tokens = 199999
+  token_basis = "prompt_tokens"
+  input_rate = 2.00
+  output_rate = 6.00
+  notes = "Standard pricing (prompt below 200k tokens)."
+
+  [[models.tiers]]
+  min_tokens = 200000
+  token_basis = "prompt_tokens"
+  input_rate = 4.00
+  output_rate = 12.00
+  notes = "Long context pricing (prompt at or above 200k tokens; doubled rates)."

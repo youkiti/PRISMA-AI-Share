@@ -1,0 +1,3472 @@
+[
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_120",
+    "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 18867,
+      "token_usage": {
+        "prompt_tokens": 14933,
+        "input_tokens": 14933,
+        "completion_tokens": 1666,
+        "output_tokens": 1666,
+        "total_tokens": 18867,
+        "reasoning_tokens": 2268
+      },
+      "processing_time": 60.87808,
+      "timestamp": "2026-09-05 10:57:45.369133"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title identifies the report as a systematic review and meta-analysis of RCTs.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "no",
+            "reason": "Abstract lacks several PRISMA 2020 abstract elements (registration, funding, RoB methods, limitations).",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Background describes KOA/TKA complications, massage use, conflicting RCTs, and absence of prior systematic reviews.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Objectives explicitly state evaluation of massage effectiveness for post-TKA rehabilitation.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "PICOS inclusion/exclusion criteria are specified; studies grouped by outcomes and time points.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Five databases listed, searched from inception to May 2024.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Full search strategies stated to be in Supplementary Table S1, including filters.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two independent reviewers screened titles/abstracts and full texts; disagreements resolved by a third reviewer.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Two researchers independently extracted data; disagreements resolved by discussion or third party.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "Outcomes named but not fully defined; no statement whether all compatible results were sought.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "Extracted variables listed but assumptions about missing or unclear information not described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "no",
+            "reason": "Cochrane RoB tool named but number of reviewers and independence not specified.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "MD or SMD with 95% CI specified for continuous outcomes.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "no",
+            "reason": "No description of processes deciding which studies were eligible for each synthesis.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "No methods described for handling missing statistics or data conversions.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "no",
+            "reason": "No explicit description of methods used to tabulate or visually display results.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "RevMan/Stata, fixed/random models based on I2, Q statistic, and rationale provided.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analysis by country used to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Paper states sensitivity analyses were not performed due to few studies per outcome.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Begg's and Egger's tests described for assessing publication/reporting bias.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods (e.g., GRADE) described to assess certainty of evidence.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Search-to-inclusion numbers reported with a flow diagram (Fig. 1).",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Exclusion reasons given by category but excluded studies not cited.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "All 11 included studies cited and characteristics presented in Table 1.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias for included studies presented in Fig. 2.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots present study-level summary statistics, effects, and CIs for outcomes.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "No brief summary of characteristics and RoB among studies in each synthesis.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates, CIs, I2, and direction of effect reported for meta-analyses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup results for hospital stay by country presented.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "no",
+            "reason": "No sensitivity analysis results presented (none conducted).",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Egger/Begg results and notes on infeasible tests presented for syntheses.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty (e.g., GRADE) assessments presented for any outcome.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results interpreted against mechanisms and other rehabilitation evidence.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (China-dominant, blinding, heterogeneity) discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Limitations of review processes (search, no sensitivity analysis, design issues) discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for adjunctive use and need for larger trials stated.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration CRD42023411680 reported.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "Protocol registered on PROSPERO, indicating where it can be accessed.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No description or explanation of any protocol/registration amendments.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Funding stated as not applicable; no other support described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no competing interests.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Data available on request only; templates, extracted data, and code availability not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 15010,
+          "token_usage": {
+            "prompt_tokens": 12303,
+            "input_tokens": 12303,
+            "completion_tokens": 1238,
+            "output_tokens": 1238,
+            "total_tokens": 15010,
+            "reasoning_tokens": 1469
+          },
+          "processing_time": 41.5975874120013,
+          "timestamp": "2026-09-05 10:58:26.990173"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis of randomized controlled trials.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states the aim to evaluate the effectiveness of massage for postoperative rehabilitation after TKA.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Only inclusion of RCTs on massage after TKA is stated; exclusion criteria are not specified.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "PubMed, Web of Science, EMBASE, Cochrane Library, and CNKI are named, with searches from inception to May 2024.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "The Cochrane Risk of Bias Assessment Tool is named as the method used to assess risk of bias.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "The abstract states that a meta-analysis of specified outcomes was performed.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "no",
+            "reason": "Eleven RCTs and 940 participants are given, but relevant study characteristics are not summarised.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "no",
+            "reason": "Direction of effects is described, but no summary estimates, confidence intervals, or study/participant counts per outcome are reported.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "Large heterogeneity of the studies is briefly noted as a limitation of the evidence.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Results are interpreted and massage is recommended as adjunctive post-TKA rehabilitation based on current evidence.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No primary source of funding for the review is specified in the abstract.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided in the abstract.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3857,
+          "token_usage": {
+            "prompt_tokens": 2630,
+            "input_tokens": 2630,
+            "completion_tokens": 428,
+            "output_tokens": 428,
+            "total_tokens": 3857,
+            "reasoning_tokens": 799
+          },
+          "processing_time": 19.256685381998977,
+          "timestamp": "2026-09-05 10:58:46.247056"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.5793650793650795,
+      "accuracy": 81.13207547169812,
+      "precision": 85.71428571428571,
+      "recall": 85.71428571428571,
+      "f1_score": 85.71428571428571,
+      "specificity": 72.22222222222221
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_14",
+    "title": "Parameters of Spinal Cord Stimulation in Complex Regional Pain Syndrome: Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 18481,
+      "token_usage": {
+        "prompt_tokens": 14810,
+        "input_tokens": 14810,
+        "completion_tokens": 1807,
+        "output_tokens": 1807,
+        "total_tokens": 18481,
+        "reasoning_tokens": 1864
+      },
+      "processing_time": 57.534434,
+      "timestamp": "2026-09-05 10:58:46.247446"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "no",
+            "reason": "Structured abstract is present but does not address all PRISMA 2020 Abstract items such as registration or funding.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction describes CRPS, SCS mechanisms, prior reviews, and knowledge gaps.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Three explicit aims are stated regarding waveforms, preference, and narrative review of RCTs.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "RCT-only inclusion, CRPS patients, exclusion of non-RCTs, and grouping by waveform/parameter are specified.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "no",
+            "reason": "PubMed, Embase and CINAHL are named but last search dates are not reported.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Only keywords are given; full database-specific strategies, filters and limits are absent.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "no",
+            "reason": "Number of independent screeners, independence, and automation details for study selection are not specified.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "no",
+            "reason": "Number of reviewers extracting data, independence, and investigator contact or automation are not described.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "Pain (VAS/GPE) is named as primary but it is not stated whether all compatible measures, time points or analyses were sought.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "Some study characteristics are listed but other variables and assumptions about missing data are not defined.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "RoB 2 tool, two independent reviewers plus third arbitrator, and no automation are described.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Mean difference is specified for pain scores and GPE in the planned syntheses.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Authors state only LF-SCS versus conventional/placebo could be pooled given available RCTs.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "No methods for handling missing summary statistics or data conversions are described.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Tables of study characteristics and forest plots (Figs 3-4) are used to display results.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects DerSimonian-Laird model, I2, rationale of heterogeneity, and RevMan 5.4 are reported.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "no",
+            "reason": "No subgroup analysis or meta-regression methods to explore heterogeneity causes are described.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Leave-one-out sensitivity analysis by sequential study exclusion is described.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "no",
+            "reason": "No methods (funnel plots, tests) for assessing reporting bias due to missing results are described.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods such as GRADE for assessing certainty of evidence are described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Numbers from 99 records to 4 included studies are given and a PRISMA flow diagram (Fig. 1) is cited.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Potentially eligible excluded studies are not cited or reasons for exclusion provided.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "All four included RCTs are named and characteristics/parameters presented in Table 1.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "RoB 2 judgements for each study across domains are summarized and shown in Fig. 2.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "no",
+            "reason": "Individual-study summary statistics and precision estimates are not presented consistently for all outcomes.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Characteristics and risk of bias of studies contributing to each synthesis are not briefly summarized.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled MD, 95% CI, P-value and I2 are reported for pain and GPE meta-analyses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "no",
+            "reason": "No results of investigations of heterogeneity causes (subgroups/meta-regression) are presented.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity-analysis estimates after omitting each study are shown in Table 2 and Fig. 4.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "No assessments of risk of bias due to missing results are presented.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty-of-evidence ratings for any outcome are presented.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results are interpreted against prior CRPS/SCS literature and other neuropathic-pain trials.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (mixed diagnoses, short follow-up, high-bias study) are discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Search restricted to RCTs and pooling of mixed-pathology data are acknowledged as process limitations.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice, device programming and need for more RCTs/long-term data are discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "no",
+            "reason": "No registration number or statement that the review was not registered is provided.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "No statement on protocol availability or that a protocol was not prepared is given.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No amendments are described because registration/protocol information is absent.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Disclaimer states there was no external funding for the manuscript.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no commercial associations that pose a conflict of interest.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Availability of data-collection forms, extracted data, analytic code or other materials is not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 14628,
+          "token_usage": {
+            "prompt_tokens": 12042,
+            "input_tokens": 12042,
+            "completion_tokens": 1377,
+            "output_tokens": 1377,
+            "total_tokens": 14628,
+            "reasoning_tokens": 1209
+          },
+          "processing_time": 40.51706545900015,
+          "timestamp": "2026-09-05 10:59:26.772936"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The report title explicitly identifies the work as a systematic review and meta-analysis of RCTs.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states the objective to provide evidence for SCS in CRPS and characterize benefits of various SCS waveforms.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Only RCT inclusion for SCS parameters in CRPS is noted; exclusion criteria are not specified.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "no",
+            "reason": "PubMed, Embase, and CINHLA are named, but last search dates are not reported.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "Risk-of-bias ratings are given, but the assessment methods or tools are not specified.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "no",
+            "reason": "Meta-analysis is mentioned in results, but methods used to present and synthesise results are not specified.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "no",
+            "reason": "Four included studies are reported, but participant numbers and study characteristics are not summarised.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Main outcomes include MDs with 95% CIs, P values, I2, study counts, and effect direction.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "Limitations include mixed neuropathic populations and high risk of bias in one study.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Interprets LF-SCS as superior to conventional/placebo and notes need for more evidence on novel waveforms.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "The abstract does not specify any funding source for the review.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided in the abstract.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3853,
+          "token_usage": {
+            "prompt_tokens": 2768,
+            "input_tokens": 2768,
+            "completion_tokens": 430,
+            "output_tokens": 430,
+            "total_tokens": 3853,
+            "reasoning_tokens": 655
+          },
+          "processing_time": 17.00820372599992,
+          "timestamp": "2026-09-05 10:59:43.781639"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.8113879003558718,
+      "accuracy": 90.56603773584906,
+      "precision": 92.3076923076923,
+      "recall": 88.88888888888889,
+      "f1_score": 90.56603773584906,
+      "specificity": 92.3076923076923
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_20",
+    "title": "Is the combination of exercise therapy and health education more effective than usual medical care in the prevention of non-specific back pain? A systematic review with meta-analysis.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 19332,
+      "token_usage": {
+        "prompt_tokens": 15706,
+        "input_tokens": 15706,
+        "completion_tokens": 1651,
+        "output_tokens": 1651,
+        "total_tokens": 19332,
+        "reasoning_tokens": 1975
+      },
+      "processing_time": 60.114183,
+      "timestamp": "2026-09-05 10:59:43.782213"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "The article title and heading explicitly identify the report as a systematic review.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "no",
+            "reason": "Abstract lacks several PRISMA 2020 Abstracts elements such as registration, funding, limitations, and certainty of evidence.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction places the review in context of prior reviews on exercise or education alone versus usual care.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Primary and secondary objectives comparing ET plus HE versus usual care for NBP, disability and kinesiophobia are stated.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion and exclusion criteria are listed and studies are grouped by intervention versus usual care.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "no",
+            "reason": "Four databases and a single December 2021 date are given; other sources and per-source dates are not specified.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "Table 1 presents full search equations for PubMed, Web of Science, Scopus and Medline.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two reviewers independently screened records and full texts, with disagreement resolved by discussion.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Two reviewers independently extracted data using a customized table; disagreements were resolved by discussion.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "Pain, disability and kinesiophobia are named but not defined, and selection of time points or measures is not specified.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "Extracted variables are listed but not defined, and assumptions about missing or unclear data are not described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "PEDro and Jadad scales were used; two reviewers independently assessed studies.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Standardized mean differences with 95% CIs are specified as the effect measure.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "no",
+            "reason": "No process is described for deciding which studies entered each synthesis beyond general eligibility.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "SMD formula is given but handling of missing statistics or data conversions is not described.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Results are presented in tables and forest plots.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "no",
+            "reason": "I2 and CMA software are reported but the meta-analysis model and rationale are not described.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "no",
+            "reason": "No methods for exploring heterogeneity (subgroups or meta-regression) are described.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "no",
+            "reason": "No sensitivity analyses are described.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "no",
+            "reason": "No methods to assess risk of bias due to missing results are described.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods to assess certainty of evidence are described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Search numbers and a PRISMA flow diagram (Figure 1) are provided.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "No excluded studies that might have met criteria are cited with reasons.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "All four included studies are cited and characterized in tables.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "PEDro and Jadad scores are presented for each included study.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "no",
+            "reason": "Forest plots give pooled effects but individual-study group statistics and precision are not fully presented for all outcomes.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Characteristics and risk of bias of studies contributing to each synthesis are not summarized.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled SMDs, CIs, p-values and I2 are reported for pain and disability.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "no",
+            "reason": "No investigations of heterogeneity causes are presented.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "no",
+            "reason": "No sensitivity-analysis results are presented.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "No assessments of reporting bias are presented.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty-of-evidence assessments are presented.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results are interpreted against prior reviews of exercise and education.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (heterogeneity, few studies) are discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "no",
+            "reason": "Limitations of the review processes themselves are not discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for clinical practice and the need for further research are stated.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration numbers are provided.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "Protocol location is not indicated and it is not stated that none was prepared.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No amendments to registration or protocol are described.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Authors report no funding associated with the work.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no competing interests.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Only that the dataset is available from the author is stated; forms, extracted data, code and other materials are not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 15605,
+          "token_usage": {
+            "prompt_tokens": 13051,
+            "input_tokens": 13051,
+            "completion_tokens": 1244,
+            "output_tokens": 1244,
+            "total_tokens": 15605,
+            "reasoning_tokens": 1310
+          },
+          "processing_time": 42.72432885700255,
+          "timestamp": "2026-09-05 11:00:26.524582"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review with meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states the aim: whether exercise plus education is more effective than usual care for preventing non-specific back pain.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Inclusion criteria are listed (years, intervention, sample) but exclusion criteria are not specified.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "no",
+            "reason": "Databases are named but the date when each source was last searched is not reported.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "Risk of bias assessment is indicated by reporting PEDro scores for the included trials.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "no",
+            "reason": "Meta-analysis is mentioned in results but methods used to present or synthesise data are not specified.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "no",
+            "reason": "Four RCTs are reported but participant numbers and study characteristics are not summarised.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Main outcomes report SMDs with 95% CIs and p-values, showing the intervention favoured over usual care.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No brief summary of limitations of the included evidence is provided.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Results are interpreted as greater preventive effect of exercise plus education, with key-message implications.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "The primary source of funding for the review is not specified.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3727,
+          "token_usage": {
+            "prompt_tokens": 2655,
+            "input_tokens": 2655,
+            "completion_tokens": 407,
+            "output_tokens": 407,
+            "total_tokens": 3727,
+            "reasoning_tokens": 665
+          },
+          "processing_time": 17.371321733000514,
+          "timestamp": "2026-09-05 11:00:43.896218"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.6984352773826459,
+      "accuracy": 84.90566037735849,
+      "precision": 88.0,
+      "recall": 81.48148148148148,
+      "f1_score": 84.61538461538461,
+      "specificity": 88.46153846153845
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_22",
+    "title": "Effect of Repetitive Transcranial Magnetic Stimulation on Post-stroke Dysphagia: A Meta-analysis of Stimulation Frequency, Stimulation Site, and Timing of Outcome Measurement.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 21267,
+      "token_usage": {
+        "prompt_tokens": 17177,
+        "input_tokens": 17177,
+        "completion_tokens": 1747,
+        "output_tokens": 1747,
+        "total_tokens": 21267,
+        "reasoning_tokens": 2343
+      },
+      "processing_time": 66.094437,
+      "timestamp": "2026-09-05 11:00:43.896496"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "no",
+            "reason": "Visible title/header identifies the work as an original article, not as a systematic review.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "A structured abstract summarizing objectives, methods, results and conclusions is provided.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction places the review in context of prior rTMS dysphagia studies and limitations of earlier meta-analyses.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Objectives explicitly state evaluation of rTMS frequency and site on post-stroke dysphagia at specified time points.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria are listed; studies grouped by stimulation frequency, site and outcome measures.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "no",
+            "reason": "Databases named but last-search date is not specified for each source.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Only keywords and filters given; full search strategies for each database are not presented.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two independent reviewers screened titles/abstracts and full texts; disagreements resolved by consensus.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Two reviewers independently extracted data; authors contacted and graphs digitized when needed.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "PAS and SSA outcomes and time points are defined; compatible results from included studies were sought.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Participant, protocol and demographic variables listed; handling of missing/graph data and PAS conversion described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "no",
+            "reason": "Cochrane tool used but number of reviewers and independence for risk-of-bias assessment not stated.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "SMD with 95% CI specified as the effect measure for each outcome.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Eligibility for each synthesis based on frequency/site groupings and outcomes used in ≥2 studies.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Methods for missing data, graph extraction, PAS conversion and SMD formulas with correlations described.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Results displayed via forest plots (Figs. 3–4) and a characteristics table.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Fixed-effect model in RevMan 5.3 with Cochran Q; rationale of common effect size given.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "no",
+            "reason": "No methods for exploring heterogeneity (e.g., subgroup analysis or meta-regression) beyond pre-specified groupings.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "no",
+            "reason": "No sensitivity analyses are described.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "no",
+            "reason": "No methods to assess risk of bias due to missing results/reporting bias are described.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods to assess certainty of evidence (e.g., GRADE) are described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Search flow from 566 records to 6 included studies is reported with a flow diagram.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Potentially eligible excluded studies are not systematically cited with reasons.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Each included study is cited and characteristics presented in Table 1.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk-of-bias assessments are presented (Fig. 2 and domain summary).",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots show individual-study summary statistics, SMDs and CIs for each outcome.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Characteristics and risk of bias of studies contributing to each synthesis are not summarized.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled SMDs, CIs, P-values and non-significant heterogeneity are reported for each analysis.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "no",
+            "reason": "No results of investigations of heterogeneity causes are presented.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "no",
+            "reason": "No sensitivity-analysis results are presented.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "No assessments of reporting bias for any synthesis are presented.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty-of-evidence assessments for any outcome are presented.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results are interpreted in relation to prior meta-analyses and interhemispheric-inhibition theory.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (small n, co-interventions, one TBI patient) are discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Limitations of review processes (excluded RCTs, outcome restrictions) are discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice and needs for future RCTs and standardized outcomes are discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "no",
+            "reason": "No registration information or statement that the review was unregistered is provided.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "No protocol location or statement that a protocol was not prepared is provided.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No protocol/registration amendments are described.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "no",
+            "reason": "Funding sources named but the role of funders/sponsors is not described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no competing interests.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Availability of data-collection forms, extracted data, analytic code or other materials is not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 17216,
+          "token_usage": {
+            "prompt_tokens": 14074,
+            "input_tokens": 14074,
+            "completion_tokens": 1301,
+            "output_tokens": 1301,
+            "total_tokens": 17216,
+            "reasoning_tokens": 1841
+          },
+          "processing_time": 52.651027575000626,
+          "timestamp": "2026-09-05 11:01:36.575794"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "no",
+            "reason": "Title and abstract identify the work as a meta-analysis, not explicitly as a systematic review.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "States the aim to evaluate rTMS frequency, stimulation site, and outcome timing on post-stroke dysphagia.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Only notes that RCTs of rTMS for post-stroke dysphagia were included; exclusion criteria are not specified.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Names PubMed, SCOPUS, Embase, and Cochrane Library and the search window through 13 December 2021.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "No method for assessing risk of bias in included studies is reported.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "no",
+            "reason": "Does not specify synthesis methods (e.g., meta-analysis model); only later presents SMDs.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Reports six studies and 158 participants (81 rTMS, 77 sham); grouping is the only study characteristic given.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Reports SSA and PAS SMDs with CIs and P values by frequency, site, and time, indicating direction of effect.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "Abstract does not summarise limitations such as risk of bias, inconsistency, or imprecision.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Concludes that high-frequency ipsilesional and low-frequency contralesional rTMS improved some swallowing measures immediately and at 4 weeks.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No funding source for the review is stated.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 4051,
+          "token_usage": {
+            "prompt_tokens": 3103,
+            "input_tokens": 3103,
+            "completion_tokens": 446,
+            "output_tokens": 446,
+            "total_tokens": 4051,
+            "reasoning_tokens": 502
+          },
+          "processing_time": 13.414304138997977,
+          "timestamp": "2026-09-05 11:01:49.990554"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.6975748930099859,
+      "accuracy": 84.90566037735849,
+      "precision": 88.88888888888889,
+      "recall": 82.75862068965517,
+      "f1_score": 85.71428571428572,
+      "specificity": 87.5
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_26",
+    "title": "Do Patients with Prostate Cancer Benefit from Exercise Interventions? A Systematic Review and Meta-Analysis.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 27814,
+      "token_usage": {
+        "prompt_tokens": 24498,
+        "input_tokens": 24498,
+        "completion_tokens": 1575,
+        "output_tokens": 1575,
+        "total_tokens": 27814,
+        "reasoning_tokens": 1741
+      },
+      "processing_time": 53.610601,
+      "timestamp": "2026-09-05 11:01:49.991180"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title states it is a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "no",
+            "reason": "Abstract omits several PRISMA Abstract items (e.g., eligibility details, RoB methods, registration, funding).",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction places the review in context of prior reviews and remaining gaps.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Objectives are stated explicitly at the end of the introduction.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria are specified and studies grouped by exercise modality.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "no",
+            "reason": "Databases listed but last-search dates not given for each source; dates conflict (June 2021 vs August 2020).",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Full search strategy provided only for MEDLINE, not for all databases.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two reviewers independently screened records/reports; disagreements resolved with a third.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "One author extracted data; a second independently checked accuracy.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Outcomes listed; closest post-intervention time point selected when multiple reported.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Study/intervention characteristics extracted; handling of missing SDs described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "no",
+            "reason": "Cochrane RoB tool used but number of independent reviewers not specified.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "SMD or WMD with 95% CI specified for outcomes.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Studies grouped for synthesis by planned exercise-modality strata.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Methods for missing SDs, conversions, and multi-arm splitting described.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots and tables used to display individual and pooled results.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Random-effects model, heterogeneity tests, rationale, and STATA software described.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Prespecified subgroup analyses by modality and instrument described.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Prespecified sensitivity analyses (change scores, fixed vs random, etc.) described.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plots and Egger’s test planned when >10 studies available.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods for assessing certainty of evidence (e.g., GRADE) reported.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Search numbers and flow diagram (Figure 1) provided.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Studies excluded after full-text review are not cited with reasons.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Included studies cited and characteristics presented in Table 1.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "RoB assessments for included studies provided in supplementary files.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots present study-level statistics, effects, and precision.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Characteristics and RoB of studies contributing to each synthesis not briefly summarised.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates, CIs, and heterogeneity statistics presented for syntheses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup results exploring heterogeneity by modality and instrument presented.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity-analysis results shown in supplementary figures.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Funnel plots and Egger tests presented for syntheses with sufficient studies.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty-of-evidence assessments presented for any outcome.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results interpreted against prior reviews and related evidence.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (heterogeneity, generalisability) discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "no",
+            "reason": "Limitations of the review processes themselves are not explicitly discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice and future research discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration number CRD42020153851 provided.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "Protocol is accessible via the stated PROSPERO registration.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No amendments to the protocol or registration are described.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "No external funding reported.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no conflicts of interest.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Public availability of forms, extracted data, code, or other materials not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 24377,
+          "token_usage": {
+            "prompt_tokens": 21880,
+            "input_tokens": 21880,
+            "completion_tokens": 1177,
+            "output_tokens": 1177,
+            "total_tokens": 24377,
+            "reasoning_tokens": 1320
+          },
+          "processing_time": 40.19704349899985,
+          "timestamp": "2026-09-05 11:02:30.208071"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states the aim to review effects of exercise on QoL and metabolic health in a broad prostate cancer population.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Inclusion and exclusion criteria are not specified; only that eligible trials were included.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "no",
+            "reason": "Nine databases are mentioned without naming them or reporting last search dates.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "No methods for assessing risk of bias in included studies are reported.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Meta-analytic procedure is stated and outcomes were stratified by aerobic, resistance, and combined exercise.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Reports 33 RCTs with 2567 participants; all were randomised trials in prostate cancer.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Main outcomes are given with SMDs and 95% CIs and direction of effects, including by exercise modality.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No summary of limitations of the included evidence is provided.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Concludes exercise improves metabolic health, aerobic exercise is superior, and QoL effects are small.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "Primary source of funding for the review is not specified.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3437,
+          "token_usage": {
+            "prompt_tokens": 2618,
+            "input_tokens": 2618,
+            "completion_tokens": 398,
+            "output_tokens": 398,
+            "total_tokens": 3437,
+            "reasoning_tokens": 421
+          },
+          "processing_time": 13.39349345699884,
+          "timestamp": "2026-09-05 11:02:43.601681"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.46547711404189307,
+      "accuracy": 75.47169811320755,
+      "precision": 75.67567567567568,
+      "recall": 87.5,
+      "f1_score": 81.15942028985506,
+      "specificity": 57.14285714285714
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_68",
+    "title": "Effects of High-Intensity Strength Training in Adults With Knee Osteoarthritis: A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 19371,
+      "token_usage": {
+        "prompt_tokens": 16129,
+        "input_tokens": 16129,
+        "completion_tokens": 1584,
+        "output_tokens": 1584,
+        "total_tokens": 19371,
+        "reasoning_tokens": 1658
+      },
+      "processing_time": 54.032888,
+      "timestamp": "2026-09-05 11:02:43.601845"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title states it is a systematic review and meta-analysis of RCTs.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract reports objective, methods, results, and conclusions.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction discusses prior conflicting evidence and knowledge gaps on training intensity.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Objective to assess high- versus low-intensity training or usual care is stated explicitly.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria for RCTs and outcome grouping are specified.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Four databases and last search date (10 March 2021) are named.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Full search strategy is shown only for PubMed, not all databases.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two authors independently screened records using EndNote.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Two authors independently extracted data; disagreements resolved by discussion.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "Outcomes listed but not whether all compatible results per domain were sought.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "Extracted variables listed; assumptions for missing/unclear data not described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "RoB assessed with RevMan by two independent authors using Cochrane domains.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "WMD for continuous and RR for dichotomous outcomes with 95% CIs specified.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "no",
+            "reason": "Process for grouping studies into each synthesis beyond eligibility not described.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "No methods for missing statistics or data conversions reported.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots and supplementary tables used to display results.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "STATA, I2/Q-test, fixed/random-effects models, and rationale given.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "no",
+            "reason": "No subgroup, meta-regression, or other heterogeneity exploration methods described.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Leave-one-out sensitivity analyses described to test robustness.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "no",
+            "reason": "No methods for assessing reporting bias (e.g., funnel plots) described.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods (e.g., GRADE) for assessing certainty of evidence described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "PRISMA flow diagram and numbers from search to included studies provided.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Excluded studies that appeared eligible are not cited or justified.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Included studies cited and characteristics given in supplementary table.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk-of-bias judgments for each study shown in figures.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots present individual-study estimates, CIs, and summary statistics.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Characteristics and RoB of studies in each synthesis not summarised.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates, CIs, I2, and direction of effects reported for syntheses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "no",
+            "reason": "No investigations of heterogeneity causes were performed or reported.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analyses indicated results did not depend on any single study.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "no",
+            "reason": "No assessments of reporting bias for any synthesis presented.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty-of-evidence assessments presented for any outcome.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results interpreted against prior reviews and related exercise literature.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (self-report, sex imbalance) discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review-process limits (English-only, unanalysed heterogeneity) discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice, intensity definitions, and future research stated.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "no",
+            "reason": "No registration information or statement that the review was unregistered.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "No protocol location or statement that a protocol was not prepared.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No protocol/registration amendments described.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "no",
+            "reason": "Specific funding sources and funder roles not described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no conflicts of interest.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Availability of data-collection forms, extracted data, or analytic code not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 15936,
+          "token_usage": {
+            "prompt_tokens": 13482,
+            "input_tokens": 13482,
+            "completion_tokens": 1172,
+            "output_tokens": 1172,
+            "total_tokens": 15936,
+            "reasoning_tokens": 1282
+          },
+          "processing_time": 42.68466512699888,
+          "timestamp": "2026-09-05 11:03:26.296903"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states the aim: assess high-intensity versus low-intensity strength training or routine care in adults with knee osteoarthritis.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Inclusion and exclusion criteria for studies are not specified in the abstract.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Databases (PubMed, Embase, Cochrane Library, Web of Science) and last search date (March 10, 2021) are reported.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "No methods for assessing risk of bias in included studies are described.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "no",
+            "reason": "Methods used to present or synthesise results (e.g., meta-analysis model) are not specified.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "no",
+            "reason": "Ten studies and 892 participants are given, but relevant study characteristics are not summarised.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Main outcomes are reported with estimates, CIs, P values, and direction of effects for comparisons.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No brief summary of limitations of the included evidence is provided.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "The abstract interprets similar effects and comparable safety versus low-intensity training or routine care.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "Primary source of funding for the review is not specified.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3435,
+          "token_usage": {
+            "prompt_tokens": 2647,
+            "input_tokens": 2647,
+            "completion_tokens": 412,
+            "output_tokens": 412,
+            "total_tokens": 3435,
+            "reasoning_tokens": 376
+          },
+          "processing_time": 11.33741321100024,
+          "timestamp": "2026-09-05 11:03:37.634500"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.6958393113342899,
+      "accuracy": 84.90566037735849,
+      "precision": 89.28571428571429,
+      "recall": 83.33333333333334,
+      "f1_score": 86.20689655172413,
+      "specificity": 86.95652173913044
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_74",
+    "title": "Meta-Analysis of the Effect of Yoga Practice on Physical Fitness in the Elderly.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 18350,
+      "token_usage": {
+        "prompt_tokens": 14813,
+        "input_tokens": 14813,
+        "completion_tokens": 1704,
+        "output_tokens": 1704,
+        "total_tokens": 18350,
+        "reasoning_tokens": 1833
+      },
+      "processing_time": 55.996756,
+      "timestamp": "2026-09-05 11:03:37.635103"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "no",
+            "reason": "Title identifies the work as a meta-analysis, not explicitly as a systematic review.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "no",
+            "reason": "Abstract lacks required PRISMA abstract elements such as eligibility criteria, risk of bias methods, and certainty assessment.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction explains the need to synthesize yoga effects on elderly physical fitness given variable prior findings.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Purpose is stated as meta-analyzing yoga intervention effects on physical fitness in the elderly.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion criteria (age >60, yoga-only, fitness outcomes, pre-post experimental design, effect-size statistics) and grouping by fitness factors are specified.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Cochrane, PubMed and Embase were searched; last search date 25 March 2021 is given.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Only general keywords are listed; full search strategies with filters/limits for each database are absent.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two investigators independently selected studies; disagreements resolved by discussion.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "no",
+            "reason": "Number of reviewers extracting data, independence, and any investigator contact or automation are not specified.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "Fitness outcomes are listed but it is not stated whether all compatible results (measures, time points) were sought or how selections were made.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "Participant and intervention variables are coded but assumptions about missing or unclear data are not described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "no",
+            "reason": "No tool or process for assessing risk of bias in included studies is reported.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Cohen's d is specified as the effect measure for all outcomes.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Studies were grouped for synthesis by predefined physical-fitness, age and period categories after tabulating characteristics.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "Methods for handling missing summary statistics or data conversions are not described.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "no",
+            "reason": "Methods used to tabulate or visually display individual-study or synthesis results are not described in Methods.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "CMA software, random- versus fixed-effect models based on Q/I2, and rationale are described.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analyses by age and intervention period were used to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "no",
+            "reason": "No sensitivity analyses assessing robustness of synthesized results are described.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plots, Egger's test and trim-and-fill were used to assess reporting bias.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods (e.g., GRADE) for assessing certainty of evidence are described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "PRISMA flow diagram and text report records identified, screened and included (12 studies).",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Excluded studies that might appear eligible are not cited with reasons.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Each of the 12 studies is cited and characteristics are presented in Table 1.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "no",
+            "reason": "Risk-of-bias assessments for each included study are not presented.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "no",
+            "reason": "Per-study summary statistics and effect estimates with precision are not provided for outcomes.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Characteristics and risk of bias of studies contributing to each synthesis are not summarized.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled effect sizes, CIs and I2 heterogeneity statistics are presented for overall and subgroup syntheses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup results by age and period investigating heterogeneity are presented.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "no",
+            "reason": "Results of sensitivity analyses are not presented.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Funnel-plot asymmetry, Egger test and trim-and-fill adjusted estimates are reported.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "Certainty (or confidence) assessments for outcomes are not presented.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results are interpreted in the context of prior yoga and fitness literature.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (publication bias, unclear yoga types, age/period categories) are discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Limitations of review processes (arbitrary categories, omitted frequency, excluded non-RCTs) are discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for physical-activity policy and future research are discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration number CRD42021247535 is provided.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "Location of the protocol or a statement that none was prepared is not given.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "Amendments to the registration or protocol are neither described nor stated as absent.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "no",
+            "reason": "University funding is named but the role of funders/sponsors is not described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no conflict of interest.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Availability of data-collection forms, extracted data, analytic code or other materials is not reported (statement says not applicable).",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 15057,
+          "token_usage": {
+            "prompt_tokens": 12332,
+            "input_tokens": 12332,
+            "completion_tokens": 1338,
+            "output_tokens": 1338,
+            "total_tokens": 15057,
+            "reasoning_tokens": 1387
+          },
+          "processing_time": 44.701964830997895,
+          "timestamp": "2026-09-05 11:04:22.341758"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "no",
+            "reason": "Title labels the work a meta-analysis, not a systematic review.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "Abstract states the purpose is to meta-analyze yoga intervention effects on elderly physical fitness.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Inclusion and exclusion criteria are not specified.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Cochrane, PubMed, and Embase are named, with last search date 25 March 2021.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "No methods for assessing risk of bias are reported.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "no",
+            "reason": "Synthesis methods (e.g., effect measures, model) are not specified.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "no",
+            "reason": "Twelve studies are reported but participant numbers and study characteristics are missing.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "no",
+            "reason": "Narrative effects only; no estimates, CIs, or study/participant counts per outcome.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No limitations of the included evidence are summarized.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Interprets yoga as improving fitness and recommends promoting it for elderly wellbeing.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "Primary funding source is not specified.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3293,
+          "token_usage": {
+            "prompt_tokens": 2481,
+            "input_tokens": 2481,
+            "completion_tokens": 366,
+            "output_tokens": 366,
+            "total_tokens": 3293,
+            "reasoning_tokens": 446
+          },
+          "processing_time": 11.289313487999607,
+          "timestamp": "2026-09-05 11:04:33.631308"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.7305737109658679,
+      "accuracy": 86.79245283018868,
+      "precision": 79.16666666666666,
+      "recall": 90.47619047619048,
+      "f1_score": 84.44444444444444,
+      "specificity": 84.375
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_76",
+    "title": "Systematic review and meta-analysis on the effectiveness of ultrasound-guided versus landmark corticosteroid injection in the treatment of shoulder pain: an update.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 18818,
+      "token_usage": {
+        "prompt_tokens": 15064,
+        "input_tokens": 15064,
+        "completion_tokens": 1591,
+        "output_tokens": 1591,
+        "total_tokens": 18818,
+        "reasoning_tokens": 2163
+      },
+      "processing_time": 59.142975,
+      "timestamp": "2026-09-05 11:04:33.632129"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "Title states 'Systematic review and meta-analysis'.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "Structured abstract covers background, methods, results and conclusion.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction places the review in context of conflicting prior evidence and lack of guidance.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit aim and null hypothesis on US-guided versus landmark injections are stated.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "RCT inclusion/exclusion criteria and outcome-based grouping are specified.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Five databases, last search date 3 July 2021 and reference-list searching are listed.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Only keywords given; full strategies deferred to supplementary file not shown in text.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two investigators independently screened titles/abstracts and full texts in duplicate.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "no",
+            "reason": "Number of reviewers and independence for data extraction not specified.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "Outcomes listed but no statement on seeking all compatible results or selection methods.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "Study/patient variables listed; assumptions for missing/unclear data not described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "no",
+            "reason": "Cochrane tool named but number of independent reviewers not specified.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "SMD, MD and RR with 95% CIs specified for outcomes.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "no",
+            "reason": "Process for deciding study eligibility for each synthesis not described.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "Methods for missing statistics or data conversions not described.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "no",
+            "reason": "Methods for tabulating or displaying results not described.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "R software, I2/Q, models and rationale for random-effects/sensitivity given.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analyses by score type used to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Leave-one-out and fixed-effect sensitivity analyses described.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plots used to assess publication bias.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods (e.g. GRADE) for certainty assessment described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Numbers from search to inclusion given with PRISMA flow diagram.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "yes",
+            "reason": "Excluded studies and reasons stated to be in supplementary file.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "All 18 studies cited with characteristics in Table 1.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "no",
+            "reason": "Per-study risk-of-bias assessments only in supplementary file, not presented.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots provide individual-study estimates, CIs and summary statistics.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Characteristics and risk of bias of studies in each synthesis not summarised.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates, CIs, I2 and direction of effects reported for all syntheses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup results exploring heterogeneity are presented.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Leave-one-out results stated as not changing overall estimates.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Funnel plots described as symmetrical with no publication bias.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty (GRADE or similar) assessments presented.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results interpreted against prior systematic reviews and clinical mechanisms.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Short follow-up, small samples, blinding and RoB of included studies discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "no",
+            "reason": "Limitations of the review processes themselves not discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice and need for cost-effectiveness and longer RCTs stated.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "no",
+            "reason": "No registration information or statement that the review was unregistered.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "No protocol location or statement that none was prepared.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No amendments described (protocol not mentioned).",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "no",
+            "reason": "Open-access funding noted but role of funders/sponsors not described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Conflict of interest declared as none.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Availability of data, forms, code or other materials not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 15055,
+          "token_usage": {
+            "prompt_tokens": 12316,
+            "input_tokens": 12316,
+            "completion_tokens": 1164,
+            "output_tokens": 1164,
+            "total_tokens": 15055,
+            "reasoning_tokens": 1575
+          },
+          "processing_time": 43.21951265399912,
+          "timestamp": "2026-09-05 11:05:16.889109"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states the objective to assess US-guided versus landmark CS injections for adult shoulder pain.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "RCTs comparing the two injection methods are mentioned, but exclusion criteria are not specified.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "no",
+            "reason": "Databases are listed, but the date when each was last searched is not reported.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "No methods for assessing risk of bias in included studies are described.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Pooling as MD/SMD/RR with 95% CIs in R, plus subgroup and leave-one-out analyses, is specified.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "no",
+            "reason": "Eighteen RCTs and 1010 patients are given, but relevant study characteristics are not summarised.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Main outcomes are reported with SMD/MD/RR, CIs, and direction of effect for US-guided versus landmark injection.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No brief summary of limitations of the included evidence (e.g., risk of bias, inconsistency) is provided.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Results are interpreted as supporting US-guided injection effectiveness, with a call for cost-effectiveness research.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "The primary source of funding for the review is not specified.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3763,
+          "token_usage": {
+            "prompt_tokens": 2748,
+            "input_tokens": 2748,
+            "completion_tokens": 427,
+            "output_tokens": 427,
+            "total_tokens": 3763,
+            "reasoning_tokens": 588
+          },
+          "processing_time": 15.88552249499844,
+          "timestamp": "2026-09-05 11:05:32.774870"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.6197991391678623,
+      "accuracy": 81.13207547169812,
+      "precision": 85.71428571428571,
+      "recall": 80.0,
+      "f1_score": 82.75862068965519,
+      "specificity": 82.6086956521739
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_80",
+    "title": "Effectiveness of eHealth Self-management Interventions in Patients With Heart Failure: Systematic Review and Meta-analysis.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 20715,
+      "token_usage": {
+        "prompt_tokens": 16496,
+        "input_tokens": 16496,
+        "completion_tokens": 1791,
+        "output_tokens": 1791,
+        "total_tokens": 20715,
+        "reasoning_tokens": 2428
+      },
+      "processing_time": 72.568781,
+      "timestamp": "2026-09-05 11:05:32.775331"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "no",
+            "reason": "Provided full text does not include a title identifying the report as a systematic review.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "A structured abstract covering background, objective, methods, results, and conclusions is provided.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction describes HF burden, self-management, eHealth, inconsistent prior reviews, and knowledge gaps.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Explicit aim stated to systematically review and meta-analyze effectiveness of eHealth self-management in HF patients.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "PICO-based inclusion/exclusion (adults with HF, eHealth self-management vs usual care, RCTs, specified outcomes) and grouping by primary/secondary outcomes described.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "PubMed, EMBASE, CENTRAL, CINAHL searched; last search date July 12, 2022 specified.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Only example combined search terms given; full strategies for each database with filters/limits not presented.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "no",
+            "reason": "Rayyan used for screening but number of reviewers, independence, and automation details for record/report screening not specified.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "Two independent reviewers extracted outcome data; two independently synthesized; third resolved disagreements.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "Outcomes listed but not defined in detail nor specified whether all compatible results (measures, time points) were sought.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "Extracted variables listed but not defined; no description of assumptions for missing or unclear information.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "yes",
+            "reason": "RoB 2 used; two reviewers assessed independently with third consulted as needed.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "OR for dichotomous and SMD for continuous outcomes specified.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "no",
+            "reason": "No description of processes (e.g., tabulating characteristics vs planned groups) to decide eligibility for each synthesis.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "No general methods for missing summary statistics or data conversions described (only one QoL score inversion).",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "no",
+            "reason": "Methods used to tabulate or visually display results not described in the methods section.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Mantel-Haenszel OR/SMD, fixed/random models by heterogeneity (Q, I2), RevMan and R software, rationale provided.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analysis by enrolled population setting (after discharge vs ambulatory) described.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Leave-one-out sensitivity analysis described for primary outcomes.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plots and Egger test described for assessing publication bias on primary outcomes.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "yes",
+            "reason": "GRADE approach used to rate certainty of evidence for each outcome.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Search results, screening numbers, and PRISMA flow diagram (Figure 1) presented.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Excluded studies that might meet criteria are not cited or reasons for exclusion given beyond counts.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Included studies cited; characteristics presented in Table 1 and Multimedia Appendix 1.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias assessments presented for each study in Figure 2.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots present study-level summary statistics, effect estimates, and CIs for outcomes.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Characteristics and risk of bias among studies contributing to each synthesis not briefly summarized.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled estimates, CIs, heterogeneity (I2, P), and direction of effects presented for all syntheses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup analysis results by setting presented (Multimedia Appendix 2).",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Sensitivity analysis results (leave-one-out, robustness) presented in Multimedia Appendix 3.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "No publication bias detected; funnel plots and tests presented for primary outcomes.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "yes",
+            "reason": "GRADE certainty ratings presented for each outcome in the results.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Results interpreted in context of prior research and implementation challenges.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (heterogeneity, self-report bias, generalizability) discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review process limitations (English-language restriction) discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for practice, implementation, and future research discussed.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "Registered in PROSPERO (CRD42021246973).",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "Protocol registered in PROSPERO, indicating where it can be accessed.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No description or explanation of any amendments to the registration or protocol.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "no",
+            "reason": "No sources of financial or non-financial support or funder roles described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Conflicts of interest declared as none.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Does not report availability of data collection forms, extracted data, analytic code, or other materials.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 16442,
+          "token_usage": {
+            "prompt_tokens": 13599,
+            "input_tokens": 13599,
+            "completion_tokens": 1343,
+            "output_tokens": 1343,
+            "total_tokens": 16442,
+            "reasoning_tokens": 1500
+          },
+          "processing_time": 49.98313713600146,
+          "timestamp": "2026-09-05 11:06:22.785714"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states the aim was to systematically review effectiveness of eHealth self-management in patients with HF.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Inclusion (RCTs, eHealth vs usual care, adults with HF) is stated; exclusion criteria are not specified.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "EMBASE, PubMed, CENTRAL, and CINAHL are named, with searches from 1 January 2011 to 12 July 2022.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "Risk of bias was assessed with the Cochrane Risk of Bias tool (RoB 2).",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Meta-analyses in RevMan and R, plus GRADE for certainty of evidence, are specified.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "no",
+            "reason": "24 RCTs and 9634 participants are given, but relevant study characteristics are not summarised.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Main outcomes include ORs/SMDs, 95% CIs, P values, GRADE, and direction versus usual care.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No brief summary of limitations of the included evidence (e.g., bias, inconsistency, imprecision).",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Results are interpreted as potential benefit, with a call for more high-quality studies.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No primary source of funding for the review is specified in the abstract.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided in the abstract.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 4273,
+          "token_usage": {
+            "prompt_tokens": 2897,
+            "input_tokens": 2897,
+            "completion_tokens": 448,
+            "output_tokens": 448,
+            "total_tokens": 4273,
+            "reasoning_tokens": 928
+          },
+          "processing_time": 22.557722137000383,
+          "timestamp": "2026-09-05 11:06:45.343806"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.6541598694942905,
+      "accuracy": 84.90566037735849,
+      "precision": 91.42857142857143,
+      "recall": 86.48648648648648,
+      "f1_score": 88.8888888888889,
+      "specificity": 81.25
+    }
+  },
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_89",
+    "title": "A systematic review and meta-analysis of elastic stockings for prevention of thrombosis after orthopedic surgery.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "x-ai/grok-4.6",
+      "model_version": "grok-4.6",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 16416,
+      "token_usage": {
+        "prompt_tokens": 13155,
+        "input_tokens": 13155,
+        "completion_tokens": 1665,
+        "output_tokens": 1665,
+        "total_tokens": 16416,
+        "reasoning_tokens": 1596
+      },
+      "processing_time": 52.387038,
+      "timestamp": "2026-09-05 11:06:45.344349"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "no",
+            "reason": "No report title identifies the work as a systematic review; only Original Article and meta-analysis keywords appear.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "no",
+            "reason": "Abstract lacks PRISMA 2020 abstract elements such as registration, funding, certainty, and limitations.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "Introduction explains DVT after orthopedic surgery, incidence, and conflicting evidence on stockings.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "Stated aim is to investigate the preventive effect of elastic stockings on DVT after orthopedic surgery via meta-analysis.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion/exclusion criteria are listed; studies were later grouped by surgery type for synthesis.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "no",
+            "reason": "PubMed, Embase and Cochrane named, but no last-search dates or other sources specified.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Only keywords and RCT/year limits given; full database-specific search strategies are not presented.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "no",
+            "reason": "Two researchers screened, but independence, number screening each record/report, and automation are not specified.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "no",
+            "reason": "Extraction of listed items described without number of reviewers, independence, or investigator confirmation.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "DVT incidence is the outcome but whether all compatible measures/time points/analyses were sought is not specified.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Participant, surgery, intervention and DVT-event variables for extraction are listed.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "no",
+            "reason": "Cochrane RoB domains named, but number of independent reviewers and automation not specified.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Odds ratio with 95% CI specified for DVT incidence.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "Eligibility for overall then subgroup syntheses by surgery type after exclusion is described.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "yes",
+            "reason": "Percentages converted to event counts for analysis.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Forest plots, tables and a funnel plot used to display results.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "RevMan, M-H, random/fixed models, I2/Q heterogeneity and rationale described.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analysis by surgery type and case-by-case exclusion used to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "Sensitivity analysis by sequential study exclusion is described.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Funnel plot planned to assess publication bias.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No methods (e.g., GRADE) to assess certainty of evidence are described.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "90 records to 7 included studies reported with a flow diagram.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Excluded studies that might have met criteria are not cited with reasons.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Included studies cited with characteristics in Table 1.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "RoB judgments for each study presented in Table 2.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Forest plots give events, ORs and CIs per study.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "No brief summary of characteristics and RoB for studies in each synthesis.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled ORs, CIs, I2 and direction of effect presented for overall and subgroup analyses.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Subgroup results by surgery type and heterogeneity between subgroups presented.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "yes",
+            "reason": "Results after excluding the spinal-surgery study presented.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Funnel-plot asymmetry interpreted as publication bias.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No certainty-of-evidence assessments for outcomes.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Findings compared with prior meta-analyses and other evidence.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of included evidence (stocking type, duration, bias) discussed.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Review-process limits (no stocking-type/duration extraction) discussed.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for combining stockings with anticoagulants and other measures stated.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "no",
+            "reason": "No registration information or statement that the review was not registered.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "no",
+            "reason": "Protocol location not given and no statement that a protocol was not prepared.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "Amendments not described (no protocol/registration to amend).",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Funding stated as none.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Authors declare no conflicts of interest.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Availability of data-collection forms, extracted data, code or other materials not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 12649,
+          "token_usage": {
+            "prompt_tokens": 10454,
+            "input_tokens": 10454,
+            "completion_tokens": 1237,
+            "output_tokens": 1237,
+            "total_tokens": 12649,
+            "reasoning_tokens": 958
+          },
+          "processing_time": 34.771184686997,
+          "timestamp": "2026-09-05 11:07:20.134353"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract states the objective: to investigate the preventive effect of elastic stockings on DVT after orthopedic surgery.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "no",
+            "reason": "Only RCTs from 2008 onward are mentioned; inclusion and exclusion criteria are not specified.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "no",
+            "reason": "PubMed, Embase and Cochrane are named, but the date each was last searched is not reported.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "no",
+            "reason": "No methods for assessing risk of bias in included studies are described.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "Meta-analysis in RevMan with forest/funnel plots and random- or fixed-effect models is specified.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "Seven studies and 3,116 patients are reported, with later grouping by ankle versus hip/knee surgery.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "yes",
+            "reason": "Overall OR 0.59 (95% CI 0.34–1.03) and subgroup effects with direction (benefit in ankle surgery only) are given.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "no",
+            "reason": "No brief summary of limitations of the included evidence is provided.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "Results are interpreted as benefit only after ankle surgery, with implication to combine other DVT prevention.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "No primary source of funding for the review is specified.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "No register name or registration number is provided.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "x-ai/grok-4.6",
+          "model_version": "grok-4.6",
+          "max_tokens": 128000,
+          "format_type": "md_x-ai_grok-4.6_low_20260905_105745",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3767,
+          "token_usage": {
+            "prompt_tokens": 2701,
+            "input_tokens": 2701,
+            "completion_tokens": 428,
+            "output_tokens": 428,
+            "total_tokens": 3767,
+            "reasoning_tokens": 638
+          },
+          "processing_time": 17.59675473199968,
+          "timestamp": "2026-09-05 11:07:37.731301"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.5766158315177924,
+      "accuracy": 79.24528301886792,
+      "precision": 78.125,
+      "recall": 86.20689655172413,
+      "f1_score": 81.96721311475409,
+      "specificity": 70.83333333333334
+    }
+  }
+]

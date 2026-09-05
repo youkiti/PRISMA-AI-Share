@@ -298,3 +298,13 @@ models:
       verbosity: low
       reasoning_effort: high
     notes: "Effort=high chosen by Tsuge sweep (low/medium/high): accuracy improves monotonically but only +1.14pt from low to high while cost rises 1.9x. reasoning_effort=none is rejected by the API (HTTP 400). See test/issues/2026-09-05_tsuge10_md_gpt6_astra_effort_sweep/."
+
+  - id: x-ai/grok-4.6
+    display_name: Grok-4.6
+    provider: xAI
+    pricing_id: xai/grok-4-6
+    schema_type: simple
+    unified_json: test/issues/2026-09-05_tsuge10_md_grok46_effort_sweep/results/md_x-ai_grok-4.6_20260905_110737.json
+    parameters:
+      reasoning_effort: low
+    notes: "Routed via xAI direct (OpenRouter upstream times out on long tool calls). Effort=low chosen by Tsuge sweep (low/medium) on sensitivity: low misses fewer reported items (sensitivity 85.19%, 44 FN vs medium 83.84%, 48 FN) at 0.6x the cost and 0.4x the latency. Raising effort improves specificity (81.12 -> 85.84%) and accuracy (83.40 -> 84.72%), not sensitivity. reasoning_effort none/max are rejected by the API (HTTP 400). See test/issues/2026-09-05_tsuge10_md_grok46_effort_sweep/."
