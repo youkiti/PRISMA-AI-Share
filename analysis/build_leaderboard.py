@@ -185,6 +185,21 @@ def compute_run_cost(
         usage = md.get("token_usage") or {}
         prompt_tokens = int(usage.get("prompt_tokens") or usage.get("input_tokens") or 0)
         completion_tokens = int(usage.get("completion_tokens") or usage.get("output_tokens") or 0)
+        # Gemini reports thinking tokens outside candidates_token_count, but Google
+        # bills them as output tokens. Use thoughts_token_count when present, else
+        # derive it from the total so the cost is not understated.
+        thinking_tokens = usage.get("thinking_tokens")
+        if thinking_tokens is None:
+            thinking_tokens = usage.get("thoughts_token_count")
+        if thinking_tokens is None:
+            total_tokens = int(
+                usage.get("total_token_count")
+                or usage.get("total_tokens")
+                or md.get("token_count")
+                or 0
+            )
+            thinking_tokens = max(0, total_tokens - prompt_tokens - completion_tokens)
+        completion_tokens += int(thinking_tokens)
         if prompt_tokens or completion_tokens:
             any_per_paper_usage = True
         model_id = (md.get("model_id") or "").lower()

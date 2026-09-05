@@ -276,3 +276,25 @@ models:
       verbosity: low
       reasoning_effort: none
     notes: "Effort=none chosen by Tsuge sweep (none/low): accuracies within 0.4pt, none is fastest/cheapest; see test/issues/2026-07-10_tsuge10_md_gpt56_sol_effort_sweep/."
+
+  - id: gemini-3.8-flash
+    display_name: Gemini 3.8 Flash
+    provider: Google
+    pricing_id: google/gemini-3.8-flash
+    schema_type: simple
+    unified_json: test/issues/2026-09-05_tsuge10_md_gemini38_flash_level_sweep/results/md_gemini-3.8-flash_20260905_091031.json
+    parameters:
+      temperature: 1.0
+      thinking_level: MEDIUM
+    notes: "thinking_level=medium chosen by Tsuge sweep (low/medium): medium is +1.13pt over low on every metric at 2.1x cost ($0.040 vs $0.019/SR); see test/issues/2026-09-05_tsuge10_md_gemini38_flash_level_sweep/."
+
+  - id: gpt-6-astra
+    display_name: GPT-6 Astra
+    provider: OpenAI
+    pricing_id: openai/gpt-6-astra
+    schema_type: simple
+    unified_json: test/issues/2026-09-05_tsuge10_md_gpt6_astra_effort_sweep/results/md_gpt-6-astra_20260905_095331.json
+    parameters:
+      verbosity: low
+      reasoning_effort: high
+    notes: "Effort=high chosen by Tsuge sweep (low/medium/high): accuracy improves monotonically but only +1.14pt from low to high while cost rises 1.9x. reasoning_effort=none is rejected by the API (HTTP 400). See test/issues/2026-09-05_tsuge10_md_gpt6_astra_effort_sweep/."

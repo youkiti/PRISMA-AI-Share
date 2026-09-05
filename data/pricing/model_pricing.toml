@@ -350,3 +350,35 @@ notes = "Standard pricing from OpenAI's GPT-5.6 pricing table (2026-07, confirme
   input_rate = 2.00
   output_rate = 12.00
   notes = "Long context pricing (doubled rates)."
+
+[[models]]
+id = "openai/gpt-6-astra"
+display_name = "GPT-6 Astra"
+provider = "OpenAI"
+billing_strategy = "tiered"
+aliases = ["gpt-6-astra"]
+notes = "Standard pricing from OpenAI's model page (2026-09, developers.openai.com/api/docs/models/gpt-6-astra). Prompts above 272k input tokens are billed at 2x input and 1.5x output (unlike the GPT-5.6 series where output also doubles). Cached input ($1.00/MTok), cache writes ($12.50/MTok), batch/flex (50%) and fast mode (2x) are not represented here."
+
+  [[models.tiers]]
+  max_tokens = 272000
+  token_basis = "prompt_tokens"
+  input_rate = 10.00
+  output_rate = 50.00
+  notes = "Short context pricing."
+
+  [[models.tiers]]
+  min_tokens = 272001
+  token_basis = "prompt_tokens"
+  input_rate = 20.00
+  output_rate = 75.00
+  notes = "Long context pricing (input 2x, output 1.5x)."
+
+[[models]]
+id = "google/gemini-3.8-flash"
+display_name = "Gemini 3.8 Flash"
+provider = "Google"
+billing_strategy = "simple"
+aliases = ["gemini-3.8-flash", "gemini-3-8-flash"]
+input_rate = 0.75
+output_rate = 3.75
+notes = "Promotional rates in effect through 2026-12-31 (ai.google.dev/gemini-api/docs/pricing, checked 2026-09-05). From 2027-01-01 the rates double to $1.50 input / $7.50 output per MTok; update this entry then. Context caching ($0.075/MTok) and batch (50%) are not represented here."

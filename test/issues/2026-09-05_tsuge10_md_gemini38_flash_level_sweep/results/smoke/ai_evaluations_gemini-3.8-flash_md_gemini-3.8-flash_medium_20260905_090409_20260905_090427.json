@@ -1,0 +1,355 @@
+[
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_120",
+    "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "gemini-3.8-flash",
+      "model_version": "gemini-3.8-flash",
+      "temperature": 1.0,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 18900,
+      "token_usage": {
+        "prompt_token_count": 14051,
+        "prompt_tokens": 14051,
+        "input_tokens": 14051,
+        "candidates_token_count": 1772,
+        "completion_tokens": 1772,
+        "output_tokens": 1772,
+        "total_token_count": 18900,
+        "total_tokens": 18900
+      },
+      "processing_time": 18.344591,
+      "timestamp": "2026-09-05 09:04:09.645453"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "13e": {
+            "result": "yes",
+            "reason": "Subgroup analysis by country type is described to explore heterogeneity.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "The objectives and clinical question are explicitly formulated at the end of the introduction.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "yes",
+            "reason": "Availability of data is declared, stating data are available upon reasonable request from the corresponding author.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "The PROSPERO registration number (CRD42023411680) is explicitly provided.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "The process of grouping studies by outcome and post-operative time points for synthesis is described.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "Competing interests of the authors are declared.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "Inclusion and exclusion criteria are specified using the PICOS framework, with grouping criteria outlined.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "Study selection numbers at each stage are described in the text and illustrated in Figure 1.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "yes",
+            "reason": "The abstract summarizes the background, objectives, data sources, study eligibility, synthesis methods, results, and conclusions.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Methods to assess reporting biases using Begg’s and Egger’s tests are specified.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "yes",
+            "reason": "Characteristics and risk of bias features are summarized for studies contributing to each synthesis.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "Amendments to the registered protocol are not described or reported.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "Funding sources are declared (stated as 'Not applicable').",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "yes",
+            "reason": "Summary statistics, mean differences, and 95% CIs for individual studies are presented in forest plots.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Excluded studies are summarized by reasons, but specific excluded studies are not cited.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "Limitations of the review process, including missing gray literature and inability to test sensitivity, are noted.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "yes",
+            "reason": "The decision not to conduct sensitivity analysis due to small study counts is justified using Cochrane guidelines.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "No formal certainty assessment (e.g., GRADE summary of findings) was conducted or presented.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "The data extraction process by two independent researchers and resolution of discrepancies are specified.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "yes",
+            "reason": "The search keywords are listed and supplementary file S1 is referenced for the full search strategy.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "Findings are interpreted in the context of biological mechanisms and existing literature.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "yes",
+            "reason": "Study characteristics, participant variables, and intervention details sought are described.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "no",
+            "reason": "No sensitivity analyses were performed, so no results could be presented.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "Methods for data conversion or handling missing summary statistics are not described.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Results of subgroup analysis by country type for length of hospital stay are presented.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Characteristics of all 11 included RCTs are presented in Table 1 with citations.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations of the included evidence (lack of blinding, geographic concentration, small samples) are discussed.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "The screening process by two independent reviewers and consensus/third-party arbitration are clearly described.",
+            "raw_response": ""
+          },
+          "1": {
+            "result": "yes",
+            "reason": "The title clearly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "yes",
+            "reason": "Primary outcomes (pain, ROM, D-dimer, length of hospital stay) and their evaluation time points are specified.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No formal method (e.g., GRADE) to assess certainty of the evidence was specified.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "no",
+            "reason": "The RoB tool is specified, but the review does not specify how many reviewers performed the assessment.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Implications for clinical practice and future RCT methodology are discussed.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "Synthesis models (fixed and random-effects models based on I²), software, and statistical criteria are specified.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Pooled effect estimates, 95% CIs, p-values, and I² heterogeneity statistics are fully reported.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "The registered PROSPERO protocol is cited and accessible via the registration ID.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "yes",
+            "reason": "Risk of bias assessments for each included study are reported in the text and Figure 2.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Databases searched and the date range (inception to May 2024) are clearly identified.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Methods to visually display results (RevMan 5.3, Stata 16.0, forest plots) are reported.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Effect measures (MD or SMD with 95% CIs) are clearly specified for continuous outcomes.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "The background provides the rationale for the review within the context of existing literature on TKA and massage.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "Results of Begg’s and Egger’s tests for publication bias are reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "gemini-3.8-flash",
+          "model_version": "gemini-3.8-flash",
+          "temperature": 1.0,
+          "format_type": "md_gemini-3.8-flash_medium_20260905_090409",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 15223,
+          "token_usage": {
+            "prompt_token_count": 12212,
+            "prompt_tokens": 12212,
+            "input_tokens": 12212,
+            "candidates_token_count": 1352,
+            "completion_tokens": 1352,
+            "output_tokens": 1352,
+            "total_token_count": 15223,
+            "total_tokens": 15223
+          },
+          "processing_time": 9.874172429997998,
+          "timestamp": "2026-09-05 09:04:19.545446"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_3": {
+            "result": "yes",
+            "reason": "Eligibility criteria including study design (RCTs), intervention (massage), and target population (postoperative TKA) are specified.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "no",
+            "reason": "No numerical summary estimates, confidence intervals, or study/participant numbers per outcome are presented for the meta-analyses.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "The abstract names five electronic databases and provides the search date (inception to May 2024).",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "The abstract does not specify any funding source for the review.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "The abstract does not provide a registry name or registration number.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "The number of included studies (11 RCTs) and total participants (940 subjects) are provided.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "The abstract states that meta-analysis was conducted for specific outcomes.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "The abstract notes that the heterogeneity of the studies was large, identifying a key limitation of the evidence.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "The abstract provides a clear general interpretation of the findings and clinical implications for post-TKA rehabilitation.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "The Cochrane Risk of Bias Assessment Tool is specified as the method used to assess risk of bias.",
+            "raw_response": ""
+          },
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The objective of evaluating the effectiveness of massage for postoperative rehabilitation after TKA is clearly stated.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "gemini-3.8-flash",
+          "model_version": "gemini-3.8-flash",
+          "temperature": 1.0,
+          "format_type": "md_gemini-3.8-flash_medium_20260905_090409",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 3677,
+          "token_usage": {
+            "prompt_token_count": 1839,
+            "prompt_tokens": 1839,
+            "input_tokens": 1839,
+            "candidates_token_count": 420,
+            "completion_tokens": 420,
+            "output_tokens": 420,
+            "total_token_count": 3677,
+            "total_tokens": 3677
+          },
+          "processing_time": 4.870674540001346,
+          "timestamp": "2026-09-05 09:04:27.989953"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.43416370106761565,
+      "accuracy": 77.35849056603774,
+      "precision": 76.74418604651163,
+      "recall": 94.28571428571428,
+      "f1_score": 84.61538461538461,
+      "specificity": 44.44444444444444
+    }
+  }
+]

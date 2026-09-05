@@ -1,0 +1,340 @@
+[
+  {
+    "paper_id": "Tsuge2025_PRISMA2020_120",
+    "title": "Massage for rehabilitation after total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials.",
+    "dataset_source": "tsuge2025_prisma",
+    "overall_metadata": {
+      "model_id": "gpt-6-astra",
+      "model_version": "gpt-6-astra",
+      "max_tokens": 128000,
+      "format_type": "combined",
+      "prompt_version": "refactored_v1_core_task_combined",
+      "token_count": 14926,
+      "token_usage": {
+        "input_tokens": 12183,
+        "output_tokens": 2743,
+        "total_tokens": 14926
+      },
+      "processing_time": 42.944637,
+      "timestamp": "2026-09-05 09:19:04.789473"
+    },
+    "evaluation_sets": {
+      "main": {
+        "evaluations": {
+          "1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis of randomized controlled trials.",
+            "raw_response": ""
+          },
+          "2": {
+            "result": "no",
+            "reason": "The abstract reports objectives, eligibility, searches, methods, and findings, but omits numerical effect estimates with precision, funding information, and registration details required by PRISMA for Abstracts.",
+            "raw_response": ""
+          },
+          "3": {
+            "result": "yes",
+            "reason": "The background describes postoperative rehabilitation problems, inconsistent massage trial findings, and the absence of previous systematic reviews addressing this question.",
+            "raw_response": ""
+          },
+          "4": {
+            "result": "yes",
+            "reason": "The review explicitly aims to evaluate massage effectiveness for rehabilitation after total knee arthroplasty.",
+            "raw_response": ""
+          },
+          "5": {
+            "result": "yes",
+            "reason": "PICOS eligibility criteria and explicit exclusions are provided. Syntheses are organized by outcome and postoperative assessment time, with hospital-stay subgrouping by country.",
+            "raw_response": ""
+          },
+          "6": {
+            "result": "yes",
+            "reason": "Five databases are named, and the search period is reported as inception through May 2024 for all databases.",
+            "raw_response": ""
+          },
+          "7": {
+            "result": "no",
+            "reason": "Only example search terms are provided. Full database-specific strategies are referenced in Supplementary Table S1, whose contents are not included in the supplied text.",
+            "raw_response": ""
+          },
+          "8": {
+            "result": "yes",
+            "reason": "Two named reviewers independently screened titles, abstracts, and full texts against eligibility criteria, resolving disagreements through discussion or a third reviewer.",
+            "raw_response": ""
+          },
+          "9": {
+            "result": "yes",
+            "reason": "The abstract specifies independent extraction by two researchers. The methods describe extracted information and resolution of extraction disagreements through discussion or third-party adjudication.",
+            "raw_response": ""
+          },
+          "10a": {
+            "result": "no",
+            "reason": "The main outcome domains are identifiable, but their definitions and whether all eligible measures, time points, and analyses were sought are not specified. Rules for selecting results are absent.",
+            "raw_response": ""
+          },
+          "10b": {
+            "result": "no",
+            "reason": "The extraction list includes study, participant, and intervention characteristics, but assumptions concerning missing or unclear information are not described.",
+            "raw_response": ""
+          },
+          "11": {
+            "result": "no",
+            "reason": "The Cochrane tool, seven domains, and judgment categories are described, but the number of risk-of-bias assessors and whether they worked independently are not reported.",
+            "raw_response": ""
+          },
+          "12": {
+            "result": "yes",
+            "reason": "Continuous outcomes are analyzed using MD or SMD with 95% confidence intervals; the results identify MD as the measure for each pooled outcome.",
+            "raw_response": ""
+          },
+          "13a": {
+            "result": "yes",
+            "reason": "The synthesis sections identify eligible studies according to reported outcomes and postoperative time points. Hospital-stay studies are further grouped by country.",
+            "raw_response": ""
+          },
+          "13b": {
+            "result": "no",
+            "reason": "No methods for data conversions, missing summary statistics, or other preparation for synthesis are described.",
+            "raw_response": ""
+          },
+          "13c": {
+            "result": "yes",
+            "reason": "Study characteristics are organized in Table 1, and outcome-specific forest plots display pooled results by postoperative time point and country subgroup.",
+            "raw_response": ""
+          },
+          "13d": {
+            "result": "yes",
+            "reason": "The report names Review Manager and Stata, specifies fixed- versus random-effects selection using I² thresholds, and describes Q and I² assessments of heterogeneity.",
+            "raw_response": ""
+          },
+          "13e": {
+            "result": "yes",
+            "reason": "Country-based subgroup analysis is specified to explore heterogeneity, with China compared against other countries for hospital stay.",
+            "raw_response": ""
+          },
+          "13f": {
+            "result": "no",
+            "reason": "The authors explicitly state that sensitivity analyses were not performed because too few studies contributed to each outcome.",
+            "raw_response": ""
+          },
+          "14": {
+            "result": "yes",
+            "reason": "Publication bias assessment is described using Begg’s and Egger’s tests with a significance threshold of p < 0.05.",
+            "raw_response": ""
+          },
+          "15": {
+            "result": "no",
+            "reason": "No method or framework for assessing certainty in the body of evidence is reported.",
+            "raw_response": ""
+          },
+          "16a": {
+            "result": "yes",
+            "reason": "The report traces 554 records through removal of 135 records, exclusion of 398 at initial screening, assessment of 21 full texts, and inclusion of 11 studies, with full-text exclusion categories.",
+            "raw_response": ""
+          },
+          "16b": {
+            "result": "no",
+            "reason": "Full-text exclusion reasons and counts are reported, but the excluded studies are not individually cited.",
+            "raw_response": ""
+          },
+          "17": {
+            "result": "yes",
+            "reason": "Table 1 cites all 11 included studies and presents countries, participant characteristics, sample sizes, interventions, duration, assessment times, outcomes, and adverse events.",
+            "raw_response": ""
+          },
+          "18": {
+            "result": "no",
+            "reason": "The narrative reports selected bias-related characteristics, but complete study-level judgments are not provided in the supplied text. Detailed assessments are referenced only in the unavailable Figure 2.",
+            "raw_response": ""
+          },
+          "19": {
+            "result": "no",
+            "reason": "The supplied text presents pooled estimates but not individual-study outcome means, variability, and effect estimates with precision. Referenced forest plots are not reproduced.",
+            "raw_response": ""
+          },
+          "20a": {
+            "result": "no",
+            "reason": "Contributing studies and participant counts are identified for syntheses, but risk of bias is not summarized separately for each synthesis.",
+            "raw_response": ""
+          },
+          "20b": {
+            "result": "yes",
+            "reason": "Overall and subgroup meta-analysis results include mean differences, 95% confidence intervals, I² values, and descriptions of effect direction.",
+            "raw_response": ""
+          },
+          "20c": {
+            "result": "yes",
+            "reason": "Country subgroup results for hospital stay are presented with estimates, confidence intervals, and heterogeneity values, identifying country as a possible source of heterogeneity.",
+            "raw_response": ""
+          },
+          "20d": {
+            "result": "no",
+            "reason": "No sensitivity-analysis results are presented; the authors explicitly state that these analyses were not performed.",
+            "raw_response": ""
+          },
+          "21": {
+            "result": "yes",
+            "reason": "The report identifies potential publication bias for postoperative day-14 pain, gives Egger’s p-value, reports no significant findings elsewhere, and specifies outcomes for which Egger’s test could not be performed.",
+            "raw_response": ""
+          },
+          "22": {
+            "result": "no",
+            "reason": "The conclusion broadly labels evidence low to moderate quality, but outcome-specific certainty assessments are not presented.",
+            "raw_response": ""
+          },
+          "23a": {
+            "result": "yes",
+            "reason": "The discussion interprets pain, mobility, D-dimer, and hospital-stay findings alongside existing evidence about massage mechanisms and postoperative rehabilitation.",
+            "raw_response": ""
+          },
+          "23b": {
+            "result": "yes",
+            "reason": "Limitations include geographic concentration, inadequate blinding, substantial heterogeneity, missing relevant outcomes, and insufficient adverse-event detail.",
+            "raw_response": ""
+          },
+          "23c": {
+            "result": "yes",
+            "reason": "The authors discuss potentially overlooked gray literature and the absence of sensitivity analyses as limitations affecting completeness and robustness.",
+            "raw_response": ""
+          },
+          "23d": {
+            "result": "yes",
+            "reason": "Massage is proposed as an adjunctive rehabilitation treatment. Future research recommendations include larger multicenter trials, stronger methods, standardized massage, and improved outcome and adverse-event measurement.",
+            "raw_response": ""
+          },
+          "24a": {
+            "result": "yes",
+            "reason": "PROSPERO registration is reported with identifier CRD42023411680.",
+            "raw_response": ""
+          },
+          "24b": {
+            "result": "yes",
+            "reason": "The authors identify the registered review protocol in PROSPERO and provide its registration number, allowing the protocol record to be located.",
+            "raw_response": ""
+          },
+          "24c": {
+            "result": "no",
+            "reason": "No protocol or registration amendments are described, and there is no statement that no amendments occurred.",
+            "raw_response": ""
+          },
+          "25": {
+            "result": "yes",
+            "reason": "The funding and acknowledgements sections both state 'Not applicable,' indicating no reported financial or acknowledged non-financial support.",
+            "raw_response": ""
+          },
+          "26": {
+            "result": "yes",
+            "reason": "The authors explicitly declare that they have no competing interests.",
+            "raw_response": ""
+          },
+          "27": {
+            "result": "no",
+            "reason": "Datasets are available only from the corresponding author on reasonable request. Public access locations for extracted data, analysis data, collection forms, and analytic code are not reported.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "gpt-6-astra",
+          "model_version": "gpt-6-astra",
+          "max_tokens": 128000,
+          "format_type": "md_gpt-6-astra_medium_20260905_091904",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 12795,
+          "token_usage": {
+            "input_tokens": 10589,
+            "output_tokens": 2206,
+            "total_tokens": 12795
+          },
+          "processing_time": 31.625982823999948,
+          "timestamp": "2026-09-05 09:19:40.013344"
+        }
+      },
+      "abstract": {
+        "evaluations": {
+          "item_1": {
+            "result": "yes",
+            "reason": "The title explicitly identifies the report as a systematic review and meta-analysis.",
+            "raw_response": ""
+          },
+          "item_2": {
+            "result": "yes",
+            "reason": "The abstract explicitly states the objective: evaluating massage effectiveness for postoperative rehabilitation after total knee arthroplasty.",
+            "raw_response": ""
+          },
+          "item_3": {
+            "result": "yes",
+            "reason": "Eligibility is specified as randomized controlled trials evaluating massage for postoperative total knee arthroplasty rehabilitation, defining eligible study design, intervention, and population.",
+            "raw_response": ""
+          },
+          "item_4": {
+            "result": "yes",
+            "reason": "Five databases are named, and the search period is reported as inception to May 2024.",
+            "raw_response": ""
+          },
+          "item_5": {
+            "result": "yes",
+            "reason": "The abstract specifies the Cochrane Risk of Bias Assessment Tool.",
+            "raw_response": ""
+          },
+          "item_6": {
+            "result": "yes",
+            "reason": "The abstract reports meta-analysis of specified outcomes and subgroup analysis by geographical region.",
+            "raw_response": ""
+          },
+          "item_7": {
+            "result": "yes",
+            "reason": "The abstract reports 11 randomized controlled trials with 940 participants and identifies the intervention and postoperative rehabilitation population.",
+            "raw_response": ""
+          },
+          "item_8": {
+            "result": "no",
+            "reason": "Results and effect directions are described, but no numerical summary estimates or confidence intervals are reported despite conducting a meta-analysis.",
+            "raw_response": ""
+          },
+          "item_9": {
+            "result": "yes",
+            "reason": "The abstract explicitly identifies substantial study heterogeneity as a limitation of the evidence.",
+            "raw_response": ""
+          },
+          "item_10": {
+            "result": "yes",
+            "reason": "The abstract interprets benefits for pain and knee range of motion, notes no benefit for D-dimer levels, and suggests massage as an adjunctive rehabilitation treatment.",
+            "raw_response": ""
+          },
+          "item_11": {
+            "result": "no",
+            "reason": "The abstract does not report a funding source for the review.",
+            "raw_response": ""
+          },
+          "item_12": {
+            "result": "no",
+            "reason": "The abstract does not provide a register name or registration number.",
+            "raw_response": ""
+          }
+        },
+        "processing_metadata": {
+          "model_id": "gpt-6-astra",
+          "model_version": "gpt-6-astra",
+          "max_tokens": 128000,
+          "format_type": "md_gpt-6-astra_medium_20260905_091904",
+          "prompt_version": "item_level_retry_v1",
+          "token_count": 2131,
+          "token_usage": {
+            "input_tokens": 1594,
+            "output_tokens": 537,
+            "total_tokens": 2131
+          },
+          "processing_time": 7.720049160001508,
+          "timestamp": "2026-09-05 09:19:47.733743"
+        }
+      }
+    },
+    "metrics": {
+      "cohen_kappa": 0.41111111111111104,
+      "accuracy": 73.58490566037736,
+      "precision": 80.0,
+      "recall": 80.0,
+      "f1_score": 80.00000000000001,
+      "specificity": 61.111111111111114
+    }
+  }
+]

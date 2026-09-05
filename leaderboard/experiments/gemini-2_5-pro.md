@@ -23,8 +23,8 @@ TP / TN / FP / FN: 251 / 168 / 65 / 46 (correct 419 of 530)
 ## Performance
 
 - Mean time per SR: 76.4 seconds
-- Cost per SR: $0.045 (USD)
-- Total cohort cost: $0.449
+- Cost per SR: $0.111 (USD)
+- Total cohort cost: $1.108
 
 ## Notes
 
